@@ -1,0 +1,65 @@
+*建议在Windows10(Server2016)及以上使用！
+
+**************************************************************************************************
+
+注意！如提示版本低，请先尝试8.9.70协议，若您当前正常使用，请勿更新。
+
+若使用8.9.70登录时提示版本低（code45），请删除txlib_version.json，然后重新运行并在第一步输入8.9.80
+
+**************************************************************************************************
+
+首先！！这个包的go-cqhttp是最新的正式版本，不要覆盖掉！
+从旧版迁移，请只迁移"Dicexxxxxxxxx"文件夹
+
+1.双击Start_Qsign.bat，按照提示输入内容。按下enter键确认。
+前面的txlib_version、host、port、key这4个可以直接按enter下一步，这个可以跳过。
+*若登录时提示版本低（code45），请删除txlib_version.json，然后重新运行并在这一步输入8.9.80
+
+2.然后脚本会提示你输入Account uin（QQ账号）和password（密码）
+当它出现“Responding at http://127.0.0.1:13579”后开始操作下一步
+
+3.双击go-cqhttp.bat启动go-cqhttp，进行验证流程。确认登录成功后进入下一步。
+
+4.双击运行DiceDriver.Gocq.Lite.exe
+
+5.后续不可以关闭qsign，qsign如果关闭会发送不出去消息，所以启动gocq之前务必确保qsign存活。
+
+6.如果重启电脑等时候，所有的程序都关闭的情况下，可以双击"启动Qsign_gocq&DiceDriver.bat"运行启动所有程序
+
+操作视频请前往https://space.bilibili.com/1851468，有录制各骰系的登录教学。
+
+感谢https://github.com/rhwong/unidbg-fetch-qsign-onekey 提供的qsign一键包支持，可以去点一个免费的星星支持原作者。
+
+如果日后需要修改协议的版本，您可以删除文件夹根目录下的 txlib_version.json 来重新进入设定流程，也可以对此文件进行修改。
+
+
+如果你需要在另一个骰娘qq账号中使用本qsign，请务必自行手动同步协议文件。方法为
+复制 txlib\(协议版本号)\android_pad.json 
+到另一个骰娘目录的 
+\data\versions文件夹中，并更名为6.json
+
+#*注意*如果提示:
+#Run separately from go-cqhttp. Please enter the sign-server address and KEY in go-cqhttp config.
+#The config file already contains account information.
+#说明没有找到config.yml，你需要双击一下go-cqhttp.bat，输入2，然后按enter让他生成一个。然后修改此文件倒数第三行的0.0.0.0:8080为127.0.0.1:24680
+
+可能遇到的问题
+1.若提示设备信息被封禁，请手动去删除device.json。
+
+2.Code237 登录网络环境不安全，重启程序，在滑块步骤时，请把滑块的链接复制到手机，用流量打开滑块即可。
+
+3.若提示 获取T544 sign时出现错误: encoding/hex: invalid byte: U+0069 'i'，则说明您使用了旧版go-cqhttp来接入最新的1.1.6，出现了不兼容。请更换go-cqhttp模块至开发版本
+
+4.若提示 获取sso sign时出现错误:.... 则说明您的qsign服务没有正确运行
+
+5.若提示 获取T544 sign时出现错误: ....TimeOut....则说明您的设备性能过低，导致签名值无法还未运算完毕，客户端就报超时了。请换用修改后的go-cqhttp开发版本。（这是已经修复的问题）
+
+6.Code45 签名服务器未生效的登录错误
+
+7.Code45 帐号被限制在非常用设备登录(且被冻结)，需要去微信-腾讯客服-账号登录问题-手持身份证拍照向人工客服申请解冻
+
+8.Code40 帐号被冻结，请去解冻
+
+packed by shia 2023-10-25
+
+其他问题和寻求帮助以及最新的一键包发布 请加群763399276

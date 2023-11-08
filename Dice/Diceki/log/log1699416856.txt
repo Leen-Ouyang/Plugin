@@ -1,0 +1,173 @@
+G:\0Class\软件工程\团队项目\Dice-GoCqLite_Qsign-Onekey-1.1.9-bitterest\Diceki
+DiceDriver.enabled
+扫描Dice:版本2.7.0build653
+G:\0Class\软件工程\团队项目\Dice-GoCqLite_Qsign-Onekey-1.1.9-bitterest\Diceki\w4123.Dice-2.7.0beta5(653).dll
+Dice2559658564.init
+Dice! by 溯洄 & Shiki Ver 2.7.0beta5(652)[MSVC 1934 May 29 2023 03:58:04] on
+Dice!驱动器Lite by 安研色Shiki & 溯洄w4123 ver0.7.4(26)[2023-04-23 13:59:19] for Gocq
+欢迎使用Dice!掷骰机器人！
+请发送.master 30497467 //公骰作成 或
+.master 71636524 //私骰作成 即可成为我的主人~
+可发送.help查看帮助
+发送.system gui开启DiceMaid后台面板
+参考文档参看.help链接
+DiceConsole.load
+Dice.webUIInit
+Dice.threadInit
+2023-11-08 12:14:20 筱沐初始化完成，用时310毫秒
+Dice.WebInit
+Dice! WebUI 正于端口54846运行，本地可通过浏览器访问http://localhost:54846
+默认用户名为admin密码为password，详细教程请查看 https://forum.kokona.tech/d/721-dice-webui-shi-yong-shuo-ming
+已成功刷新软件包缓存：37个拓展可用
+{
+    "msg": "success",
+    "code": 0,
+    "data": [
+        {
+            "name": "PC_Slots",
+            "title": "角色卡栏位扩展",
+            "ver": "1.0.0",
+            "author": "安研色Shiki",
+            "dice_build": 607,
+            "repo": "https://ghproxy.com/https://github.com/mystringEmpty/PC_Slots.git",
+            "pkg": "https://ghproxy.com/https://github.com/Dice-Developer-Team/DiceModIndex/releases/download/official/PC_Slots.zip",
+            "brief": "角色卡栏位扩展（状态栏、物品栏、法术栏、专长栏、笔记栏等）"
+        },
+        {
+            "name": "COC7-Tibet",
+            "title": "COC7-西藏诡秘",
+            "ver": "0.2.0(2)",
+            "author": "安研色Shiki",
+            "dice_build": 652,
+            "repo": "https://gitee.com/dicemaid/coc7-secrets_of_tibet.git",
+            "brief": "COC7规则扩展《西藏诡秘Secrets of Tibet》\n请使用 .rules 西藏职业/西藏技能/西藏僧侣法术/西藏武器 获取相关索引"
+        },
+        {
+            "name": "DiceFavor",
+            "title": "恋色LoveDice",
+            "ver": "1.0.7(8)",
+            "author": "安研色Shiki",
+            "dice_build": 629,
+            "repo": "https://ghproxy.com/https://github.com/mystringEmpty/DiceFavor.git",
+            "pkg": "https://ghproxy.com/https://github.com/Dice-Developer-Team/DiceModIndex/releases/download/favor/DiceFavor.zip",
+            "brief": "好感互动模块，包含好感读写、编辑、成长等"
+        },
+        {
+            "title": "开发工具",
+            "ver": "0.3.0(3)",
+            "author": "安研色Shiki",
+            "dice_build": 640,
+            "repo": "https://gitee.com/dicemaid/dev-tool.git",
+            "pkg": "",
+            "brief": "lua/js/py脚本在线调试工具、性能测试"
+        },
+        {
+            "name": "HelloLua",
+            "title": "欢迎使用Lua",
+            "ver": "0.1.0(1)",
+            "author": "安研色Shiki",
+            "dice_build": 638,
+            "repo": "https://gitee.com/dicemaid/hello_lua.git",
+            "pkg": "",
+            "brief": "入门向Lua开发样例"
+        }
+    ]
+}
+<< 试问，你就是筱沐的Master√
+请认真阅读当前版本Master手册以及用户手册。请注意版本号对应: https://v2docs.kokona.tech
+<< 筱沐以公骰模式认主：
+自动开启BelieveDiceList响应来自骰娘列表的warning；
+已开启自动通过非黑名单好友申请；
+已开启黑名单自动清理，拉黑时及每日定时会自动清理与黑名单用户的共同群聊，黑名单用户群权限不低于自己时自动退群；
+已开启拉黑群时连带邀请人；
+已启用send功能接收用户发送的消息；
+<< 筱沐默认开启对群移出、禁言、刷屏事件的监听，如要关闭请手动调整；
+请注意云黑系统默认开启，如无需此功能请关闭CloudBlackShare；
+<< 试验型 Dice! by 溯洄 & Shiki Ver 2.7.0beta5(652)
+请使用.dismiss ID（或后四位） 使筱沐退群退讨论组
+.bot on/off ID（或后四位） //开启或关闭指令
+.help协议 确认服务协议
+.help指令 查看指令列表
+.help群管 查看群管指令
+.help设定 确认骰娘设定
+.help链接 查看源码文档
+官方论坛: https://forum.kokona.tech/
+Dice!众筹计划: https://afdian.net/@suhuiw4123
+<< 游戏模式：
+`.game new 桌名` 创建游戏（命名可省略）
+`.game over` 销毁本桌游戏
+`.game state` 查看本桌状态
+`.game master` 登记为GM
+`.game set 属性=值` 游戏设置
+例: `.game set rule=COC7`
+`.game set 属性` 查看设置
+`.game call` at玩家
+`.game join` 玩家登记
+`.game kick 玩家ID` 将玩家踢出游戏
+`.game exit` 退出游戏
+`.game open 桌号` 将当前窗口加入指定游戏
+`.game close` 关闭当前游戏
+`.game rou 100` 设置(百面)轮盘骰，详见.help roulette
+2023-11-08 12:19:21 自动保存
+{
+    "msg": "success",
+    "code": 0,
+    "data": [
+        {
+            "name": "PC_Slots",
+            "title": "角色卡栏位扩展",
+            "ver": "1.0.0",
+            "author": "安研色Shiki",
+            "dice_build": 607,
+            "repo": "https://ghproxy.com/https://github.com/mystringEmpty/PC_Slots.git",
+            "pkg": "https://ghproxy.com/https://github.com/Dice-Developer-Team/DiceModIndex/releases/download/official/PC_Slots.zip",
+            "brief": "角色卡栏位扩展（状态栏、物品栏、法术栏、专长栏、笔记栏等）"
+        },
+        {
+            "name": "COC7-Tibet",
+            "title": "COC7-西藏诡秘",
+            "ver": "0.2.0(2)",
+            "author": "安研色Shiki",
+            "dice_build": 652,
+            "repo": "https://gitee.com/dicemaid/coc7-secrets_of_tibet.git",
+            "brief": "COC7规则扩展《西藏诡秘Secrets of Tibet》\n请使用 .rules 西藏职业/西藏技能/西藏僧侣法术/西藏武器 获取相关索引"
+        },
+        {
+            "name": "DiceFavor",
+            "title": "恋色LoveDice",
+            "ver": "1.0.7(8)",
+            "author": "安研色Shiki",
+            "dice_build": 629,
+            "repo": "https://ghproxy.com/https://github.com/mystringEmpty/DiceFavor.git",
+            "pkg": "https://ghproxy.com/https://github.com/Dice-Developer-Team/DiceModIndex/releases/download/favor/DiceFavor.zip",
+            "brief": "好感互动模块，包含好感读写、编辑、成长等"
+        },
+        {
+            "title": "开发工具",
+            "ver": "0.3.0(3)",
+            "author": "安研色Shiki",
+            "dice_build": 640,
+            "repo": "https://gitee.com/dicemaid/dev-tool.git",
+            "pkg": "",
+            "brief": "lua/js/py脚本在线调试工具、性能测试"
+        },
+        {
+            "name": "HelloLua",
+            "title": "欢迎使用Lua",
+            "ver": "0.1.0(1)",
+            "author": "安研色Shiki",
+            "dice_build": 638,
+            "repo": "https://gitee.com/dicemaid/hello_lua.git",
+            "pkg": "",
+            "brief": "入门向Lua开发样例"
+        }
+    ]
+}
+2023-11-08 12:24:22 自动保存
+<< 召唤筱沐，天麟有何事么？
+<< 召唤筱沐，天麟有何事么？
+<< 已手动加载筱沐的配置√
+<< 已手动加载筱沐的配置√
+<< 筱沐仅找到相近词条「扩展指令」:
+
+

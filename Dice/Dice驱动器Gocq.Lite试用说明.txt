@@ -1,0 +1,15 @@
+DiceDriver.Gocq使用go-cqhttp作为QQ登录设备，QQ账号一对一，不支持多开
+# 如DiceDriver与gocq在同级目录使用（新人仅看此节）
+1. 双击go-cqhttp.bat启动，生成go-cqhttp配置文件(config.yml)，通信方式输入2；
+2. 打开config.yml输入账号信息（扫码登录可以跳过，改为将device.json中的"protocol":6改为"protocol":2）；
+编辑最下方的正向websocket连接，将ws下address的【0.0.0.0:8080】改为【127.0.0.1:15800】（如果同电脑多开则端口须不相同，如127.0.0.1:15800、127.0.0.1:15801、127.0.0.1:15802……）
+3. 再次双击go-cqhttp.bat启动gocq；
+4. 登录完成后再双击启动DiceDriver.Gocq.Lite（gocq需要登录后才开始监听端口），DiceDriver将读取go-cqhttp中的config.yml连接ws；
+（servers可以有复数配置，DiceDriver将读取其中第一个正向ws端口）；
+
+# 如DiceDriver与gocq拆分使用（如果你知道是在做什么）:
+1. 在Diceki目录创建driver.yaml，添加server: go-cqhttp配置的正向WS服务器监听地址
+2. 双击启动DiceDriver.Gocq.Lite
+3. 同上
+
+——by Shiki 最后更新2023-05-19

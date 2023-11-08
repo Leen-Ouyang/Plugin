@@ -1,0 +1,111 @@
+G:\0Class\软件工程\团队项目\Dice-GoCqLite_Qsign-Onekey-1.1.9-bitterest\Diceki
+DiceDriver.enabled
+扫描Dice:版本2.7.0build653
+G:\0Class\软件工程\团队项目\Dice-GoCqLite_Qsign-Onekey-1.1.9-bitterest\Diceki\w4123.Dice-2.7.0beta5(653).dll
+Dice2559658564.init
+Dice! by 溯洄 & Shiki Ver 2.7.0beta5(652)[MSVC 1934 May 29 2023 03:58:04] on
+Dice!驱动器Lite by 安研色Shiki & 溯洄w4123 ver0.7.4(26)[2023-04-23 13:59:19] for Gocq
+DiceConsole.load
+2023-11-08 12:35:27 筱沐
+注册speech 24 项
+注册help 5 项
+注册reply 11 项
+注册lua脚本 10 份
+模块加载完毕√
+2023-11-08 12:35:27 
+读取/mod/中的2枚mod
+扩展配置读取完毕√
+2023-11-08 12:35:27 读取用户记录2条 读取群聊记录4条 用户数据读取完毕
+Dice.webUIInit
+Dice.threadInit
+<< 2023-11-08 12:35:27 筱沐
+注册speech 24 项
+注册help 5 项
+注册reply 11 项
+注册lua脚本 10 份
+模块加载完毕√
+2023-11-08 12:35:27 筱沐初始化完成，用时360毫秒
+Dice.WebInit
+<< 2023-11-08 12:35:27 
+读取/mod/中的2枚mod
+扩展配置读取完毕√
+<< 2023-11-08 12:35:27 读取用户记录2条 读取群聊记录4条 用户数据读取完毕
+Dice! WebUI 正于端口56626运行，本地可通过浏览器访问http://localhost:56626
+默认用户名为admin密码为password，详细教程请查看 https://forum.kokona.tech/d/721-dice-webui-shi-yong-shuo-ming
+<< 2023-11-08 12:35:27 筱沐初始化完成，用时360毫秒
+<< Dice! WebUI 正于端口56626运行，本地可通过浏览器访问http://localhost:56626
+默认用户名为admin密码为password，详细教程请查看 https://forum.kokona.tech/d/721-dice-webui-shi-yong-shuo-ming
+已成功刷新软件包缓存：37个拓展可用
+{
+    "msg": "success",
+    "code": 0,
+    "data": [
+        {
+            "name": "PC_Slots",
+            "title": "角色卡栏位扩展",
+            "ver": "1.0.0",
+            "author": "安研色Shiki",
+            "dice_build": 607,
+            "repo": "https://ghproxy.com/https://github.com/mystringEmpty/PC_Slots.git",
+            "pkg": "https://ghproxy.com/https://github.com/Dice-Developer-Team/DiceModIndex/releases/download/official/PC_Slots.zip",
+            "brief": "角色卡栏位扩展（状态栏、物品栏、法术栏、专长栏、笔记栏等）"
+        },
+        {
+            "name": "COC7-Tibet",
+            "title": "COC7-西藏诡秘",
+            "ver": "0.2.0(2)",
+            "author": "安研色Shiki",
+            "dice_build": 652,
+            "repo": "https://gitee.com/dicemaid/coc7-secrets_of_tibet.git",
+            "brief": "COC7规则扩展《西藏诡秘Secrets of Tibet》\n请使用 .rules 西藏职业/西藏技能/西藏僧侣法术/西藏武器 获取相关索引"
+        },
+        {
+            "name": "DiceFavor",
+            "title": "恋色LoveDice",
+            "ver": "1.0.7(8)",
+            "author": "安研色Shiki",
+            "dice_build": 629,
+            "repo": "https://ghproxy.com/https://github.com/mystringEmpty/DiceFavor.git",
+            "pkg": "https://ghproxy.com/https://github.com/Dice-Developer-Team/DiceModIndex/releases/download/favor/DiceFavor.zip",
+            "brief": "好感互动模块，包含好感读写、编辑、成长等"
+        },
+        {
+            "title": "开发工具",
+            "ver": "0.3.0(3)",
+            "author": "安研色Shiki",
+            "dice_build": 640,
+            "repo": "https://gitee.com/dicemaid/dev-tool.git",
+            "pkg": "",
+            "brief": "lua/js/py脚本在线调试工具、性能测试"
+        },
+        {
+            "name": "HelloLua",
+            "title": "欢迎使用Lua",
+            "ver": "0.1.0(1)",
+            "author": "安研色Shiki",
+            "dice_build": 638,
+            "repo": "https://gitee.com/dicemaid/hello_lua.git",
+            "pkg": "",
+            "brief": "入门向Lua开发样例"
+        }
+    ]
+}
+2023-11-08 12:36:11 筱沐
+注册speech 24 项
+注册help 3 项
+注册reply 11 项
+注册lua脚本 10 份
+模块加载完毕√
+<< 2023-11-08 12:36:11 筱沐
+注册speech 24 项
+注册help 3 项
+注册reply 11 项
+注册lua脚本 10 份
+模块加载完毕√
+2023-11-08 12:36:25 
+读取/mod/中的2枚mod
+扩展配置读取完毕√
+<< 2023-11-08 12:36:25 
+读取/mod/中的2枚mod
+扩展配置读取完毕√
+<< 已手动加载筱沐的配置√

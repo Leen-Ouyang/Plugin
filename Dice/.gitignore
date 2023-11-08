@@ -1,0 +1,8 @@
+/data/images
+/data/videos
+/data/voices
+/data/leveldb-v3
+/logs
+device.json
+session.token
+config.yml
