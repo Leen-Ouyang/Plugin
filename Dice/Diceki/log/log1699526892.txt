@@ -1,0 +1,39 @@
+G:\0Class\软件工程\团队项目\Plugin\Dice\Diceki
+DiceDriver.enabled
+扫描Dice:版本2.7.0build653
+G:\0Class\软件工程\团队项目\Plugin\Dice\Diceki\w4123.Dice-2.7.0beta5(653).dll
+Dice2559658564.init
+Dice! by 溯洄 & Shiki Ver 2.7.0beta5(652)[MSVC 1934 May 29 2023 03:58:04] on
+Dice!驱动器Lite by 安研色Shiki & 溯洄w4123 ver0.7.4(26)[2023-04-23 13:59:19] for Gocq
+DiceConsole.load
+2023-11-09 18:48:16 筱沐
+注册help 8 项
+注册reply 14 项
+注册lua脚本 9 份
+模块加载完毕√
+预加载selfdata1份
+2023-11-09 18:48:16 
+读取/mod/中的1枚mod
+读取/plugin/中的1个脚本, 共5条指令
+扩展配置读取完毕√
+2023-11-09 18:48:16 读取用户记录2条 读取群聊记录4条 用户数据读取完毕
+Dice.webUIInit
+Dice.threadInit
+<< 2023-11-09 18:48:16 筱沐
+注册help 8 项
+注册reply 14 项
+注册lua脚本 9 份
+模块加载完毕√
+2023-11-09 18:48:16 筱沐初始化完成，用时350毫秒
+Dice.WebInit
+<< 2023-11-09 18:48:16 
+读取/mod/中的1枚mod
+读取/plugin/中的1个脚本, 共5条指令
+扩展配置读取完毕√
+Dice! WebUI 正于端口56686运行，本地可通过浏览器访问http://localhost:56686
+默认用户名为admin密码为password，详细教程请查看 https://forum.kokona.tech/d/721-dice-webui-shi-yong-shuo-ming
+<< 2023-11-09 18:48:16 读取用户记录2条 读取群聊记录4条 用户数据读取完毕
+<< 2023-11-09 18:48:16 筱沐初始化完成，用时350毫秒
+<< Dice! WebUI 正于端口56686运行，本地可通过浏览器访问http://localhost:56686
+默认用户名为admin密码为password，详细教程请查看 https://forum.kokona.tech/d/721-dice-webui-shi-yong-shuo-ming
+已成功刷新软件包缓存：37个拓展可用
