@@ -1,0 +1,17 @@
+{
+  "player": [
+    {
+      "nickname": "ljh",
+      "gender": "男",
+      "position": "学生",
+      "biography": "经验+3，告辞",
+      "attribute": "INT10,CON10,WIL10,LUC16",
+      "dailyStatus": "energy100,mood100",
+      "semester": "0",
+      "credit": "0",
+      "point": "0",
+      "achievement": [ "初来乍到" ],
+      "bag": [ "身份证", "通用五折券" ]
+    }
+  ]
+}
