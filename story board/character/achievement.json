@@ -1,140 +1,290 @@
 {
-  "achievement": [
-    {
-      "name": "初来乍到",
-      "premise": "完成角色创建",
-      "description": "你成为了大学一员的象征",
-      "buff": "",
-      "unique": "0",
-      "unlocked": "1"
-    },
-    {
-      "name": "大吉特吉",
-      "premise": "特殊事件累计成功五次",
-      "description": "“风水轮流转，次次到我家。”",
-      "buff": "INT+1,CON+1",
-      "unique": "0",
-      "unlocked": "0"
-    },
-    {
-      "name": "大寄特寄",
-      "premise": "特殊事件累计失败五次",
-      "description": "建议remake",
-      "buff": "WIL+1,LUC+1",
-      "unique": "0",
-      "unlocked": "0"
-    },
-    {
-      "name": "资深根友",
-      "premise": [ "冒险等级：60（特殊事件）" ],
-      "description": "真正的《根行》老玩家",
-      "buff": "《根行》相关事件(071,271)概率收益翻倍",
-      "unique": "0",
-      "unlocked": "0"
-    },
-    {
-      "name": "领域大神",
-      "premise": [ "游戏领域大神", "动漫领域大神", "校园领域大神" ],
-      "description": "论坛过街老鼠认证",
-      "buff": "论坛相关事件概率收益翻倍",
-      "unique": "0",
-      "unlocked": "0"
-    },
-    {
-      "name": "科学锻炼",
-      "premise": "INT累计增加3点",
-      "description": "“工欲善其事，必先利其器”",
-      "buff": "CON+1",
-      "unique": "0",
-      "unlocked": "0"
-    },
-    {
-      "name": "修身养性",
-      "premise": "INT累计增加4点",
-      "description": "“吾日三省吾身”",
-      "buff": "WIL+1",
-      "unique": "0",
-      "unlocked": "0"
-    },
-    {
-      "name": "知识改变命运",
-      "premise": "INT累计增加5点",
-      "description": "“好运，不会眷顾傻瓜。”",
-      "buff": "LUC+1",
-      "unique": "0",
-      "unlocked": "0"
-    },
-    {
-      "name": "脑力锻炼",
-      "premise": "CON累计增加3点",
-      "description": "“没有身体健康，就没有精神健康。”",
-      "buff": "INT+1",
-      "unique": "0",
-      "unlocked": "0"
-    },
-    {
-      "name": "坚持，再坚持",
-      "premise": "CON累计增加4点",
-      "description": "“玩游戏可能会越玩越不爽，但跑步可不会。”",
-      "buff": "WIL+1",
-      "unique": "0",
-      "unlocked": "0"
-    },
-    {
-      "name": "病魔退散！",
-      "premise": "CON累计增加5点",
-      "description": "“区区新冠，怎么比得上我久经锻炼的肉体！”",
-      "buff": "LUC+1",
-      "unique": "0",
-      "unlocked": "0"
-    },
-    {
-      "name": "勤能补拙",
-      "premise": "WIL累计增加3点",
-      "description": "“天才在于积累，聪明在于勤奋。”",
-      "buff": "INT+1",
-      "unique": "0",
-      "unlocked": "0"
-    },
-    {
-      "name": "晨起达人",
-      "premise": "WIL累计增加4点",
-      "description": "“早睡早起身体好。”",
-      "buff": "CON+1",
-      "unique": "0",
-      "unlocked": "0"
-    },
-    {
-      "name": "《钢铁是怎样练成的》",
-      "premise": "WIL累计增加5点",
-      "description": "“我命由我不由天！”",
-      "buff": "LUC+1",
-      "unique": "0",
-      "unlocked": "0"
-    },
-    {
-      "name": "偶遇灯塔",
-      "premise": "LUC累计增加3点",
-      "description": "航行在知识的广阔海洋中，你找到了属于自己的灯塔",
-      "buff": "INT+1",
-      "unique": "0",
-      "unlocked": "0"
-    },
-    {
-      "name": "本能激发",
-      "premise": "LUC累计增加4点",
-      "description": "“卧槽，原来我游泳这么吊！”",
-      "buff": "CON+1",
-      "unique": "0",
-      "unlocked": "0"
-    },
-    {
-      "name": "锦上添花",
-      "premise": "LUC累计增加5点",
-      "description": "“第一次运行，bug居然这么少！继续继续”",
-      "buff": "WIL+1",
-      "unique": "0",
-      "unlocked": "0"
-    }
-  ]
+  "ac000": {
+    "name": "种子发芽",
+    "premise": "完成角色创建",
+    "description": "成为了大学一员的证明",
+    "buff": "",
+    "unique": "0",
+    "unlocked": "1"
+  },
+  "ac001": {
+    "name": "小苗初成",
+    "premise": "累计游玩7天",
+    "description": "与学生AI互动一周的证明",
+    "buff": "WIL+1",
+    "unique": "0",
+    "unlocked": "1"
+  },
+  "ac002": {
+    "name": "枝繁叶茂",
+    "premise": "累计游玩30天",
+    "description": "与学生AI互动一个月的证明",
+    "buff": "WIL+2",
+    "unique": "0",
+    "unlocked": "1"
+  },
+  "ac003": {
+    "name": "开花结果",
+    "premise": "累计游玩365天",
+    "description": "与学生AI互动一年的证明",
+    "buff": "WIL+5",
+    "unique": "0",
+    "unlocked": "1"
+  },
+  "ac004": {
+    "name": "溪",
+    "premise": "连续游玩3天",
+    "description": "与学生AI连续互动三天的证明",
+    "buff": "LUC+1",
+    "unique": "0",
+    "unlocked": "1"
+  },
+  "ac005": {
+    "name": "河",
+    "premise": "连续游玩7天",
+    "description": "与学生AI连续互动一周的证明",
+    "buff": "INT+1，CON+1",
+    "unique": "0",
+    "unlocked": "1"
+  },
+  "ac006": {
+    "name": "海",
+    "premise": "连续游玩30天",
+    "description": "与学生AI连续互动一个月的证明",
+    "buff": "INT+1,CON+1,LUC+1",
+    "unique": "0",
+    "unlocked": "1"
+  },
+  "ac010": {
+    "name": "科学锻炼",
+    "premise": "INT累计增加3点",
+    "description": "“工欲善其事，必先利其器”",
+    "buff": "CON+1",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac011": {
+    "name": "修身养性",
+    "premise": "INT累计增加4点",
+    "description": "“吾日三省吾身”",
+    "buff": "WIL+1",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac012": {
+    "name": "知识改变命运",
+    "premise": "INT累计增加5点",
+    "description": "“好运，不会眷顾傻瓜。”",
+    "buff": "LUC+1",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac013": {
+    "name": "脑力锻炼",
+    "premise": "CON累计增加3点",
+    "description": "“没有身体健康，就没有精神健康。”",
+    "buff": "INT+1",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac014": {
+    "name": "坚持，再坚持",
+    "premise": "CON累计增加4点",
+    "description": "“玩游戏可能会越玩越没耐心，但跑步可不会。”",
+    "buff": "WIL+1",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac015": {
+    "name": "病魔退散！",
+    "premise": "CON累计增加5点",
+    "description": "“区区新冠，怎么比得上我久经锻炼的肉体！”",
+    "buff": "LUC+1",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac016": {
+    "name": "勤能补拙",
+    "premise": "WIL累计增加3点",
+    "description": "“天才在于积累，聪明在于勤奋。”",
+    "buff": "INT+1",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac017": {
+    "name": "晨起达人",
+    "premise": "WIL累计增加4点",
+    "description": "“早睡早起身体好。”",
+    "buff": "CON+1",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac018": {
+    "name": "《钢铁是怎样炼成的》",
+    "premise": "WIL累计增加5点",
+    "description": "“我命由我不由天！”",
+    "buff": "LUC+1",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac019": {
+    "name": "抓住机会涨知识",
+    "premise": "LUC累计增加3点",
+    "description": "“还好碰上了这次讲座，知识点get。”",
+    "buff": "INT+1",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac020": {
+    "name": "运动本能激发",
+    "premise": "LUC累计增加4点",
+    "description": "“卧槽，原来我游泳这么吊！”",
+    "buff": "CON+1",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac021": {
+    "name": "锦上添花",
+    "premise": "LUC累计增加5点",
+    "description": "“第一次运行，bug居然这么少！继续继续”",
+    "buff": "WIL+1",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac022": {
+    "name": "嚼叶",
+    "premise": "主属性总和达到50",
+    "description": "摆脱脆脆杀生活的第一步",
+    "buff": "INT+1,CON+1,WIL+1,LUC+1",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac023": {
+    "name": "吐丝",
+    "premise": "主属性总和达到60",
+    "description": "“嗯，有起色了。”",
+    "buff": "INT+2,CON+2,WIL+2,LUC+2",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac024": {
+    "name": "化茧",
+    "premise": "主属性总和达到75",
+    "description": "“我的转变进度，正在蒸蒸日上。”",
+    "buff": "INT+3,CON+3,WIL+3,LUC+3",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac025": {
+    "name": "成蝶",
+    "premise": "主属性总和达到100",
+    "description": "“卿今者才略，非复吴下阿蒙。”",
+    "buff": "INT+4,CON+4,WIL+4,LUC+4",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac026": {
+    "name": "精力UP！",
+    "premise": "精力上限达到120",
+    "description": "脆脆杀身体转变的第一步",
+    "buff": "maxMood+5",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac027": {
+    "name": "精力UP！",
+    "premise": "精力上限达到150",
+    "description": "脆脆杀身体转变的第二步",
+    "buff": "maxMood+10",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac028": {
+    "name": "心情UP！",
+    "premise": "心情上限达到120",
+    "description": "脆脆杀心理转变的第一步",
+    "buff": "maxEnergy+5",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac029": {
+    "name": "心情UP！",
+    "premise": "心情上限达到150",
+    "description": "脆脆杀心理转变的第二步",
+    "buff": "maxEnergy+10",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac030": {
+    "name": "天上掉馅饼",
+    "premise": "触发一次特殊事件",
+    "description": "“不可能，这一定是陷阱。”",
+    "buff": "LUC+1",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac031": {
+    "name": "今日大吉",
+    "premise": "特殊事件执行成功",
+    "description": "“万事开头难？”",
+    "buff": "INT+1,CON+1",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac032": {
+    "name": "大吉特吉",
+    "premise": "特殊事件累计成功五次",
+    "description": "“风水轮流转，次次到我家。”",
+    "buff": "INT+2,CON+2",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac033": {
+    "name": "今日大凶",
+    "premise": "特殊事件执行失败",
+    "description": "“万事开头难……”",
+    "buff": "WIL+1,LUC+1",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac034": {
+    "name": "大寄特寄",
+    "premise": "特殊事件累计失败五次",
+    "description": "建议remake",
+    "buff": "WIL+2,LUC+2",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac050": {
+    "name": "资深根友",
+    "premise": [ "冒险等级：60（特殊事件）" ],
+    "description": "真正的《根行》老玩家",
+    "buff": "《根行》相关事件(071,271)概率收益翻倍",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac061": {
+    "name": "领域大神",
+    "premise": [ "游戏领域大神", "动漫领域大神", "校园领域大神" ],
+    "description": "论坛过街老鼠认证",
+    "buff": "论坛相关事件概率收益翻倍",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac900": {
+    "name": "捷足先登",
+    "premise": "第一个完成角色创建(UID8)",
+    "description": "“你是第一个走进校园的……”",
+    "buff": "LUC+1",
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac901": {
+    "name": "考场“首秀”",
+    "premise": "第一个触发考试事件",
+    "description": "第一个勇于吃螃蟹的人",
+    "buff": "INT+1",
+    "unique": "0",
+    "unlocked": "0"
+  }
 }
