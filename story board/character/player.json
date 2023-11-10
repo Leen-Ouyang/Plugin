@@ -18,8 +18,8 @@
       "Semester": 1,
       "credit": 0
     },
-    "Bag": {"身份证","五折通用券"},
-    "Achievement": {"初来乍到"},
+    "Bag": [ "000" ],
+    "Achievement": [ "ac000" ],
     "points": 0
   },
   "UID2": {
@@ -41,8 +41,8 @@
       "Semester": 1,
       "credit": 0
     },
-    "Bag": {},
-    "Achievement": { "初来乍到" },
+    "Bag": ["000"],
+    "Achievement": [ "ac000" ],
     "points": 0
   }
 }
