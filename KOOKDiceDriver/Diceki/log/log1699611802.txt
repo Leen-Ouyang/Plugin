@@ -1,0 +1,67 @@
+G:\0Class\软件工程\团队项目\Plugin\KOOKDiceDriver\Diceki
+DiceDriver.enabled
+G:\0Class\软件工程\团队项目\Plugin\KOOKDiceDriver\Diceki\w4123.Dice.windows.i386.dll
+Dice2381514724.init
+Dice! by 溯洄 & Shiki Ver 2.6.6rc(638)[MSVC 1934 Dec 15 2022 12:49:56] on
+Dice!驱动器Lite by 安研色Shiki & 溯洄w4123 ver0.7.4(26)[2023-04-06 22:43:11] for Gocq
+DiceConsole.load
+2023-11-10 18:24:06 脆脆杀的大学生活
+注册help 8 项
+注册reply 14 项
+注册script 9 份
+模块加载完毕√
+预加载selfdata1份
+2023-11-10 18:24:06 
+读取/mod/中的1枚mod
+读取/plugin/中的1个脚本, 共5条指令
+扩展配置读取完毕√
+2023-11-10 18:24:06 读取用户记录3条 读取群聊记录5条 用户数据读取完毕
+Dice.webUIInit
+Dice.threadInit
+<< 2023-11-10 18:24:06 脆脆杀的大学生活
+注册help 8 项
+注册reply 14 项
+注册script 9 份
+模块加载完毕√
+2023-11-10 18:24:07 脆脆杀的大学生活初始化完成，用时1632毫秒
+Dice.WebInit
+<< 2023-11-10 18:24:06 脆脆杀的大学生活
+注册help 8 项
+注册reply 14 项
+注册script 9 份
+模块加载完毕√
+<< 2023-11-10 18:24:06 
+读取/mod/中的1枚mod
+读取/plugin/中的1个脚本, 共5条指令
+扩展配置读取完毕√
+<< 2023-11-10 18:24:06 
+读取/mod/中的1枚mod
+读取/plugin/中的1个脚本, 共5条指令
+扩展配置读取完毕√
+<< 2023-11-10 18:24:06 读取用户记录3条 读取群聊记录5条 用户数据读取完毕
+<< 2023-11-10 18:24:06 读取用户记录3条 读取群聊记录5条 用户数据读取完毕
+<< 2023-11-10 18:24:07 脆脆杀的大学生活初始化完成，用时1632毫秒
+<< 2023-11-10 18:24:07 脆脆杀的大学生活初始化完成，用时1632毫秒
+<< Dice! WebUI 正于端口65370运行，本地可通过浏览器访问http://localhost:65370
+默认用户名为admin密码为password，详细教程请查看 https://forum.kokona.tech/d/721-dice-webui-shi-yong-shuo-ming
+Dice! WebUI 正于端口65370运行，本地可通过浏览器访问http://localhost:65370
+默认用户名为admin密码为password，详细教程请查看 https://forum.kokona.tech/d/721-dice-webui-shi-yong-shuo-ming
+<< Dice! WebUI 正于端口65370运行，本地可通过浏览器访问http://localhost:65370
+默认用户名为admin密码为password，详细教程请查看 https://forum.kokona.tech/d/721-dice-webui-shi-yong-shuo-ming
+已成功刷新软件包缓存：37个拓展可用
+<< 试验型 Dice! by 溯洄 & Shiki Ver 2.6.6rc(638)
+请使用.dismiss ID（或后四位） 使脆脆杀的大学生活退群退讨论组
+.bot on/off ID（或后四位） //开启或关闭指令
+.help协议 确认服务协议
+.help指令 查看指令列表
+.help群管 查看群管指令
+.help设定 确认骰娘设定
+.help链接 查看源码文档
+官方论坛: https://forum.kokona.tech/
+Dice!众筹计划: https://afdian.net/@suhuiw4123
+近似匹配扩展指令:
+[前缀匹配] 扔漂流瓶 | 跳进海里 | 删除瓶子 | 捡漂流瓶 | 查找瓶子
+<< 脆脆杀的大学生活仅找到相近词条「扩展指令」:
+
+[前缀匹配] 扔漂流瓶 | 跳进海里 | 删除瓶子 | 捡漂流瓶 | 查找瓶子
+<< 你将一个写着test的纸条塞入瓶中扔进大海，希望有人捞到吧~

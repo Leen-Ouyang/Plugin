@@ -6,12 +6,14 @@
 ],
 "user": {
 "0": {
-"frq": 27
+"frq": 30
 },
 "797093627": {
-"frq": 26,
+"frq": 29,
 "DB_everyday_drown": 1,
-"DB_drown_cd": 1699553331
+"DB_drown_cd": 1699553331,
+"DB_everyday_throw": 1,
+"DB_throw_cd": 1699611994
 },
 "1135625211": {
 "frq": 1
