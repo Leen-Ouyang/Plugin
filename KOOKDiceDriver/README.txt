@@ -1,0 +1,3 @@
+在config.json里填入自己的kook token
+其他的不用管
+先开KookOneBot 再开DiceDriver

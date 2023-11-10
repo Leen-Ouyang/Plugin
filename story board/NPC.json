@@ -1,0 +1,83 @@
+{
+  "NPC": [
+    {
+      "position": "student",
+      "character": [
+        {
+          "name": "Jason",
+          "gender": "男",
+          "biography": "来自计算机学院的一名学霸，目前已拿到全国第一大学的保研名额。",
+          "attribute": "INT25,CON25,WIL30,LUC20",
+          "events": [ "软件工程实践", "学霸经验座谈会" ]
+        },
+        {
+          "name": "李华",
+          "gender": "男",
+          "biography": "来自外国语学院，包揽每年英语竞赛一等奖的大牛。",
+          "attribute": "INT20,CON15,WIL30,LUC10",
+          "events": [ "李华的演讲", "英语竞赛" ]
+        }
+      ]
+    },
+    {
+      "position": "teacher",
+      "character": [
+        {
+          "name": "张梁",
+          "gender": "男",
+          "biography": "计算机学院的教授，同时也是某学院的院长，Jason目前的导师。",
+          "attribute": "INT30,CON25,WIL25,LUC15",
+          "events": [ "软件工程理论", "软件工程实践" ]
+        }
+      ]
+    },
+    {
+      "position": "staff",
+      "character": [
+        {
+          "name": "山志",
+          "gender": "男",
+          "biography": "退伍海军，做饭能力一流，对女性喜欢的口味尤为了解。",
+          "attribute": "INT30,CON30,WIL15,LUC15",
+          "events": [ "65周年校庆套餐", "食堂员工评比会" ]
+        }
+      ]
+    },
+    {
+      "position": "guard",
+      "character": [
+        {
+          "name": "高建国",
+          "gender": "男",
+          "biography": "一米九的大汉，是一个被许多“偷渡者”所厌恶的“高坚果”。",
+          "attribute": "INT30,CON30,WIL15,LUC15",
+          "events": [ "校庆守门员", "保安评比会" ]
+        }
+      ]
+    },
+    {
+      "position": "salesclerk",
+      "character": [
+        {
+          "name": "卡莎",
+          "gender": "女",
+          "biography": "曾是某知名女团成员，由于厌倦了娱乐明星的生活，主动退圈当收银员。",
+          "attribute": "INT30,CON30,WIL15,LUC15",
+          "events": [ "呱，是窃贼口牙！", "买一送一" ]
+        }
+      ]
+    },
+    {
+      "position": "animal",
+      "character": [
+        {
+          "name": "橘猫",
+          "gender": "未知",
+          "biography": "活动范围为32号楼边草坪，其夜晚鬼哭狼嚎般的叫声令其成为32号楼学生的眼中钉。",
+          "attribute": "INT30,CON30,WIL15,LUC15",
+          "events": [ "空谷传响", "老虎发威" ,"除妖行动"]
+        }
+      ]
+    }
+  ]
+}

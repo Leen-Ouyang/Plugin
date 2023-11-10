@@ -1,0 +1,51 @@
+G:\0Class\软件工程\KOOKDiceDriver\Diceki
+DiceDriver.enabled
+G:\0Class\软件工程\KOOKDiceDriver\Diceki\w4123.Dice.windows.i386.dll
+Dice2381514724.init
+Dice! by 溯洄 & Shiki Ver 2.6.6rc(638)[MSVC 1934 Dec 15 2022 12:49:56] on
+Dice!驱动器Lite by 安研色Shiki & 溯洄w4123 ver0.7.4(26)[2023-04-06 22:43:11] for Gocq
+欢迎使用Dice!掷骰机器人！
+请发送.master 64824554 //公骰作成 或
+.master 20068435 //私骰作成 即可成为我的主人~
+可发送.help查看帮助
+发送.system gui开启DiceMaid后台面板
+参考文档参看.help链接
+DiceConsole.load
+2023-11-10 02:03:00 读取用户记录2条 读取群聊记录2条 用户数据读取完毕
+Dice.webUIInit
+Dice.threadInit
+2023-11-10 02:03:02 脆脆杀的大学生活初始化完成，用时2018毫秒
+Dice.WebInit
+Dice! WebUI 正于端口52324运行，本地可通过浏览器访问http://localhost:52324
+默认用户名为admin密码为password，详细教程请查看 https://forum.kokona.tech/d/721-dice-webui-shi-yong-shuo-ming
+已成功刷新软件包缓存：37个拓展可用
+<< 试验型 Dice! by 溯洄 & Shiki Ver 2.6.6rc(638)
+请使用.dismiss ID（或后四位） 使脆脆杀的大学生活退群退讨论组
+.bot on/off ID（或后四位） //开启或关闭指令
+.help协议 确认服务协议
+.help指令 查看指令列表
+.help群管 查看群管指令
+.help设定 确认骰娘设定
+.help链接 查看源码文档
+官方论坛: https://forum.kokona.tech/
+Dice!众筹计划: https://afdian.net/@suhuiw4123
+<< 天麟掷骰: D100=18
+2023-11-10 02:03:49 脆脆杀的大学生活
+注册help 8 项
+注册reply 14 项
+注册script 9 份
+模块加载完毕√
+预加载selfdata1份
+2023-11-10 02:03:49 
+读取/mod/中的1枚mod
+读取/plugin/中的1个脚本, 共5条指令
+扩展配置读取完毕√
+<< 已手动加载脆脆杀的大学生活的配置√
+<< [前缀匹配] 扔漂流瓶 | 跳进海里 | 删除瓶子 | 查找瓶子 | 捡漂流瓶
+<< yyds: 永远滴神 音乐大师 以一当十 阴阳大师 永远单身 游刃有余(日语) 硬硬的说 永远都是 一衣带水 有一点骚 以一敌十 要胰岛素 医院等死 硬硬的屎 音乐电视 いいです 爷爷的屎 又要大筛 
+<< 你缓缓走入大海，感受着海浪轻柔地拍打着你的小腿，膝盖……
+波浪卷着你的腰腹，你感觉有些把握不住平衡了……
+……
+你沉入海中，0个物体与你一同沉浮。
+不知何处涌来一股暗流，你失去了意识。
+2023-11-10 02:08:02 自动保存

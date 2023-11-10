@@ -1,0 +1,2 @@
+G:\0Class\软件工程\团队项目\Plugin\Dice\Diceki
+DiceDriver.enabled
