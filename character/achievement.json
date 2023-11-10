@@ -1,0 +1,140 @@
+{
+  "achievement": [
+    {
+      "name": "初来乍到",
+      "premise": "完成角色创建",
+      "description": "你成为了大学一员的象征",
+      "buff": "",
+      "unique": "0",
+      "unlocked": "1"
+    },
+    {
+      "name": "大吉特吉",
+      "premise": "特殊事件累计成功五次",
+      "description": "“风水轮流转，次次到我家。”",
+      "buff": "INT+1,CON+1",
+      "unique": "0",
+      "unlocked": "0"
+    },
+    {
+      "name": "大寄特寄",
+      "premise": "特殊事件累计失败五次",
+      "description": "建议remake",
+      "buff": "WIL+1,LUC+1",
+      "unique": "0",
+      "unlocked": "0"
+    },
+    {
+      "name": "资深根友",
+      "premise": [ "冒险等级：60（特殊事件）" ],
+      "description": "真正的《根行》老玩家",
+      "buff": "《根行》相关事件(071,271)概率收益翻倍",
+      "unique": "0",
+      "unlocked": "0"
+    },
+    {
+      "name": "领域大神",
+      "premise": [ "游戏领域大神", "动漫领域大神", "校园领域大神" ],
+      "description": "论坛过街老鼠认证",
+      "buff": "论坛相关事件概率收益翻倍",
+      "unique": "0",
+      "unlocked": "0"
+    },
+    {
+      "name": "科学锻炼",
+      "premise": "INT累计增加3点",
+      "description": "“工欲善其事，必先利其器”",
+      "buff": "CON+1",
+      "unique": "0",
+      "unlocked": "0"
+    },
+    {
+      "name": "修身养性",
+      "premise": "INT累计增加4点",
+      "description": "“吾日三省吾身”",
+      "buff": "WIL+1",
+      "unique": "0",
+      "unlocked": "0"
+    },
+    {
+      "name": "知识改变命运",
+      "premise": "INT累计增加5点",
+      "description": "“好运，不会眷顾傻瓜。”",
+      "buff": "LUC+1",
+      "unique": "0",
+      "unlocked": "0"
+    },
+    {
+      "name": "脑力锻炼",
+      "premise": "CON累计增加3点",
+      "description": "“没有身体健康，就没有精神健康。”",
+      "buff": "INT+1",
+      "unique": "0",
+      "unlocked": "0"
+    },
+    {
+      "name": "坚持，再坚持",
+      "premise": "CON累计增加4点",
+      "description": "“玩游戏可能会越玩越不爽，但跑步可不会。”",
+      "buff": "WIL+1",
+      "unique": "0",
+      "unlocked": "0"
+    },
+    {
+      "name": "病魔退散！",
+      "premise": "CON累计增加5点",
+      "description": "“区区新冠，怎么比得上我久经锻炼的肉体！”",
+      "buff": "LUC+1",
+      "unique": "0",
+      "unlocked": "0"
+    },
+    {
+      "name": "勤能补拙",
+      "premise": "WIL累计增加3点",
+      "description": "“天才在于积累，聪明在于勤奋。”",
+      "buff": "INT+1",
+      "unique": "0",
+      "unlocked": "0"
+    },
+    {
+      "name": "晨起达人",
+      "premise": "WIL累计增加4点",
+      "description": "“早睡早起身体好。”",
+      "buff": "CON+1",
+      "unique": "0",
+      "unlocked": "0"
+    },
+    {
+      "name": "《钢铁是怎样练成的》",
+      "premise": "WIL累计增加5点",
+      "description": "“我命由我不由天！”",
+      "buff": "LUC+1",
+      "unique": "0",
+      "unlocked": "0"
+    },
+    {
+      "name": "偶遇灯塔",
+      "premise": "LUC累计增加3点",
+      "description": "航行在知识的广阔海洋中，你找到了属于自己的灯塔",
+      "buff": "INT+1",
+      "unique": "0",
+      "unlocked": "0"
+    },
+    {
+      "name": "本能激发",
+      "premise": "LUC累计增加4点",
+      "description": "“卧槽，原来我游泳这么吊！”",
+      "buff": "CON+1",
+      "unique": "0",
+      "unlocked": "0"
+    },
+    {
+      "name": "锦上添花",
+      "premise": "LUC累计增加5点",
+      "description": "“第一次运行，bug居然这么少！继续继续”",
+      "buff": "WIL+1",
+      "unique": "0",
+      "unlocked": "0"
+    }
+  ]
+}
