@@ -1,0 +1,18 @@
+{
+    "No1": {
+        "name": "初来乍到",
+        "premise": "完成角色创建",
+        "description": "你成为了大学一员的象征",
+        "buff": "",
+        "unique": "0",
+        "unlocked": "1"
+    },
+    "No2": {
+        "name": "大吉特吉",
+        "premise": "特殊事件累计成功五次",
+        "description": "“风水轮流转，次次到我家。”",
+        "buff": "INT+1,CON+1",
+        "unique": "0",
+        "unlocked": "0"
+    }
+}

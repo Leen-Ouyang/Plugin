@@ -1,0 +1,48 @@
+{
+    "UID1": {
+        "Info": {
+            "nickname": "天麟",
+            "Introduction": "空无一物"
+        },
+        "MainAtt": {
+            "INT": 10,
+            "CON": 10,
+            "WIL": 10,
+            "LUC": 10
+        },
+        "DailyAtt": {
+            "energy": 100,
+            "mood": 100
+        },
+        "Main line": {
+            "Semester": 1,
+            "credit": 0
+        },
+        "Bag": {},
+        "Achievement": {},
+        "points": 0
+    },
+    "UID2": {
+        "Info": {
+            "nickname": "天麟",
+            "Introduction": "空无一物"
+        },
+        "MainAtt": {
+            "INT": 10,
+            "CON": 10,
+            "WIL": 10,
+            "LUC": 10
+        },
+        "DailyAtt": {
+            "energy": 100,
+            "mood": 100
+        },
+        "Main line": {
+            "Semester": 1,
+            "credit": 0
+        },
+        "Bag": {},
+        "Achievement": {},
+        "points": 0
+    }
+}
