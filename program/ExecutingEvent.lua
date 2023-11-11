@@ -1,13 +1,11 @@
---[[
-(更新时间2023.6.17)
-漂流瓶jsonReforged by 豹猫ocelot
-使用json重写了兔兔的整个漂流瓶，配置也用json（）
-新增了查询/删除指定瓶子的功能，为 查找瓶子/删除瓶子 id=【id】/qq=【qq】
-有bug及时反馈qq1226421749
-↓↓↓↓↓↓请在下方修改配置↓↓↓↓↓↓
-]]
---以下是关键词，修改后需要重载
 
+--以下是关键词，修改后需要重载
+day = "day"
+week = "week"
+all = "all"
+done = "done"
+dodaily = "dodaily"
+doweekly = "doweekly"
 --以下是插件配置，修改后无需重载
 
 all_event = "Event.json"
@@ -23,8 +21,13 @@ config = {
     }
 }
 --↑↑↑↑↑↑上面是配置部分↑↑↑↑↑↑
-
-
+msg_order = {}
+msg_order[day] = "search_daily_event"
+msg_order[week] = "search_weekly_event"
+msg_order[all] = "not_yet_down"
+msg_order[done] = "haven_down"
+msg_order[dodaily] = "execute_daily_event"
+msg_order[doweekly] = "execute_weekly_event"
 
 all_Event = getSelfData(all_event)
 data = getSelfData(event_name)
@@ -87,25 +90,69 @@ function init_weekly_event(msg)
 end
 
 
-function search_event(msg)
+function search_daily_event(msg)
     if(config.dis_priv==true and msg.fromGroup=="0")then--小窗检测
         return ""
     end
     init_daily_event(msg)
-    init_weekly_event(msg)
     
+    
+    local daily_id=player_event[msg.fromQQ].daily_event_id
+    
+    return --事件所有内容
+    
+end
+
+function search_weekly_event(msg)
+    if(config.dis_priv==true and msg.fromGroup=="0")then--小窗检测
+        return ""
+    end
+    init_weekly_event(msg)
+    local weekly_id=player_event[msg.fromQQ].weekly_event_id
+    return --事件所有内容
+end
+
+function not_yet_down(msg)
+    if(config.dis_priv==true and msg.fromGroup=="0")then--小窗检测
+        return ""
+    end
+    init_weekly_event(msg)
+    init_daily_event(msg)
     local daily_id=player_event[msg.fromQQ].daily_event_id
     local weekly_id=player_event[msg.fromQQ].weekly_event_id
 
     if(player_event[msg.fromQQ].daily_event_used==0 and player_event[msg.fromQQ].weekly_event_used == 0)then
-        return "每日任务："..all_Event[daily_id].title.."\n 每周任务："..all_Event[weekly_id].title.."\n已执行任务：无\n".."未执行任务:每日任务、每周任务\n"
+        return "未执行任务:每日任务、每周任务\n"
     elseif(player_event[msg.fromQQ].daily_event_used==1 and player_event[msg.fromQQ].weekly_event_used == 0)then
-        return "每日任务："..all_Event[daily_id].title.."\n 每周任务："..all_Event[weekly_id].title.."\n已执行任务：每日任务\n".."未执行任务:每周任务\n"
+        return "未执行任务:每周任务\n"
     elseif(player_event[msg.fromQQ].daily_event_used==0 and player_event[msg.fromQQ].weekly_event_used == 1)then
-        return "每日任务："..all_Event[daily_id].title.."\n 每周任务："..all_Event[weekly_id].title.."\n已执行任务：每周任务\n".."未执行任务:每日任务\n"
+        return "未执行任务:每日任务\n"
     else
-        return "每日任务："..all_Event[daily_id].title.."\n 每周任务："..all_Event[weekly_id].title.."\n已执行任务：每日任务、每周任务\n".."未执行任务:\n"
+        return "太棒了，你已经执行完全部任务了\n"
 end
+
+
+function haven_down(msg)
+    if(config.dis_priv==true and msg.fromGroup=="0")then--小窗检测
+        return ""
+    end
+    init_weekly_event(msg)
+    init_daily_event(msg)
+    local daily_id=player_event[msg.fromQQ].daily_event_id
+    local weekly_id=player_event[msg.fromQQ].weekly_event_id
+
+    
+    if(player_event[msg.fromQQ].daily_event_used==0 and player_event[msg.fromQQ].weekly_event_used == 0)then
+        return "已执行任务：无\n"
+    elseif(player_event[msg.fromQQ].daily_event_used==1 and player_event[msg.fromQQ].weekly_event_used == 0)then
+        return "已执行任务：每日任务\n"
+    elseif(player_event[msg.fromQQ].daily_event_used==0 and player_event[msg.fromQQ].weekly_event_used == 1)then
+        return "已执行任务：每周任务\n"
+    else
+        return "已执行任务：每日任务、每周任务\n"
+
+end
+
 
 function execute_daily_event(msg)
     if(config.dis_priv==true and msg.fromGroup=="0")then--小窗检测
