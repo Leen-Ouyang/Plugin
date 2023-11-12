@@ -8,40 +8,45 @@
       "INT": 10,
       "CON": 10,
       "WIL": 10,
-      "LUC": 16
+      "LUC": 16,
+      "sum": 46
     },
     "DailyAtt": {
       "energy": 100,
       "mood": 100
     },
-    "Main line": {
-      "Semester": 1,
-      "credit": 0
+    "Event": {
+      "daily": [],
+      "weekly": [],
+      "spec": []
     },
-    "Bag": [ "000" ],
-    "Achievement": [ "ac000" ],
-    "points": 0
-  },
-  "UID2": {
-    "Info": {
-      "nickname": "李莉莉",
-      "Introduction": "ENFP快乐小狗一枚"
-    },
-    "MainAtt": {
-      "INT": 13,
-      "CON": 10,
-      "WIL": 10,
-      "LUC": 13
-    },
-    "DailyAtt": {
-      "energy": 100,
-      "mood": 100
+    "Count": {
+      "daily": 0,
+      "weekly": 0,
+      "spec": 0,
+      "sign": 0,
+      "board": 0,
+      "bottle": 0,
+      "public": 0,
+      "disturb": 0,
+      "shop": 0
     },
     "Main line": {
       "Semester": 1,
-      "credit": 0
+      "credit": 0,
+      "rank": 514
     },
-    "Bag": ["000"],
+    "Bag": {
+      "item": [],
+      "study": 0,
+      "sport": 0,
+      "snack": 0,
+      "game": 0,
+      "anima": 0,
+      "comp": 0,
+      "fans": 0,
+      "trophy": 0
+    },
     "Achievement": [ "ac000" ],
     "points": 0
   }
