@@ -62,6 +62,36 @@
     "unique": "0",
     "unlocked": "1"
   },
+  "ac007": {
+    "name": "结伴而行",
+    "premise": "邀请1位好友",
+    "description": "“两个黄鹂鸣翠柳。”",
+    "buff": {
+      "point": "+10"
+    },
+    "unique": "0",
+    "unlocked": "1"
+  },
+  "ac008": {
+    "name": "三人成组",
+    "premise": "邀请2位好友",
+    "description": "“三人行，必有我师焉。”",
+    "buff": {
+      "point": "+30"
+    },
+    "unique": "0",
+    "unlocked": "1"
+  },
+  "ac009": {
+    "name": "五人成群",
+    "premise": "邀请4位好友",
+    "description": "金木水火土",
+    "buff": {
+      "point": "+50"
+    },
+    "unique": "0",
+    "unlocked": "1"
+  },
   "ac010": {
     "name": "科学锻炼",
     "premise": "INT累计增加3点",
@@ -316,12 +346,192 @@
     "unique": "0",
     "unlocked": "0"
   },
+  "ac070": {
+    "name": "黑板上的第一笔",
+    "premise": "累计发布1条留言",
+    "description": "第一次使用留言板的纪念",
+    "buff": {
+      "point": "+10"
+    },
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac071": {
+    "name": "分享达人",
+    "premise": "累计发布10条留言",
+    "description": "“所见所闻，皆纪于其上。”",
+    "buff": {
+      "point": "+20"
+    },
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac072": {
+    "name": "浮瓶传书",
+    "premise": "累计送出1个漂流瓶",
+    "description": "第一次使用漂流瓶的纪念",
+    "buff": {
+      "point": "+10"
+    },
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac073": {
+    "name": "瓶中时光",
+    "premise": "累计送出10个漂流瓶",
+    "description": "“一瓶装万物。”",
+    "buff": {
+      "point": "+20"
+    },
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac074": {
+    "name": "漂流瓶投手",
+    "premise": "累计丢弃10个漂流瓶",
+    "description": "如同打水漂般熟练",
+    "buff": {
+      "point": "+20"
+    },
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac075": {
+    "name": "合作愉快！",
+    "premise": "公共事件达成好结局",
+    "description": "“合作愉快！”",
+    "buff": {
+      "point": "+10"
+    },
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac076": {
+    "name": "合作愉快？",
+    "premise": "公共事件达成坏结局",
+    "description": "“我们合不来，滚！”",
+    "buff": {
+      "point": "+10"
+    },
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac077": {
+    "name": "社交达人",
+    "premise": "累计完成10次公共事件",
+    "description": "达人成就收集进度+1",
+    "buff": {
+      "point": "+20"
+    },
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac078": {
+    "name": "乐子人·开端",
+    "premise": "累计完成1次干扰",
+    "description": "乐",
+    "buff": {
+      "point": "+10"
+    },
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac079": {
+    "name": "搞事达人",
+    "premise": "累计完成10次干扰",
+    "description": "乐",
+    "buff": {
+      "point": "+20"
+    },
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac080": {
+    "name": "内卷王",
+    "premise": "累计获得15个学习类道具",
+    "description": "“学如逆水行舟，不进则退。”",
+    "buff": {
+      "point": "+20"
+    },
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac081": {
+    "name": "运动狂",
+    "premise": "累计获得10个运动类道具",
+    "description": "“生命在于运动。”",
+    "buff": {
+      "point": "+20"
+    },
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac082": {
+    "name": "花栗鼠",
+    "premise": "累计获得10个零食类道具",
+    "description": "“吃零食使人快乐。”",
+    "buff": {
+      "point": "+20"
+    },
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac083": {
+    "name": "游戏迷",
+    "premise": "累计获得10个游戏类道具",
+    "description": "“不论输赢，再来一把。”",
+    "buff": {
+      "point": "+20"
+    },
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac084": {
+    "name": "二刺螈",
+    "premise": "累计获得10个动漫类道具",
+    "description": "“我们二刺螈是这样的。”",
+    "buff": {
+      "point": "+20"
+    },
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac085": {
+    "name": "校园通",
+    "premise": "累计获得10个校园专属道具",
+    "description": "“我爱大学。”",
+    "buff": {
+      "point": "+20"
+    },
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac086": {
+    "name": "发烧友",
+    "premise": "累计获得10个其他娱乐类道具",
+    "description": "痴迷八大艺术的象征",
+    "buff": {
+      "point": "+20"
+    },
+    "unique": "0",
+    "unlocked": "0"
+  },
+  "ac087": {
+    "name": "八冠王",
+    "premise": "累计获得8个奖杯",
+    "description": "“冲击九冠王！”",
+    "buff": {
+      "point": "+50"
+    },
+    "unique": "0",
+    "unlocked": "0"
+  },
   "ac900": {
     "name": "捷足先登",
     "premise": "第一个完成角色创建(UID8)",
     "description": "“你是第一个走进校园的……”",
     "buff": { "LUC": "+1" },
-    "unique": "0",
+    "unique": "1",
     "unlocked": "0"
   },
   "ac901": {
@@ -329,7 +539,7 @@
     "premise": "第一个触发考试事件",
     "description": "第一个勇于吃螃蟹的人",
     "buff": { "INT": "+1" },
-    "unique": "0",
+    "unique": "1",
     "unlocked": "0"
   }
 }
