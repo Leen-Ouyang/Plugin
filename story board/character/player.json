@@ -1,8 +1,10 @@
 {
     "76755379": {
       "Info": {
-        "nickname": "ljh",
-        "Introduction": "经验+3，告辞"
+        "Nickname": "ljh",
+        "Introduction": "经验+3，告辞",
+        "Gender":"男",
+        "Job":"学生"
       },
       "MainAtt": {
         "INT": 10,
