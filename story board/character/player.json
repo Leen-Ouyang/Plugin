@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "76755379": {
       "Info": {
         "nickname": "ljh",
@@ -55,62 +54,4 @@
       "Achievement": [ "ac000" ],
       "points": 0
     }
-  }
-=======
-  "UID1": {
-    "Info": {
-      "nickname": "ljh",
-      "Introduction": "经验+3，告辞"
-    },
-    "MainAtt": {
-      "INT": 10,
-      "CON": 10,
-      "WIL": 10,
-      "LUC": 16,
-      "sum": 46
-    },
-    "DailyAtt": {
-      "energy": 100,
-      "mood": 100
-    },
-    "Event": {
-      "daily": [],
-      "weekly": [],
-      "spec": []
-    },
-    "Count": {
-      "daily": 0,
-      "weekly": 0,
-      "spec": 0,
-      "exam": 0,
-      "sign": 0,
-      "board": 0,
-      "bottleSend": 0,
-      "bottleRecv": 0,
-      "bottleCast": 0,
-      "public": 0,
-      "disturb": 0,
-      "shop": 0
-    },
-    "Main line": {
-      "Semester": 1,
-      "credit": 0,
-      "rank": 514
-    },
-    "Bag": {
-      "item": [],
-      "study": 0,
-      "sport": 0,
-      "snack": 0,
-      "game": 0,
-      "anima": 0,
-      "comp": 0,
-      "fans": 0,
-      "trophy": 0,
-      "sum": 0
-    },
-    "Achievement": [ "ac000" ],
-    "points": 0
-  }
 }
->>>>>>> 5341338fe926e28543ed6f16bfbedc257bb63d75
