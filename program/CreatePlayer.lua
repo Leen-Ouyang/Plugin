@@ -30,7 +30,7 @@ msg_order[att]="getChangeInfo"
 
 config = {
     msg = {
-        begin="{currentYear}年{currentMonth}月{currentDay}日   {currentWeekday}    晴\n今天是进入大学的第一天,和其他普通的大学生一样,我对大学生活充满了好奇。我路过操场时不经意间瞥见几个身强力壮的学长,低头看着自己高中时被跑操捶打出来的健壮身躯,历经高考结束后的疯狂摸鱼而变得瘦弱,我开始担忧起自己的大学生活状态。此刻,“脆脆杀”和“超级大学人”的选择,摆在了我的面前。",
+        begin="{currentYear}年{currentMonth}月{currentDay}日             晴\n今天是进入大学的第一天,和其他普通的大学生一样,我对大学生活充满了好奇。我路过操场时不经意间瞥见几个身强力壮的学长,低头看着自己高中时被跑操捶打出来的健壮身躯,历经高考结束后的疯狂摸鱼而变得瘦弱,我开始担忧起自己的大学生活状态。此刻,“脆脆杀”和“超级大学人”的选择,摆在了我的面前。",
         intro="╔                                 ╗\n      脆脆杀的大学生活\n╚                                 ╝\n您好，我是大学的学生智能\nAI，现在请您配合我的工作，\n填写学生信息。",
         ask_name="请给我您的姓名" ,
         ask_gender="请选择性别「m/f」" ,
@@ -264,18 +264,16 @@ function succeed()
     return config.msg.success
 end
 
-local currentTime = os.time()
-local currentYear = os.date("%Y", currentTime)
+local currentTime = os.date("*t")
+local currentYear = currentTime.year
 config.msg.begin = config.msg.begin:gsub("{currentYear}", currentYear)
-local currentMonth = os.date("%m", currentTime)
+local currentMonth = currentTime.month
 config.msg.begin = config.msg.begin:gsub("{currentTime}", currentTime)
-local currentDay = os.date("%d", currentTime)
+local currentDay = currentTime.day
 config.msg.begin = config.msg.begin:gsub("{currentDay}", currentDay)
-local currentWeekday = os.date("%A", currentTime)
-config.msg.begin = config.msg.begin:gsub("{currentWeekday}", currentWeekday)
 
 function createPlayer(msg)
-    userQQ=msg.fromQQ
+    local userQQ=msg.fromQQ
     begin()
     introduce()
 
