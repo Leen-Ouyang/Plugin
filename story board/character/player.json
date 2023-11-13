@@ -37,7 +37,8 @@
       "Mainline": {
         "Semester": 1,
         "credit": 0,
-        "rank": 514
+        "rank": 514,
+        "FinishTimes":0
       },
       "Bag": {
         "item": [],
@@ -54,4 +55,4 @@
       "Achievement": [ "ac000" ],
       "points": 0
     }
-}
+  }
