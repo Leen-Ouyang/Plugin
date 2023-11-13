@@ -24,9 +24,12 @@
       "daily": 0,
       "weekly": 0,
       "spec": 0,
+      "exam": 0,
       "sign": 0,
       "board": 0,
-      "bottle": 0,
+      "bottleSend": 0,
+      "bottleRecv": 0,
+      "bottleCast": 0,
       "public": 0,
       "disturb": 0,
       "shop": 0
@@ -45,7 +48,8 @@
       "anima": 0,
       "comp": 0,
       "fans": 0,
-      "trophy": 0
+      "trophy": 0,
+      "sum": 0
     },
     "Achievement": [ "ac000" ],
     "points": 0

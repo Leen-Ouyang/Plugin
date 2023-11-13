@@ -33,7 +33,7 @@
   },
   "ac004": {
     "name": "传道受业",
-    "premise": { "MainAtt": { "INT": 20 } },
+    "premise": { "MainAtt": { "INT": 25 } },
     "description": "解锁教师职业",
     "buff": {
       "point": 50
@@ -53,7 +53,7 @@
   },
   "ac006": {
     "name": "校园之盾",
-    "premise": { "MainAtt": { "CON": 25 } },
+    "premise": { "MainAtt": { "CON": 30 } },
     "description": "解锁保安职业”",
     "buff": {
       "point": 50
@@ -63,7 +63,7 @@
   },
   "ac007": {
     "name": "收款码战士",
-    "premise": { "point": 300 },
+    "premise": { "Count": { "shop": 50 } },
     "description": "解锁售货员职业",
     "buff": {
       "point": 50
@@ -73,7 +73,7 @@
   },
   "ac008": {
     "name": "喵？",
-    "premise": { "Main line": { "Semester": 7 } },
+    "premise": { "point": 300 },
     "description": "解锁猫职业",
     "buff": {
       "point": 50
@@ -280,7 +280,7 @@
     "unlocked": 0
   },
   "ac031": {
-    "name": "馅饼翻三倍",
+    "name": "风水轮流转",
     "premise": { "Count": { "spec": 3 } },
     "description": "触发五次特殊事件",
     "buff": {
@@ -291,7 +291,7 @@
     "unlocked": 0
   },
   "ac032": {
-    "name": "馅饼翻五倍",
+    "name": "快去买彩票",
     "premise": { "Count": { "spec": 15 } },
     "description": "触发十五次特殊事件",
     "buff": {
@@ -324,7 +324,7 @@
     "unlocked": 0
   },
   "ac050": {
-    "name": "我超，米",
+    "name": "米卫兵",
     "premise": { "Event": { "daily": "NO271" } },
     "description": "这不是我们XX的XX吗？",
     "buff": {
@@ -338,8 +338,107 @@
     "premise": { "Event": { "spec": "NO285" } },
     "description": "论坛过街老鼠认证",
     "buff": {
-      "085": { "odds": "*2" },
-      "285": { "odds": "*2" }
+      "point": 10
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac070": {
+    "name": "黑板上的第一笔",
+    "premise": { "Count": { "board": 1 } },
+    "description": "我的第一条留言",
+    "buff": {
+      "point": 10
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac071": {
+    "name": "知识，与你分享",
+    "premise": { "Count": { "board": 10 } },
+    "description": "留言板发布10条留言",
+    "buff": {
+      "point": 30
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac072": {
+    "name": "飞鸽传书",
+    "premise": { "Count": { "bottleSend": 1 } },
+    "description": "送出的第一个漂流瓶",
+    "buff": {
+      "point": 10
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac073": {
+    "name": "瓶中时光",
+    "premise": { "Count": { "bottleSend": 10 } },
+    "description": "送出的第十个漂流瓶",
+    "buff": {
+      "point": 30
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac074": {
+    "name": "打水漂",
+    "premise": { "Count": { "bottleCast": 1 } },
+    "description": "丢出的第一个漂流瓶",
+    "buff": {
+      "point": 10
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac075": {
+    "name": "漂流瓶投手",
+    "premise": { "Count": { "bottleCast": 10 } },
+    "description": "丢出的第十个漂流瓶",
+    "buff": {
+      "point": 30
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac076": {
+    "name": "合作愉快！",
+    "premise": { "Count": { "public": 1 } },
+    "description": "完成一次公共事件",
+    "buff": {
+      "point": 10
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac077": {
+    "name": "社交达人",
+    "premise": { "Count": { "public": 10 } },
+    "description": "完成十次公共事件",
+    "buff": {
+      "point": 50
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac078": {
+    "name": "乐子人·开端",
+    "premise": { "Count": { "disturb": 1 } },
+    "description": "完成一次干扰",
+    "buff": {
+      "point": 10
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac079": {
+    "name": "搞事能手",
+    "premise": { "Count": { "disturb": 10 } },
+    "description": "完成十次干扰",
+    "buff": {
+      "point": 30
     },
     "unique": 0,
     "unlocked": 0
@@ -438,6 +537,36 @@
     "name": "剁手狂魔",
     "premise": { "Count": { "shop": 15 } },
     "description": "完成十五次任意商店交易",
+    "buff": {
+      "point": 20
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac090": {
+    "name": "特定指令",
+    "premise": {},
+    "description": "拙劣的彩蛋成就罢了",
+    "buff": {
+      "point": 20
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac091": {
+    "name": "PMの聖遺物",
+    "premise": { "Bag": { "item": "天麟之鳞" } },
+    "description": "获得“天麟之鳞”",
+    "buff": {
+      "point": 20
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac092": {
+    "name": "院长神器",
+    "premise": { "Bag": { "item": "张梁的眼镜" } },
+    "description": "获得“张梁的眼镜”",
     "buff": {
       "point": 20
     },
