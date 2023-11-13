@@ -150,6 +150,7 @@ function randomQuality()
     con=math.random(1, 6)+math.random(1, 6)+math.random(1, 6)
     wil=math.random(1, 6)+math.random(1, 6)+math.random(1, 6)
     luc=math.random(1, 6)+math.random(1, 6)+math.random(1, 6)
+    sum=int+con+luc+wil
     config.msg.quaility_info.int = int
     config.msg.quaility_info.con = con
     config.msg.quaility_info.wil = wil
@@ -163,10 +164,11 @@ function setQuality(msg)
     for val in mainatt:gmatch("%S+") do
         table.insert(values, val)
     end
-    int=values[1]
-    con=values[2]
-    wil=values[3]
-    luc=values[4]
+    int=tonumber(values[1])
+    con=tonumber(values[2])
+    wil=tonumber(values[3])
+    luc=tonumber(values[4])
+    sum=int+con+luc+wil
     config.msg.quaility_info.int = int
     config.msg.quaility_info.con = con
     config.msg.quaility_info.wil = wil
@@ -235,17 +237,53 @@ function saveInfo()
                 INT = int,
                 CON = con,
                 WIL = wil,
-                LUC = luc
-            },
-            DailyAtt = {
-                energy = 100,
-                mood = 100
+                LUC = luc,
+                SUM=sum
             },
             Mainline = {
                 Semester = 1,
                 credit = 0
             },
-            Bag = {},
+            DailyAtt = {
+                energy = 100,
+                mood = 100
+            },
+            Event = {
+                daily = {},
+                weekly = {},
+                spec = {}
+              },
+              Count = {
+                daily = 0,
+                weekly = 0,
+                spec = 0,
+                exam = 0,
+                sign = 0,
+                board = 0,
+                bottleSend = 0,
+                bottleRecv = 0,
+                bottleCast = 0,
+                public = 0,
+                disturb = 0,
+                shop = 0
+              },
+              Mainline = {
+                Semester = 1,
+                credit = 0,
+                rank = 514
+              },
+              Bag = {
+                item = {},
+                study = 0,
+                sport = 0,
+                snack = 0,
+                game = 0,
+                anima = 0,
+                comp = 0,
+                fans = 0,
+                trophy = 0,
+                sum = 0
+              },
             Achievement = {},
             points = 0
         }
