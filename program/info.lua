@@ -14,21 +14,21 @@ if(players == nil)then
 end
 
 function getInformation(msg)
-    --QQ=tostring(msg.fromQQ)
-    QQ="76755379"
-    local name = players[QQ]["Info"]["Nickname"]
-    local gender = players[QQ]["Info"]["Gender"]
-    local job = players[QQ]["Info"]["Job"]
-    local intro = players[QQ]["Info"]["Introduction"]
-    local int = players[QQ]["MainAtt"]["INT"]
-    local con = players[QQ]["MainAtt"]["CON"]
-    local wil = players[QQ]["MainAtt"]["WIL"]
-    local luc = players[QQ]["MainAtt"]["LUC"]
-    local mood = players[QQ]["DailyAtt"]["mood"]
-    local semester = players[QQ]["Mainline"]["Semester"]
-    local credit = players[QQ]["Mainline"]["credit"]
-    local point = players[QQ]["points"]
-    local achi_num = #players[QQ]["Achievement"]
+    QQ=tostring(msg.fromQQ)
+    local name = players["QQ"]["Info"]["Nickname"]
+    local gender = players["QQ"]["Info"]["Gender"]
+    local job = players["QQ"]["Info"]["Job"]
+    local intro = players["QQ"]["Info"]["Introduction"]
+    local int = players["QQ"]["MainAtt"]["INT"]
+    local con = players["QQ"]["MainAtt"]["CON"]
+    local wil = players["QQ"]["MainAtt"]["WIL"]
+    local luc = players["QQ"]["MainAtt"]["LUC"]
+    local energy = players["QQ"]["DailyAtt"]["energy"]
+    local mood = players["QQ"]["DailyAtt"]["mood"]
+    local semester = players["QQ"]["Mainline"]["Semester"]
+    local credit = players["QQ"]["Mainline"]["credit"]
+    local point = players["QQ"]["points"]
+    local achi_num = #players["QQ"]["Achievement"]
     config.msg.record = config.msg.record:gsub("{name}", name)
     config.msg.record = config.msg.record:gsub("{gender}", gender)
     config.msg.record = config.msg.record:gsub("{job}", job)
@@ -43,5 +43,5 @@ function getInformation(msg)
     config.msg.record = config.msg.record:gsub("{credit}", credit)
     config.msg.record = config.msg.record:gsub("{point}", point)
     config.msg.record = config.msg.record:gsub("{achi_num}", achi_num)
-    return  config.msg.record
+    return   config.msg.record
 end
