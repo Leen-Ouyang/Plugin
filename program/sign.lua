@@ -32,7 +32,7 @@ function sign(msg)
     local year = time.year
     local month = time.month
     local day = time.day
-    if (year == last_year && month == last_month && day == last_day) then
+    if (year == last_year and month == last_month and day == last_day) then
         return config.msg.already
     else
         temps[QQ][last_sign]=time
