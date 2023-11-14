@@ -1,7 +1,7 @@
 cred="cred"
 ocnfig={
     msg={
-        point_info="╔═══════════════╗\n            学分档案\n  ——————————\n  学分 {credit}      排行 {rank}\n  ——————————\n 「ttl」  总排行\n╚═══════════════╝\ntips:学分可以通过考试\n          提升"
+        point_info="╔═══════════════╗\n            学分档案\n  ——————————\n  学分 {credit}      排行 {rank}\n  ——————————\n 「ttl」  总排行\n╚═══════════════╝\ntips:学分可以通过上课、\n          完成作业、考试提升"
     }
 }
 msg_order={}
@@ -18,7 +18,7 @@ function viewPoint(msg){
     local QQ=tostring(msg.fromQQ)
     local credit = players[QQ]["Mainline"]["credit"]
     local rank = players[QQ]["Mainline"]["rank"]
-    cnfig.msg.point_info = config.msg.record:gsub("{credit}", credit)
-    cnfig.msg.point_info = config.msg.record:gsub("{rank}", rank)
+    config.msg.point_info = config.msg.record:gsub("{credit}", credit)
+    config.msg.point_info = config.msg.record:gsub("{rank}", rank)
     return config.msg.point_info
 }
