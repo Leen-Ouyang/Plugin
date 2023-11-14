@@ -555,14 +555,14 @@
   },
   "ac091": {
     "name": "PMの聖遺物",
-    "premise": { "Bag": { "item": "天麟之鳞" } },
-    "description": "获得“天麟之鳞”",
+    "premise": { "Bag": { "item": "天麟的鳞片" } },
+    "description": "获得码界三神器其一“天麟的鳞片”",
     "buff": {
       "MainAtt": {
-        "INT": 1,
-        "CON": 2,
-        "WIL": 3,
-        "LUC": 4
+        "INT": 6,
+        "CON": 6,
+        "WIL": 6,
+        "LUC": 6
       }
     },
     "unique": 0,
@@ -571,66 +571,163 @@
   "ac092": {
     "name": "院长神器",
     "premise": { "Bag": { "item": "张梁的眼镜" } },
-    "description": "获得“张梁的眼镜”",
+    "description": "获得码界三神器其二“张梁的眼镜”",
     "buff": {
       "MainAtt": {
-        "INT": 3,
-        "CON": 3,
-        "WIL": 3,
-        "LUC": 3
+        "INT": 8,
+        "CON": 8,
+        "WIL": 8,
+        "LUC": 8
+      },
+      "DailyAtt": {
+        "energy": 8,
+        "mood": 8
       }
     },
     "unique": 0,
     "unlocked": 0
   },
   "ac093": {
-    "name": "一个BUG",
-    "premise": { "Bag": { "item": "碧油鸡" } },
-    "description": "获得“碧油鸡”",
+    "name": "神之眼",
+    "premise": { "Bag": { "item": "杰森的注视" } },
+    "description": "获得码界三神器其三“杰森的注视”",
     "buff": {
       "MainAtt": {
-        "INT": -1,
-        "CON": -2,
-        "WIL": -3,
-        "LUC": -4
-      }
+        "INT": 9,
+        "CON": 9,
+        "WIL": 9,
+        "LUC": 9
+      },
+      "DailyAtt": {
+        "energy": 9,
+        "mood": 9
+      },
+      "point": 66
     },
     "unique": 0,
     "unlocked": 0
   },
   "ac094": {
-    "name": "Error",
-    "premise": { "Bag": { "item": "一份炒饭" } },
-    "description": "只有饮料",
+    "name": "Error!",
+    "premise": { "Bag": { "item": "邪恶炒饭" } },
+    "description": "获得黑洞三魔器其一“邪恶炒饭”",
     "buff": {
       "MainAtt": {
-        "INT": -3,
-        "CON": -3,
-        "WIL": -3,
-        "LUC": -3
+        "INT": 4,
+        "CON": 7,
+        "WIL": -11,
+        "LUC": -13
       }
     },
     "unique": 0,
     "unlocked": 0
   },
   "ac095": {
-    "name": "神之眼",
-    "premise": { "Bag": { "item": "Jason的注视" } },
-    "description": "Jason温柔地注视着你，不再言语",
+    "name": "一个BUG",
+    "premise": { "Bag": { "item": "代码蠹虫" } },
+    "description": "获得黑洞三魔器其二“代码蠹虫”",
     "buff": {
       "MainAtt": {
-        "INT": 6,
-        "CON": 6,
-        "WIL": 6,
-        "LUC": 6
+        "INT": 13,
+        "CON": 4,
+        "WIL": -7,
+        "LUC": -11
       },
       "DailyAtt": {
-        "energy": 6,
-        "mood": 6
-      },
-      "point": 66
+        "energy": 7,
+        "mood": -7
+      }
     },
     "unique": 0,
     "unlocked": 0
+  },
+  "ac096": {
+    "name": "BUG缠身",
+    "premise": { "Bag": { "item": "碧油鸡羽" } },
+    "description": "获得黑洞三魔器其三“碧油鸡羽”",
+    "buff": {
+      "MainAtt": {
+        "INT": 11,
+        "CON": 13,
+        "WIL": -4,
+        "LUC": -7
+      },
+      "DailyAtt": {
+        "energy": 11,
+        "mood": -11
+      },
+      "point": 74
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac097": {
+    "name": "一念神魔",
+    "premise": {
+      "Bag": {
+        "item": {
+          "shenqi": 1,
+          "moqi": 1
+        }
+      },
+      "description": "同时拥有神器和魔器",
+      "buff": {
+        "point": 50
+      },
+      "unique": 0,
+      "unlocked": 0
+    }
+  },
+  "ac098": {
+    "name": "码神再临",
+    "premise": {
+      "Bag": {
+        "item": {
+          "shenqi": 3
+        }
+      },
+      "description": "获得码界三神器",
+      "buff": {
+        "MainAtt": {
+          "INT": 10,
+          "CON": 10,
+          "WIL": 10,
+          "LUC": 10
+        },
+        "DailyAtt": {
+          "energy": 10,
+          "mood": 10
+        },
+        "point": 99
+      },
+      "unique": 0,
+      "unlocked": 0
+    }
+  },
+  "ac099": {
+    "name": "谬魔复苏",
+    "premise": {
+      "Bag": {
+        "item": {
+          "moqi": 3
+        }
+      },
+      "description": "获得黑洞三魔器",
+      "buff": {
+        "MainAtt": {
+          "INT": 13,
+          "CON": 13,
+          "WIL": -4,
+          "LUC": -4
+        },
+        "DailyAtt": {
+          "energy": 13,
+          "mood": -13
+        },
+        "point": 444
+      },
+      "unique": 0,
+      "unlocked": 0
+    }
   }
 }
