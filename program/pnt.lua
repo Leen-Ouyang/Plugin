@@ -18,7 +18,7 @@ function viewPoint(msg){
     local QQ=tostring(msg.fromQQ)
     local point = players[QQ]["points"]
     local rank = players[QQ]["Mainline"]["rank"]
-    cnfig.msg.point_info = config.msg.record:gsub("{point}", point)
-    cnfig.msg.point_info = config.msg.record:gsub("{rank}", rank)
+    connfig.msg.point_info = config.msg.record:gsub("{point}", point)
+    config.msg.point_info = config.msg.record:gsub("{rank}", rank)
     return config.msg.point_info
 }
