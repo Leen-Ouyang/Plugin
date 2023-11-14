@@ -558,7 +558,12 @@
     "premise": { "Bag": { "item": "天麟之鳞" } },
     "description": "获得“天麟之鳞”",
     "buff": {
-      "point": 20
+      "MainAtt": {
+        "INT": 1,
+        "CON": 2,
+        "WIL": 3,
+        "LUC": 4
+      }
     },
     "unique": 0,
     "unlocked": 0
@@ -568,7 +573,62 @@
     "premise": { "Bag": { "item": "张梁的眼镜" } },
     "description": "获得“张梁的眼镜”",
     "buff": {
-      "point": 20
+      "MainAtt": {
+        "INT": 3,
+        "CON": 3,
+        "WIL": 3,
+        "LUC": 3
+      }
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac093": {
+    "name": "一个BUG",
+    "premise": { "Bag": { "item": "碧油鸡" } },
+    "description": "获得“碧油鸡”",
+    "buff": {
+      "MainAtt": {
+        "INT": -1,
+        "CON": -2,
+        "WIL": -3,
+        "LUC": -4
+      }
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac094": {
+    "name": "Error",
+    "premise": { "Bag": { "item": "一份炒饭" } },
+    "description": "只有饮料",
+    "buff": {
+      "MainAtt": {
+        "INT": -3,
+        "CON": -3,
+        "WIL": -3,
+        "LUC": -3
+      }
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac095": {
+    "name": "神之眼",
+    "premise": { "Bag": { "item": "Jason的注视" } },
+    "description": "Jason温柔地注视着你，不再言语",
+    "buff": {
+      "MainAtt": {
+        "INT": 6,
+        "CON": 6,
+        "WIL": 6,
+        "LUC": 6
+      },
+      "DailyAtt": {
+        "energy": 6,
+        "mood": 6
+      },
+      "point": 66
     },
     "unique": 0,
     "unlocked": 0
