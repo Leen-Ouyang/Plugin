@@ -1,0 +1,16 @@
+{
+    "76755379":{
+        "last_sign":"nil",
+        "daily_done":[],
+        "weekly_done":[],
+        "next_daily":{
+            "generate_time" : "nil",
+            "num": "nil",
+            "is_exam":0
+        },
+        "next_weekly":{
+            "generate_time" : "nil",
+            "num": "nil"
+        }
+    }
+}
