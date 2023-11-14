@@ -14,11 +14,11 @@ if(players == nil)then
     players = {}
 end
 
-function viewPoint(msg){
+function viewPoint(msg)
     local QQ=tostring(msg.fromQQ)
     local point = players[QQ]["points"]
     local rank = players[QQ]["Mainline"]["rank"]
     connfig.msg.point_info = config.msg.record:gsub("{point}", point)
     config.msg.point_info = config.msg.record:gsub("{rank}", rank)
     return config.msg.point_info
-}
+end
