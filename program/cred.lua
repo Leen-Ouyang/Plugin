@@ -5,7 +5,7 @@ ocnfig={
     }
 }
 msg_order={}
-msg_order[cred]="cred"
+msg_order[cred]="viewPoint"
 
 player_information="player.json"
 data = getSelfData(player_information)

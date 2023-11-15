@@ -16,11 +16,11 @@ if(players == nil)then
 end
 
 temp="temp.json"
-    temp_data = getSelfData(temp)
-    temps = temp_data:get(nil,{})
-    if(temps == nil)then
-        temps = {}
-    end
+temp_data = getSelfData(temp)
+temps = temp_data:get(nil,{})
+if(temps == nil)then
+    temps = {}
+end
 
 function sign(msg)
     local QQ=tostring(msg.fromQQ)

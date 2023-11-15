@@ -12,7 +12,6 @@ pick_bottle_order = "捡漂流瓶"
 drown_self_order = "跳进海里"
 search_bottle = "查找瓶子"
 del_bottle = "删除瓶子"
-reset_order = "漂流瓶初始化"
 --以下是插件配置，修改后无需重载
 bottle_name = "bottle_letter.json"--文件名，勿动
 config = {
