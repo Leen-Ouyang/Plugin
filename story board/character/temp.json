@@ -6,11 +6,12 @@
         "next_daily":{
             "generate_time" : "nil",
             "num": "nil",
-            "is_exam":0
+            "type":"nil"
         },
         "next_weekly":{
             "generate_time" : "nil",
             "num": "nil"
+            "type":"nil"
         }
     }
 }
