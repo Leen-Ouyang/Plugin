@@ -102,8 +102,8 @@ function randomQuality(msg)
 end
 
 function setQuality(msg)
-    mainatt = string.match(msg.fromMsg,"[%s]*(.-)[%s]*$",#setq+1)
-    values = {}
+    local mainatt = string.match(msg.fromMsg,"[%s]*(.-)[%s]*$",#setq+1)
+    local values = {}
     for val in mainatt:gmatch("%S+") do
         table.insert(values, val)
     end
