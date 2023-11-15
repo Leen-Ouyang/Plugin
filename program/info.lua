@@ -1,4 +1,4 @@
-info = "info"
+info = "档案"
 config = {
     msg = {
         record="╔═══════════════╗\n            个人档案\n  姓名  {name}\n  性别 {gender}      职业 {job}\n  个人简介\n  {intro}\n  ——————————\n   主属性        每日状态\n  智力  {int}    精力\n  体质 {con}    {energy}/100\n  意志 {wil}    心情\n  运气 {luc}    {mood}/100\n  ——————————\n  学年  {semester}       学分 {credit}\n  积分  {point}         成就数 {achi_num}\n╚═══════════════╝\n"
@@ -16,7 +16,7 @@ end
 function getInformation(msg)
     local QQ=tostring(msg.fromQQ)
     if (players[QQ]==nil) then 
-        return "未创建角色，请先创建角色「crt」"
+        return "未创建角色，请先创建角色「创建新角色」"
     end
     local name = players[QQ]["Info"]["Nickname"]
     local gender = players[QQ]["Info"]["Gender"]

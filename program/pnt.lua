@@ -1,7 +1,7 @@
-pnt="pnt"
+pnt="查看积分"
 ocnfig={
     msg={
-        point_info="╔═══════════════╗\n            积分档案\n  ——————————\n  积分 {point}\n  ——————————\n 「way」  积分获取路径\n╚═══════════════╝\ntips:电动车，不上牌\n          保安把你拦下来"
+        point_info="╔══════════════════╗\n            积分档案\n  ————————————\n  积分 {point}\n  ————————————\n 「获取方法」 积分获取路径\n╚══════════════════╝\ntips:电动车，不上牌保安把你拦下来"
     }
 }
 msg_order={}
@@ -17,11 +17,11 @@ end
 function viewPoint(msg)
     local QQ=tostring(msg.fromQQ)
     if (players[QQ]==nil) then 
-        return "未创建角色，请先创建角色「crt」"
+        return "未创建角色，请先创建角色「创建新角色」"
     end
     local point = players[QQ]["points"]
     local rank = players[QQ]["Mainline"]["rank"]
-    connfig.msg.point_info = config.msg.record:gsub("{point}", point)
+    config.msg.point_info = config.msg.record:gsub("{point}", point)
     config.msg.point_info = config.msg.record:gsub("{rank}", rank)
     return config.msg.point_info
 end

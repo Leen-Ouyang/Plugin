@@ -1,9 +1,9 @@
-achi="achi"
-my_achi="mine"
-lock_achi="lock"
+achi="查看成就"
+my_achi="已解锁"
+lock_achi="未解锁"
 config={
     msg={
-        achievementmenu="╔═══════════════╗\n            成就档案\n  ——————————\n      输入指令查看详细\n  ——————————\n   指令     效果\n 「mine」已解锁成就\n 「lock」未解锁成就\n╚═══════════════╝\ntips:触发极低概率特殊\n         事件可解锁相应成就",
+        achievementmenu="╔════════════════════╗\n           成就档案\n   —————————————\n      输入指令查看详细\n   —————————————\n   指令及效果：\n    「已解锁」 查看已解锁成就\n    「未解锁」 查看未解锁成就\n╚════════════════════╝\ntips:触发极低概率特殊事件可解锁相应成就",
         my_achievement="",
         lock_achievement=""
     }
@@ -34,7 +34,7 @@ end
 function viewMyAchievement(msg)
     local QQ=tostring(msg.fromQQ)
     if (players[QQ]==nil) then 
-        return "未创建角色，请先创建角色「crt」"
+        return "未创建角色，请先创建角色「创建新角色」"
     end
     local player_achi=players[QQ]["Achievement"]
     local achi_id = {}
@@ -47,7 +47,7 @@ end
 function viewLockAchievement(msg)
     local QQ=tostring(msg.fromQQ)
     if (players[QQ]==nil) then 
-        return "未创建角色，请先创建角色「crt」"
+        return "未创建角色，请先创建角色「创建新角色」"
     end
     return config.msg.lock_achievement
 end

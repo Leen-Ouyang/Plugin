@@ -1,7 +1,7 @@
-bag="bag"
+bag="背包"
 config={
     msg={
-        item="╔═══════════════╗\n            远程背包\n  ——————————\n   积分 {point}       道具 {num}\n  ——————————\n  {items}\n   指令:\n      查看+道具名\n       使用+道具名\n╚═══════════════╝"
+        item="╔═══════════════╗\n            远程背包\n  ——————————\n   积分 {point}       道具 {num}\n  ——————————\n  {items}\n   指令:\n      「查看+道具名」\n       「使用+道具名」\n╚═══════════════╝"
     }
 }
 msg_order={}
@@ -18,7 +18,7 @@ end
 function viewBag(msg)
     local QQ=tostring(msg.fromQQ)
     if (players[QQ]==nil) then 
-        return "未创建角色，请先创建角色「crt」"
+        return "未创建角色，请先创建角色「创建新角色」"
     end
     local point = players[QQ]["points"]
     local items = players[QQ]["Bag"]["item"]

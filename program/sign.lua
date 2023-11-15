@@ -1,4 +1,4 @@
-s="sign"
+s="签到"
 ocnfig={
     msg={
         sign_success="签到成功！积分+{point}\n连续签到{days}天",
@@ -25,7 +25,7 @@ end
 function sign(msg)
     local QQ=tostring(msg.fromQQ)
     if (players[QQ]==nil) then 
-        return "未创建角色，请先创建角色「crt」"
+        return "未创建角色，请先创建角色「请先创建角色」"
     end
     local last_sign=temps[QQ][last_sign]
     local last_year = last_sign.year

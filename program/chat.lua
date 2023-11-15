@@ -1,12 +1,12 @@
-chat = "chat"
-board = "brd"
-bottle = "btl"
-vnt = "vnt"
+chat = "社交"
+board = "留言板"
+bottle = "漂流瓶"
+social_event = "查看活动"
 config = {
     msg = {
-        chatmenu="╔═══════════════╗\n            社交选择\n  ——————————\n   指令     效果\n 「brd」 留言板\n 「btl」  漂流瓶\n 「vnt」  查看社交事件\n╚═══════════════╝",
-        brdmenu="╔═══════════════╗\n              留言板\n  ——————————\n   指令     效果\n 「wrt」 书写留言\n 「see」  留言显形\n 「mine」我的留言\n 「dlt」  擦除留言\n╚═══════════════╝",
-        btlmenu="╔═══════════════╗\n              漂流瓶\n  ——————————\n   指令:\n       扔漂流瓶\n       捡漂流瓶\n       跳进海里\n       查找瓶子\n       删除瓶子\n       漂流瓶初始化\n╚═══════════════╝",
+        chatmenu="╔═══════════════╗\n            社交选择\n  ——————————\n   指令及效果\n    「留言板」 查看留言板\n    「漂流瓶」 查看漂流瓶\n    「查看活动」 查看社交事件\n╚═══════════════╝",
+        brdmenu="╔═══════════════╗\n              留言板\n  ——————————\n   指令:\n       「书写留言」\n       「留言显形」\n       「我的留言」\n       「擦除留言」\n╚═══════════════╝",
+        btlmenu="╔═══════════════╗\n              漂流瓶\n  ——————————\n   指令:\n       「扔漂流瓶」\n       「捡漂流瓶」\n       「跳进海里」\n       「查找瓶子」\n       「删除瓶子」\n╚═══════════════╝",
         socialevent=""
     }
 }
@@ -14,7 +14,7 @@ msg_order = {}
 msg_order[chat] = "Chatmenu"
 msg_order[board] = "Boardmenu"
 msg_order[bottle] = "Bottlemenu"
-msg_order[vnt] = "getSocialEvent"
+msg_order[social_event] = "getSocialEvent"
 
 function Chatmenu()
     return config.msg.chatmenu

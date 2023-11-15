@@ -1,4 +1,4 @@
-mod="mod"
+mod="简介"
 config={
     msg={
         update_intro="个人简介保存成功！"
@@ -18,7 +18,7 @@ function updateIntro(msg)
     local introduction = string.match(msg.fromMsg,"[%s]*(.-)[%s]*$",#mod+1)
     local QQ=tostring(msg.fromQQ)
     if (players[QQ]==nil) then 
-        return "未创建角色，请先创建角色「crt」"
+        return "未创建角色，请先创建角色「创建新角色」"
     end
     players[QQ]["Info"]["Introduction"]=introduction
     data:set(players)
