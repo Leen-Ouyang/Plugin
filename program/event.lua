@@ -10,15 +10,17 @@ Temp = "temp" --temp json文件夹读取
 json = require("json")
 
 config = {
-
+    min_credit = 15,  --最少多少分可以考试
+    exam_chance = 60, --考试成功概率
     msg = {
         --回复词
-
+        exam_fail = "叫你不好好复习，准备补考吧\n",
+        
     }
 }
 
 -------------分割线--------------
-msg_order[] = {}
+msg_order = {}
 msg_order[search_event_order] = "search_event"
 msg_order[execute_day_order] = "execute_day"
 msg_order[execute_week_order] = "execute_week"
@@ -62,32 +64,38 @@ local function generate_day(msg)
     --如果下一个每日事件已经过期了或者已经被执行，清空temp里对应uid事件，重新生成
     local QQ = msg.fromQQ
     local time = os.time()
-    if(isSameDay(time,temp[QQ].next_daily.generate_time) == false)then
+
+    if (temp[QQ].next_daily.generate_time ~= nil) and (not isSameDay(time, temp[QQ].next_daily.generate_time)) then
         table.clear(temp[QQ].daily_done)
         temp[QQ].next_daily.generate_time = nil
         temp[QQ].next_daily.num = nil
-        temp[QQ].next_daily.type = nil;
-    else(temp[QQ].next_daily.generate_time=="nil" or isSameDay(time,temp[QQ].next_daily.generate_time))then
-    
-        if(temp[QQ].next_daily.generate_time!="nil") then--把上一次的存在里面
+        temp[QQ].next_daily.type = nil
+    elseif (temp[QQ].next_daily.generate_time == nil or isSameDay(time, temp[QQ].next_daily.generate_time)) then
+        -- 剩下的代码...
+        if(temp[QQ].next_daily.generate_time~=nil and temp[QQ].next_daily.type == "Daily") then--把上一次的存在里面
             table.insert(temp[QQ].daily_done,temp[QQ].next_daily.num)
-
         end
         
     end
     
-    if()then--先判断学分够不够考试事件，够就进入考试事件
-        
-    else then--如果分数还达不到考试阶段
+    if(player[QQ]["Mainline"]["credit"]>min_credit)then--先判断学分够不够考试事件，够就进入考试事件
+        temp[QQ].next_daily.type = "Exam";
+        temp[QQ].next_daily.generate_time = time
+    else--如果分数还达不到考试阶段
     
         
         local flag = 0
-        while flag do
+        while ~flag do
             math.randomseed(os.time()) -- 使用当前时间作为随机种子
             local randomInt = math.random(100, 199)
             -- 将整数转换为3位字符串
             local formattedString = string.format("NO%03d", randomInt)
-            if(player[QQ].Semeste>event["Daily"][formattedString].)then
+            if(event["Daily"][formattedString][0].limit=="null")then
+                flag=1
+            end
+            local lastChar = string.sub(event["Daily"][formattedString][0]["limit"], -1)
+            local lastCharAsInt = tonumber(lastChar)
+            if(lastCharAsInt<=player[QQ]["Mainline"]["Semester"])then
                 flag=1
             end
         end
@@ -108,30 +116,38 @@ local function generate_week(msg)
     --如果下一个每周事件已经过期了或者已经被执行，清空temp里对应uid事件，重新生成
     local time = os.time()
     local QQ = msg.fromQQ
-    if(isSameDay(time,temp[QQ].next_weekly.generate_time) == false)then
+
+    
+
+    if(temp[QQ].next_weekly.generate_time ~= nil) and (not isSameDay(time, temp[QQ].next_weekly.generate_time))then
         table.clear(temp[QQ].weekly_done)
         temp[QQ].next_weekly.generate_time = nil
         temp[QQ].next_weekly.num = nil
         temp[QQ].next_weekly.type = nil;
-    else(temp[QQ].next_weekly.generate_time=="nil" or isSameDay(time,temp[QQ].next_weekly.generate_time))then
-        if(temp[QQ].next_weekly.generate_time!="nil")then--把上一次的存在里
+    elseif(temp[QQ].next_weekly.generate_time==nil or isSameDay(time,temp[QQ].next_weekly.generate_time))then 
+        if temp[QQ].next_weekly.generate_time~=nil and temp[QQ].next_weekly.type == "Weekly" then--把上一次的存在里
             table.insert(temp[QQ].weekly_done,temp[QQ].next_weekly.num)
         end
     end
 
-    if()then--先判断学分够不够考试事件，够就进入考试事件
-        
-            
-    else then--如果分数还达不到考试阶段
+    if(player[QQ]["Mainline"]["credit"]>min_credit)then--先判断学分够不够考试事件，够就进入考试事件
+        temp[QQ].next_weekly.type = "Exam";
+        temp[QQ].next_weekly.generate_time = time  
+    else    --如果分数还达不到考试阶段
     
         
         local flag = 0
-        while flag do
+        while ~flag do
             math.randomseed(os.time()) -- 使用当前时间作为随机种子
             local randomInt = math.random(100, 199)
             -- 将整数转换为3位字符串
             local formattedString = string.format("NO%03d", randomInt)
-            if(player[QQ].Semeste>event["Weekly"][formattedString].)then
+            if(event["Weekly"][formattedString][0].limit=="null")then
+                flag=1
+            end
+            local lastChar = string.sub(event["Weekly"][formattedString][0]["limit"], -1)
+            local lastCharAsInt = tonumber(lastChar)
+            if(lastCharAsInt<=player[QQ]["Mainline"]["Semester"])then
                 flag=1
             end
         end
@@ -148,18 +164,21 @@ end
 -----------查找事件功能-----------
 function search_event(msg)
     local QQ = msg.fromQQ
-    if(temp[QQ].next_daily.generate_time==nil)generate_day(msg);
-    if(temp[QQ].next_weekly.generate_time==nil)generate_week(msg);
-
+    if(temp[QQ].next_daily.generate_time==nil)then
+        generate_day(msg);
+    end
+    if(temp[QQ].next_weekly.generate_time==nil)then
+        generate_week(msg);
+    end
     s = "今日已完成事件：\n"
     --查看已完成事件
     s = s.."  每日事件：\n"
-    for i = 0, #temp[QQ].daily_done do 
-        s = s.."    "..event[Daily][temp[QQ].daily_done[i]].."\n"
+    for i = 1, #temp[QQ].daily_done do 
+        s = s.."    "..event["Daily"][temp[QQ].daily_done[i]].."\n"
     end
     s = s.."  每周事件：\n"
-    for i = 0, #temp[QQ].weekly_done do 
-        s = s.."    "..event[Weekly][temp[QQ].daily_done[i]].."\n"
+    for i = 1, #temp[QQ].weekly_done do 
+        s = s.."    "..event["Weekly"][temp[QQ].daily_done[i]].."\n"
     end
 
     if(temp[QQ].next_daily.type=="Exam")then 
@@ -176,14 +195,14 @@ function search_event(msg)
 
     --查看下一项每日事件，以及相关具体信息
     if(temp[QQ].next_daily.type=="Daily")then
-        s = s.."  下一项每日事件："..event[Daily][temp[QQ].next_daily.num].."\n"
+        s = s.."  下一项每日事件："..event["Daily"][temp[QQ].next_daily.num].."\n"
     end
     --查看下一项每周事件，以及相关具体信息
     if(temp[QQ].next_weekly.type=="Weekly")then
-        s = s.."  下一项每周事件："..event[Weekly][temp[QQ].next_weekly.num].."\n"
+        s = s.."  下一项每周事件："..event["Weekly"][temp[QQ].next_weekly.num].."\n"
     end
     --考试的话
-    if(temp[QQ].next_daily.type==1)then 
+    if(temp[QQ].next_daily.type=="Exam")then 
         s = s.."  该准备考试了！".."\n"
     end
 
@@ -195,13 +214,44 @@ function search_event(msg)
     return s
 end
 
+function do_exam(msg)
+    local QQ = msg.fromQQ
+    math.randomseed(os.time()) -- 使用当前时间作为随机种子
+    local randomInt = math.random(0,100);
 
+    if(randomInt>exam_chance)then
+        return config.msg.exam_fail;
+    else
+        player[QQ]["Mainline"]["Semester"]=player[QQ]["Mainline"]["Semester"]+1
+        local num = player[QQ]["Mainline"]["Semester"]
+        local formattedString = string.format("NO40d", randomInt)
+        local s = event["Semester"][formattedString]["description"].."\n"..event[QQ]["Semester"][formattedString]["fixes"].."\n"
+        player[QQ]["MainAtt"]["INT"]=player[QQ]["MainAtt"]["INT"]+event["Semester"][formattedString]["change"]["INT"]
+        player[QQ]["MainAtt"]["CON"]=player[QQ]["MainAtt"]["CON"]+event["Semester"][formattedString]["change"]["CON"]
+        player[QQ]["MainAtt"]["WIL"]=player[QQ]["MainAtt"]["WIL"]+event["Semester"][formattedString]["change"]["WIL"]
+        player[QQ]["MainAtt"]["LUC"]=player[QQ]["MainAtt"]["LUC"]+event["Semester"][formattedString]["change"]["LUC"]
+        player[QQ]["MainAtt"]["SUM"]=player[QQ]["MainAtt"]["INT"]+ player[QQ]["MainAtt"]["CON"]+player[QQ]["MainAtt"]["WIL"]+player[QQ]["MainAtt"]["SUM"]
+        return s;
+    end
+end
 
 
 ---------执行每日事件功能---------
 function execute_day(msg)
+
     --判断是否触发随机事件
     local QQ = msg.fromQQ
+    local time = os.time()
+    if(temp[QQ].next_weekly.type=="Exam")then 
+        temp[QQ].next_daily.generate_time = temp[QQ].next_weekly.generate_time
+        temp[QQ].next_daily.num = temp[QQ].next_weekly.num
+        temp[QQ].next_daily.type = temp[QQ].next_weekly.type
+        do_exam(msg)
+        data1:set(event)
+        data2:set(player)
+        data3:set(temp)
+        return ""
+    end
     local chance = player[QQ]["MainAtt"]["LUC"]-10;
     math.randomseed(os.time()) -- 使用当前时间作为随机种子
     local randomInt = math.random(0,100);
@@ -209,12 +259,17 @@ function execute_day(msg)
     if(randomInt>chance)then --正常执行
         s = s.."触发随机事件\n"
         local flag = 0
-        while flag do
+        while ~flag do
             math.randomseed(os.time()) -- 使用当前时间作为随机种子
             local randomInt = math.random(200,399)
             -- 将整数转换为3位字符串
             local formattedString = string.format("NO%03d", randomInt)
-            if(player[QQ].Semeste>event[Daily][formattedString].)then
+            if(event["Weekly"][formattedString][0].limit=="null")then
+                flag=1
+            end
+            local lastChar = string.sub(event["Weekly"][formattedString][0]["limit"], -1)
+            local lastCharAsInt = tonumber(lastChar)
+            if(lastCharAsInt<=player[QQ]["Mainline"]["Semester"])then
                 flag=1
             end
         end
@@ -234,7 +289,7 @@ function execute_day(msg)
 
     local random = math.random(0,20);
     local judge = event[type][num][randomInt]["judge"];
-    if(player[QQ]["MainAtt"][judge]-10+randowm > odd)then
+    if(player[QQ]["MainAtt"][judge]-10+random > odd)then
         s = s..event[type][num][randomInt]["success"].."\n"
         player[QQ]["MainAtt"]["INT"]=player[QQ]["MainAtt"]["INT"]+event[type][num][randomInt]["change"]["INT"]
         player[QQ]["MainAtt"]["CON"]=player[QQ]["MainAtt"]["CON"]+event[type][num][randomInt]["change"]["CON"]
@@ -247,7 +302,7 @@ function execute_day(msg)
         s = s.."WIL获得"..event[type][num][randomInt]["change"]["WIL"].."  玩家目前WIL为："..player[QQ]["MainAtt"]["WIL"].."\n"
         s = s.."LUC获得"..event[type][num][randomInt]["change"]["LUC"].."  玩家目前LUC为："..player[QQ]["MainAtt"]["LUC"].."\n"
 
-    else then
+    else
         s = s..event[type][num][randomInt]["failure"].."\n"
         s = s.."以下玩家属性发生变化：\n"
     end
@@ -274,6 +329,17 @@ end
 function execute_week(msg)
     --判断是否触发随机事件
     local QQ = msg.fromQQ
+    local time = os.time()
+    if(temp[QQ].next_daily.type=="Exam")then 
+        temp[QQ].next_weekly.generate_time = temp[QQ].next_daily.generate_time
+        temp[QQ].next_weekly.num = temp[QQ].next_daily.num
+        temp[QQ].next_weekly.type = temp[QQ].next_daily.type
+        do_exam(msg)
+        data1:set(event)
+        data2:set(player)
+        data3:set(temp)
+        return ""
+    end
     local chance = player[QQ]["MainAtt"]["LUC"]-10;
     math.randomseed(os.time()) -- 使用当前时间作为随机种子
     local randomInt = math.random(0,100);
@@ -281,12 +347,17 @@ function execute_week(msg)
     if(randomInt>chance)then --正常执行
         s = s.."触发随机事件\n"
         local flag = 0
-        while flag do
+        while ~flag do
             math.randomseed(os.time()) -- 使用当前时间作为随机种子
             local randomInt = math.random(200,399)
             -- 将整数转换为3位字符串
             local formattedString = string.format("NO%03d", randomInt)
-            if(player[QQ].Semeste>event[Daily][formattedString].)then
+            if(event["Weekly"][formattedString][0].limit=="null")then
+                flag=1
+            end
+            local lastChar = string.sub(event["Spec"][formattedString][0]["limit"], -1)
+            local lastCharAsInt = tonumber(lastChar)
+            if(lastCharAsInt<=player[QQ]["Mainline"]["Semester"])then
                 flag=1
             end
         end
@@ -306,7 +377,7 @@ function execute_week(msg)
 
     local random = math.random(0,20);
     local judge = event[type][num][randomInt]["judge"];
-    if(player[QQ]["MainAtt"][judge]-10+randowm > odd)then
+    if(player[QQ]["MainAtt"][judge]-10+random > odd)then
         s = s..event[type][num][randomInt]["success"].."\n"
         player[QQ]["MainAtt"]["INT"]=player[QQ]["MainAtt"]["INT"]+event[type][num][randomInt]["change"]["INT"]
         player[QQ]["MainAtt"]["CON"]=player[QQ]["MainAtt"]["CON"]+event[type][num][randomInt]["change"]["CON"]
@@ -319,7 +390,7 @@ function execute_week(msg)
         s = s.."WIL获得"..event[type][num][randomInt]["change"]["WIL"].."  玩家目前WIL为："..player[QQ]["MainAtt"]["WIL"].."\n"
         s = s.."LUC获得"..event[type][num][randomInt]["change"]["LUC"].."  玩家目前LUC为："..player[QQ]["MainAtt"]["LUC"].."\n"
 
-    else then
+    else 
         s = s..event[type][num][randomInt]["failure"].."\n"
         s = s.."以下玩家属性发生变化：\n"
     end
