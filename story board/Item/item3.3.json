@@ -1,0 +1,698 @@
+{
+    "study":
+    {
+        "I000":
+        {  
+            "name": "《高数（上）》",  
+            "shop": "积分商店",  
+            "price": 50,  
+            "description": "经典同济版。这是学习高数必不可少的书籍，可以让你更深入地理解学术知识。",  
+            "pre":{
+                "class":"学习·高数"
+            },
+            "buff": {
+                "INT":3
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 5,
+            "remaining_usage": 5
+        },
+        "I001":
+        {  
+            "name": "《高数（下）》",  
+            "shop": "积分商店",  
+            "price": 60,  
+            "description": "经典同济版。这是学习高数必不可少的书籍，可以让你更深入地理解学术知识。",  
+            "pre":{
+                "class":"学习·高数"
+            },
+            "buff":{
+                "INT":4
+            },
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 5,
+            "remaining_usage": 5
+        },
+        "I002":
+        {  
+            "name": "《大学英语（一）》",  
+            "shop": "积分商店",  
+            "price": 30,  
+            "description": "这是学习英语必不可少的书籍，可以让你更深入地理解学术知识。",  
+            "pre":{
+                "class":"学习·英语"
+            },
+            "buff":{
+                "INT":3
+            },  
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 5,
+            "remaining_usage": 5
+        },
+        "I003":
+        {  
+            "name": "《大学英语（二）》",  
+            "shop": "积分商店",  
+            "price": 40,
+            "description": "这是学习英语必不可少的书籍，可以让你更深入地理解学术知识。",  
+            "pre":{
+                "class":"学习·英语"
+            },
+            "buff": {
+                "INT":4
+            }, 
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 5,
+            "remaining_usage": 5
+        },
+        "I004":
+        {  
+            "name": "《大学英语（三）》",  
+            "shop": "积分商店",  
+            "price": 50,  
+            "description": "这是学习英语必不可少的书籍，可以让你更深入地理解学术知识。",  
+            "pre":{
+                "class":"学习·英语"
+            },
+            "buff": {
+                "INT":5
+            },
+            "unique": false,  
+            "acquired": false,
+            "max_usagIe": 5,
+            "remaining_usage": 5
+        },
+        "I005":
+        {  
+            "name": "《毛泽东思想和中国特色社会主义理论体系概论》",  
+            "shop": "积分商店",  
+            "price": 40,  
+            "description": "这是提高思政素养必不可少的书籍，可以让你更深入地理解学术知识。",  
+            "pre":{
+                "class":"学习·毛概"
+            },
+            "buff":{
+                "INT":3
+            },
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 5,
+            "remaining_usage": 5
+        },
+        "I006":
+        {  
+            "name": "《马克思主义基本原理》",  
+            "shop": "积分商店",  
+            "price": 50,  
+            "description": "这是提高思政素养必不可少的书籍，可以让你更深入地理解学术知识。",  
+            "pre":{
+                "class":"学习·马原"
+            },
+            "buff": {
+                "INT":4
+            }, 
+            "unique": false,  
+            "acqIuired": false,
+            "max_usage": 5,
+            "remaining_usage": 5
+        },
+        "I007":
+        {  
+            "name": "《C语言程序设计》",  
+            "shop": "积分商店",  
+            "price": 60,  
+            "description": "这是编程必不可少的书籍，可以让你更深入地理解学术知识。",  
+            "pre":{
+                "class":"学习·C语言"
+            },
+            "buff": {
+                "INT":5
+            },
+            "unique": false,  
+            "acquired": false,
+            "maxI_usage": 5,
+            "remaining_usage": 5
+        },
+        "I014":
+        {  
+            "name": "笔记本",  
+            "shop": "积分商店",  
+            "price": 20,  
+            "description": "精美的笔记本，可用于记录课堂笔记和作业，可让你事半功倍。",  
+            "pre":{
+                "class":"学习"
+            },
+            "buff": {
+                "INT":2,
+                "energy":1
+            },
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 5,
+            "remaining_usage": 5
+        },
+        "I015":
+        {  
+            "name": "历年卷",  
+            "shop": "积分商店",  
+            "price": 30,  
+            "description": "包含了过去的考试试卷，有助于了解历年考试的题型和难度。",  
+            "pre":{
+                "event":["NO100","NO101","NO102","NO103","N0104","NO105","NO106","NO107","NO108","NO109"]
+            },
+            "buff":{
+                "INT":5
+            },  
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 3,
+            "remaining_usage": 3
+        },
+        "I020":
+        {  
+            "name": "学长の笔记",  
+            "shop": "特殊商店",  
+            "price": 166,  
+            "description": "传说是杰胜学长的大学四年以来的珍贵笔记，里面记录了他的学习经验和心得。",  
+            "pre":{
+                "event":["NO100","NO101","NO102","NO103","N0104","NO105","NO106","NO107","NO108","NO109"]
+            },
+            "buff": {
+                "INT":10,
+                "LUC":5
+            },
+            "unique": true,  
+            "acquired": false,
+            "max_usage": 10,
+            "remaining_usage": 10
+        }
+    },
+    "sport":
+    {   
+        "I022":
+        {  
+            "name": "李麟牌运动鞋",  
+            "shop": "积分商店",  
+            "price": 120,  
+            "description": "专门为跑步设计的运动鞋，适合长跑和健身。",  
+            "pre":{
+                "event":"运动"
+            },
+            "buff": {
+                "energy":3,
+                "WIL": 5
+            },
+            "unique": true,  
+            "acquired": false,
+            "max_usage": 10,
+            "remaining_usage": 10
+        },
+        "I023":
+        {  
+            "name": "跳绳",  
+            "shop": "积分商店",  
+            "price": 15,  
+            "description": "一种简单的健身器材，可以锻炼身体的协调性和耐力。",  
+            "pre":{
+            },
+            "buff": {
+                "CON":3,
+                "WIL":1
+            },  
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 10,
+            "remaining_usage": 10
+        },
+        "I024":
+        {  
+            "name": "二手自行车",  
+            "shop": "特殊商店",  
+            "price": 300,  
+            "description": "方便的交通工具，可以让你更快地到达目的地。",  
+            "pre":{
+                "event":"NO200"
+            },
+            "buff":{ 
+                "result":1,
+                "WIL":3,
+                "CON":1
+            },  
+            "unique": true,  
+            "acquired": false,
+            "max_usage": 10,
+            "remaining_usage": 10
+        },
+        "I025":
+        {  
+            "name": "小米粒运动手环",  
+            "shop": "积分商店",  
+            "price": 200,  
+            "description": "最时尚的可穿戴设备。可以监测心率、睡眠质量等健康数据的手环。",  
+            "pre":{
+                "event":"NO004"
+            },
+            "buff": {
+                "？？？":"概率降低50%",
+                "CON":3  
+            },
+            "unique": true,  
+            "acquired": false,
+            "max_usage": 10,
+            "remaining_usage": 10
+        }
+    },
+    "snack":
+    {
+        "I050":
+        {  
+            "name": "乐色薯片",  
+            "shop": "积分商店",  
+            "price": 30,  
+            "description": "酥脆可口，口感鲜美，是休闲娱乐时的最佳小食品。",  
+            "pre":{
+            },
+            "buff":{
+                "energy":5,
+                "mood":10
+            },
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I051":
+        {  
+            "name": "肥宅快乐水",  
+            "shop": "积分商店",  
+            "price": 20,  
+            "description": "肥宅们的最爱，喝上一口，快乐无比。",  
+            "pre":{
+            },
+            "buff":{
+                "energy":3,
+                "mood":5
+            },
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I052":
+        {  
+            "name": "百香方便面",  
+            "shop": "积分商店",  
+            "price": 40,  
+            "description": "“不是百香的我不吃”",  
+            "pre":{
+            },
+            "buff":{
+                "energy":10,
+                "mood":10
+            }, 
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I053":
+        {  
+            "name": "QQㄋㄟㄋㄟ好喝到咩噗茶",  
+            "shop": "积分商店",  
+            "price": 25,  
+            "description": "香浓的奶茶，配以顺滑的奶油，口感绝佳。",  
+            "pre":{
+            },
+            "buff":{
+                "energy":10,
+                "mood":10
+            },  
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I054":
+        {  
+            "name": "幸爸爸咖啡",  
+            "shop": "积分商店",  
+            "price": 30,  
+            "description": "浓郁的咖啡香味，可以提神醒脑，增加工作效率。",  
+            "pre":{
+            },
+            "buff":{
+                "精力":10
+            },
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I055":
+        {  
+            "name": "cc果汁",  
+            "shop": "积分商店",  
+            "price": 35,  
+            "description": "采用新鲜水果榨取，口感鲜美，营养丰富。",  
+            "pre":{
+            },
+            "buff": {
+                "CON":10
+            },
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I056":
+        {  
+            "name": "V51炸鸡全家桶",  
+            "shop": "积分商店",  
+            "price": 60,  
+            "description": "包含多种炸鸡口味，是家庭聚餐或朋友聚会的不错选择。",  
+            "pre":{
+                "date":"(星期四)"
+            },
+            "buff": {
+                "energy":20,
+                "mood":20
+            },  
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I057":
+        {  
+            "name": "水果捞",  
+            "shop": "积分商店",  
+            "price": 50,  
+            "description": "多种新鲜水果搭配在一起，色彩缤纷，美味可口。",   
+            "pre":{
+            },
+            "buff": {
+                "CON":8,
+                "mood":10
+            },
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I060":
+        {  
+            "name": "普通餐券",  
+            "shop": "积分商店",  
+            "price": 30,  
+            "description": "可在食堂兑换任意菜品，凭此券可享受优惠。",  
+            "pre":{
+                "category":"food"
+            },
+            "buff": {
+                "price":"0.5*price"
+            },  
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I061":
+        {  
+            "name": "周年校庆餐券",  
+            "shop": "特殊商店", 
+            "price": 50,  
+            "description": "庆祝学校成立65周年特别推出的餐券，可在食堂兑换特色菜品。",  
+            "pre":{
+                "category":"food"
+            },
+            "buff": {
+                "price":"0.5*price",
+                "LUC":5
+            },
+            "unique": true,  
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        }
+    },
+    "game":
+    {
+        "I031": 
+        {
+            "name": "猫条",
+            "shop": "积分商店",
+            "price": 20,
+            "description": "专为猫咪设计的美味零食，能够讨好你的小伙伴。",
+            "pre": {
+                "label":"撸猫"
+            },
+            "buff": {
+                "probability":"raise 50%",
+                "LUC":5
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I032": 
+        {
+            "name": "逗猫棒",
+            "shop": "积分商店",
+            "price": 35,
+            "description": "专业级的猫咪玩具，能够引发猫咪的好奇心。",
+            "pre": {
+                "label":"撸猫"
+            },
+            "buff": {
+                "probability":"raise 50%",
+                "mood":10
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 2,
+            "remaining_usage": 2
+        },
+        "I033": 
+        {
+            "name": "肉骨头",
+            "shop": "积分商店",
+            "price": 45,
+            "description": "新鲜的肉骨头，是大型犬类宠物的最爱。",
+            "pre": {
+                "label":"撸狗"
+            },
+            "buff": {
+                "probability":"raise 50%",
+                "LUC":"5"
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 2,
+            "remaining_usage": 2
+        },
+        "I034": {
+            "name": "风筝",
+            "shop": "积分商店",
+            "price": 60,
+            "description": "五彩斑斓的风筝，适合在悠闲的时光放飞。",
+            "pre": {
+                "weather":"晴天",
+                "energy":">=50"
+            },
+            "buff": {
+                "mood":15
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I035": {
+            "name": "根行普通皮肤",
+            "shop": "积分商店",
+            "price": 80,
+            "description": "根行游戏中的普通皮肤，让你的角色焕然一新。",
+            "pre": {
+                "label":"游戏"
+            },
+            "buff": {
+                "odds":0.8,
+                "LUC":3
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 6,
+            "remaining_usage": 6
+        },
+        "I036": {
+            "name": "根行高级皮肤",
+            "shop": "积分商店",
+            "price": 120,
+            "description": "根行游戏中的高级皮肤，让你的角色焕然一新。",
+            "pre": {
+                "label":"游戏"
+            },
+            "buff": {
+                "probability":"raise 50%",
+                "LUC":3
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 6,
+            "remaining_usage": 6
+        }        
+    },
+    "anima":
+    {
+    },
+    "comp":
+    {
+        "I062":
+        {  
+            "name": "学校明信片",  
+            "shop": "社交商店",  
+            "price": 20,  
+            "description": "记录学校美景和历史的明信片，可用来收藏或寄给朋友。",  
+            "pre": {
+            },
+            "buff": {
+                "effect":"可获得对应的漂流瓶文字UI",
+                "probability":"漂流上岸概率提高50%"
+            },
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 6,
+            "remaining_usage": 6
+        }
+    },
+    "fans":
+    {
+    },
+    "trophy":
+    {
+    },
+    "shenqi":
+    {
+    },
+    "moqi":
+    {
+    },
+    "social":
+    {
+        "I070": {
+            "name": "简易漂流瓶",
+            "shop": "社交商店",
+            "price": 10,
+            "description": "一个简易的漂流瓶，适合写下简短的留言。",
+            "pre": {},
+            "buff": {
+                "probability":"raise 30%"
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 5,
+            "remaining_usage": 5
+        },
+        "I071": {
+            "name": "普通漂流瓶",
+            "shop": "社交商店",
+            "price": 15,
+            "description": "一般常见的漂流瓶，适合写下各种留言。",
+            "pre": {},
+            "buff": {
+                "probability":"raise 50%"
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 5,
+            "remaining_usage": 5
+        },
+        "I072": {
+            "name": "高级漂流瓶",
+            "shop": "社交商店",
+            "price": 30,
+            "description": "质量较高的漂流瓶，能够吸引更多的关注。",
+            "pre": {},
+            "buff": {
+                "probability":"raise 70%"
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 5,
+            "remaining_usage": 5
+        },
+        "I073": {
+            "name": "简易留言板",
+            "shop": "社交商店",
+            "price": 10,
+            "description": "一个简易的留言板，适合写下简短的留言。",
+            "pre": {},
+            "buff": "字数限制在20字。",
+            "unique": false,
+            "acquired": false,
+            "max_usage": -1,
+            "remaining_usage": -1
+        },
+        "I074": {
+            "name": "普通留言板",
+            "shop": "社交商店",
+            "price": 15,
+            "description": "一般常见的留言板，适合写下各种留言。",
+            "pre": {},
+            "buff": "字数限制在50字。",
+            "unique": false,
+            "acquired": false,
+            "max_usage": -1,
+            "remaining_usage": -1
+        },
+        "I075": {
+            "name": "高级留言板",
+            "shop": "社交商店",
+            "price": 30,
+            "description": "质量较高的留言板，能够吸引更多的关注。",
+            "pre": {},
+            "buff": "字数限制在100字。",
+            "unique": false,
+            "acquired": false,
+            "max_usage": -1,
+            "remaining_usage": -1
+        },
+        "I076": {
+            "name": "签到提醒小助手",
+            "shop": "社交商店",
+            "price": 25,
+            "description": "可设置每日签到提醒，不再错过每日奖励。",
+            "pre": {},
+            "buff": "每日签到成功后，奖励额外增加。",
+            "unique": false,
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        }
+    },
+    "other":
+    {
+        "I021":
+        {  
+            "name": "普通透明雨伞",  
+            "shop": "积分商店",  
+            "price": 30,  
+            "description": "大头大头，下雨不愁，别人有大头，我有伞~",
+            "pre": {
+                "weather":"雨天"
+            },  
+            "buff": {
+                "result":1
+            },
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        }
+    }
+}
