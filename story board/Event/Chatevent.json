@@ -1,0 +1,276 @@
+{
+  "Message board": {
+    "C000": {
+      "board_Theme ": "学术交流",
+      "board_founder": "李莉莉",
+      "description": "求软件工程历年卷，qwp",
+      "time": "2023-03-10",
+      "reply_count": 5,
+      "reply_content": {
+        "content1": "同求",
+        "content2": "同求+1",
+        "content3": "蹲",
+        "content4": "私q12345678",
+        "content5": "同蹲"
+      },
+      "Attention heat": 100 //被关注热度
+    },
+    "C001": {
+      "board_Theme ": "校园新闻",
+      "board_founder": "林贝贝",
+      "description": "周三下午，不三不四湖有猫协活动，欢迎来玩！",
+      "time": "2023-03-09",
+      "reply_count": 4,
+      "reply_content": {
+        "content1": "有明信片吗？",
+        "content2": "啊，有约了，想来",
+        "content3": "下次活动什么时候",
+        "content4": "有朋友一起吗"
+      },
+      "Attention heat": 88
+    },
+    "C002": {
+      "board_Theme ": "兴趣联盟",
+      "board_founder": "陌生人",
+      "description": "东门的街舞社招人，一课时50r,有意私。",
+      "time": "2023-03-11",
+      "reply_count": 3,
+      "reply_content": {
+        "content1": "有拼课的朋友吗",
+        "content2": "师大的可以报吗",
+        "content3": "菜菜，捞捞"
+      },
+      "Attention heat": 70
+    },
+    "C003": {
+      "board_Theme ": "生活服务",
+      "board_founder": "DD",
+      "description": "有在东三捡到pencil的朋友吗？请奶茶",
+      "time": "2023-03-8",
+      "reply_count": 2,
+      "reply_content": {
+        "content1": "无，下一个",
+        "content2": "建议查监控"
+        
+      },
+      "Attention heat": 50
+    },
+    "C004": {
+      "board_Theme ": "杂项",
+      "board_founder": "捞个人",
+      "description": "潮汕三日游，2等1",
+      "time": "2023-03-5",
+      "reply_count": 1,
+      "reply_content": {
+        "content1": "有大致预算吗"
+      },
+      "Attention heat": 22
+    }
+  },
+
+  "Bottle": {
+    "C100": {
+      "bottle_name ": "梦魇",
+      "bottle_type": "娃哈哈AD钙奶瓶",
+      "description": "是噩梦，别看",
+      "content": "好像影子慢慢接近我，它的形态模糊不清，仿佛是从地狱深渊中爬出来的恶灵。我感到它的目光紧紧地盯着我的身体，仿佛要将我吞噬。我感到自己的身体开始颤抖，无法控制地颤抖。",
+      "pick_times": "2"
+    },
+    "C101": {
+      "bottle_name ": "来了就看看呗",
+      "bottle_type": "宠物小精灵瓶",
+      "description": "四海皆兄弟，加个好友诶",
+      "content": "瑶妹一枚，急求野王",
+      "pick_times": "1"
+    },
+    "C102": {
+      "bottle_name ": "悲伤的一天",
+      "bottle_type": "安眠药瓶",
+      "description": "轮倒霉蛋的一天",
+      "content": "今天真是倒霉透顶，事事都不顺心。希望明天能够好转。",
+      "pick_times": "2"
+    },
+    "C103": {
+      "bottle_name ": "发财了",
+      "bottle_type": "镶金的矿泉水瓶",
+      "description": "爷，就是开心",
+      "content": "彩票中了1000万，诶嘿",
+      "pick_times": "2"
+    },
+    "C104": {
+      "bottle_name ": "再当舔狗就是傻X",
+      "bottle_type": "莫洛托夫鸡尾酒瓶",
+      "description": "",
+      "content": "拒绝舔狗，从我做起。这句话送给所有正在当舔狗或者曾经当过舔狗的人。",
+      "pick_times": "1"
+    }
+
+
+
+
+
+  },
+
+  "Public Event": {
+    "C201": {
+      "title": "校庆",
+      "description": "福州大学65周年校庆日，许多校友回校看望母校",
+      "date": "2023-10-28",
+      "place": "school",
+      "label": "Celebration",
+      "odds": 1,
+      "count": 1,
+      "judge": "LUC",
+      "diff": 10,
+      "result": 1,
+      "success": "校庆日，学校停课了，还给你发了100餐券",
+      "failure": "校庆日，学校停课了，但是让你去做志愿者",
+      "change": {
+        "INT": 0,
+        "CON": 2,
+        "WIL": 1,
+        "LUC": 5
+      },
+      "energy": -2,
+      "mood": 20,
+      "Participant_ID": "",
+      "Participant_awar": "100元餐券",
+      "Participation_penalty": { "CON": -10 }
+    },
+
+    "C202": {
+      "title": "运动会",
+      "description": "学校举办了一场盛大的运动会，各种运动项目都有",
+      "date": "2023-11-04",
+      "place": "school操场",
+      "label": "Sports Event",
+      "odds": 0.3,
+      "count": 1,
+      "judge": "WIL",
+      "diff": 5,
+      "result": 1,
+      "success": "你在运动会上表现出色，获得了不少奖项，还得到了体育用品大礼包",
+      "failure": "你在运动会上表现不佳，没有获得任何奖项，但是还是得到了一份安慰奖品",
+      "change": {
+        "INT": 0,
+        "CON": 1,
+        "WIL": 2,
+        "LUC": 3
+      },
+      "energy": -1,
+      "mood": 15,
+      "Participant_ID": "",
+      "Participant_awar": "体育用品大礼包",
+      "Participation_penalty": { "WIL": -5 }
+    },
+
+    "C203": {
+      "title": "文艺晚会",
+      "description": "学校举办了一场文艺晚会，各种表演都有",
+      "date": "2023-11-18",
+      "place": "学校礼堂",
+      "label": "Art Gala",
+      "odds": 0.3,
+      "count": 1,
+      "judge": "WIL",
+      "diff": 7,
+      "result": 1,
+      "success": "你在文艺晚会上表演出色，赢得了观众的热烈掌声，还得到了一个精美的礼品",
+      "failure": "你在文艺晚会上表演不佳，观众反应一般，但是还是得到了一份参与奖品",
+      "change": {
+        "INT": 0,
+        "CON": 1,
+        "WIL": 2,
+        "LUC": 4
+      },
+      "energy": -2,
+      "mood": 18,
+      "Participant_ID": "",
+      "Participant_awar": "精美礼品",
+      "Participation_penalty": { "WIL": -7 }
+    },
+
+    "C204": {
+      "title": "学术论坛",
+      "description": "学校举办了一场学术论坛，各种专业的研究都有",
+      "date": "2023-12-07",
+      "place": "学术报告厅",
+      "label": "Academic Forum",
+      "odds": 0.5,
+      "count": 1,
+      "judge": "LUC",
+      "diff": 8,
+      "result": 1,
+      "success": "你在学术论坛上发表了一篇高质量的论文，引起了专家的关注，还得到了一个荣誉证书",
+      "failure": "你在学术论坛上发表的论文质量一般，没有引起太多关注，但是还是得到了一份参与奖品",
+      "change": {
+        "INT": 1,
+        "CON": 0,
+        "WIL": -1,
+        "LUC": 2
+      },
+      "energy": -3,
+      "mood": 12,
+      "Participant_ID": "",
+      "Participant_awar": "荣誉证书",
+      "Participation_penalty": { "LUC": -10 }
+    },
+
+    "C205": {
+      "title": "校园清洁日",
+      "description": "全校师生一起参与校园清洁活动",
+      "date": "2023-03-01",
+      "place": "school",
+      "label": "Cleaning Day",
+      "odds": 0.5,
+      "count": 1,
+      "judge": "LUC",
+      "diff": 10,
+      "result": 1,
+      "success": "你积极参与校园清洁活动，为营造更加整洁的校园环境做出了贡献，得到了一份特别的证书",
+      "failure": "你没有积极参与校园清洁活动，但是还是得到了一份参与奖品",
+      "change": {
+        "INT": 0,
+        "CON": 1,
+        "WIL": -2,
+        "LUC": 3
+      },
+      "energy": -4,
+      "mood": 25,
+      "Participant_ID": "",
+      "Participant_awar": "特别的证书",
+      "Participation_penalty": { "WIL": -10 }
+    },
+
+    "C206": {
+      "title": "慈善义卖活动",
+      "description": "学校组织了一场慈善义卖活动，筹集善款帮助需要帮助的人",
+      "date": "2023-04-15",
+      "place": "学校广场",
+      "label": "Charity Bazaar",
+      "odds": 0.3,
+      "count": 1,
+      "judge": "LUC",
+      "diff": 15,
+      "result": 1,
+      "success": "你慈善义卖活动中表现出色，筹集到了很多善款，为帮助需要帮助的人做出了贡献，得到了一个慈善大使的称号",
+      "failure": "你在慈善义卖活动中表现一般，但是还是得到了一份参与奖品",
+      "change": {
+        "INT": 0,
+        "CON": -1,
+        "WIL": 3,
+        "LUC": 4
+      },
+      "energy": -5,
+      "mood": 30,
+      "Participant_ID": "",
+      "Participant_awar": "慈善大使的称号",
+      "Participation_penalty": { "CON": -10 }
+    }
+
+
+
+
+
+    }
+  }
