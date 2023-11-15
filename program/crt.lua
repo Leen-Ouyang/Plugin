@@ -122,14 +122,15 @@ end
 
 function getChange(msg)
     change=msg.fromMsg
+    local userQQ=msg.fromQQ
     if (change == "y") then
         return config.msg.ask_name
     elseif (change == "n") then
-        saveInfo()
+        saveInfo(userQQ)
     end
 end
 
-function saveInfo()
+function saveInfo(userQQ)
     local information = {
         [userQQ]={
             Info = {
