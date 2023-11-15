@@ -83,10 +83,10 @@ function getJob(msg)
 end
 
 function printInfo(int,con,wil,luc)
-    config.msg.quaility_info.int = int
-    config.msg.quaility_info.con = con
-    config.msg.quaility_info.wil = wil
-    config.msg.quaility_info.luc = luc
+    config.msg.quaility_info = config.msg.quaility_info:gsub("{int}", int)
+    config.msg.quaility_info = config.msg.quaility_info:gsub("{con}", con)
+    config.msg.quaility_info = config.msg.quaility_info:gsub("{wil}", wil)
+    config.msg.quaility_info = config.msg.quaility_info:gsub("{luc}", luc)
     return config.msg.quaility_info
 end
 
