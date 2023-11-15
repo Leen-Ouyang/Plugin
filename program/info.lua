@@ -15,6 +15,9 @@ end
 
 function getInformation(msg)
     local QQ=tostring(msg.fromQQ)
+    if (players[QQ]==nil) then 
+        return "未创建角色，请先创建角色「crt」"
+    end
     local name = players[QQ]["Info"]["Nickname"]
     local gender = players[QQ]["Info"]["Gender"]
     local job = players[QQ]["Info"]["Job"]

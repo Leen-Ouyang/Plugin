@@ -16,6 +16,9 @@ end
 
 function viewPoint(msg)
     local QQ=tostring(msg.fromQQ)
+    if (players[QQ]==nil) then 
+        return "未创建角色，请先创建角色「crt」"
+    end
     local credit = players[QQ]["Mainline"]["credit"]
     local rank = players[QQ]["Mainline"]["rank"]
     config.msg.point_info = config.msg.record:gsub("{credit}", credit)

@@ -24,6 +24,9 @@ temp="temp.json"
 
 function sign(msg)
     local QQ=tostring(msg.fromQQ)
+    if (players[QQ]==nil) then 
+        return "未创建角色，请先创建角色「crt」"
+    end
     local last_sign=temps[QQ][last_sign]
     local last_year = last_sign.year
     local last_month = last_sign.month

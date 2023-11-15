@@ -6,6 +6,6 @@ config = {
 }
 msg_order = {}
 msg_order[go] = "Eventmenu"
-function Eventmenu()
+function Eventmenu(msg)
     return config.msg.eventmenu
 end
