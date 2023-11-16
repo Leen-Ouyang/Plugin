@@ -6,6 +6,7 @@ config:
   BannedBanInviter: 1
   KickedBanInviter: 1
   AllowStranger: 2
+  ListenSpam: 0
 clock:
   - moment: 11:45
     task: clear
