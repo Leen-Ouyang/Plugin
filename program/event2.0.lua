@@ -242,6 +242,7 @@ function do_exam(msg)
         return config.msg.exam_fail;
     else
         player[QQ]["Mainline"]["Semester"]=player[QQ]["Mainline"]["Semester"]+1
+        player[QQ]["Mainline"]["credit"]=0
         local s = Semester[player[QQ]["Mainline"]["Semester"]]["description"].."\n"..Semester[player[QQ]["Mainline"]["Semester"]]["fixes"].."\n"
         return s;
     end
