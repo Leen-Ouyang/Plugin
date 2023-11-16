@@ -20,11 +20,11 @@ function viewBag(msg)
     if (players[QQ]==nil) then 
         return "未创建角色，请先创建角色「创建新角色」"
     end
-    local point = players[QQ]["points"]
+    --[[ local point = players[QQ]["points"]
     local items = players[QQ]["Bag"]["item"]
     local num = players[QQ]["Bag"]["sum"]
     config.msg.item = config.msg.sign_success:gsub("{point}", point)
     config.msg.item = config.msg.sign_success:gsub("{num}", num)
-    config.msg.item = config.msg.sign_success:gsub("{items}", items)
+    config.msg.item = config.msg.sign_success:gsub("{items}", items) ]]
     return config.msg.item
 end

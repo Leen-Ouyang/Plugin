@@ -205,7 +205,7 @@ function createPlayer(msg)
     local information = {
         Info = {
             Nickname = "",
-            Introduction = "",
+            Introduction = " ",
             Gender = "",
             Job = ""
         },
