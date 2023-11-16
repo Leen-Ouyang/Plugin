@@ -1,0 +1,448 @@
+--关键词
+search_event_order = "事件查看"
+execute_day_order = "执行每周事件"
+execute_week_order = "执行每日事件"
+
+--插件配置
+Event = "Event" --事件json文件夹读取
+Player = "player" --玩家json文件夹读取
+Temp = "temp" --temp json文件夹读取
+semester = "Semester"
+json = require("json")
+
+config = {
+    min_credit = 15,  --最少多少分可以考试
+    exam_chance = 60, --考试成功概率
+    msg = {
+        --回复词
+        exam_fail = "叫你不好好复习，准备补考吧\n",
+        error_string = "参数类型错误\n",
+    }
+}
+
+-------------分割线--------------
+msg_order = {}
+msg_order[search_event_order] = "search_event"
+msg_order[execute_day_order] = "execute_day"
+msg_order[execute_week_order] = "execute_week"
+
+data1 = getSelfData(Event)
+event = data1:get(nil,{})
+if(event == nil)then
+    event = {}
+end
+data2 = getSelfData(Player)
+player = data2:get(nil,{})
+if(player == nil)then
+    player = {}
+end
+data3 = getSelfData(Temp)
+
+temp = data3:get(nil,{})
+if(temp == nil)then
+    temp = {}
+end
+
+data4 = getSelfData(semester);
+Semester = data4:get(nil,{})
+if(Semester == nil)then
+    Semester = {}
+end
+
+-----判断是否在同一天----
+function isSameDay(time1, time2)
+    -- 使用 os.date 将时间戳转换为表格式
+    local t1 = os.date("*t", time1)
+    local t2 = os.date("*t", time2)
+
+    -- 比较年、月、日是否相同
+    return t1.year == t2.year and t1.month == t2.month and t1.day == t2.day
+end
+
+
+local function show(playername, changetype, num)
+    if type(playername) == "string" and type(changetype) == "string" and type(num) == "number" then
+        local message = ""
+        if num < 0 then
+            message = playername .. "的" .. changetype .. "减少了" .. (-num)
+        elseif num > 0 then
+            message = playername .. "的" .. changetype .. "增加了" .. num
+        else
+            message = playername .. "的" .. changetype .. "没有变化"
+        end
+        return msg;
+    else
+        return config.msg.error_string;
+    end
+end
+
+
+
+----------生成下一个每日事件------------
+local function generate_day(msg)
+    --如果下一个每日事件已经过期了或者已经被执行，清空temp里对应uid事件，重新生成
+    local QQ = msg.fromQQ
+    local time = os.time()
+
+    if (temp[QQ].next_daily.generate_time ~= nil) and (not isSameDay(time, temp[QQ].next_daily.generate_time)) then
+        table.clear(temp[QQ].daily_done)
+        temp[QQ].next_daily.generate_time = nil
+        temp[QQ].next_daily.num = nil
+        temp[QQ].next_daily.type = nil
+    elseif (temp[QQ].next_daily.generate_time == nil or isSameDay(time, temp[QQ].next_daily.generate_time)) then
+        -- 剩下的代码...
+        if(temp[QQ].next_daily.generate_time~=nil and temp[QQ].next_daily.type == "Daily") then--把上一次的存在里面
+            table.insert(temp[QQ].daily_done,temp[QQ].next_daily.num)
+        end
+        
+    end
+    
+    if(player[QQ]["Mainline"]["credit"]>min_credit)then--先判断学分够不够考试事件，够就进入考试事件
+        temp[QQ].next_daily.type = "Exam";
+        temp[QQ].next_daily.generate_time = time
+    else--如果分数还达不到考试阶段
+    
+        
+        local flag = 0
+        while ~flag do
+            math.randomseed(os.time()) -- 使用当前时间作为随机种子
+            local randomInt = math.random(100, 199)
+            -- 将整数转换为3位字符串
+            local formattedString = string.format("NO%03d", randomInt)
+            if(event["Daily"][formattedString][0].limit=="null")then
+                flag=1
+            end
+            local lastChar = string.sub(event["Daily"][formattedString][0]["limit"], -1)
+            local lastCharAsInt = tonumber(lastChar)
+            if(lastCharAsInt<=player[QQ]["Mainline"]["Semester"])then
+                flag=1
+            end
+        end
+        temp[QQ].next_daily.generate_time = time
+        temp[QQ].next_daily.num = formattedString
+        temp[QQ].next_daily.type = "Daily";
+    end
+
+end
+
+
+
+
+
+
+----------生成下一个每周事件------------
+local function generate_week(msg)
+    --如果下一个每周事件已经过期了或者已经被执行，清空temp里对应uid事件，重新生成
+    local time = os.time()
+    local QQ = msg.fromQQ
+
+    
+
+    if(temp[QQ].next_weekly.generate_time ~= nil) and (not isSameDay(time, temp[QQ].next_weekly.generate_time))then
+        table.clear(temp[QQ].weekly_done)
+        temp[QQ].next_weekly.generate_time = nil
+        temp[QQ].next_weekly.num = nil
+        temp[QQ].next_weekly.type = nil;
+    elseif(temp[QQ].next_weekly.generate_time==nil or isSameDay(time,temp[QQ].next_weekly.generate_time))then 
+        if temp[QQ].next_weekly.generate_time~=nil and temp[QQ].next_weekly.type == "Weekly" then--把上一次的存在里
+            table.insert(temp[QQ].weekly_done,temp[QQ].next_weekly.num)
+        end
+    end
+
+    if(player[QQ]["Mainline"]["credit"]>min_credit)then--先判断学分够不够考试事件，够就进入考试事件
+        temp[QQ].next_weekly.type = "Exam";
+        temp[QQ].next_weekly.generate_time = time  
+    else    --如果分数还达不到考试阶段
+    
+        
+        local flag = 0
+        while ~flag do
+            math.randomseed(os.time()) -- 使用当前时间作为随机种子
+            local randomInt = math.random(100, 199)
+            -- 将整数转换为3位字符串
+            local formattedString = string.format("NO%03d", randomInt)
+            if(event["Weekly"][formattedString][0].limit=="null")then
+                flag=1
+            end
+            local lastChar = string.sub(event["Weekly"][formattedString][0]["limit"], -1)
+            local lastCharAsInt = tonumber(lastChar)
+            if(lastCharAsInt<=player[QQ]["Mainline"]["Semester"])then
+                flag=1
+            end
+        end
+        
+        temp[QQ].next_weekly.generate_time = time
+        temp[QQ].next_weekly.num = formattedString
+        temp[QQ].next_weekly.type = "Weekly";
+    end
+
+end
+
+
+
+-----------查找事件功能-----------
+function search_event(msg)
+    local QQ = msg.fromQQ
+    if(temp[QQ].next_daily.generate_time==nil)then
+        generate_day(msg);
+    end
+    if(temp[QQ].next_weekly.generate_time==nil)then
+        generate_week(msg);
+    end
+    s = "今日已完成事件：\n"
+    --查看已完成事件
+    s = s.."  每日事件：\n"
+    for i = 1, #temp[QQ].daily_done do 
+        s = s.."    "..event["Daily"][temp[QQ].daily_done[i]].."\n"
+    end
+    s = s.."  每周事件：\n"
+    for i = 1, #temp[QQ].weekly_done do 
+        s = s.."    "..event["Weekly"][temp[QQ].daily_done[i]].."\n"
+    end
+
+    if(temp[QQ].next_daily.type=="Exam")then 
+        temp[QQ].next_weekly.generate_time = temp[QQ].next_daily.generate_time
+        temp[QQ].next_weekly.num = temp[QQ].next_daily.num
+        temp[QQ].next_weekly.type = temp[QQ].next_daily.type
+    end
+    if(temp[QQ].next_weekly.type=="Exam")then 
+        temp[QQ].next_daily.generate_time = temp[QQ].next_weekly.generate_time
+        temp[QQ].next_daily.num = temp[QQ].next_weekly.num
+        temp[QQ].next_daily.type = temp[QQ].next_weekly.type
+    end
+
+
+    --查看下一项每日事件，以及相关具体信息
+    if(temp[QQ].next_daily.type=="Daily")then
+        s = s.."  下一项每日事件："..event["Daily"][temp[QQ].next_daily.num].."\n"
+    end
+    --查看下一项每周事件，以及相关具体信息
+    if(temp[QQ].next_weekly.type=="Weekly")then
+        s = s.."  下一项每周事件："..event["Weekly"][temp[QQ].next_weekly.num].."\n"
+    end
+    --考试的话
+    if(temp[QQ].next_daily.type=="Exam")then 
+        s = s.."  该准备考试了！".."\n"
+    end
+
+
+    data1:set(event)
+    data2:set(player)
+    data3:set(temp)
+    data4:set(Semester)
+    return s
+end
+
+function do_exam(msg)
+    local QQ = msg.fromQQ
+    math.randomseed(os.time()) -- 使用当前时间作为随机种子
+    local randomInt = math.random(0,100);
+
+    if(randomInt>exam_chance)then
+        return config.msg.exam_fail;
+    else
+        player[QQ]["Mainline"]["Semester"]=player[QQ]["Mainline"]["Semester"]+1
+        player[QQ]["Mainline"]["credit"]=0
+        local s = Semester[player[QQ]["Mainline"]["Semester"]]["description"].."\n"..Semester[player[QQ]["Mainline"]["Semester"]]["fixes"].."\n"
+        return s;
+    end
+end
+
+
+---------执行每日事件功能---------
+function execute_day(msg)
+
+    --判断是否触发随机事件
+    local QQ = msg.fromQQ
+    local time = os.time()
+    if(temp[QQ].next_weekly.type=="Exam")then 
+        temp[QQ].next_daily.generate_time = temp[QQ].next_weekly.generate_time
+        temp[QQ].next_daily.num = temp[QQ].next_weekly.num
+        temp[QQ].next_daily.type = temp[QQ].next_weekly.type
+        local s = do_exam(msg)
+        data1:set(event)
+        data2:set(player)
+        data3:set(temp)
+        data4:set(Semester)
+        return s
+    end
+    local chance = player[QQ]["MainAtt"]["LUC"]-10;
+    math.randomseed(os.time()) -- 使用当前时间作为随机种子
+    local randomInt = math.random(0,100);
+    s = ""
+    if(randomInt>chance)then --正常执行
+        s = s.."触发随机事件\n"
+        local flag = 0
+        while ~flag do
+            math.randomseed(os.time()) -- 使用当前时间作为随机种子
+            local randomInt = math.random(200,399)
+            -- 将整数转换为3位字符串
+            local formattedString = string.format("NO%03d", randomInt)
+            if(event["Weekly"][formattedString][0].limit=="null")then
+                flag=1
+            end
+            local lastChar = string.sub(event["Weekly"][formattedString][0]["limit"], -1)
+            local lastCharAsInt = tonumber(lastChar)
+            if(lastCharAsInt<=player[QQ]["Mainline"]["Semester"])then
+                flag=1
+            end
+        end
+        temp[QQ].next_daily.generate_time = time
+        temp[QQ].next_daily.num = formattedString
+        temp[QQ].next_daily.type = "Spec";
+    end
+
+    local num = temp[QQ][next_daily][num]
+    local type = temp[QQ][next_daily]["type"]
+    --判断事件是否执行成功
+    local cnt = #event[type][num];
+    math.randomseed(os.time()) -- 使用当前时间作为随机种子
+    local randomInt = math.random(1,cnt)
+
+    local odd = event[type][num][randomInt]["diff"];
+
+    local random = math.random(0,20);
+    local judge = event[type][num][randomInt]["judge"];
+    if(player[QQ]["MainAtt"][judge]-10+random > odd)then
+        s = s..event[type][num][randomInt]["success"].."\n"
+        for key, value in pairs(event[type][num][randomInt]["change"]) do
+            s = s..show("玩家",key,value).."\n"
+            if key == "point" then 
+                player[QQ]["points"]=player[QQ]["points"]+value;
+            elseif key == "credit" then 
+                player[QQ]["Mainline"]["credit"]=player[QQ]["Mainline"]["credit"]+value
+            elseif key == "CON" or key == "WIL" or key == "LUC" or key == "INT" then
+                player[QQ]["MainAtt"][key]=player[QQ]["MainAtt"][key]+value
+            else
+                player[QQ]["Count"][key]=player[QQ]["Count"][key]+value
+            end
+        end
+    else
+        s = s..event[type][num][randomInt]["failure"].."\n"
+        player[QQ]["DailyAtt"]["energy"]=player[QQ]["DailyAtt"]["energy"]+event[type][num][randomInt]["energy"]
+        s = s..show("玩家","energy",event[type][num][randomInt]["energy"])..'\n';
+        player[QQ]["DailyAtt"]["mood"]=player[QQ]["DailyAtt"]["mood"]+event[type][num][randomInt]["mood"]
+        s = s..show("玩家","mood",event[type][num][randomInt]["mood"])..'\n';    
+        data1:set(event)
+        data2:set(player)
+        data3:set(temp)
+        data4:set(Semester)
+        return s
+    end
+
+
+
+    --更新参数，维护数据库
+    player[QQ]["DailyAtt"]["energy"]=player[QQ]["DailyAtt"]["energy"]+event[type][num][randomInt]["energy"]
+    s = s..show("玩家","energy",event[type][num][randomInt]["energy"])..'\n';
+    player[QQ]["DailyAtt"]["mood"]=player[QQ]["DailyAtt"]["mood"]+event[type][num][randomInt]["mood"]
+    s = s..show("玩家","mood",event[type][num][randomInt]["mood"])..'\n';
+
+    --生成下一个事件
+    generate_day(msg)
+    data1:set(event)
+    data2:set(player)
+    data3:set(temp)
+    data4:set(Semester)
+    return s
+    
+end
+
+
+---------执行每周事件功能---------
+function execute_week(msg)
+    --判断是否触发随机事件
+    local QQ = msg.fromQQ
+    local time = os.time()
+    if(temp[QQ].next_daily.type=="Exam")then 
+        temp[QQ].next_weekly.generate_time = temp[QQ].next_daily.generate_time
+        temp[QQ].next_weekly.num = temp[QQ].next_daily.num
+        temp[QQ].next_weekly.type = temp[QQ].next_daily.type
+        local s = do_exam(msg)
+        data1:set(event)
+        data2:set(player)
+        data3:set(temp)
+        return s
+    end
+    local chance = player[QQ]["MainAtt"]["LUC"]-10;
+    math.randomseed(os.time()) -- 使用当前时间作为随机种子
+    local randomInt = math.random(0,100);
+    s = ""
+    if(randomInt>chance)then --正常执行
+        s = s.."触发随机事件\n"
+        local flag = 0
+        while ~flag do
+            math.randomseed(os.time()) -- 使用当前时间作为随机种子
+            local randomInt = math.random(200,399)
+            -- 将整数转换为3位字符串
+            local formattedString = string.format("NO%03d", randomInt)
+            if(event["Weekly"][formattedString][0].limit=="null")then
+                flag=1
+            end
+            local lastChar = string.sub(event["Spec"][formattedString][0]["limit"], -1)
+            local lastCharAsInt = tonumber(lastChar)
+            if(lastCharAsInt<=player[QQ]["Mainline"]["Semester"])then
+                flag=1
+            end
+        end
+        temp[QQ].next_weekly.generate_time = time
+        temp[QQ].next_weekly.num = formattedString
+        temp[QQ].next_weekly.type = "Spec";
+    end
+
+    local num = temp[QQ]["next_weekly"][num]
+    local type = temp[QQ]["next_weekly"]["type"]
+    --判断事件是否执行成功
+    local cnt = #event[type][num];
+    math.randomseed(os.time()) -- 使用当前时间作为随机种子
+    local randomInt = math.random(1,cnt)
+
+    local odd = event[type][num][randomInt]["diff"];
+
+    local random = math.random(0,20);
+    local judge = event[type][num][randomInt]["judge"];
+    if(player[QQ]["MainAtt"][judge]-10+random > odd)then
+        s = s..event[type][num][randomInt]["success"].."\n"
+        for key, value in pairs(event[type][num][randomInt]["change"]) do
+            s = s..show("玩家",key,value).."\n"
+            if key == "point" then 
+                player[QQ]["points"]=player[QQ]["points"]+value;
+            elseif key == "credit" then 
+                player[QQ]["Mainline"]["credit"]=player[QQ]["Mainline"]["credit"]+value
+            elseif key == "CON" or key == "WIL" or key == "LUC" or key == "INT" then
+                player[QQ]["MainAtt"][key]=player[QQ]["MainAtt"][key]+value
+            else
+                player[QQ]["Count"][key]=player[QQ]["Count"][key]+value
+            end
+        end
+    else 
+        s = s..event[type][num][randomInt]["failure"].."\n"
+        s = s.."以下玩家属性发生变化：\n"
+        player[QQ]["DailyAtt"]["energy"]=player[QQ]["DailyAtt"]["energy"]+event[type][num][randomInt]["energy"]
+        s = s..show("玩家","energy",event[type][num][randomInt]["energy"])..'\n';
+        player[QQ]["DailyAtt"]["mood"]=player[QQ]["DailyAtt"]["mood"]+event[type][num][randomInt]["mood"]
+        s = s..show("玩家","mood",event[type][num][randomInt]["mood"])..'\n';
+        data1:set(event)
+        data2:set(player)
+        data3:set(temp)
+        data4:set(Semester)
+        return s;
+    end
+
+
+
+    --更新参数，维护数据库
+    player[QQ]["DailyAtt"]["energy"]=player[QQ]["DailyAtt"]["energy"]+event[type][num][randomInt]["energy"]
+    s = s..show("玩家","energy",event[type][num][randomInt]["energy"])..'\n';
+    player[QQ]["DailyAtt"]["mood"]=player[QQ]["DailyAtt"]["mood"]+event[type][num][randomInt]["mood"]
+    s = s..show("玩家","mood",event[type][num][randomInt]["mood"])..'\n';
+
+    --生成下一个事件
+    generate_week(msg)
+    data1:set(event)
+    data2:set(player)
+    data3:set(temp)
+    data4:set(Semester)
+    return s;
+
+end
