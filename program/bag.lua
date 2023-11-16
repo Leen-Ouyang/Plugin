@@ -17,7 +17,7 @@ end
 
 function viewBag(msg)
     local QQ=tostring(msg.fromQQ)
-    if (players[QQ]==nil) then 
+    if (players[QQ]["Info"]["Nickname"]==nil) then 
         return "未创建角色，请先创建角色「创建新角色」"
     end
     --[[ local point = players[QQ]["points"]

@@ -17,7 +17,7 @@ end
 function updateIntro(msg)
     local introduction = string.match(msg.fromMsg,"[%s]*(.-)[%s]*$",#mod+1)
     local QQ=tostring(msg.fromQQ)
-    if (players[QQ]==nil) then 
+    if (players[QQ]["Info"]["Nickname"]==nil) then 
         return "未创建角色，请先创建角色「创建新角色」"
     end
     players[QQ]["Info"]["Introduction"]=introduction

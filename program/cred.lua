@@ -16,7 +16,7 @@ end
 
 function viewPoint(msg)
     local QQ=tostring(msg.fromQQ)
-    if (players[QQ]==nil) then 
+    if (players[QQ]["Info"]["Nickname"]==nil) then 
         return "未创建角色，请先创建角色「crt」"
     end
     local credit = players[QQ]["Mainline"]["credit"]

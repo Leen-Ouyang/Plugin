@@ -132,6 +132,9 @@ function setQuality(msg)
     wil=tonumber(values[3])
     luc=tonumber(values[4])
     sum=int+con+luc+wil
+    if (sum>48) then
+        return "属性值之和超过48，请重新输入「分配+智力值+体质值+意志值+运气值」或选择随机分配「随机」"
+    end
     player_information="player.json"
     data = getSelfData(player_information)
     players = data:get(nil, {})
@@ -203,8 +206,8 @@ function createPlayer(msg)
     if (players[tostring(userQQ)]) then
         if (tonumber(players[tostring(userQQ)]["Mainline"]["FinishTimes"])>0) then
             achievement=players[tostring(userQQ)]["Achievement"]
-            table.remove (players, userQQ)
         end
+        table.remove (players, userQQ)
     end
     local information = {
         Info = {
