@@ -21,7 +21,7 @@ msg_order[no]="getChange"
 
 config = {
     msg = {
-        begin="{currentYear}年{currentMonth}月{currentDay}日             晴\n今天是进入大学的第一天,和其他普通的大学生一样,我对大学生活充满了好奇。我路过操场时不经意间瞥见几个身强力壮的学长,低头看着自己高中时被跑操捶打出来的健壮身躯,历经高考结束后的疯狂摸鱼而变得瘦弱,我开始担忧起自己的大学生活状态。此刻,“脆脆杀”和“超级大学人”的选择,摆在了我的面前。",
+        begin="{currentYear}年{currentMonth}月{currentDay}日             晴\n    今天是进入大学的第一天,和其他普通的大学生一样,我对大学生活充满了好奇。我路过操场时不经意间瞥见几个身强力壮的学长,低头看着自己高中时被跑操捶打出来的健壮身躯,历经高考结束后的疯狂摸鱼而变得瘦弱,我开始担忧起自己的大学生活状态。此刻,“脆脆杀”和“超级大学人”的选择,摆在了我的面前。",
         intro="╔                                 ╗\n      脆脆杀的大学生活\n╚                                 ╝\n您好，我是大学的学生智能AI，现在请您配合我的工作，填写学生信息。",
         ask_name="请给我您的姓名「姓名+玩家姓名」" ,
         ask_gender="请选择性别「男/女」" ,
@@ -41,24 +41,27 @@ if(players == nil)then
     players = {}
 end
 
-function begin()
-    local currentTime = os.date("*t")
-    local currentYear = currentTime.year
-    config.msg.begin = config.msg.begin:gsub("{currentYear}", currentYear)
-    local currentMonth = currentTime.month
-    config.msg.begin = config.msg.begin:gsub("{currentTime}", currentTime)
-    local currentDay = currentTime.day
-    config.msg.begin = config.msg.begin:gsub("{currentDay}", currentDay)
-    return config.msg.begin
+temp="temp.json"
+temp_data = getSelfData(temp)
+temps = temp_data:get(nil,{})
+if(temps == nil)then
+    temps = {}
 end
 
-function introduce()
-    return config.msg.intro
-end
-
+--[[ nickname = nil
+gender = nil
+change = nil
+job = nil
+int=0
+con=0
+wil=0
+luc=0
+sum=0
+achievement = {}
+ ]]
 function getName(msg)
-    nickname = string.match(msg.fromMsg,"[%s]*(.-)[%s]*$",#setn+1)
-    return config.msg.ask_gender
+    nickname = string.match(msg.fromMsg,".*",#setn+1)
+    return nickname..config.msg.ask_gender
 end
 
 
@@ -68,7 +71,7 @@ function getGender(msg)
 end
 
 function getJob(msg)
-    local getjob = string.match(msg.fromMsg,"[%s]*(.-)[%s]*$",#setj+1)
+    local getjob = string.match(msg.fromMsg,"[%s]*(.-)$",#setj+1)
     if (getjob=="学生") then
         job="学生"
         return config.msg.ask_quality
@@ -78,23 +81,17 @@ function getJob(msg)
     end
 end
 
-function printInfo(int,con,wil,luc)
-    config.msg.quaility_info = config.msg.quaility_info:gsub("{int}", int)
-    config.msg.quaility_info = config.msg.quaility_info:gsub("{con}", con)
-    config.msg.quaility_info = config.msg.quaility_info:gsub("{wil}", wil)
-    config.msg.quaility_info = config.msg.quaility_info:gsub("{luc}", luc)
-    return config.msg.quaility_info
-end
-
-
 function randomQuality(msg)
     int=math.random(1, 6)+math.random(1, 6)+math.random(1, 6)
     con=math.random(1, 6)+math.random(1, 6)+math.random(1, 6)
     wil=math.random(1, 6)+math.random(1, 6)+math.random(1, 6)
     luc=math.random(1, 6)+math.random(1, 6)+math.random(1, 6)
     sum=int+con+luc+wil
-    printInfo(int,con,wil,luc)
-    return config.msg.ask_change
+    config.msg.quaility_info = config.msg.quaility_info:gsub("{int}", int)
+    config.msg.quaility_info = config.msg.quaility_info:gsub("{con}", con)
+    config.msg.quaility_info = config.msg.quaility_info:gsub("{wil}", wil)
+    config.msg.quaility_info = config.msg.quaility_info:gsub("{luc}", luc)
+    return config.msg.quaility_info.."\n"..config.msg.ask_change
 end
 
 function setQuality(msg)
@@ -108,12 +105,11 @@ function setQuality(msg)
     wil=tonumber(values[3])
     luc=tonumber(values[4])
     sum=int+con+luc+wil
-    printInfo(int,con,wil,luc)
-    return config.msg.ask_change
-end
- 
-function askChange()
-    return config.msg.ask_change
+    config.msg.quaility_info = config.msg.quaility_info:gsub("{int}", int)
+    config.msg.quaility_info = config.msg.quaility_info:gsub("{con}", con)
+    config.msg.quaility_info = config.msg.quaility_info:gsub("{wil}", wil)
+    config.msg.quaility_info = config.msg.quaility_info:gsub("{luc}", luc)
+    return config.msg.quaility_info.."\n"..config.msg.ask_change
 end
 
 function getChange(msg)
@@ -122,25 +118,19 @@ function getChange(msg)
     if (change == "否") then
         return config.msg.ask_name
     elseif (change == "是") then
-        saveInfo(userQQ)
-    end
-end
-
-function saveInfo(userQQ)
-    local information = {
-        [userQQ]={
+        local information = {
             Info = {
-                Nickname = nickname,
+                Nickname = "",
                 Introduction = "",
-                Gender = gender,
-                Job = job
+                Gender = "",
+                Job = ""
             },
             MainAtt = {
-                INT = int,
-                CON = con,
-                WIL = wil,
-                LUC = luc,
-                SUM=sum
+                INT = 0,
+                CON = 0,
+                WIL = 0,
+                LUC = 0,
+                SUM=0
             },
             DailyAtt = {
                 energy = 100,
@@ -150,8 +140,8 @@ function saveInfo(userQQ)
                 daily = {},
                 weekly = {},
                 spec = {}
-              },
-              Count = {
+                },
+                Count = {
                 daily = 0,
                 weekly = 0,
                 spec = 0,
@@ -164,14 +154,14 @@ function saveInfo(userQQ)
                 public = 0,
                 disturb = 0,
                 shop = 0
-              },
-              Mainline = {
+                },
+                Mainline = {
                 Semester = 1,
                 credit = 0,
                 rank = 0,
                 FinishTimes = 0
-              },
-              Bag = {
+                },
+                Bag = {
                 item = {},
                 study = 0,
                 sport = 0,
@@ -182,14 +172,40 @@ function saveInfo(userQQ)
                 fans = 0,
                 trophy = 0,
                 sum = 0
-              },
-            Achievement = achievement,
+                },
+            Achievement ={},
             points = 0
         }
-    }
-    table.insert(players,information)
-    data:set(players)
-    return config.msg.success
+        players[userQQ]=information
+        players[userQQ]["Info"]["Nickname"]=nickname
+        players[userQQ]["Info"]["Gender"]=gender
+        players[userQQ]["Info"]["Job"]=job
+        players[userQQ]["MainAtt"]["INT"]=int
+        players[userQQ]["MainAtt"]["CON"]=con
+        players[userQQ]["MainAtt"]["WIL"]=wil
+        players[userQQ]["MainAtt"]["LUC"]=luc
+        players[userQQ]["MainAtt"]["SUM"]=sum
+        players[userQQ]["Achievement"]=achievement
+        data:set(players)
+        local user_temp={
+            last_sign = "nil",  
+            daily_done = {},  
+            weekly_done = {},  
+            next_daily = {  
+                generate_time = "nil",  
+                num = "nil",  
+                type = "nil"  
+            },  
+            next_weekly = {  
+                generate_time = "nil",  
+                num = "nil",  
+                type = "nil"  
+            }
+        }
+        temps[userQQ]=user_temp
+        temp_data:set(temps)
+        return config.msg.success
+    end
 end
 
 function createPlayer(msg)
@@ -198,7 +214,6 @@ function createPlayer(msg)
     gender = nil
     change = nil
     job = nil
-    quaility = nil
     int=0
     con=0
     wil=0
@@ -211,7 +226,12 @@ function createPlayer(msg)
             table.remove (players, userQQ)
         end
     end
-    begin()
-    introduce()
-    return config.msg.ask_name
+    local currentTime = os.date("*t")
+    local currentYear = currentTime.year
+    config.msg.begin = config.msg.begin:gsub("{currentYear}", currentYear)
+    local currentMonth = currentTime.month
+    config.msg.begin = config.msg.begin:gsub("{currentMonth}", currentMonth)
+    local currentDay = currentTime.day
+    config.msg.begin = config.msg.begin:gsub("{currentDay}", currentDay)
+    return config.msg.begin.."\n\n"..config.msg.intro.."\n"..config.msg.ask_name
 end

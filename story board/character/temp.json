@@ -10,7 +10,7 @@
         },
         "next_weekly":{
             "generate_time" : "nil",
-            "num": "nil"
+            "num": "nil",
             "type":"nil"
         }
     }
