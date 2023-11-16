@@ -110,6 +110,8 @@ function randomQuality(msg)
     players[userQQ]["MainAtt"]["SUM"]=sum
     players[userQQ]["DailyAtt"]["energy"]=players[userQQ]["DailyAtt"]["energy"]+con
     players[userQQ]["DailyAtt"]["mood"]=players[userQQ]["DailyAtt"]["mood"]+wil
+    players[userQQ]["DailyAtt"]["energy_limit"]=players[userQQ]["DailyAtt"]["energy"]
+    players[userQQ]["DailyAtt"]["mood_limit"]=players[userQQ]["DailyAtt"]["mood"]
     data:set(players)
     config.msg.quaility_info = config.msg.quaility_info:gsub("{int}", int)
     config.msg.quaility_info = config.msg.quaility_info:gsub("{con}", con)
@@ -143,6 +145,8 @@ function setQuality(msg)
     players[userQQ]["MainAtt"]["SUM"]=sum
     players[userQQ]["DailyAtt"]["energy"]=players[userQQ]["DailyAtt"]["energy"]+con
     players[userQQ]["DailyAtt"]["mood"]=players[userQQ]["DailyAtt"]["mood"]+wil
+    players[userQQ]["DailyAtt"]["energy_limit"]=players[userQQ]["DailyAtt"]["energy"]
+    players[userQQ]["DailyAtt"]["mood_limit"]=players[userQQ]["DailyAtt"]["mood"]
     data:set(players)
     config.msg.quaility_info = config.msg.quaility_info:gsub("{int}", int)
     config.msg.quaility_info = config.msg.quaility_info:gsub("{con}", con)
@@ -217,6 +221,8 @@ function createPlayer(msg)
             SUM=0
         },
         DailyAtt = {
+            energy_limit = 100,
+            mood_limit = 100,
             energy = 100,
             mood = 100
         },
