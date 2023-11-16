@@ -134,28 +134,29 @@ function setQuality(msg)
     sum=int+con+luc+wil
     if (sum>48) then
         return "属性值之和超过48，请重新输入「分配+智力值+体质值+意志值+运气值」或选择随机分配「随机」"
+    else
+        player_information="player.json"
+        data = getSelfData(player_information)
+        players = data:get(nil, {})
+        if(players == nil)then
+            players = {}
+        end
+        players[userQQ]["MainAtt"]["INT"]=int
+        players[userQQ]["MainAtt"]["CON"]=con
+        players[userQQ]["MainAtt"]["WIL"]=wil
+        players[userQQ]["MainAtt"]["LUC"]=luc
+        players[userQQ]["MainAtt"]["SUM"]=sum
+        players[userQQ]["DailyAtt"]["energy"]=players[userQQ]["DailyAtt"]["energy"]+con
+        players[userQQ]["DailyAtt"]["mood"]=players[userQQ]["DailyAtt"]["mood"]+wil
+        players[userQQ]["DailyAtt"]["energy_limit"]=players[userQQ]["DailyAtt"]["energy"]
+        players[userQQ]["DailyAtt"]["mood_limit"]=players[userQQ]["DailyAtt"]["mood"]
+        data:set(players)
+        config.msg.quaility_info = config.msg.quaility_info:gsub("{int}", int)
+        config.msg.quaility_info = config.msg.quaility_info:gsub("{con}", con)
+        config.msg.quaility_info = config.msg.quaility_info:gsub("{wil}", wil)
+        config.msg.quaility_info = config.msg.quaility_info:gsub("{luc}", luc)
+        return config.msg.quaility_info.."\n"..config.msg.ask_change
     end
-    player_information="player.json"
-    data = getSelfData(player_information)
-    players = data:get(nil, {})
-    if(players == nil)then
-        players = {}
-    end
-    players[userQQ]["MainAtt"]["INT"]=int
-    players[userQQ]["MainAtt"]["CON"]=con
-    players[userQQ]["MainAtt"]["WIL"]=wil
-    players[userQQ]["MainAtt"]["LUC"]=luc
-    players[userQQ]["MainAtt"]["SUM"]=sum
-    players[userQQ]["DailyAtt"]["energy"]=players[userQQ]["DailyAtt"]["energy"]+con
-    players[userQQ]["DailyAtt"]["mood"]=players[userQQ]["DailyAtt"]["mood"]+wil
-    players[userQQ]["DailyAtt"]["energy_limit"]=players[userQQ]["DailyAtt"]["energy"]
-    players[userQQ]["DailyAtt"]["mood_limit"]=players[userQQ]["DailyAtt"]["mood"]
-    data:set(players)
-    config.msg.quaility_info = config.msg.quaility_info:gsub("{int}", int)
-    config.msg.quaility_info = config.msg.quaility_info:gsub("{con}", con)
-    config.msg.quaility_info = config.msg.quaility_info:gsub("{wil}", wil)
-    config.msg.quaility_info = config.msg.quaility_info:gsub("{luc}", luc)
-    return config.msg.quaility_info.."\n"..config.msg.ask_change
 end
 
 function getChange(msg)

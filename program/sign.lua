@@ -27,17 +27,33 @@ function sign(msg)
     if (players[QQ]["Info"]["Nickname"]==nil) then 
         return "未创建角色，请先创建角色「请先创建角色」"
     end
-    local last_sign=temps[QQ][last_sign]
-    local last_year = last_sign.year
-    local last_month = last_sign.month
-    local last_day = last_sign.day
-    local time = os.date("*t")
-    local year = time.year
-    local month = time.month
-    local day = time.day
-    if (year == last_year and month == last_month and day == last_day) then
-        return config.msg.already
+    if (temps[QQ][last_sign]) then
+        local last_sign=temps[QQ][last_sign]
+        local last_year = last_sign.year
+        local last_month = last_sign.month
+        local last_day = last_sign.day
+        local time = os.date("*t")
+        local year = time.year
+        local month = time.month
+        local day = time.day
+        if (year == last_year and month == last_month and day == last_day) then
+            return config.msg.already
+        else
+            temps[QQ][last_sign]=time
+            temp_data:set(temps)
+            players[QQ]["Count"]["sign"]=players[QQ]["Count"]["sign"]+1
+            local days=players[QQ]["Count"]["sign"]
+            players[QQ]["points"]=players[QQ]["points"]+10+math.random(1, 10)
+            data:set(players)
+            config.msg.sign_success = config.msg.sign_success:gsub("{point}", point)
+            config.msg.sign_success = config.msg.sign_success:gsub("{days}", days)
+            return config.msg.sign_success
+        end
     else
+        local time = os.date("*t")
+        local year = time.year
+        local month = time.month
+        local day = time.day
         temps[QQ][last_sign]=time
         temp_data:set(temps)
         players[QQ]["Count"]["sign"]=players[QQ]["Count"]["sign"]+1
