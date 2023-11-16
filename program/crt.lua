@@ -34,13 +34,6 @@ config = {
     }
 }
 
-player_information="player.json"
-data = getSelfData(player_information)
-players = data:get(nil, {})
-if(players == nil)then
-    players = {}
-end
-
 temp="temp.json"
 temp_data = getSelfData(temp)
 temps = temp_data:get(nil,{})
@@ -48,32 +41,48 @@ if(temps == nil)then
     temps = {}
 end
 
---[[ nickname = nil
-gender = nil
-change = nil
-job = nil
-int=0
-con=0
-wil=0
-luc=0
-sum=0
-achievement = {}
- ]]
 function getName(msg)
-    nickname = string.match(msg.fromMsg,".*",#setn+1)
-    return nickname..config.msg.ask_gender
+    local userQQ=msg.fromQQ
+    nickname = string.match(msg.fromMsg,"[%s]*(.-)[%s]*$",#setn+1)
+    player_information="player.json"
+    data = getSelfData(player_information)
+    players = data:get(nil, {})
+    if(players == nil)then
+        players = {}
+    end
+    players[userQQ]["Info"]["Nickname"]=nickname
+    data:set(players)
+    return config.msg.ask_gender
 end
 
 
 function getGender(msg)
+    local userQQ=msg.fromQQ
     gender = msg.fromMsg
+    player_information="player.json"
+    data = getSelfData(player_information)
+    players = data:get(nil, {})
+    if(players == nil)then
+        players = {}
+    end
+    players[userQQ]["Info"]["Gender"]=gender
+    data:set(players)
     return config.msg.ask_job
 end
 
 function getJob(msg)
-    local getjob = string.match(msg.fromMsg,"[%s]*(.-)$",#setj+1)
+    local userQQ=msg.fromQQ
+    local getjob = string.match(msg.fromMsg,"[%s]*(.-)[%s]*$",#setj+1)
     if (getjob=="学生") then
         job="学生"
+        player_information="player.json"
+        data = getSelfData(player_information)
+        players = data:get(nil, {})
+        if(players == nil)then
+            players = {}
+        end
+        players[userQQ]["Info"]["Job"]=job
+        data:set(players)
         return config.msg.ask_quality
     else
         job = nil
@@ -82,11 +91,26 @@ function getJob(msg)
 end
 
 function randomQuality(msg)
+    local userQQ=msg.fromQQ
     int=math.random(1, 6)+math.random(1, 6)+math.random(1, 6)
     con=math.random(1, 6)+math.random(1, 6)+math.random(1, 6)
     wil=math.random(1, 6)+math.random(1, 6)+math.random(1, 6)
     luc=math.random(1, 6)+math.random(1, 6)+math.random(1, 6)
     sum=int+con+luc+wil
+    player_information="player.json"
+    data = getSelfData(player_information)
+    players = data:get(nil, {})
+    if(players == nil)then
+        players = {}
+    end
+    players[userQQ]["MainAtt"]["INT"]=int
+    players[userQQ]["MainAtt"]["CON"]=con
+    players[userQQ]["MainAtt"]["WIL"]=wil
+    players[userQQ]["MainAtt"]["LUC"]=luc
+    players[userQQ]["MainAtt"]["SUM"]=sum
+    players[userQQ]["DailyAtt"]["energy"]=players[userQQ]["DailyAtt"]["energy"]+con
+    players[userQQ]["DailyAtt"]["mood"]=players[userQQ]["DailyAtt"]["mood"]+wil
+    data:set(players)
     config.msg.quaility_info = config.msg.quaility_info:gsub("{int}", int)
     config.msg.quaility_info = config.msg.quaility_info:gsub("{con}", con)
     config.msg.quaility_info = config.msg.quaility_info:gsub("{wil}", wil)
@@ -95,7 +119,8 @@ function randomQuality(msg)
 end
 
 function setQuality(msg)
-    local mainatt = string.match(msg.fromMsg,"[%s]*(.-)[%s]*$",#setq+1)
+    local userQQ=msg.fromQQ
+    local mainatt = string.match(msg.fromMsg,"[%s]*(.-)[%s]*$",#free+1)
     local values = {}
     for val in mainatt:gmatch("%S+") do
         table.insert(values, val)
@@ -105,6 +130,20 @@ function setQuality(msg)
     wil=tonumber(values[3])
     luc=tonumber(values[4])
     sum=int+con+luc+wil
+    player_information="player.json"
+    data = getSelfData(player_information)
+    players = data:get(nil, {})
+    if(players == nil)then
+        players = {}
+    end
+    players[userQQ]["MainAtt"]["INT"]=int
+    players[userQQ]["MainAtt"]["CON"]=con
+    players[userQQ]["MainAtt"]["WIL"]=wil
+    players[userQQ]["MainAtt"]["LUC"]=luc
+    players[userQQ]["MainAtt"]["SUM"]=sum
+    players[userQQ]["DailyAtt"]["energy"]=players[userQQ]["DailyAtt"]["energy"]+con
+    players[userQQ]["DailyAtt"]["mood"]=players[userQQ]["DailyAtt"]["mood"]+wil
+    data:set(players)
     config.msg.quaility_info = config.msg.quaility_info:gsub("{int}", int)
     config.msg.quaility_info = config.msg.quaility_info:gsub("{con}", con)
     config.msg.quaility_info = config.msg.quaility_info:gsub("{wil}", wil)
@@ -118,75 +157,6 @@ function getChange(msg)
     if (change == "否") then
         return config.msg.ask_name
     elseif (change == "是") then
-        local information = {
-            Info = {
-                Nickname = "",
-                Introduction = "",
-                Gender = "",
-                Job = ""
-            },
-            MainAtt = {
-                INT = 0,
-                CON = 0,
-                WIL = 0,
-                LUC = 0,
-                SUM=0
-            },
-            DailyAtt = {
-                energy = 100,
-                mood = 100
-            },
-            Event = {
-                daily = {},
-                weekly = {},
-                spec = {}
-                },
-                Count = {
-                daily = 0,
-                weekly = 0,
-                spec = 0,
-                exam = 0,
-                sign = 0,
-                board = 0,
-                bottleSend = 0,
-                bottleRecv = 0,
-                bottleCast = 0,
-                public = 0,
-                disturb = 0,
-                shop = 0
-                },
-                Mainline = {
-                Semester = 1,
-                credit = 0,
-                rank = 0,
-                FinishTimes = 0
-                },
-                Bag = {
-                item = {},
-                study = 0,
-                sport = 0,
-                snack = 0,
-                game = 0,
-                anima = 0,
-                comp = 0,
-                fans = 0,
-                trophy = 0,
-                sum = 0
-                },
-            Achievement ={},
-            points = 0
-        }
-        players[userQQ]=information
-        players[userQQ]["Info"]["Nickname"]=nickname
-        players[userQQ]["Info"]["Gender"]=gender
-        players[userQQ]["Info"]["Job"]=job
-        players[userQQ]["MainAtt"]["INT"]=int
-        players[userQQ]["MainAtt"]["CON"]=con
-        players[userQQ]["MainAtt"]["WIL"]=wil
-        players[userQQ]["MainAtt"]["LUC"]=luc
-        players[userQQ]["MainAtt"]["SUM"]=sum
-        players[userQQ]["Achievement"]=achievement
-        data:set(players)
         local user_temp={
             last_sign = "nil",  
             daily_done = {},  
@@ -220,12 +190,79 @@ function createPlayer(msg)
     luc=0
     sum=0
     achievement = {}
+    player_information="player.json"
+    data = getSelfData(player_information)
+    players = data:get(nil, {})
+    if(players == nil)then
+        players = {}
+    end
     if (players[tostring(userQQ)]) then
         if (tonumber(players[tostring(userQQ)]["Mainline"]["FinishTimes"])>0) then
             achievement=players[tostring(userQQ)]["Achievement"]
             table.remove (players, userQQ)
         end
     end
+    local information = {
+        Info = {
+            Nickname = "",
+            Introduction = "",
+            Gender = "",
+            Job = ""
+        },
+        MainAtt = {
+            INT = 0,
+            CON = 0,
+            WIL = 0,
+            LUC = 0,
+            SUM=0
+        },
+        DailyAtt = {
+            energy = 100,
+            mood = 100
+        },
+        Event = {
+            daily = {},
+            weekly = {},
+            spec = {}
+            },
+            Count = {
+            daily = 0,
+            weekly = 0,
+            spec = 0,
+            exam = 0,
+            sign = 0,
+            board = 0,
+            bottleSend = 0,
+            bottleRecv = 0,
+            bottleCast = 0,
+            public = 0,
+            disturb = 0,
+            shop = 0
+            },
+            Mainline = {
+            Semester = 1,
+            credit = 0,
+            rank = 0,
+            FinishTimes = 0
+            },
+            Bag = {
+            item = {},
+            study = 0,
+            sport = 0,
+            snack = 0,
+            game = 0,
+            anima = 0,
+            comp = 0,
+            fans = 0,
+            trophy = 0,
+            sum = 0
+            },
+        Achievement ={},
+        points = 0
+    }
+    players[userQQ]=information
+    players[userQQ]["Achievement"]=achievement
+    data:set(players)
     local currentTime = os.date("*t")
     local currentYear = currentTime.year
     config.msg.begin = config.msg.begin:gsub("{currentYear}", currentYear)
