@@ -188,6 +188,9 @@ function getChange(msg)
         if(players == nil)then
             players = {}
         end
+        achievement=players[userQQ]["Achievement"]
+        table.insert(achievement,"ac000")
+        players[userQQ]["Achievement"]=achievement
         players[userQQ]["points"]=10
         data:set(players)
         return config.msg.success
@@ -278,7 +281,6 @@ function createPlayer(msg)
         points = 0
     }
     players[userQQ]=information
-    table.insert(achievement,"ac000")
     players[userQQ]["Achievement"]=achievement
     data:set(players)
     local currentTime = os.date("*t")
