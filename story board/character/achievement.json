@@ -19,7 +19,11 @@
     "name": "枝繁叶茂",
     "premise": { "Count": { "sign": 7 } },
     "description": "累计签到一周",
-    "buff": { "WIL": 2 },
+    "buff": {
+      "MainAtt": {
+        "WIL": 2
+      }
+    },
     "unique": 0,
     "unlocked": 1
   },
@@ -27,7 +31,7 @@
     "name": "开花结果",
     "premise": { "Count": { "sign": 30 } },
     "description": "累计签到一个月",
-    "buff": { "WIL": 5 },
+    "buff": { "MainAtt": { "WIL": 5 } },
     "unique": 0,
     "unlocked": 1
   },
@@ -95,7 +99,7 @@
     "name": "科学指导运动",
     "premise": { "MainAtt": { "INT": 15 } },
     "description": "智力达到15点，体质增加1点",
-    "buff": { "CON": 1 },
+    "buff": { "MainAtt": { "CON": 1 } },
     "unique": 0,
     "unlocked": 0
   },
@@ -103,7 +107,7 @@
     "name": "自省锤炼意志",
     "premise": { "MainAtt": { "INT": 20 } },
     "description": "智力达到20点，意志增加1点”",
-    "buff": { "WIL": 1 },
+    "buff": { "MainAtt": { "WIL": 1 } },
     "unique": 0,
     "unlocked": 0
   },
@@ -111,7 +115,7 @@
     "name": "知识改变命运",
     "premise": { "MainAtt": { "INT": 25 } },
     "description": "智力达到25点，运气增加1点",
-    "buff": { "LUC": 1 },
+    "buff": { "MainAtt": { "LUC": 1 } },
     "unique": 0,
     "unlocked": 0
   },
@@ -119,7 +123,7 @@
     "name": "大脑还在发育！",
     "premise": { "MainAtt": { "CON": 15 } },
     "description": "体质达到15点，智力增加1点",
-    "buff": { "INT": 1 },
+    "buff": { "MainAtt": { "INT": 1 } },
     "unique": 0,
     "unlocked": 0
   },
@@ -127,7 +131,7 @@
     "name": "终点快到了！",
     "premise": { "MainAtt": { "CON": 20 } },
     "description": "体质达到20点，意志增加1点",
-    "buff": { "WIL": 1 },
+    "buff": { "MainAtt": { "WIL": 1 } },
     "unique": 0,
     "unlocked": 0
   },
@@ -135,7 +139,7 @@
     "name": "病魔退散！",
     "premise": { "MainAtt": { "CON": 25 } },
     "description": "体质达到25点，运气增加1点",
-    "buff": { "LUC": 1 },
+    "buff": { "MainAtt": { "LUC": 1 } },
     "unique": 0,
     "unlocked": 0
   },
@@ -143,7 +147,7 @@
     "name": "聪明在于勤奋",
     "premise": { "MainAtt": { "WIL": 15 } },
     "description": "意志达到15点，智力增加1点",
-    "buff": { "INT": 1 },
+    "buff": { "MainAtt": { "INT": 1 } },
     "unique": 0,
     "unlocked": 0
   },
@@ -151,7 +155,9 @@
     "name": "早睡早起身体好",
     "premise": { "MainAtt": { "WIL": 20 } },
     "description": "意志达到20点，体质增加1点",
-    "buff": { "CON": 1 },
+    "buff": {
+      "MainAtt": { "CON": 1 }
+    },
     "unique": 0,
     "unlocked": 0
   },
@@ -159,7 +165,7 @@
     "name": "早起的鸟儿有虫吃",
     "premise": { "MainAtt": { "WIL": 25 } },
     "description": "意志达到25点，运气增加1点",
-    "buff": { "LUC": 1 },
+    "buff": { "MainAtt": { "LUC": 1 } },
     "unique": 0,
     "unlocked": 0
   },
@@ -167,7 +173,7 @@
     "name": "趁热打铁",
     "premise": { "MainAtt": { "LUC": 15 } },
     "description": "运气达到15点，智力增加1点",
-    "buff": { "INT": 1 },
+    "buff": { "MainAtt": { "INT": 1 } },
     "unique": 0,
     "unlocked": 0
   },
@@ -175,7 +181,7 @@
     "name": "水到渠成",
     "premise": { "MainAtt": { "LUC": 20 } },
     "description": "运气达到20点，体质增加1点",
-    "buff": { "CON": 1 },
+    "buff": { "MainAtt": { "CON": 1 } },
     "unique": 0,
     "unlocked": 0
   },
@@ -183,7 +189,7 @@
     "name": "锦上添花",
     "premise": { "MainAtt": { "LUC": 25 } },
     "description": "运气达到25点，意志增加1点",
-    "buff": { "WIL": 1 },
+    "buff": { "MainAtt": { "WIL": 1 } },
     "unique": 0,
     "unlocked": 0
   },
@@ -192,10 +198,12 @@
     "premise": { "MainAtt": { "sum": 50 } },
     "description": "主属性点总和达到50",
     "buff": {
-      "INT": 1,
-      "CON": 1,
-      "WIL": 1,
-      "LUC": 1
+      "MainAtt": {
+        "INT": 1,
+        "CON": 1,
+        "WIL": 1,
+        "LUC": 1
+      }
     },
     "unique": 0,
     "unlocked": 0
@@ -205,10 +213,12 @@
     "premise": { "MainAtt": { "sum": 60 } },
     "description": "主属性点总和达到60”",
     "buff": {
-      "INT": 2,
-      "CON": 2,
-      "WIL": 2,
-      "LUC": 2
+      "MainAtt": {
+        "INT": 2,
+        "CON": 2,
+        "WIL": 2,
+        "LUC": 2
+      }
     },
     "unique": 0,
     "unlocked": 0
@@ -218,10 +228,12 @@
     "premise": { "MainAtt": { "sum": 75 } },
     "description": "主属性点总和达到75",
     "buff": {
-      "INT": 3,
-      "CON": 3,
-      "WIL": 3,
-      "LUC": 3
+      "MainAtt": {
+        "INT": 3,
+        "CON": 3,
+        "WIL": 3,
+        "LUC": 3
+      }
     },
     "unique": 0,
     "unlocked": 0
@@ -231,10 +243,12 @@
     "premise": { "MainAtt": { "sum": 100 } },
     "description": "主属性点总和达到100",
     "buff": {
-      "INT": 4,
-      "CON": 4,
-      "WIL": 4,
-      "LUC": 4
+      "MainAtt": {
+        "INT": 4,
+        "CON": 4,
+        "WIL": 4,
+        "LUC": 4
+      }
     },
     "unique": 0,
     "unlocked": 0
@@ -275,7 +289,7 @@
     "name": "天上掉馅饼",
     "premise": { "Count": { "spec": 1 } },
     "description": "触发特殊事件",
-    "buff": { "LUC": 1 },
+    "buff": { "MainAtt": { "LUC": 1 } },
     "unique": 0,
     "unlocked": 0
   },
@@ -284,8 +298,10 @@
     "premise": { "Count": { "spec": 3 } },
     "description": "触发五次特殊事件",
     "buff": {
-      "INT": 1,
-      "CON": 1
+      "MainAtt": {
+        "INT": 1,
+        "CON": 1
+      }
     },
     "unique": 0,
     "unlocked": 0
@@ -295,8 +311,10 @@
     "premise": { "Count": { "spec": 15 } },
     "description": "触发十五次特殊事件",
     "buff": {
-      "INT": 2,
-      "CON": 2
+      "MainAtt": {
+        "INT": 2,
+        "CON": 2
+      }
     },
     "unique": 0,
     "unlocked": 0
@@ -306,8 +324,10 @@
     "premise": { "Count": { "daily": 66 } },
     "description": "光阴似箭",
     "buff": {
-      "WIL": 1,
-      "LUC": 1
+      "MainAtt": {
+        "WIL": 1,
+        "LUC": 1
+      }
     },
     "unique": 0,
     "unlocked": 0
@@ -317,8 +337,10 @@
     "premise": { "Count": { "weekly": 6 } },
     "description": "日月如梭",
     "buff": {
-      "WIL": 2,
-      "LUC": 2
+      "MainAtt": {
+        "WIL": 2,
+        "LUC": 2
+      }
     },
     "unique": 0,
     "unlocked": 0
