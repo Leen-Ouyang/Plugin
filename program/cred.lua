@@ -1,7 +1,7 @@
 cred="查看学分"
 config={
     msg={
-        point_info="╔═══════════════╗\n            学分档案\n  ——————————\n  学分 {credit}      排行 {rank}\n  ——————————\n 「学分排行」  总排行\n╚═══════════════╝\ntips:学分可以通过上课、完成作业、考试提升"
+        cre_info="╔═══════════════╗\n            学分档案\n  ——————————\n  学分 {credit}      排行 {rank}\n  ——————————\n 「学分排行」  总排行\n╚═══════════════╝\ntips:学分可以通过上课、完成作业、考试提升"
     }
 }
 msg_order={}
@@ -21,7 +21,7 @@ function viewPoint(msg)
     end
     local credit = players[QQ]["Mainline"]["credit"]
     local rank = players[QQ]["Mainline"]["rank"]
-    config.msg.point_info = config.msg.record:gsub("{credit}", credit)
-    config.msg.point_info = config.msg.record:gsub("{rank}", rank)
-    return config.msg.point_info
+    config.msg.cre_info = config.msg.cre_info:gsub("{credit}", credit)
+    config.msg.cre_info = config.msg.cre_info:gsub("{rank}", rank)
+    return config.msg.cre_info
 end

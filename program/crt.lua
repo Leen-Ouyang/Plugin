@@ -166,7 +166,7 @@ function getChange(msg)
         return config.msg.ask_name
     elseif (change == "是") then
         local user_temp={
-            last_sign = "nil",  
+            last_sign = {},  
             daily_done = {},  
             weekly_done = {},  
             next_daily = {  
