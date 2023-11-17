@@ -1,2 +1,2 @@
-test.lua 文件是相关测试函数  输入修改游戏阶段和修改学分时请再输入相关数值进行修改
-event2.0.lua 为event目前最新版本
+把event拆成了do_event,generate_event,search具体操作前缀看文件里面就行了
+test的前缀不懂为什么搞不进去，明天再看看，然后事件的话随机事件还没做，json写的有点没看懂，明天搞
