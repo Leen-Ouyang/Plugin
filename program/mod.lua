@@ -4,8 +4,8 @@ config={
         update_intro="个人简介保存成功！"
     }
 }
-order_msg={}
-order_msg[mod]="updateIntro"
+msg_order={}
+msg_order[mod]="updateIntro"
 
 function updateIntro(msg)
     local introduction = string.match(msg.fromMsg,"[%s]*(.-)[%s]*$",#mod+1)
@@ -21,5 +21,5 @@ function updateIntro(msg)
     end
     players[QQ]["Info"]["Introduction"]=introduction
     data:set(players)
-    return config.msg.update_intro
+    return config.msg.update_intro 
 end
