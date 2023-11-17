@@ -1,8 +1,8 @@
 {
   "ac000": {
     "name": "种子发芽",
-    "premise": { "Count": { "sign": 1 } },
-    "description": "累计签到1天",
+    "premise": {},
+    "description": "创建角色",
     "buff": { "point": 10 },
     "unique": 0,
     "unlocked": 1
