@@ -1,2 +1,5 @@
 把event拆成了do_event,generate_event,search具体操作前缀看文件里面就行了
 test的前缀不懂为什么搞不进去，明天再看看，然后事件的话随机事件还没做，json写的有点没看懂，明天搞
+
+
+随机事件已经做了，但是概率很低，可以把do_event 文件的第220行和113行的chance改成100就百分百执行随机事件，但是他们eventjson的随机事件好像不是很全，导致daily事件和weekly事件很少，weekly事件的随机事件好像也还没有写
