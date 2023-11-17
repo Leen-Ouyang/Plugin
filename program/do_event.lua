@@ -64,7 +64,7 @@ local function do_exam(msg)
     math.randomseed(os.time()) -- 使用当前时间作为随机种子
     local randomInt = math.random(0,100);
 
-    if(randomInt>exam_chance)then
+    if(randomInt>config.exam_chance)then
         return config.msg.exam_fail;
     else
         player[QQ]["Mainline"]["Semester"]=player[QQ]["Mainline"]["Semester"]+1
@@ -110,25 +110,33 @@ function do_daily(msg)
 --判断随机事件
     for key, value in pairs(event["Spec"]) do
         if value[1]["pre"]["event"][1] == Type and value[1]["pre"]["event"][2] == num then
-            local chance = value[1]["odds"]*100
-            --local chance = 100
+            --local chance = value[1]["odds"]*100
+            local chance = 100
             math.randomseed(os.time()) -- 使用当前时间作为随机种子
             local randomnum = math.random(1,100)
             if randomnum <= chance then-- 触发随机事件
                 s = s..value[1]["description"].."\n"
-                s = s..value[1]["success"].."\n"
-
-                for key1, value1 in pairs(value[1]["change"]) do
-                    s = s..show("玩家",key1,value1).."\n"
-                    if key1 == "point" then 
-                        player[QQ]["points"]=player[QQ]["points"]+value1;
-                    elseif key1 == "credit" then 
-                        player[QQ]["Mainline"]["credit"]=player[QQ]["Mainline"]["credit"]+value1
-                    elseif key1 == "CON" or key1 == "WIL" or key1 == "LUC" or key1 == "INT" then
-                        player[QQ]["MainAtt"][key1]=player[QQ]["MainAtt"][key1]+value1
-                    else
-                        player[QQ]["Count"][key1]=player[QQ]["Count"][key1]+value1
+                
+                local odd = value[1]["diff"]
+                local random = math.random(0,20)
+                local judge = value[1]["judge"]
+                if(player[QQ]["MainAtt"][judge]-10+random > odd)then
+                    s = s..value[1]["success"].."\n"
+                    for key1, value1 in pairs(value[1]["change"]) do
+                        
+                        s = s..show("玩家",key1,value1).."\n"
+                        if key1 == "point" then 
+                            player[QQ]["points"]=player[QQ]["points"]+value1;
+                        elseif key1 == "credit" then 
+                            player[QQ]["Mainline"]["credit"]=player[QQ]["Mainline"]["credit"]+value1
+                        elseif key1 == "CON" or key1 == "WIL" or key1 == "LUC" or key1 == "INT" then
+                            player[QQ]["MainAtt"][key1]=player[QQ]["MainAtt"][key1]+value1
+                        else
+                            player[QQ]["Count"][key1]=player[QQ]["Count"][key1]+value1
+                        end
                     end
+                else 
+                    s = s..value[1]["failure"].."\n"
                 end
                 player[QQ]["DailyAtt"]["energy"]=player[QQ]["DailyAtt"]["energy"]+value[1]["energy"]
                 s = s..show("玩家","energy",value[1]["energy"])..'\n';
@@ -223,19 +231,27 @@ function do_weekly(msg)
             local randomnum = math.random(1,100)
             if randomnum <= chance then-- 触发随机事件
                 s = s..value[1]["description"].."\n"
-                s = s..value[1]["success"].."\n"
-
-                for key1, value1 in pairs(value[1]["change"]) do
-                    s = s..show("玩家",key1,value1).."\n"
-                    if key1 == "point" then 
-                        player[QQ]["points"]=player[QQ]["points"]+value1;
-                    elseif key1 == "credit" then 
-                        player[QQ]["Mainline"]["credit"]=player[QQ]["Mainline"]["credit"]+value1
-                    elseif key1 == "CON" or key1 == "WIL" or key1 == "LUC" or key1 == "INT" then
-                        player[QQ]["MainAtt"][key1]=player[QQ]["MainAtt"][key1]+value1
-                    else
-                        player[QQ]["Count"][key1]=player[QQ]["Count"][key1]+value1
+                
+                local odd = value[1]["diff"]
+                local random = math.random(0,20)
+                local judge = value[1]["judge"]
+                if(player[QQ]["MainAtt"][judge]-10+random > odd)then
+                    s = s..value[1]["success"].."\n"
+                    for key1, value1 in pairs(value[1]["change"]) do
+                        
+                        s = s..show("玩家",key1,value1).."\n"
+                        if key1 == "point" then 
+                            player[QQ]["points"]=player[QQ]["points"]+value1;
+                        elseif key1 == "credit" then 
+                            player[QQ]["Mainline"]["credit"]=player[QQ]["Mainline"]["credit"]+value1
+                        elseif key1 == "CON" or key1 == "WIL" or key1 == "LUC" or key1 == "INT" then
+                            player[QQ]["MainAtt"][key1]=player[QQ]["MainAtt"][key1]+value1
+                        else
+                            player[QQ]["Count"][key1]=player[QQ]["Count"][key1]+value1
+                        end
                     end
+                else 
+                    s = s..value[1]["failure"].."\n"
                 end
                 player[QQ]["DailyAtt"]["energy"]=player[QQ]["DailyAtt"]["energy"]+value[1]["energy"]
                 s = s..show("玩家","energy",value[1]["energy"])..'\n';

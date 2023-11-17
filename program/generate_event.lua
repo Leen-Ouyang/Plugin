@@ -43,10 +43,16 @@ function generate_daily(msg)
        return config.msg.already_generate_daily
     end
     
+    if player[QQ]["Mainline"]["credit"] == "nil" or player[QQ]["Mainline"]["credit"] == nil then
+        player[QQ]["Mainline"]["credit"] = 0
+    end
     if player[QQ]["Mainline"]["credit"]>config.min_credit then
         s = s.."马上就要学期末了请好好准备期末考试\n"
         temp[QQ].next_daily.type = "exam"
         temp[QQ].next_weekly.type = "exam"
+        data:set(temp)
+        data1:set(event)
+        data2:set(player)
         return s
     end
     local flag = 0
@@ -90,11 +96,16 @@ function generate_weekly(msg)
     if temp[QQ]["next_weekly"]["generate_time"] ~= nil then
       return config.msg.already_generate_weekly
     end
-
+    if player[QQ]["Mainline"]["credit"] == "nil" or player[QQ]["Mainline"]["credit"] == nil then
+        player[QQ]["Mainline"]["credit"] = 0
+    end
     if player[QQ]["Mainline"]["credit"]>config.min_credit then
         s = s.."马上就要学期末了请好好准备期末考试\n"
         temp[QQ].next_daily.type = "exam"
         temp[QQ].next_weekly.type = "exam"
+        data:set(temp)
+        data1:set(event)
+        data2:set(player)
         return s
     end
 

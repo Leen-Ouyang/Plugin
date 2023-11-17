@@ -62,7 +62,7 @@ function search_event(msg)
         s = s.."  下一项每周事件："..event["Weekly"][temp[QQ].next_weekly.num][1]["title"].."\n"
     end
     --考试的话
-    if(temp[QQ].next_daily.type=="Exam")then 
+    if(temp[QQ].next_daily.type=="exam")then 
         s = s.."  该准备考试了！".."\n"
     end
 
