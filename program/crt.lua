@@ -208,7 +208,6 @@ function createPlayer(msg)
         if (tonumber(players[tostring(userQQ)]["Mainline"]["FinishTimes"])>0) then
             achievement=players[tostring(userQQ)]["Achievement"]
         end
-        table.remove (players, userQQ)
     end
     local information = {
         Info = {
