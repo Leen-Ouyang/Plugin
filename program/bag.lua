@@ -6,8 +6,6 @@ config={
 }
 msg_order={}
 msg_order[bag]="viewBag"
-
-msg_order[info] = "getInformation"
 player_information="player.json"
 data = getSelfData(player_information)
 players = data:get(nil, {})
