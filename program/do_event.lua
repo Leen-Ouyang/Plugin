@@ -95,12 +95,60 @@ function do_daily(msg)
         return config.msg.no_generate_daily
     end
 
-    if(temp[QQ].next_daily.type == exam)then
+    if(temp[QQ].next_daily.type == "exam")then
         return do_exam(msg)
     end
+    
+    
 
     local num = temp[QQ]["next_daily"]["num"]
     local Type = temp[QQ]["next_daily"]["type"]
+
+    if event[Type][num][1]["energy"]<0 and -event[Type][num][1]["energy"]>player[QQ]["DailyAtt"]["energy"] then
+       return config.msg.no_energy
+    end
+--判断随机事件
+    for key, value in pairs(event["Spec"]) do
+        if value[1]["pre"]["event"][1] == Type and value[1]["pre"]["event"][2] == num then
+            local chance = value[1]["odds"]*100
+            --local chance = 100
+            math.randomseed(os.time()) -- 使用当前时间作为随机种子
+            local randomnum = math.random(1,100)
+            if randomnum <= chance then-- 触发随机事件
+                s = s..value[1]["description"].."\n"
+                s = s..value[1]["success"].."\n"
+
+                for key1, value1 in pairs(value[1]["change"]) do
+                    s = s..show("玩家",key1,value1).."\n"
+                    if key1 == "point" then 
+                        player[QQ]["points"]=player[QQ]["points"]+value1;
+                    elseif key1 == "credit" then 
+                        player[QQ]["Mainline"]["credit"]=player[QQ]["Mainline"]["credit"]+value1
+                    elseif key1 == "CON" or key1 == "WIL" or key1 == "LUC" or key1 == "INT" then
+                        player[QQ]["MainAtt"][key1]=player[QQ]["MainAtt"][key1]+value1
+                    else
+                        player[QQ]["Count"][key1]=player[QQ]["Count"][key1]+value1
+                    end
+                end
+                player[QQ]["DailyAtt"]["energy"]=player[QQ]["DailyAtt"]["energy"]+value[1]["energy"]
+                s = s..show("玩家","energy",value[1]["energy"])..'\n';
+                player[QQ]["DailyAtt"]["mood"]=player[QQ]["DailyAtt"]["mood"]+value[1]["mood"]
+                s = s..show("玩家","mood",value[1]["mood"])..'\n';    
+                table.insert(temp[QQ]["daily_done"],temp[QQ]["next_daily"].num)
+                temp[QQ].next_daily.num = nil
+                temp[QQ].next_daily.generate_time = nil
+                temp[QQ].next_daily.type = nil
+                data:set(temp)
+                data1:set(event)
+                data2:set(player)
+                data3:set(semester)
+                return s
+            end
+            break
+        end
+    end
+
+
     --判断事件是否执行成功
     local cnt = #event[Type][num];
     math.randomseed(os.time()) -- 使用当前时间作为随机种子
@@ -153,12 +201,61 @@ function do_weekly(msg)
         return config.msg.no_generate_weekly
     end
 
-    if(temp[QQ].next_weekly.type == exam)then
+    if(temp[QQ].next_weekly.type == "exam")then
         return do_exam(msg)
     end
 
+    
+
     local num = temp[QQ]["next_weekly"]["num"]
     local Type = temp[QQ]["next_weekly"]["type"]
+
+    if event[Type][num][1]["energy"]<0 and -event[Type][num][1]["energy"]>player[QQ]["DailyAtt"]["energy"] then
+        return config.msg.no_energy
+    end
+
+
+    for key, value in pairs(event["Spec"]) do
+        if value[1]["pre"]["event"][1] == Type and value[1]["pre"]["event"][2] == num then
+            local chance = value[1]["odds"]*100
+            --local chance = 100
+            math.randomseed(os.time()) -- 使用当前时间作为随机种子
+            local randomnum = math.random(1,100)
+            if randomnum <= chance then-- 触发随机事件
+                s = s..value[1]["description"].."\n"
+                s = s..value[1]["success"].."\n"
+
+                for key1, value1 in pairs(value[1]["change"]) do
+                    s = s..show("玩家",key1,value1).."\n"
+                    if key1 == "point" then 
+                        player[QQ]["points"]=player[QQ]["points"]+value1;
+                    elseif key1 == "credit" then 
+                        player[QQ]["Mainline"]["credit"]=player[QQ]["Mainline"]["credit"]+value1
+                    elseif key1 == "CON" or key1 == "WIL" or key1 == "LUC" or key1 == "INT" then
+                        player[QQ]["MainAtt"][key1]=player[QQ]["MainAtt"][key1]+value1
+                    else
+                        player[QQ]["Count"][key1]=player[QQ]["Count"][key1]+value1
+                    end
+                end
+                player[QQ]["DailyAtt"]["energy"]=player[QQ]["DailyAtt"]["energy"]+value[1]["energy"]
+                s = s..show("玩家","energy",value[1]["energy"])..'\n';
+                player[QQ]["DailyAtt"]["mood"]=player[QQ]["DailyAtt"]["mood"]+value[1]["mood"]
+                s = s..show("玩家","mood",value[1]["mood"])..'\n';    
+                table.insert(temp[QQ]["weekly_done"],temp[QQ]["next_weekly"].num)
+                temp[QQ].next_weekly.num = nil
+                temp[QQ].next_weekly.generate_time = nil
+                temp[QQ].next_weekly.type = nil
+                data:set(temp)
+                data1:set(event)
+                data2:set(player)
+                data3:set(semester)
+                return s
+            end
+            break
+        end
+    end
+
+
     --判断事件是否执行成功
     local cnt = #event[Type][num];
     math.randomseed(os.time()) -- 使用当前时间作为随机种子
