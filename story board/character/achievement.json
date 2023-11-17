@@ -20,9 +20,7 @@
     "premise": { "Count": { "sign": 7 } },
     "description": "累计签到一周",
     "buff": {
-      "MainAtt": {
         "WIL": 2
-      }
     },
     "unique": 0,
     "unlocked": 1
@@ -31,7 +29,7 @@
     "name": "开花结果",
     "premise": { "Count": { "sign": 30 } },
     "description": "累计签到一个月",
-    "buff": { "MainAtt": { "WIL": 5 } },
+    "buff": { "WIL": 5 },
     "unique": 0,
     "unlocked": 1
   },
@@ -99,7 +97,7 @@
     "name": "科学指导运动",
     "premise": { "MainAtt": { "INT": 15 } },
     "description": "智力达到15点，体质增加1点",
-    "buff": { "MainAtt": { "CON": 1 } },
+    "buff": { "CON": 1 },
     "unique": 0,
     "unlocked": 0
   },
@@ -107,7 +105,7 @@
     "name": "自省锤炼意志",
     "premise": { "MainAtt": { "INT": 20 } },
     "description": "智力达到20点，意志增加1点”",
-    "buff": { "MainAtt": { "WIL": 1 } },
+    "buff": { "WIL": 1 },
     "unique": 0,
     "unlocked": 0
   },
@@ -115,7 +113,7 @@
     "name": "知识改变命运",
     "premise": { "MainAtt": { "INT": 25 } },
     "description": "智力达到25点，运气增加1点",
-    "buff": { "MainAtt": { "LUC": 1 } },
+    "buff": { "LUC": 1 },
     "unique": 0,
     "unlocked": 0
   },
@@ -123,7 +121,7 @@
     "name": "大脑还在发育！",
     "premise": { "MainAtt": { "CON": 15 } },
     "description": "体质达到15点，智力增加1点",
-    "buff": { "MainAtt": { "INT": 1 } },
+    "buff": { "INT": 1 },
     "unique": 0,
     "unlocked": 0
   },
@@ -131,7 +129,7 @@
     "name": "终点快到了！",
     "premise": { "MainAtt": { "CON": 20 } },
     "description": "体质达到20点，意志增加1点",
-    "buff": { "MainAtt": { "WIL": 1 } },
+    "buff": { "WIL": 1 },
     "unique": 0,
     "unlocked": 0
   },
@@ -139,7 +137,7 @@
     "name": "病魔退散！",
     "premise": { "MainAtt": { "CON": 25 } },
     "description": "体质达到25点，运气增加1点",
-    "buff": { "MainAtt": { "LUC": 1 } },
+    "buff": { "LUC": 1 },
     "unique": 0,
     "unlocked": 0
   },
@@ -147,7 +145,7 @@
     "name": "聪明在于勤奋",
     "premise": { "MainAtt": { "WIL": 15 } },
     "description": "意志达到15点，智力增加1点",
-    "buff": { "MainAtt": { "INT": 1 } },
+    "buff": { "INT": 1 },
     "unique": 0,
     "unlocked": 0
   },
@@ -155,8 +153,8 @@
     "name": "早睡早起身体好",
     "premise": { "MainAtt": { "WIL": 20 } },
     "description": "意志达到20点，体质增加1点",
-    "buff": {
-      "MainAtt": { "CON": 1 }
+    "buff": { 
+      "CON": 1 
     },
     "unique": 0,
     "unlocked": 0
@@ -165,7 +163,7 @@
     "name": "早起的鸟儿有虫吃",
     "premise": { "MainAtt": { "WIL": 25 } },
     "description": "意志达到25点，运气增加1点",
-    "buff": { "MainAtt": { "LUC": 1 } },
+    "buff": { "LUC": 1 },
     "unique": 0,
     "unlocked": 0
   },
@@ -173,7 +171,7 @@
     "name": "趁热打铁",
     "premise": { "MainAtt": { "LUC": 15 } },
     "description": "运气达到15点，智力增加1点",
-    "buff": { "MainAtt": { "INT": 1 } },
+    "buff": { "INT": 1 },
     "unique": 0,
     "unlocked": 0
   },
@@ -181,7 +179,7 @@
     "name": "水到渠成",
     "premise": { "MainAtt": { "LUC": 20 } },
     "description": "运气达到20点，体质增加1点",
-    "buff": { "MainAtt": { "CON": 1 } },
+    "buff": { "CON": 1 },
     "unique": 0,
     "unlocked": 0
   },
@@ -189,7 +187,7 @@
     "name": "锦上添花",
     "premise": { "MainAtt": { "LUC": 25 } },
     "description": "运气达到25点，意志增加1点",
-    "buff": { "MainAtt": { "WIL": 1 } },
+    "buff": { "WIL": 1 },
     "unique": 0,
     "unlocked": 0
   },
@@ -198,12 +196,10 @@
     "premise": { "MainAtt": { "sum": 50 } },
     "description": "主属性点总和达到50",
     "buff": {
-      "MainAtt": {
-        "INT": 1,
-        "CON": 1,
-        "WIL": 1,
-        "LUC": 1
-      }
+      "INT": 1,
+      "CON": 1,
+      "WIL": 1,
+      "LUC": 1
     },
     "unique": 0,
     "unlocked": 0
@@ -213,12 +209,10 @@
     "premise": { "MainAtt": { "sum": 60 } },
     "description": "主属性点总和达到60”",
     "buff": {
-      "MainAtt": {
-        "INT": 2,
-        "CON": 2,
-        "WIL": 2,
-        "LUC": 2
-      }
+      "INT": 2,
+      "CON": 2,
+      "WIL": 2,
+      "LUC": 2
     },
     "unique": 0,
     "unlocked": 0
@@ -228,12 +222,10 @@
     "premise": { "MainAtt": { "sum": 75 } },
     "description": "主属性点总和达到75",
     "buff": {
-      "MainAtt": {
-        "INT": 3,
-        "CON": 3,
-        "WIL": 3,
-        "LUC": 3
-      }
+      "INT": 3,
+      "CON": 3,
+      "WIL": 3,
+      "LUC": 3
     },
     "unique": 0,
     "unlocked": 0
@@ -243,12 +235,10 @@
     "premise": { "MainAtt": { "sum": 100 } },
     "description": "主属性点总和达到100",
     "buff": {
-      "MainAtt": {
-        "INT": 4,
-        "CON": 4,
-        "WIL": 4,
-        "LUC": 4
-      }
+      "INT": 4,
+      "CON": 4,
+      "WIL": 4,
+      "LUC": 4
     },
     "unique": 0,
     "unlocked": 0
@@ -289,7 +279,7 @@
     "name": "天上掉馅饼",
     "premise": { "Count": { "spec": 1 } },
     "description": "触发特殊事件",
-    "buff": { "MainAtt": { "LUC": 1 } },
+    "buff": { "LUC": 1 },
     "unique": 0,
     "unlocked": 0
   },
@@ -298,10 +288,9 @@
     "premise": { "Count": { "spec": 3 } },
     "description": "触发五次特殊事件",
     "buff": {
-      "MainAtt": {
-        "INT": 1,
-        "CON": 1
-      }
+      "INT": 1,
+      "CON": 1
+      
     },
     "unique": 0,
     "unlocked": 0
@@ -311,10 +300,8 @@
     "premise": { "Count": { "spec": 15 } },
     "description": "触发十五次特殊事件",
     "buff": {
-      "MainAtt": {
-        "INT": 2,
-        "CON": 2
-      }
+      "INT": 2,
+      "CON": 2
     },
     "unique": 0,
     "unlocked": 0
@@ -324,10 +311,8 @@
     "premise": { "Count": { "daily": 66 } },
     "description": "光阴似箭",
     "buff": {
-      "MainAtt": {
-        "WIL": 1,
-        "LUC": 1
-      }
+      "WIL": 1,
+      "LUC": 1
     },
     "unique": 0,
     "unlocked": 0
@@ -337,10 +322,8 @@
     "premise": { "Count": { "weekly": 6 } },
     "description": "日月如梭",
     "buff": {
-      "MainAtt": {
-        "WIL": 2,
-        "LUC": 2
-      }
+      "WIL": 2,
+      "LUC": 2
     },
     "unique": 0,
     "unlocked": 0
@@ -580,12 +563,10 @@
     "premise": { "Bag": { "item": "天麟的鳞片" } },
     "description": "获得码界三神器其一“天麟的鳞片”",
     "buff": {
-      "MainAtt": {
-        "INT": 6,
-        "CON": 6,
-        "WIL": 6,
-        "LUC": 6
-      }
+      "INT": 6,
+      "CON": 6,
+      "WIL": 6,
+      "LUC": 6
     },
     "unique": 0,
     "unlocked": 0
@@ -595,16 +576,12 @@
     "premise": { "Bag": { "item": "张梁的眼镜" } },
     "description": "获得码界三神器其二“张梁的眼镜”",
     "buff": {
-      "MainAtt": {
-        "INT": 8,
-        "CON": 8,
-        "WIL": 8,
-        "LUC": 8
-      },
-      "DailyAtt": {
-        "energy": 8,
-        "mood": 8
-      }
+      "INT": 8,
+      "CON": 8,
+      "WIL": 8,
+      "LUC": 8,
+      "energy": 8,
+      "mood": 8
     },
     "unique": 0,
     "unlocked": 0
@@ -614,16 +591,12 @@
     "premise": { "Bag": { "item": "杰森的注视" } },
     "description": "获得码界三神器其三“杰森的注视”",
     "buff": {
-      "MainAtt": {
-        "INT": 9,
-        "CON": 9,
-        "WIL": 9,
-        "LUC": 9
-      },
-      "DailyAtt": {
-        "energy": 9,
-        "mood": 9
-      },
+      "INT": 9,
+      "CON": 9,
+      "WIL": 9,
+      "LUC": 9,
+      "energy": 9,
+      "mood": 9,
       "point": 66
     },
     "unique": 0,
@@ -634,12 +607,10 @@
     "premise": { "Bag": { "item": "邪恶炒饭" } },
     "description": "获得黑洞三魔器其一“邪恶炒饭”",
     "buff": {
-      "MainAtt": {
-        "INT": 4,
-        "CON": 7,
-        "WIL": -11,
-        "LUC": -13
-      }
+      "INT": 4,
+      "CON": 7,
+      "WIL": -11,
+      "LUC": -13  
     },
     "unique": 0,
     "unlocked": 0
@@ -649,16 +620,12 @@
     "premise": { "Bag": { "item": "代码蠹虫" } },
     "description": "获得黑洞三魔器其二“代码蠹虫”",
     "buff": {
-      "MainAtt": {
-        "INT": 13,
-        "CON": 4,
-        "WIL": -7,
-        "LUC": -11
-      },
-      "DailyAtt": {
-        "energy": 7,
-        "mood": -7
-      }
+      "INT": 13,
+      "CON": 4,
+      "WIL": -7,
+      "LUC": -11,
+      "energy": 7,
+      "mood": -7
     },
     "unique": 0,
     "unlocked": 0
@@ -668,16 +635,12 @@
     "premise": { "Bag": { "item": "碧油鸡羽" } },
     "description": "获得黑洞三魔器其三“碧油鸡羽”",
     "buff": {
-      "MainAtt": {
-        "INT": 11,
-        "CON": 13,
-        "WIL": -4,
-        "LUC": -7
-      },
-      "DailyAtt": {
-        "energy": 11,
-        "mood": -11
-      },
+      "INT": 11,
+      "CON": 13,
+      "WIL": -4,
+      "LUC": -7,
+      "energy": 11,
+      "mood": -11,
       "point": 74
     },
     "unique": 0,
@@ -710,16 +673,12 @@
       },
       "description": "获得码界三神器",
       "buff": {
-        "MainAtt": {
-          "INT": 10,
-          "CON": 10,
-          "WIL": 10,
-          "LUC": 10
-        },
-        "DailyAtt": {
-          "energy": 10,
-          "mood": 10
-        },
+        "INT": 10,
+        "CON": 10,
+        "WIL": 10,
+        "LUC": 10,
+        "energy": 10,
+        "mood": 10,
         "point": 99
       },
       "unique": 0,
@@ -736,16 +695,12 @@
       },
       "description": "获得黑洞三魔器",
       "buff": {
-        "MainAtt": {
-          "INT": 13,
-          "CON": 13,
-          "WIL": -4,
-          "LUC": -4
-        },
-        "DailyAtt": {
-          "energy": 13,
-          "mood": -13
-        },
+        "INT": 13,
+        "CON": 13,
+        "WIL": -4,
+        "LUC": -4,
+        "energy": 13,
+        "mood": -13,
         "point": 444
       },
       "unique": 0,
