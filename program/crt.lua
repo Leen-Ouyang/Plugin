@@ -182,6 +182,14 @@ function getChange(msg)
         }
         temps[userQQ]=user_temp
         temp_data:set(temps)
+        player_information="player.json"
+        data = getSelfData(player_information)
+        players = data:get(nil, {})
+        if(players == nil)then
+            players = {}
+        end
+        players[userQQ]["points"]=10
+        data:set(players)
         return config.msg.success
     end
 end
@@ -270,6 +278,7 @@ function createPlayer(msg)
         points = 0
     }
     players[userQQ]=information
+    table.insert(achievement,"ac000")
     players[userQQ]["Achievement"]=achievement
     data:set(players)
     local currentTime = os.date("*t")
