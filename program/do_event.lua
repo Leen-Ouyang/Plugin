@@ -43,20 +43,35 @@ if(semester == nil)then
 end
 
 local function show(playername, changetype, num)
+    local typeNames = {
+        point = "积分",
+        credit = "学分",
+        CON = "体质",
+        WIL = "意志",
+        LUC = "幸运",
+        INT = "智力",
+        energy = "精力",
+        mood = "心情",
+    }
+
     if type(playername) == "string" and type(changetype) == "string" and type(num) == "number" then
         local message = ""
+        local typeName = typeNames[changetype] or changetype
+
         if num < 0 then
-            message = playername .. "的" .. changetype .. "减少了" .. (-num)
+            message = playername .. "的" .. typeName .. "减少了" .. (-num)
         elseif num > 0 then
-            message = playername .. "的" .. changetype .. "增加了" .. num
+            message = playername .. "的" .. typeName .. "增加了" .. num
         else
-            message = playername .. "的" .. changetype .. "没有变化"
+            message = playername .. "的" .. typeName .. "没有变化"
         end
+
         return message;
     else
         return config.msg.error_string;
     end
 end
+
 
 
 local function do_exam(msg)
@@ -126,22 +141,46 @@ function do_daily(msg)
                         
                         s = s..show("玩家",key1,value1).."\n"
                         if key1 == "point" then 
-                            player[QQ]["points"]=player[QQ]["points"]+value1;
-                        elseif key1 == "credit" then 
-                            player[QQ]["Mainline"]["credit"]=player[QQ]["Mainline"]["credit"]+value1
-                        elseif key1 == "CON" or key1 == "WIL" or key1 == "LUC" or key1 == "INT" then
-                            player[QQ]["MainAtt"][key1]=player[QQ]["MainAtt"][key1]+value1
-                        else
-                            player[QQ]["Count"][key1]=player[QQ]["Count"][key1]+value1
-                        end
+							player[QQ]["points"] = player[QQ]["points"] + value1;
+							-- 如果计算值小于零，则将其强制赋值为零
+							if player[QQ]["points"] < 0 then
+								player[QQ]["points"] = 0
+							end
+						elseif key1 == "credit" then 
+							player[QQ]["Mainline"]["credit"] = player[QQ]["Mainline"]["credit"] + value1
+							-- 如果计算值小于零，则将其强制赋值为零
+							if player[QQ]["Mainline"]["credit"] < 0 then
+								player[QQ]["Mainline"]["credit"] = 0
+							end
+						elseif key1 == "CON" or key1 == "WIL" or key1 == "LUC" or key1 == "INT" then
+							player[QQ]["MainAtt"][key1] = player[QQ]["MainAtt"][key1] + value1
+							-- 如果计算值小于零，则将其强制赋值为零
+							if player[QQ]["MainAtt"][key1] < 0 then
+								player[QQ]["MainAtt"][key1] = 0
+							end
+						else
+							player[QQ]["Count"][key1] = player[QQ]["Count"][key1] + value1
+							-- 如果计算值小于零，则将其强制赋值为零
+							if player[QQ]["Count"][key1] < 0 then
+								player[QQ]["Count"][key1] = 0
+							end
+						end
                     end
                 else 
                     s = s..value[1]["failure"].."\n"
                 end
-                player[QQ]["DailyAtt"]["energy"]=player[QQ]["DailyAtt"]["energy"]+value[1]["energy"]
-                s = s..show("玩家","energy",value[1]["energy"])..'\n';
-                player[QQ]["DailyAtt"]["mood"]=player[QQ]["DailyAtt"]["mood"]+value[1]["mood"]
-                s = s..show("玩家","mood",value[1]["mood"])..'\n';    
+                player[QQ]["DailyAtt"]["energy"] = player[QQ]["DailyAtt"]["energy"] + value[1]["energy"]
+				-- 如果计算值小于零，则将其强制赋值为零
+				if player[QQ]["DailyAtt"]["energy"] < 0 then
+					player[QQ]["DailyAtt"]["energy"] = 0
+				end
+				s = s .. show("玩家", "energy", value[1]["energy"]) .. '\n';
+				player[QQ]["DailyAtt"]["mood"] = player[QQ]["DailyAtt"]["mood"] + value[1]["mood"]
+				-- 如果计算值小于零，则将其强制赋值为零
+				if player[QQ]["DailyAtt"]["mood"] < 0 then
+					player[QQ]["DailyAtt"]["mood"] = 0
+				end
+				s = s .. show("玩家", "mood", value[1]["mood"]) .. '\n';
                 table.insert(temp[QQ]["daily_done"],temp[QQ]["next_daily"].num)
                 temp[QQ].next_daily.num = nil
                 temp[QQ].next_daily.generate_time = nil
@@ -171,22 +210,47 @@ function do_daily(msg)
         for key, value in pairs(event[Type][num][idx]["change"]) do
             s = s..show("玩家",key,value).."\n"
             if key == "point" then 
-                player[QQ]["points"]=player[QQ]["points"]+value;
-            elseif key == "credit" then 
-                player[QQ]["Mainline"]["credit"]=player[QQ]["Mainline"]["credit"]+value
-            elseif key == "CON" or key == "WIL" or key == "LUC" or key == "INT" then
-                player[QQ]["MainAtt"][key]=player[QQ]["MainAtt"][key]+value
-            else
-                player[QQ]["Count"][key]=player[QQ]["Count"][key]+value
-            end
+				player[QQ]["points"] = player[QQ]["points"] + value
+				-- 如果计算值小于零，则将其强制赋值为零
+				if player[QQ]["points"] < 0 then
+					player[QQ]["points"] = 0
+				end
+			elseif key == "credit" then 
+				player[QQ]["Mainline"]["credit"] = player[QQ]["Mainline"]["credit"] + value
+				-- 如果计算值小于零，则将其强制赋值为零
+				if player[QQ]["Mainline"]["credit"] < 0 then
+					player[QQ]["Mainline"]["credit"] = 0
+				end
+			elseif key == "CON" or key == "WIL" or key == "LUC" or key == "INT" then
+				player[QQ]["MainAtt"][key] = player[QQ]["MainAtt"][key] + value
+				-- 如果计算值小于零，则将其强制赋值为零
+				if player[QQ]["MainAtt"][key] < 0 then
+					player[QQ]["MainAtt"][key] = 0
+				end
+			else
+				player[QQ]["Count"][key] = player[QQ]["Count"][key] + value
+				-- 如果计算值小于零，则将其强制赋值为零
+				if player[QQ]["Count"][key] < 0 then
+					player[QQ]["Count"][key] = 0
+				end
+			end
         end
     else
         s = s..event[Type][num][idx]["failure"].."\n"
     end
-    player[QQ]["DailyAtt"]["energy"]=player[QQ]["DailyAtt"]["energy"]+event[Type][num][idx]["energy"]
-    s = s..show("玩家","energy",event[Type][num][idx]["energy"])..'\n';
-    player[QQ]["DailyAtt"]["mood"]=player[QQ]["DailyAtt"]["mood"]+event[Type][num][idx]["mood"]
-    s = s..show("玩家","mood",event[Type][num][idx]["mood"])..'\n';    
+    player[QQ]["DailyAtt"]["energy"] = player[QQ]["DailyAtt"]["energy"] + event[Type][num][idx]["energy"]
+	-- 如果计算值小于零，则将其强制赋值为零
+	if player[QQ]["DailyAtt"]["energy"] < 0 then
+		player[QQ]["DailyAtt"]["energy"] = 0
+	end
+	s = s .. show("玩家", "energy", event[Type][num][idx]["energy"]) .. '\n';
+
+	player[QQ]["DailyAtt"]["mood"] = player[QQ]["DailyAtt"]["mood"] + event[Type][num][idx]["mood"]
+	-- 如果计算值小于零，则将其强制赋值为零
+	if player[QQ]["DailyAtt"]["mood"] < 0 then
+		player[QQ]["DailyAtt"]["mood"] = 0
+	end
+	s = s .. show("玩家", "mood", event[Type][num][idx]["mood"]) .. '\n';
     table.insert(temp[QQ]["daily_done"],temp[QQ]["next_daily"].num)
     temp[QQ].next_daily.num = nil
     temp[QQ].next_daily.generate_time = nil
@@ -241,22 +305,47 @@ function do_weekly(msg)
                         
                         s = s..show("玩家",key1,value1).."\n"
                         if key1 == "point" then 
-                            player[QQ]["points"]=player[QQ]["points"]+value1;
-                        elseif key1 == "credit" then 
-                            player[QQ]["Mainline"]["credit"]=player[QQ]["Mainline"]["credit"]+value1
-                        elseif key1 == "CON" or key1 == "WIL" or key1 == "LUC" or key1 == "INT" then
-                            player[QQ]["MainAtt"][key1]=player[QQ]["MainAtt"][key1]+value1
-                        else
-                            player[QQ]["Count"][key1]=player[QQ]["Count"][key1]+value1
-                        end
+							player[QQ]["points"] = player[QQ]["points"] + value1
+							-- 如果计算值小于零，则将其强制赋值为零
+							if player[QQ]["points"] < 0 then
+								player[QQ]["points"] = 0
+							end
+						elseif key1 == "credit" then 
+							player[QQ]["Mainline"]["credit"] = player[QQ]["Mainline"]["credit"] + value1
+							-- 如果计算值小于零，则将其强制赋值为零
+							if player[QQ]["Mainline"]["credit"] < 0 then
+								player[QQ]["Mainline"]["credit"] = 0
+							end
+						elseif key1 == "CON" or key1 == "WIL" or key1 == "LUC" or key1 == "INT" then
+							player[QQ]["MainAtt"][key1] = player[QQ]["MainAtt"][key1] + value1
+							-- 如果计算值小于零，则将其强制赋值为零
+							if player[QQ]["MainAtt"][key1] < 0 then
+								player[QQ]["MainAtt"][key1] = 0
+							end
+						else
+							player[QQ]["Count"][key1] = player[QQ]["Count"][key1] + value1
+							-- 如果计算值小于零，则将其强制赋值为零
+							if player[QQ]["Count"][key1] < 0 then
+								player[QQ]["Count"][key1] = 0
+							end
+						end
                     end
                 else 
                     s = s..value[1]["failure"].."\n"
                 end
-                player[QQ]["DailyAtt"]["energy"]=player[QQ]["DailyAtt"]["energy"]+value[1]["energy"]
-                s = s..show("玩家","energy",value[1]["energy"])..'\n';
-                player[QQ]["DailyAtt"]["mood"]=player[QQ]["DailyAtt"]["mood"]+value[1]["mood"]
-                s = s..show("玩家","mood",value[1]["mood"])..'\n';    
+                player[QQ]["DailyAtt"]["energy"] = player[QQ]["DailyAtt"]["energy"] + value[1]["energy"]
+				-- 如果计算值小于零，则将其强制赋值为零
+				if player[QQ]["DailyAtt"]["energy"] < 0 then
+					player[QQ]["DailyAtt"]["energy"] = 0
+				end
+				s = s .. show("玩家", "energy", value[1]["energy"]) .. '\n';
+
+				player[QQ]["DailyAtt"]["mood"] = player[QQ]["DailyAtt"]["mood"] + value[1]["mood"]
+				-- 如果计算值小于零，则将其强制赋值为零
+				if player[QQ]["DailyAtt"]["mood"] < 0 then
+					player[QQ]["DailyAtt"]["mood"] = 0
+				end
+				s = s .. show("玩家", "mood", value[1]["mood"]) .. '\n';
                 table.insert(temp[QQ]["weekly_done"],temp[QQ]["next_weekly"].num)
                 temp[QQ].next_weekly.num = nil
                 temp[QQ].next_weekly.generate_time = nil
@@ -286,22 +375,47 @@ function do_weekly(msg)
         for key, value in pairs(event[Type][num][idx]["change"]) do
             s = s..show("玩家",key,value).."\n"
             if key == "point" then 
-                player[QQ]["points"]=player[QQ]["points"]+value;
-            elseif key == "credit" then 
-                player[QQ]["Mainline"]["credit"]=player[QQ]["Mainline"]["credit"]+value
-            elseif key == "CON" or key == "WIL" or key == "LUC" or key == "INT" then
-                player[QQ]["MainAtt"][key]=player[QQ]["MainAtt"][key]+value
-            else
-                player[QQ]["Count"][key]=player[QQ]["Count"][key]+value
-            end
+				player[QQ]["points"] = player[QQ]["points"] + value
+				-- 如果计算值小于零，则将其强制赋值为零
+				if player[QQ]["points"] < 0 then
+					player[QQ]["points"] = 0
+				end
+			elseif key == "credit" then 
+				player[QQ]["Mainline"]["credit"] = player[QQ]["Mainline"]["credit"] + value
+				-- 如果计算值小于零，则将其强制赋值为零
+				if player[QQ]["Mainline"]["credit"] < 0 then
+					player[QQ]["Mainline"]["credit"] = 0
+				end
+			elseif key == "CON" or key == "WIL" or key == "LUC" or key == "INT" then
+				player[QQ]["MainAtt"][key] = player[QQ]["MainAtt"][key] + value
+				-- 如果计算值小于零，则将其强制赋值为零
+				if player[QQ]["MainAtt"][key] < 0 then
+					player[QQ]["MainAtt"][key] = 0
+				end
+			else
+				player[QQ]["Count"][key] = player[QQ]["Count"][key] + value
+				-- 如果计算值小于零，则将其强制赋值为零
+				if player[QQ]["Count"][key] < 0 then
+					player[QQ]["Count"][key] = 0
+				end
+			end
         end
     else
         s = s..event[Type][num][idx]["failure"].."\n"
     end
-    player[QQ]["DailyAtt"]["energy"]=player[QQ]["DailyAtt"]["energy"]+event[Type][num][idx]["energy"]
-    s = s..show("玩家","energy",event[Type][num][idx]["energy"])..'\n';
-    player[QQ]["DailyAtt"]["mood"]=player[QQ]["DailyAtt"]["mood"]+event[Type][num][idx]["mood"]
-    s = s..show("玩家","mood",event[Type][num][idx]["mood"])..'\n';    
+    player[QQ]["DailyAtt"]["energy"] = player[QQ]["DailyAtt"]["energy"] + event[Type][num][idx]["energy"]
+	-- 如果计算值小于零，则将其强制赋值为零
+	if player[QQ]["DailyAtt"]["energy"] < 0 then
+		player[QQ]["DailyAtt"]["energy"] = 0
+	end
+	s = s .. show("玩家", "energy", event[Type][num][idx]["energy"]) .. '\n';
+
+	player[QQ]["DailyAtt"]["mood"] = player[QQ]["DailyAtt"]["mood"] + event[Type][num][idx]["mood"]
+	-- 如果计算值小于零，则将其强制赋值为零
+	if player[QQ]["DailyAtt"]["mood"] < 0 then
+		player[QQ]["DailyAtt"]["mood"] = 0
+	end
+	s = s .. show("玩家", "mood", event[Type][num][idx]["mood"]) .. '\n';
     table.insert(temp[QQ]["weekly_done"],temp[QQ]["next_weekly"].num)
     temp[QQ].next_weekly.num = nil
     temp[QQ].next_weekly.generate_time = nil
