@@ -1,0 +1,2116 @@
+{
+  "Daily": {
+    "NO000": [
+      {
+        "title": "用餐时间",
+        "description": "今天你和朋友一起到食堂吃饭，你们一边吃饭，一边聊天。",
+        "place": "canteen",
+        "label": "生活",
+        "pre": {},
+        "odds": 0.15,
+        "count": 1,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你们的话匣子一下子打开了，顺畅的聊天，让原本平淡无奇的饭菜变得格外美味。",
+        "failure": "你和朋友聊着聊着突然出现了分歧，然后开始争论起来，你们两个都没了食欲。",
+        "change": {
+          "point": 5
+        },
+        "energy": 15,
+        "mood": 20,
+        "limit": "null"
+      },
+      {
+        "title": "用餐时间",
+        "description": "今天没有好友陪伴，又是一个人在食堂用餐。",
+        "place": "canteen",
+        "label": "生活",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "也许是饥饿的原因，今天的食物味道格外美味，你心满意足地炫完了餐，一点残渣都不剩。",
+        "failure": "食物的味道平淡无奇，食堂里又拥挤，你皱着眉头，勉强吃完了今天的午餐。",
+        "change": {
+          "point": 5
+        },
+        "energy": 15,
+        "mood": 10,
+        "limit": "null"
+      },
+      {
+        "title": "用餐时间",
+        "description": "今天在宿舍用餐，味道很平淡，你决定观看视频下饭。",
+        "place": "dormitory",
+        "label": "生活",
+        "pre": {},
+        "odds": 0.15,
+        "count": 1,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+        "success": "这期的电子榨菜非常下饭，出乎你的意料，你食欲大增，三下五除二就把餐炫完了。",
+        "failure": "这期的电子榨菜一点都不下饭，出乎你的意料，你食欲不振，餐没吃完就倒掉了。",
+        "change": {
+          "point": 5
+        },
+        "energy": 15,
+        "mood": 5,
+        "limit": "null"
+      },
+      {
+        "title": "用餐时间",
+        "description": "你饥肠辘辘，独自一人来到食堂，却发现每一个档口都大排长龙。",
+        "place": "canteen",
+        "label": "生活",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "尽管等待时间很长，你仍然坚持不懈地排队等待，并最终吃上了晚饭。",
+        "failure": "等待时间过长，让你感到饥饿和不耐烦，你无奈回到宿舍泡面或吃一些零食来充饥。",
+        "change": {
+          "point": 5
+        },
+        "energy": 15,
+        "mood": 5,
+        "limit": "null"
+      },
+      {
+        "title": "用餐时间",
+        "description": "由于懒得去食堂吃饭，你打开了米团APP点了一份外卖，不久就收到了外卖已送达的消息。",
+        "place": "dormitory",
+        "label": "生活",
+        "pre": {},
+        "odds": 0.1,
+        "count": 1,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+        "success": "你下楼查看外卖架，经过一番查找，发现了自己的外卖，取外卖-上楼-干饭，整个过程非常顺畅。",
+        "failure": "你慢悠悠地下楼查看外卖架，找了很久，外卖架上迟迟不见踪影，你只好重新点餐。",
+        "change": {
+          "point": 5
+        },
+        "energy": 15,
+        "mood": 0,
+        "limit": "null"
+      }
+    ],
+    "NO001": [
+      {
+        "title": "高等数学（上）",
+        "description": "数学公式和方程填满了前方的黑板，老师讲解得有声有色，你积极参与互动。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.5,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+        "success": "在老师的引导下，你成功地理解了一些复杂的数学概念和公式，并且能够运用它们解决问题。",
+        "failure": "尽管你努力参与互动，但你发现自己的理解并不如其他同学那样深刻，你感到有些失落和困惑。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "Semster1"
+      },
+      {
+        "title": "高等数学（上）",
+        "description": "听着老师讲课，你试图跟上节奏，然而老师的声音对你来说就是一首摇篮曲。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.3,
+        "count": 1,
+        "judge": "WIL",
+        "ending": 1,
+        "diff": 10,
+        "success": "尽管你感到疲倦，但你成功地坚持听完了整节课，在困意中吸收了一点知识。",
+        "failure": "尽管你试图保持清醒，但你愈发觉得困倦，于是趴在桌上睡了一整节课。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 5,
+        "limit": "Semster1"
+      },
+      {
+        "title": "高等数学（上）",
+        "description": "听着老师讲课，你觉得自己跟不上节奏，于是掏出口袋里的爱机打算自学。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.15,
+        "count": 1,
+        "judge": "WIL",
+        "ending": 1,
+        "diff": 10,
+        "success": "你打开了霹雳霹雳，点开了宋浩老师的高数视频，吸收了不少高数知识。",
+        "failure": "你打开了霹雳霹雳，却被首页的推荐吸引，你无心学习，连刷了多条短视频。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "Semster1"
+      },
+      {
+        "title": "高等数学（下）",
+        "description": "由于事先做好了预习，在课堂上你可以精神饱满地跟上老师的步伐。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.5,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+        "success": "老师提出问题时，你自告奋勇地举手了，并且正确地回答了问题，老师满意地点了点头。",
+        "failure": "老师提出问题时，你自告奋勇地举手了，然而由于粗心而答错，你感到很尴尬。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "Semster2"
+      },
+      {
+        "title": "高等数学（下）",
+        "description": "坐在教室里，望着PPT上各种眼花缭乱的积分，你感到难以理解，昏昏欲睡。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.3,
+        "count": 1,
+        "judge": "WIL",
+        "ending": 1,
+        "diff": 10,
+        "success": "尽管睡意缠绕着你，但在你的强大意志下成功坚持住了，在睡意中吸收了一点知识。",
+        "failure": "尽管你试图睁大眼睛以抵抗睡意，但还是失败了，你趴在桌上睡了一整节课。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 5,
+        "limit": "Semster2"
+      },
+      {
+        "title": "高等数学（下）",
+        "description": "面对难以理解的奇怪积分和老师的催眠曲，你决定掏出口袋里的爱机自学。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.15,
+        "count": 1,
+        "judge": "WIL",
+        "ending": 1,
+        "diff": 10,
+        "success": "你打开了霹雳霹雳，观看了宋浩老师的高数视频，从中获取了不少的积分知识。",
+        "failure": "你打开了霹雳霹雳，却被首页的推荐吸引，你无心学习，连刷了多条短视频。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 5,
+        "limit": "Semster2"
+      }
+    ],
+    "NO002": [
+      {
+        "title": "C语言程序设计",
+        "description": "计算机屏幕上充斥着各种代码，你挑战着编程的难题，感到吃力又无助。",
+        "place": "compus",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.5,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+        "success": "尽管你感到困难，但你成功地克服了这些问题，并解决了编程难题，最终完成了编程任务。",
+        "failure": "尽管你努力尝试解决编程难题，但你仍然无法解决这些问题，只能课后多花时间解决。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": -10,
+        "limit": "Semster1"
+      },
+      {
+        "title": "C语言程序设计",
+        "description": "计算机屏幕上充斥着各种代码，一如往常，简单题对你来说小菜一碟，但难题还是依旧卡着你无法前行。",
+        "place": "compus",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.3,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+        "success": "你不断调整思路并尝试新的解决方案，最终成功地实现了题目要求的功能。",
+        "failure": "尽管你尝试了多种方法来解决难题，但你仍然无法找到解决问题的方法。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": -5,
+        "limit": "Semster1"
+      },
+      {
+        "title": "C语言程序设计",
+        "description": "计算机屏幕上充斥着各种代码，你快速敲击着键盘势如破竹，宛若Jason附体。",
+        "place": "compus",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.15,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+        "success": "你的代码不仅规范而且高效，展现出了出色的编程技巧和逻辑思维，你获得了老师的认可和赞赏。",
+        "failure": "尽管你的代码速度很快，但你没有仔细检查代码中的错误，导致运行时出现了问题。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "Semster1"
+      }
+    ],
+    "NO003": [
+      {
+        "title": "心理健康教育",
+        "description": "在心理课上，你从书包里拿出了练习和笔袋，开始自习。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.3,
+        "count": 1,
+        "judge": "WIL",
+        "ending": 1,
+        "diff": 10,
+        "success": "你自习时的状态非常投入，忘记了心理课的存在，又增长了不少知识。",
+        "failure": "由于你周围有人打游戏时不停讲话，这节课你静不下心来自习。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 5,
+        "limit": "Semster1"
+      },
+      {
+        "title": "心理健康教育",
+        "description": "在心理课上，你从口袋里掏出了手机启动了《铁锹互殴》，和好友开了一局。",
+        "place": "classroom",
+        "label": "游戏",
+        "pre": {},
+        "odds": 0.3,
+        "count": 1,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+        "success": "也许是天胡，也许是运营节奏正确，你成功吃鸡，游戏结束时正好碰上下课铃。",
+        "failure": "也许是脸黑，也许是运营乱了，你老八出局，老八的惩罚是听完剩下半节课。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 5,
+        "limit": "Semster1"
+      },
+      {
+        "title": "心理健康教育",
+        "description": "在心理课上，你从口袋里掏出了手机，打算看乐子。",
+        "place": "classroom",
+        "label": "娱乐",
+        "pre": {},
+        "odds": 0.3,
+        "count": 1,
+        "judge": "WIL",
+        "ending": 0,
+        "diff": 10,
+        "success": "你突然刷到一个特别好笑的视频，忍不住笑出了声，教室顿时鸦雀无声，更不幸的是老师扣了你的平时分。",
+        "failure": "由于强大的控制能力，你在看乐子的过程中，全程没笑出声，成功避免了尴尬局面。",
+        "change": {
+          "credit": -1
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "Semster1"
+      }
+    ],
+    "NO004": [
+      {
+        "title": "思想道德与法治",
+        "description": "你认为思政课和心理课一样都是水课，所以你开始掏出纸笔写作业。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.4,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+        "success": "你写作业时的状态非常投入，但你用见闻色霸气注意到了老师的走进，迅速地收起练习，逃过一劫。",
+        "failure": "你写作业时的状态非常投入，以至于没有注意到老师的身影走进，老师拍了拍你，露出邪魅一笑。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 5,
+        "limit": "Semster1"
+      },
+      {
+        "title": "心理健康教育",
+        "description": "你认为思政课和心理课一样都是水课，所以你掏出手机玩《铁锹互殴》。",
+        "place": "classroom",
+        "label": "游戏",
+        "pre": {},
+        "odds": 0.4,
+        "count": 1,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+        "success": "老师并没有下台巡视，你在运气和实力的双重加持下，在下课时成功吃鸡。",
+        "failure": "由于这节课老师频繁下台巡视，你的节奏被打乱了，喜提老八出局。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 5,
+        "limit": "Semster1"
+      }
+    ],
+    "NO005": [
+      {
+        "title": "体育（一）",
+        "description": "按照惯例，体育课前几min需要慢跑1km以热身，你信心满满，认为自己能完成。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.4,
+        "count": 1,
+        "judge": "CON",
+        "ending": 1,
+        "diff": 10,
+        "success": "由于良好的身体素质，你成功完成了1km慢跑热身，全身的运动细胞成功激活。",
+        "failure": "由于平时缺乏锻炼，你慢跑了一圈半就坚持不住，只能偷懒走回原地。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 5,
+        "limit": "Semster1"
+      },
+      {
+        "title": "体育（一）",
+        "description": "按照惯例，体育课前几min需要慢跑1km以热身，你今天状态有点不好。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.5,
+        "count": 1,
+        "judge": "WIL",
+        "ending": 1,
+        "diff": 15,
+        "success": "虽然不在状态，但是凭借顽强的毅力，你成功完成了1km热身。",
+        "failure": "由于心理素质一般，你中途便坚持不住，只能偷懒走回原地。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "Semster1"
+      },
+      {
+        "title": "体育（一）",
+        "description": "按照惯例，体育课前二十分钟需要热身，热身项目有单脚跳、短跑。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.4,
+        "count": 1,
+        "judge": "CON",
+        "ending": 1,
+        "diff": 10,
+        "success": "凭借强大的身体素质，这次热身取得了良好的效果，你的全身充满了动力。",
+        "failure": "由于身体素质一般，这次热身不但没有起到效果，反而使你耗费太多精力，你累瘫了。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "Semster2"
+      },
+      {
+        "title": "体育（一）",
+        "description": "按照惯例，这学期体育课热身之后便是跳绳训练。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.5,
+        "count": 1,
+        "judge": "CON",
+        "ending": 1,
+        "diff": 10,
+        "success": "凭借良好的热身效果和灵活的躯体，这次跳绳训练的成果非常好看，你突破了之前的记录。",
+        "failure": "由于热身效果和身体素质一般，这次跳绳训练的成果一般，你大口地喘着粗气，迫不及待要坐下休息。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "Semster2"
+      }
+    ],
+    "NO050": [
+      {
+        "title": "走走停停1km",
+        "description": "你在校园小道上漫步，微风拂过，你独自一人欣赏校园风景，沉浸在宁静的夜晚中。",
+        "place": "compus",
+        "label": "散步",
+        "pre": {},
+        "odds": 0.6,
+        "count": 1,
+        "judge": "WIL",
+        "ending": 1,
+        "diff": 10,
+        "success": "你在校园小道上漫步，独自一人欣赏着校园的夜景，感受着微风的拂面。你沉浸在这种宁静和美好中，心情愉悦。",
+        "failure": "你在漫步的过程中，无法完全沉浸在夜晚的美景中，思绪有些纷乱。你感到有些不安和烦躁，无法完全放松身心。",
+        "change": {
+          "point": 5
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "null"
+      },
+      {
+        "title": "走走停停0km",
+        "description": "你在校园小道上漫步，突然间狂风大作，电闪雷鸣，暴雨倾盆。",
+        "place": "compus",
+        "label": "散步",
+        "pre": {},
+        "odds": 0.1,
+        "count": 1,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+        "success": "尽管突然遭遇了狂风暴雨，但你成功地找到了躲避处，保护了自己免受暴雨的侵袭。",
+        "failure": "尽管你尝试寻找躲避处，但狂风暴雨太大，你被淋了一个落汤鸡，感到十分狼狈和沮丧。",
+        "change": {
+          "point": 20
+        },
+        "energy": -10,
+        "mood": -5,
+        "limit": "null"
+      },
+      {
+        "title": "走走停停5km",
+        "description": "你在校园小道上漫步，你感觉全身上下充满了精力。",
+        "place": "compus",
+        "label": "散步",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "CON",
+        "ending": 1,
+        "diff": 10,
+        "success": "你轻松完成了5km的漫步，并成功获得了朋友圈步数排行榜的第一名。",
+        "failure": "虽然你感觉很精力充沛，但你走得过于匆忙，没有注意到周围的美景和细节。",
+        "change": {
+          "point": 10
+        },
+        "energy": -10,
+        "mood": 20,
+        "limit": "null"
+      }
+    ],
+    "NO051": [
+      {
+        "title": "100%",
+        "description": "在慢跑之前，你给自己定了个目标，并自信满满地做完了热身运动。",
+        "place": "playground",
+        "label": "跑步",
+        "pre": {},
+        "odds": 0.8,
+        "count": 1,
+        "judge": "CON",
+        "ending": 1,
+        "diff": 10,
+        "success": "由于目标里程切合自身实际，你成功地完成了慢跑目标，高兴地擦了擦头上的汗。",
+        "failure": "由于你高估了自己的体能，目标定得过高，你不到一半里程就跑不动了，只能草草收场。",
+        "change": {
+          "point": 10
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "null"
+      },
+      {
+        "title": "0%",
+        "description": "你在操场上做着热身运动，为慢跑做准备，突然狂风大作，电闪雷鸣，暴雨倾盆。",
+        "place": "playground",
+        "label": "跑步",
+        "pre": {},
+        "odds": 0.1,
+        "count": 1,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+        "success": "尽管突然遭遇了狂风暴雨，但你成功地找到了躲避处，保护了自己免受暴雨的侵袭。",
+        "failure": "尽管你尝试寻找躲避处，但狂风暴雨太大，你被淋了一个落汤鸡，感到十分狼狈和沮丧。",
+        "change": {
+          "point": 20
+        },
+        "energy": -10,
+        "mood": -5,
+        "limit": "null"
+      }
+    ],
+    "NO071": [
+      {
+        "title": "根行，启动",
+        "description": "你启动了《根行》，爆肝2h终于集满了想要角色的突破材料，万事俱备，只欠东风。",
+        "place": "dormitory",
+        "label": "游戏",
+        "pre": {},
+        "odds": 0.1,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+        "success": "你成功收集到了所爱角色的突破材料，检查了一遍，数量正好，你心满意足地下线了。",
+        "failure": "你花费了很长时间收集突破材料，突然你发现想要角色的突破材料刷错了，你气得差点把电脑砸了。",
+        "change": {
+          "point": 10
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "null"
+      },
+      {
+        "title": "根行，启动",
+        "description": "你启动了《根行》，一如既往地刷绝缘本，希望能出个好货。",
+        "place": "dormitory",
+        "label": "游戏",
+        "pre": {},
+        "odds": 0.1,
+        "count": 1,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+        "success": "你一如既往地刷绝缘本，终于出了个极品充能双爆杯，你的角色终于有好东西用了。",
+        "failure": "你刷了很久的绝缘本，用光了所有树脂，果然，这次并没有出货，你一如既往地下线了。",
+        "change": {
+          "point": 10
+        },
+        "energy": -10,
+        "mood": 30,
+        "limit": "null"
+      },
+      {
+        "title": "根行，启动",
+        "description": "你启动了《根行》，跟着影月月的攻略视频开宝箱、找神瞳。",
+        "place": "dormitory",
+        "label": "游戏",
+        "pre": {},
+        "odds": 0.1,
+        "count": 1,
+        "judge": "WIL",
+        "ending": 1,
+        "diff": 10,
+        "success": "由于在找宝箱和神瞳时细心又谨慎，你成功跟着视频收集了所有的宝箱奖励和神瞳。",
+        "failure": "你跟着视频找了一遍，却发现神瞳少了几个，你只能重新播放视频，从头开始检查。",
+        "change": {
+          "point": 10
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "null"
+      },
+      {
+        "title": "寰宇列车，启动",
+        "description": "今天活动又开了新的关卡，你启动了《寰宇列车》，开始做活动。",
+        "place": "dormitory",
+        "label": "游戏",
+        "pre": {},
+        "odds": 0.1,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+        "success": "活动对你而言非常简单，你短时间内就完成了活动的新关卡，拿到了全部奖励。",
+        "failure": "你被这铸币活动恶心吐了，花了很长时间才打完新关卡，拿到了全部奖励。",
+        "change": {
+          "point": 10
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "null"
+      },
+      {
+        "title": "寰宇列车，启动",
+        "description": "今天又是刷遗器的一天，你启动了《寰宇列车》，开始打侵蚀隧洞。",
+        "place": "dormitory",
+        "label": "游戏",
+        "pre": {},
+        "odds": 0.1,
+        "count": 1,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+        "success": "今天运气爆棚，出了个极品遗器，你的角色终于有好东西用了。",
+        "failure": "你用光了所有体力，果然，这次又没出货，你一如既往地下线了。",
+        "change": {
+          "point": 10
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "null"
+      },
+      {
+        "title": "寰宇列车，启动",
+        "description": "今天又是打模拟宇宙的一天，你启动了《寰宇列车》，开始打模拟宇宙。",
+        "place": "dormitory",
+        "label": "游戏",
+        "pre": {},
+        "odds": 0.1,
+        "count": 1,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+        "success": "今天运气爆棚，出的祝福都很契合你的队伍，面对丰饶玄鹿，你轻松地嘎掉了它的三条命。",
+        "failure": "今天脸太黑，出的祝福都不太行，包里还有好几个负面奇物，你的队伍被可可利亚团灭了。",
+        "change": {
+          "point": 10
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "null"
+      },
+      {
+        "title": "绷3，启动",
+        "description": "今天开了新剧情关卡，你启动了《绷3》，准备接收新刀子的问候。",
+        "place": "dormitory",
+        "label": "游戏",
+        "pre": {},
+        "odds": 0.1,
+        "count": 1,
+        "judge": "WIL",
+        "ending": 0,
+        "diff": 10,
+        "success": "虽然挨过无数刀子，但这次刀子的杀伤力太强，看着关卡中的剧情，你还是泪流满面了。",
+        "failure": "也许是挨过无数刀子，这次的剧情居然没有让你流泪，你觉得这次剧情有点逊色了。",
+        "change": {
+          "point": 10
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "null"
+      },
+      {
+        "title": "绷3，启动",
+        "description": "今天是周本更新的一天，你一如既往地启动了《绷3》。",
+        "place": "dormitory",
+        "label": "游戏",
+        "pre": {},
+        "odds": 0.1,
+        "count": 1,
+        "judge": "WIL",
+        "ending": 0,
+        "diff": 10,
+        "success": "所幸你没有忘记这次周本更新，你完成了所有委托，拿到了丰厚奖励。",
+        "failure": "由于各种原因，你忘记了这次周本更新的事情，错失了很多奖励。",
+        "change": {
+          "point": 10
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "null"
+      }
+    ],
+    "NO096": [
+      {
+        "title": "虎崖直播",
+        "description": "你在虎崖直播平台观看红莲的《泥底之弈》直播，此时红莲血量最少。",
+        "place": "dormitory",
+        "label": "其他",
+        "pre": {},
+        "odds": 0.1,
+        "count": 1,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+        "success": "由于红莲太贪，导致他被一家运营朋克阵容的玩家送走了，直播间飘满了下播的弹幕。",
+        "failure": "红莲在欧气的加持之下，在最后几秒成功把琴女D到3星，最终成功吃鸡，直播间飘满了问号。",
+        "change": {
+          "point": 5
+        },
+        "energy": -5,
+        "mood": 10,
+        "limit": "null"
+      }
+    ]
+  },
+
+  "Weekly": {
+    "NO100": [
+      {
+        "title": "重生之制霸小测·高数小妖精",
+        "description": "简单的极限计算题，对你来说不要太容易，60s搞定！呵，邪魅一笑",
+        "place": "classroom",
+        "label": "高数",
+        "pre": {},
+        "odds": 0.25,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你以极快的速度和准确性完成了极限计算题，展现出了自己的高超数学技能和思维能力。",
+        "failure": "虽然你完成了极限计算题，但你的答案出现了错误，让你感到有些尴尬和失落。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": 20,
+        "limit": "Semster1"
+      },
+      {
+        "title": "重生之制霸小测·高数小妖精",
+        "description": "简单的极限计算题，对你来说不算困难，花了5分钟！但有个傻逼，先做完还傻笑，好气！！",
+        "place": "classroom",
+        "label": "高数",
+        "pre": {},
+        "odds": 0.25,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "尽管被傻逼的傻笑干扰，但你仍然坚持完成了极限计算题。",
+        "failure": "尽管你完成了极限计算题，但你被傻逼的傻笑干扰，失去了专注和冷静。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": 5,
+        "limit": "Semster1"
+      },
+      {
+        "title": "重生之制霸小测·高数小妖精",
+        "description": "简单的极限计算题，对你来说有点困难，花了10分钟！算了，爷下次再努力~",
+        "place": "classroom",
+        "label": "高数",
+        "pre": {},
+        "odds": 0.25,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你虽然花了10分钟来解决极限计算题，但你并没有放弃，而是决定下次再努力。",
+        "failure": "尽管你花了10分钟来解决极限计算题，但你的答案仍然出现了错误，你感到有些沮丧。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": 0,
+        "limit": "Semster1"
+      },
+      {
+        "title": "重生之制霸小测·高数小妖精",
+        "description": "简单的极限计算题，对你来说很困难，花了30分钟！总算做出来了，但被老师鼓励，比之前有很大进步",
+        "place": "classroom",
+        "label": "高数",
+        "pre": {},
+        "odds": 0.25,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你虽然花了30分钟来解决极限计算题，但你最终成功解决了问题，展现出了自己的毅力和解决问题的能力。",
+        "failure": "尽管你最终解决了极限计算题，但你的答案并不完全正确。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": 5,
+        "limit": "Semster1"
+      }
+    ],
+    "NO101": [
+      {
+        "title": "重生之制霸小测·高数小妖精1",
+        "description": "简单的微积分啦，对你来说不要太容易，5分钟搞定！呵，邪魅一笑",
+        "place": "classroom",
+        "label": "高数",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你以极快的速度和准确性完成了微积分题目，展现出了自己的高超数学技能和思维能力。。",
+        "failure": "虽然你完成了微积分题目，但你的答案出现了错误，让你感到有些尴尬和失落。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": 20,
+        "limit": "Semster1"
+      },
+      {
+        "title": "重生之制霸小测·高数小妖精1",
+        "description": "简单的微积分啦，对你来说不算困难，花了10分钟！但有个傻逼，先做完还嘲笑你，好气！！",
+
+        "place": "classroom",
+        "label": "高数",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "尽管被傻逼嘲笑，但你仍然坚持完成了微积分题目。你的冷静和专注让你成功应对了这个挑战。",
+        "failure": "尽管你完成了微积分题目，但你被傻逼的嘲笑干扰，失去了专注和冷静。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": 5,
+        "limit": "Semster1"
+      },
+      {
+        "title": "重生之制霸小测·高数小妖精1",
+        "description": "简单的微积分啦，对你来说有点困难，花了15分钟！算了，爷下次再努力~",
+
+        "place": "classroom",
+        "label": "高数",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你虽然花了15分钟来解决微积分题目，但你并没有放弃，而是决定下次再努力。",
+        "failure": "尽管你花了15分钟来解决微积分题目，但你的答案仍然出现了错误，你感到有些沮丧。",
+        "change": {
+          "credit": 1
+        },
+        "energy": "-3",
+        "mood": 0,
+        "limit": "Semster1"
+      },
+      {
+        "title": "重生之制霸小测·高数小妖精1",
+        "description": "简单的微积分啦，对你来说很困难，花了30分钟！总算做出来了，但被老师鼓励，比之前有很大进步",
+
+        "place": "classroom",
+        "label": "高数",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你虽然花了30分钟来解决微积分题目，但你最终成功解决了问题，展现出了自己的毅力和解决问题的能力。",
+        "failure": "尽管你最终解决了微积分题目，但你的答案并不完全正确。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": 5,
+        "limit": "Semster1"
+      },
+      {
+        "title": "重生之制霸小测·高数小妖精1",
+        "description": "简单的微积分啦，对你来说很困难，花了45分钟,还没出来了，好难过，你决定回去发奋学习",
+
+        "place": "classroom",
+        "label": "高数",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "虽然你未能立即解决微积分题目，但你决定回去发奋学习，这表明你有积极的学习态度和自我提升的意识。",
+        "failure": "你虽然努力尝试解决微积分题目，但最终未能成功，你感到难过，意识到自己的不足。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": -10,
+        "limit": "Semster1"
+      }
+
+    ],
+    "NO102": [
+      {
+        "title": "重生之制霸小测·高数小妖精2",
+        "description": "只是有点复杂的微积分啦，对你来说不要太容易，5分钟搞定！呵，邪魅一笑",
+
+        "place": "classroom",
+        "label": "高数",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你以极快的速度和准确性完成了复杂的微积分题目，展现出了自己的高超数学技能和思维能力。",
+        "failure": "虽然你完成了微积分题目，但你的答案出现了错误，让你感到有些尴尬和失落。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": 20,
+        "limit": "Semster1"
+      },
+      {
+        "title": "重生之制霸小测·高数小妖精2",
+        "description": "只是有点复杂的微积分啦，对你来说不算困难，花了10分钟！但有个傻逼，先做完还嘲笑你，好气！！",
+
+        "place": "classroom",
+        "label": "高数",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "尽管被傻逼嘲笑，但你仍然坚持完成了复杂的微积分题目。",
+        "failure": "尽管你完成了微积分题目，但你被傻逼的嘲笑干扰，失去了专注和冷静。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": 5,
+        "limit": "Semster1"
+      },
+      {
+        "title": "重生之制霸小测·高数小妖精2",
+        "description": "只是有点复杂的微积分啦，对你来说有点困难，花了15分钟！算了，爷下次再努力~",
+
+        "place": "classroom",
+        "label": "高数",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你虽然花了15分钟来解决复杂的微积分题目，但你并没有放弃，而是决定下次再努力。",
+        "failure": "尽管你花了15分钟来解决微积分题目，但你的答案仍然出现了错误。你感到有些沮丧。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": 0,
+        "limit": "Semster1"
+      },
+      {
+        "title": "重生之制霸小测·高数小妖精2",
+        "description": "只是有点复杂的微积分啦，对你来说很困难，花了30分钟！总算做出来了，但被老师鼓励，比之前有很大进步",
+
+        "place": "classroom",
+        "label": "高数",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你虽然花了30分钟来解决微积分题目，但你最终成功解决了问题。",
+        "failure": "尽管你最终解决了微积分题目，但你的答案并不完全正确。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": 5,
+        "limit": "Semster1"
+      },
+      {
+        "title": "重生之制霸小测·高数小妖精2",
+        "description": "只是有点复杂的微积分啦，对你来说很困难，花了45分钟,还没出来了，好难过，你决定回去发奋学习",
+
+        "place": "classroom",
+        "label": "高数",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "虽然你未能立即解决微积分题目，但你决定回去发奋学习。",
+        "failure": "你虽然努力尝试解决微积分题目，但最终未能成功。你感到难过，意识到自己的不足。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": -10,
+        "limit": "Semster1"
+      }
+
+    ],
+    "NO103": [
+      {
+        "title": "重生之制霸小测·高数小妖精3",
+        "description": "好复杂的求微分，对你来说不要太容易，5分钟搞定！呵，邪魅一笑",
+
+        "place": "classroom",
+        "label": "高数",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你以极快的速度和准确性完成了复杂的微分题目，展现出了自己的高超数学技能和思维能力。",
+        "failure": "虽然你完成了微分题目，但你的答案可能不够完善或者有错误，这让你感到有些尴尬和失落。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": 20,
+        "limit": "Semster1"
+      },
+      {
+        "title": "重生之制霸小测·高数小妖精3",
+        "description": "好复杂的求微分，对你来说不算困难，花了10分钟！但有个傻逼，先做完还嘲笑你，好气！！",
+
+        "place": "classroom",
+        "label": "高数",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "尽管被傻逼嘲笑，但你仍然坚持完成了复杂的微分题目。你的冷静和专注让你成功应对了这个挑战。",
+        "failure": "尽管你完成了微分题目，但你被傻逼的嘲笑干扰，失去了专注和冷静。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": 5,
+        "limit": "Semster1"
+      },
+      {
+        "title": "重生之制霸小测·高数小妖精3",
+        "description": "好复杂的求微分，对你来说有点困难，花了15分钟！算了，爷下次再努力~",
+
+        "place": "classroom",
+        "label": "高数",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你虽然花了15分钟来解决微分题目，但你并没有放弃，而是决定下次再努力。",
+        "failure": "尽管你花了15分钟来解决微分题目，但你的答案可能不够完善或者有错误，这让你感到有些沮丧。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": -0,
+        "limit": "Semster1"
+      },
+      {
+        "title": "重生之制霸小测·高数小妖精3",
+        "description": "好复杂的求微分，对你来说很困难，花了30分钟！总算做出来了，但被老师鼓励，比之前有很大进步",
+
+        "place": "classroom",
+        "label": "高数",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你虽然花了30分钟来解决微分题目，但你最终成功解决了问题，展现出了自己的毅力和解决问题的能力。",
+        "failure": "尽管你最终解决了微分题目，但你的答案并不完全正确。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": -10,
+        "limit": "Semster1"
+      },
+      {
+        "title": "重生之制霸小测·高数小妖精3",
+        "description": "好复杂的求微分，对你来说很困难，花了45分钟,还没出来了，好难过，你决定回去发奋学习",
+
+        "place": "classroom",
+        "label": "高数",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "虽然你未能立即解决微积分题目，但你决定回去发奋学习。",
+        "failure": "你虽然努力尝试解决微积分题目，但最终未能成功，你感到难过，意识到自己的不足。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": 5,
+        "limit": "Semster1"
+      }
+
+    ],
+    "NO104": [
+      {
+        "title": "重生之制霸小测·高数小妖精4",
+        "description": "救命是期末考，但对你来说不要太容易，5分钟搞定！呵，邪魅一笑",
+
+        "place": "classroom",
+        "label": "高数",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你在期末考中表现出色，以极快的速度和准确性完成了试卷，你感到非常自豪和满足。",
+        "failure": "虽然你完成了试卷，但你的答案可能不够完善或者有错误，这让你感到有些尴尬和失落。",
+        "change": {
+          "credit": 3
+        },
+        "energy": -20,
+        "mood": 20,
+        "limit": "Semster1"
+
+      },
+      {
+        "title": "重生之制霸小测·高数小妖精4",
+        "description": "救命是期末考，对你来说不算困难，花了10分钟！但有个傻逼，先做完还嘲笑你，好气！！",
+
+        "place": "classroom",
+        "label": "高数",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你成功完成了期末考，展示了你的数学技能和思维能力。",
+        "failure": "虽然你完成了试卷，但你被傻逼的嘲笑所干扰，失去了专注和冷静。",
+        "change": {
+          "credit": 3
+        },
+        "energy": -20,
+        "mood": 5,
+        "limit": "Semster1"
+      },
+      {
+        "title": "重生之制霸小测·高数小妖精4",
+        "description": "好复杂的求微分，对你来说有点困难，花了15分钟！算了，爷下次再努力~",
+
+        "place": "classroom",
+        "label": "高数",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你虽然花了15分钟来解决微分题目，但你并没有放弃，而是决定下次再努力。",
+        "failure": "尽管你花了15分钟来解决微分题目，但你的答案可能不够完善或者有错误，这让你感到有些沮丧。",
+        "change": {
+          "credit": 3
+        },
+        "energy": -20,
+        "mood": -0,
+        "limit": "Semster1"
+      },
+      {
+        "title": "重生之制霸小测·高数小妖精4",
+        "description": "救命是期末考，对你来说很困难，花了30分钟！总算做出来了，但被老师鼓励，比之前有很大进步",
+
+        "place": "classroom",
+        "label": "高数",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你虽然花了30分钟来解决期末考中的问题，但你最终成功解决了问题。",
+        "failure": "尽管你最终解决了问题，但你的答案并不完全正确。",
+        "change": {
+          "credit": 3
+        },
+        "energy": -20,
+        "mood": 5,
+        "limit": "Semster1"
+      },
+      {
+        "title": "重生之制霸小测·高数小妖精4",
+        "description": "救命是期末考，对你来说很困难，花了45分钟,还没出来了，好难过，你决定回去发奋学习",
+
+        "place": "classroom",
+        "label": "高数",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "",
+        "failure": "",
+        "change": {
+          "credit": 3
+        },
+        "energy": -20,
+        "mood": 10,
+        "limit": "Semster1"
+      }
+
+    ],
+    "NO105": [
+      {
+        "title": "重生之制霸小测·C语言",
+        "description": "要求用户输入两个整数并计算它们的和，对你来说不算困难，花了5分钟！但有个傻逼，先做完还傻笑，好气！！",
+
+        "place": "classroom",
+        "label": "C语言",
+        "pre": {},
+        "odds": 0.5,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你成功地完成了C语言编程挑战，从接收用户输入到计算两个整数的和，整个程序运行顺利。",
+        "failure": "虽然你完成了编程挑战，但你被傻逼的傻笑所干扰，失去了专注和冷静。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": 5,
+        "limit": "Semster1"
+
+      },
+      {
+        "title": "重生之制霸小测·C语言",
+        "description": "要求用户输入两个整数并计算它们的和，对你来说有点困难，花了10分钟！算了，爷下次再努力~",
+        "place": "classroom",
+        "label": "C语言",
+        "pre": {},
+        "odds": 0.25,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你虽然花了10分钟来完成这个编程挑战，但你并没有放弃，而是决定下次再努力。",
+        "failure": "你虽然花费了10分钟，但你并没有完全理解或掌握这个编程挑战所需的技能或知识。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": -0,
+        "limit": "Semster1"
+      },
+      {
+        "title": "重生之制霸小测·C语言",
+        "description": "要求用户输入两个整数并计算它们的和，对你来说很困难，花了30分钟！总算做出来了，但被老师鼓励，比之前有很大进步",
+        "place": "classroom",
+        "label": "C语言",
+        "pre": {},
+        "odds": 0.25,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你虽然花了30分钟来完成这个编程挑战，但你最终成功完成了任务，展现出了自己的毅力和解决问题的能力。",
+        "failure": "在这个挑战中，你没有遇到任何困难或挑战，因此没有出现失败的情况。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": 5,
+        "limit": "Semster1"
+      }
+    ],
+    "NO106": [
+      {
+        "title": "重生之制霸小测·C语言1",
+        "description": "用一个for循环来计算n的阶乘，对你来说不要太容易，5分钟搞定！呵，邪魅一笑",
+        "place": "classroom",
+        "label": "C语言",
+        "pre": {},
+        "odds": 0.25,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你成功地用一个for循环计算出了n的阶乘，虽然花了10分钟才完成这个任务，但你还是做到了。",
+        "failure": "在这个任务中，你遇到了一些困难。你需要思考如何使用for循环来计算n的阶乘，并不断尝试和调试代码。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": 20,
+        "limit": "Semster1"
+      },
+      {
+        "title": "重生之制霸小测·C语言1",
+        "description": "用一个for循环来计算n的阶乘，对你来说不算困难，花了10分钟！但有个傻逼，先做完还嘲笑你，好气！！",
+        "place": "classroom",
+        "label": "C语言",
+        "pre": {},
+        "odds": 0.25,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你成功地完成了一个for循环来计算n的阶乘，只花了10分钟时间。你感到非常自豪和满足。",
+        "failure": "在这个任务中，你遇到了一些困难。你需要思考如何使用for循环来计算n的阶乘，并不断尝试和调试代码。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": 5,
+        "limit": "Semster1"
+      },
+      {
+        "title": "重生之制霸小测·C语言1",
+        "description": "用一个for循环来计算n的阶乘，对你来说很困难，花了30分钟！总算做出来了，但被老师鼓励，比之前有很大进步",
+        "place": "classroom",
+        "label": "C语言",
+        "pre": {},
+        "odds": 0.25,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你成功地完成了一个for循环来计算n的阶乘，虽然花了30分钟才完成这个任务，但你仍然感到非常高兴和满足。",
+        "failure": "在这个任务中，你遇到了一些困难。你需要思考如何使用for循环来计算n的阶乘，并不断尝试和调试代码。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": 5,
+        "limit": "Semster1"
+      },
+      {
+        "title": "重生之制霸小测·C语言1",
+        "description": "用一个for循环来计算n的阶乘，对你来说很困难，花了45分钟,还没出来了，好难过，你决定回去发奋学习",
+        "place": "classroom",
+        "label": "C语言",
+        "pre": {},
+        "odds": 0.25,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "虽然任务很困难，但你最终还是成功地用一个for循环计算出了n的阶乘。花了一些时间来思考和调试代码，但最终完成了任务。",
+        "failure": "在这个任务中，你遇到了一些困难。你需要思考如何使用for循环来计算n的阶乘，并不断尝试和调试代码。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": -10,
+        "limit": "Semster1"
+      }
+
+    ],
+    "NO107": [
+      {
+        "title": "重生之制霸小测·C语言2",
+        "description": "要求用户输入一个整数n，并输出n行的杨辉三角形，对你来说有点困难，花了15分钟！算了，爷下次再努力~",
+        "place": "classroom",
+        "label": "C语言",
+        "pre": {},
+        "odds": 1,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "恭喜你成功完成了这个挑战！尽管你感到有些困难，但你仍然成功地输入了一个正整数n，并输出了n行的杨辉三角形，每行的数字计算都正确。",
+        "failure": "很遗憾，你没有成功完成这个挑战。可能你感到困难，需要更多练习和努力才能完成任务。请仔细检查你的代码和计算过程，并尝试重新运行程序。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": -0,
+        "limit": "Semster1"
+      }
+    ],
+    "NO108": [
+      {
+        "title": "重生之制霸小测·C语言3",
+        "description": "要求实现一个简单的排序算法（例如冒泡排序或选择排序）来对用户输入的一组整数进行排序",
+        "place": "classroom",
+        "label": "C语言",
+        "pre": {},
+        "odds": 1,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你成功地实现了排序算法，对用户输入的一组整数进行了正确排序。你的代码简洁明了，没有出现任何错误。",
+        "failure": "很遗憾，你没有成功完成这个任务。可能你在实现排序算法时遇到了困难，需要更多练习和努力才能完成任务。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": 20,
+        "limit": "Semster1"
+      }
+    ],
+    "NO109": [
+      {
+        "title": "重生之制霸小测·C语言4",
+        "description": "救命是期末考，但对你来说不要太容易，5分钟搞定！呵，邪魅一笑",
+        "place": "classroom",
+        "label": "C语言",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "恭喜你成功完成了这个挑战！你在短短的5分钟内就成功应对了期末考试，这充分展示了你的技能和知识储备。",
+        "failure": "",
+        "change": {
+          "credit": 3
+        },
+        "energy": -20,
+        "mood": 20,
+        "limit": "Semster1"
+      },
+      {
+        "title": "重生之制霸小测·C语言4",
+        "description": "救命是期末考，对你来说不算困难，花了10分钟！但有个傻逼，先做完还嘲笑你，好气！！",
+        "place": "classroom",
+        "label": "C语言",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你成功地完成了这个挑战！尽管有个别不愉快的事情发生，但你仍然在规定的时间内完成了期末考试，并取得了高分。",
+        "failure": "很遗憾，你没有成功完成这个挑战。可能你在应对期末考试时遇到了困难，或者因为其他原因没有在规定的时间内完成考试。",
+        "change": {
+          "credit": 3
+        },
+        "energy": -20,
+        "mood": 5,
+        "limit": "Semster1"
+      },
+      {
+        "title": "重生之制霸小测·C语言4",
+        "description": "救命是期末考，对你来说有点困难，花了15分钟！算了，爷下次再努力~",
+        "place": "classroom",
+        "label": "C语言",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+        "result": "1",
+        "success": "你成功地完成了这个挑战！尽管在应对期末考试时遇到了一些困难，但你仍然在规定的时间内完成了。",
+        "failure": "很遗憾，你没有成功完成这个挑战。可能你在应对期末考试时遇到了困难，或者在规定的时间内没有完成。",
+        "change": {
+          "credit": 3
+        },
+        "energy": -20,
+        "mood": 0,
+        "limit": "Semster1"
+
+      },
+      {
+        "title": "重生之制霸小测·C语言4",
+        "description": "救命是期末考，对你来说很困难，花了30分钟！总算做出来了，但被老师鼓励，比之前有很大进步",
+        "place": "classroom",
+        "label": "C语言",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "你成功地完成了这个挑战！尽管任务对你来说非常困难，但你仍然在规定的时间内完成了期末考试。",
+        "failure": "很遗憾，你没有成功完成这个挑战。可能你在应对期末考试时遇到了很大的困难，或者在规定的时间内没有完成。",
+        "change": {
+          "credit": 3
+        },
+        "energy": -20,
+        "mood": 5,
+        "limit": "Semster1"
+      },
+      {
+        "title": "重生之制霸小测·C语言4",
+        "description": "救命是期末考，对你来说很困难，花了45分钟,还没出来了，好难过，你决定回去发奋学习",
+        "place": "classroom",
+        "label": "C语言",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "",
+        "failure": "很遗憾，你没有成功完成这个挑战。在应对期末考试时，你遇到了很大的困难，花费了45分钟仍未完成。",
+        "change": {
+          "credit": 3
+        },
+        "energy": -20,
+        "mood": -10,
+        "limit": "Semster1"
+      }
+
+    ]
+  },
+
+  "Spec": {
+    "NO200": [
+      {
+        "title": "忍饥挨饿",
+        "description": "也许是起得太晚，也许是事情太忙，你没时间用餐，就去做其他事了。",
+        "place": "dormitory",
+        "label": "早餐",
+        "pre": {
+          "event": [ "Daily", "NO000" ]
+        },
+        "odds": 0.1,
+        "judge": "WIL",
+        "ending": 1,
+        "diff": 10,
+        "success": "在内外强大力量的加持下，你成功抗住了饥饿。",
+        "failure": "你试图用躯体和意念硬刚饥饿，果不其然地失败了。",
+        "change": {
+          "WIL": 2
+        },
+        "energy": -15,
+        "mood": -10,
+        "limit": "null"
+      },
+      {
+        "title": "因噎废食",
+        "description": "你和朋友边吃饭边聊天，突然噎住了。",
+
+        "place": "canteen",
+        "label": "食物",
+        "pre": {
+          "event": [ "Daily", "NO000" ]
+        },
+        "odds": 0.03,
+        "judge": "CON",
+        "ending": 1,
+        "diff": 10,
+        "success": "虽然朋友帮你摆脱了危险，但是你早已食欲全无。",
+        "failure": "在朋友的帮助下，你摆脱了危险，紧皱的眉头舒缓开来。",
+        "change": {
+          "point": -10
+        },
+        "energy": -15,
+        "mood": -10,
+        "limit": "null"
+      },
+      {
+        "title": "《半条命》",
+        "description": "你不小心吃到了有毒的食物，顿感头晕目眩。",
+        "place": "canteen",
+        "label": "食物",
+        "pre": {
+          "event": [ "Daily", "NO000" ]
+        },
+        "odds": 0.02,
+        "judge": "CON",
+        "ending": 0,
+        "diff": 10,
+        "success": "食物毒性太强，你的大脑受到损伤，需要一年才能恢复。",
+        "failure": "由于身心强大，你很快便恢复正常，找回了丢失的半条命。",
+        "change": {
+          "point": -30,
+          "credit": -30
+        },
+        "energy": -50,
+        "mood": -30,
+        "limit": "null"
+      },
+      {
+        "title": "饭前一排",
+        "description": "饭点到了，正打算去吃饭时，你突然想上厕所。",
+        "place": "canteen",
+        "label": "食物",
+        "pre": {
+          "event": [ "Daily", "NO000" ]
+        },
+        "odds": 0.05,
+        "judge": "LUC",
+        "ending": 0,
+        "diff": 10,
+        "success": "你在厕所里发现了没有冲下去的答辩，突然你大病发作，忍不住吃了起来，嗯，OC~。",
+        "failure": "你在厕所里顺畅地出恭，排空的瞬间身心非常舒畅，食欲也变得更强了。",
+        "change": {
+          "point": 30
+        },
+        "energy": 50,
+        "mood": 30,
+        "limit": "null"
+      }
+    ],
+    "NO201": [
+      {
+        "title": "高数课前的灾难",
+        "description": "你在前往教室的路上时，被一辆疾驰的电动车创了，这正如多数学生学习高数的开端。",
+        "place": "compus",
+        "label": "车祸",
+        "pre": {
+          "event": [ "Daily", "NO001" ]
+        },
+        "odds": 0.05,
+        "judge": "CON",
+        "ending": 0,
+        "diff": 10,
+        "success": "由于伤势过重难以快速恢复，你被迫接收了留级的命运。",
+        "failure": "凭借强健的躯体和不屈的意志，几周后你大致恢复了健康。",
+        "change": {
+          "point": -20,
+          "credit": -30
+        },
+        "energy": -50,
+        "mood": -30,
+        "limit": "null"
+      }
+    ],
+    "NO202": [
+      {
+        "title": "口袋梦",
+        "description": "一股力量把你拉到了真新镇，此刻你的梦想是成为口袋生物大师，突然老师把你叫了起来",
+        "place": "compus",
+        "label": "做梦",
+        "pre": {
+          "event": [ "Daily", "NO002" ]
+        },
+        "odds": 0.05,
+        "judge": "INT",
+        "ending": 0,
+        "diff": 10,
+        "success": "你继续做着口袋梦，老师笑了笑，扣了你的平时分。",
+        "failure": "你成功从梦里醒来，并幸运地找到了老师所问问题的答案。",
+        "change": {
+          "point": 30,
+          "credit": -1
+        },
+        "energy": -20,
+        "mood": -10,
+        "limit": "null"
+      }
+    ],
+    "NO203": [
+      {
+        "title": "认真听课",
+        "description": "这节课你没带练习和课本，手机也因为忘记充电而没电，你只能乖乖听课。",
+        "place": "compus",
+        "label": "学习",
+        "pre": {
+          "event": [ "Daily", "NO003" ]
+        },
+        "odds": 0.1,
+        "judge": "CON",
+        "ending": 0,
+        "diff": 10,
+        "success": "由于睡眠充足，你居然听了一整节心理课，自己都感到不可思议。",
+        "failure": "昨晚没睡好，你听着听着，半节课不到就趴在桌子上睡觉了。",
+        "change": {
+          "point": 25,
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": 10,
+        "limit": "null"
+      }
+    ],
+    "NO204": [
+      {
+        "title": "认真听课",
+        "description": "由于奇怪的原因，今天你破天荒地准备认真听思政课。",
+        "place": "compus",
+        "label": "学习",
+        "pre": {
+          "event": [ "Daily", "NO004" ]
+        },
+        "odds": 0.16,
+        "judge": "CON",
+        "ending": 1,
+        "diff": 10,
+        "success": "由于睡眠充足，你思政课听得津津有味，自己都感到不可思议。",
+        "failure": "由于昨晚没睡好，你听着听着，半节课不到就趴在桌子上睡觉了。",
+        "change": {
+          "point": 25,
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": 10,
+        "limit": "null"
+      },
+      {
+        "title": "原来你也……",
+        "description": "你认为思政课和心理课一样都是水课，所以掏出手机启动《根行》。",
+        "place": "compus",
+        "label": "学习",
+        "pre": {
+          "event": [ "Daily", "NO004" ]
+        },
+        "odds": 0.04,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+        "success": "突然老师出现在你身后，你以为老师要动怒了，这时老师开口了：“原来，你也玩根行！”，你满脸震惊，同学们哄堂大笑。",
+        "failure": "突然老师出现在你身后，他露出了和善的笑容，周围的人也幸灾乐祸地看着你，你尴尬地抠着脚趾，恨不得找个地洞钻进去。",
+        "change": {
+          "point": 30,
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": 10,
+        "limit": "null"
+      }
+    ],
+    "NO205": [
+      {
+        "title": "不想上课",
+        "description": "体育老师不点名的习惯，使你内心萌生了旷课的想法，你决定今天不去上课。",
+        "place": "compus",
+        "label": "学习",
+        "pre": {
+          "event": [ "Daily", "NO005" ]
+        },
+        "odds": 0.05,
+        "judge": "LUC",
+        "ending": 0,
+        "diff": 10,
+        "success": "今天体育课，老师打破了原来不点名的习惯，花名册上，留下了你旷课的记录。",
+        "failure": "今天体育课，老师依旧保持原来的习惯，体育课上没有点名，你成功地逃过一劫。",
+        "change": {
+          "point": 25,
+          "credit": -1
+        },
+        "energy": 0,
+        "mood": 10,
+        "limit": "null"
+      },
+      {
+        "title": "两眼一黑",
+        "description": "这节体育课，由于运动不当，你在跑步途中体力不支，顿时昏厥过去。",
+        "place": "compus",
+        "label": "学习",
+        "pre": {
+          "event": [ "Daily", "NO005" ]
+        },
+        "odds": 0.05,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+        "success": "同学及时发现了你，在体育老师和同学们的帮助下，你很快便恢复过来。",
+        "failure": "过了好一会儿，同学才发现你的存在，然而此时你只能被送往校医疗室。",
+        "change": {
+          "point": 30
+        },
+        "energy": -30,
+        "mood": -10,
+        "limit": "null"
+      }
+    ],
+    "NO250": [
+      {
+        "title": "诶，是猫猫",
+        "description": "你在校园小道上漫步，有一只超可爱的猫猫路过。",
+        "place": "compus",
+        "label": "撸猫",
+        "pre": {
+          "event": [ "Daily", "NO050" ]
+        },
+        "odds": 0.05,
+        "count": 1,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+        "success": "你的手上恰好有顺手带出门的冻干并投喂了猫猫。喵~小猫咪快乐地对你翻肚皮。",
+        "failure": "你的手上没有猫粮，但你决定强行撸猫。很不幸，猫猫狠狠地抓伤了你，你得去打疫苗了。",
+        "change": {
+          "point": 30,
+          "petting_cat": 1
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "null"
+      },
+      {
+        "title": "诶，是狗狗",
+        "description": "你在校园小道上漫步，有一只超可爱的狗狗路过。",
+        "place": "compus",
+        "label": "喂狗",
+        "pre": {
+          "event": [ "Daily", "NO050" ]
+        },
+        "odds": 0.05,
+        "count": 1,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+        "success": "你的手上恰好有顺手带出门的火腿肠并投喂了狗狗。汪汪~小狗快乐地围着你的腿打转。",
+        "failure": "你的手上没有零食，但你决定强行摸它。很不幸，小狗狠狠地咬了你一口，你得去打疫苗了。",
+        "change": {
+          "point": 30,
+          "petting_dog": 1
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "null"
+      }
+    ],
+    "NO251": [
+      {
+        "title": "失足少年",
+        "description": "按照计划，你动身去操场跑步，然而当天跑道湿滑，你不慎跌倒了。",
+        "place": "playground",
+        "label": "跑步",
+        "pre": {
+          "event": [ "Daily", "NO051" ]
+        },
+        "odds": 0.05,
+        "judge": "LUC",
+        "ending": 0,
+        "diff": 10,
+        "success": "你没能逃过骨折的命运，你只能拜托朋友送你就医。",
+        "failure": "好在没有太大损伤，你拍了拍身上的尘土就回宿舍了。",
+        "change": {
+          "point": -30,
+          "credit": -10
+        },
+        "energy": -50,
+        "mood": -20,
+        "limit": "null"
+      },
+      {
+        "title": "校园博尔特",
+        "description": "你突然发现自己刚开始跑步时，步频比平时快了许多，觉得自己有能力参加校运会了。",
+        "place": "playground",
+        "label": "跑步",
+        "pre": {
+          "event": [ "Daily", "NO051" ]
+        },
+        "odds": 0.05,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+        "success": "你偶然解锁了跑步方面的天赋，欣喜若狂。",
+        "failure": "然而这只是幻想，果不其然，没跑一会儿就累瘫了。",
+        "change": {
+          "point": 30,
+          "CON": 5
+        },
+        "energy": -20,
+        "mood": 20,
+        "limit": "null"
+      }
+    ],
+    "NO271": [
+      {
+        "title": "根行·深渊",
+        "description": "你启动了《根行》，打渊月螺旋12层时，圣骸兽打你就跟打狗一样简单，你被恶心退了。",
+        "place": "dormitory",
+        "label": "游戏",
+        "pre": {},
+        "odds": 0.04,
+        "count": 1,
+        "judge": "WIL",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "在你坚持不懈地凹深渊之下，最终12层深渊成功满星，你又赚了一堆原石抽想要的角色。",
+        "failure": "在打12层深渊时，你尝试了多种方法，但仍然无法满星。你内心大呼布响丸辣，果断退出《根行》。",
+        "change": {
+          "point": 30
+        },
+        "energy": -10,
+        "mood": -10,
+        "limit": "null"
+      },
+      {
+        "title": "根行·祈愿",
+        "description": "梦寐以求的角色终于UP了，你迫不及待地打开《根行》，摩拳擦掌准备梭哈。",
+        "place": "dormitory",
+        "label": "游戏",
+        "pre": {
+          "event": [ "Daily", "NO071" ]
+        },
+        "odds": 0.04,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 20,
+        "success": "天空中穿出一颗彗星，刹那间化作金光降临，伴随着金光的消逝，你十抽出了两个想要的角色。",
+        "failure": "一道金光划过天空，然而天空岛这次并没有眷顾你，你不仅小保底歪了，还花光了160纠缠之缘。",
+        "change": {
+          "point": 30
+        },
+        "energy": -10,
+        "mood": 40,
+        "limit": "null"
+      },
+      {
+        "title": "寰宇列车·跃迁",
+        "description": "梦寐以求的角色终于UP了，你迫不及待地打开《寰宇列车》，准备梭哈。",
+        "place": "dormitory",
+        "label": "游戏",
+        "pre": {
+          "event": [ "Daily", "NO071" ]
+        },
+        "odds": 0.04,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 20,
+        "success": "伴随着列车门的开启，金光从中涌现，你用了二十抽就出了想要的角色。",
+        "failure": "伴随着列车门的开启，金光从中涌现，一看竟是常驻角色，你抱怨这次又歪了。",
+        "change": {
+          "point": 30
+        },
+        "energy": -10,
+        "mood": 40,
+        "limit": "null"
+      },
+      {
+        "title": "绷3·补给",
+        "description": "梦寐以求的角色终于UP了，你迫不及待地打开《绷3》，十指乱动准备梭哈。",
+        "place": "dormitory",
+        "label": "游戏",
+        "pre": {
+          "event": [ "Daily", "NO071" ]
+        },
+        "odds": 0.04,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 20,
+        "success": "补给箱从天而降，在打开盖子的瞬间，闪闪金光从中涌现，你用了十抽就出了所爱的女武神。",
+        "failure": "第一百个补给箱从天而降，伴随着盖子的开启，想要的女武神终于出现在屏幕上，这次又保底了。",
+        "change": {
+          "point": 30
+        },
+        "energy": -10,
+        "mood": 40,
+        "limit": "null"
+      },
+      {
+        "title": "绷3·深渊",
+        "description": "今天又是打深渊的一天，你上号《绷3》，摩拳擦掌准备打超弦空间/量子流形。",
+        "place": "dormitory",
+        "label": "游戏",
+        "pre": {
+          "event": [ "Daily", "NO071" ]
+        },
+        "odds": 0.04,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 20,
+        "success": "在挑战深渊时，你凹了很久，终于打完了深渊，保住了红莲的位置。",
+        "failure": "在挑战深渊时，你凹了很久，奈何怪物太强打不动，你知道这次又要降级了。",
+        "change": {
+          "point": 30
+        },
+        "energy": -10,
+        "mood": 40,
+        "limit": "null"
+      }
+    ],
+    "NO296": [
+      {
+        "title": "比赛直播·精英联盟",
+        "description": "你在霹雳霹雳观看《精英联盟》季中赛，正值JDG和PLG的决赛对决。",
+        "place": "dormitory",
+        "label": "其他",
+        "pre": {},
+        "odds": 0.05,
+        "count": 1,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "双方鏖战五局后，PLG最终战胜JDG，“孟获反擒丞相”，你和舍友见证了这场奇迹，开了香槟。",
+        "failure": "由于双方实力差距过大，JDG战胜了PLG，人称“七擒孟获”，对于看过春季赛的你来说毫不稀奇。",
+        "change": {
+          "point": 30
+        },
+        "energy": -10,
+        "mood": -10,
+        "limit": "null"
+      },
+      {
+        "title": "比赛直播·精英联盟",
+        "description": "你在虎崖观看《精英联盟》全球总决赛，正值VBG和T1的决赛对决。",
+        "place": "dormitory",
+        "label": "其他",
+        "pre": {},
+        "odds": 0.05,
+        "count": 1,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+
+        "success": "双方鏖战五局后，VBG最终战胜T1，赢下了S13的奖杯，你和舍友见证了奇迹，不禁欢呼起来。",
+        "failure": "双方实力差距过大，T1零封VBG，Faker拿下了S赛的第四冠，你在感叹VBG的同时也佩服大魔王的强大。",
+        "change": {
+          "point": 30
+        },
+        "energy": -10,
+        "mood": -10,
+        "limit": "null"
+      }
+    ]
+  }
+}
