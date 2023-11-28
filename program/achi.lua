@@ -40,25 +40,25 @@ function viewMyAchievement(msg)
     for i=1,#player_achi do
         local achi_id=player_achi[i]
         local name=achievements[achi_id]["name"]
-        namebuff=namebuff.."\n".."        "..name.."\n".."            "
+        namebuff=namebuff.."\n".."      「"..name.."」\n".."            "
         local buffs=achievements[achi_id]["buff"]
         for key,val in pairs(buffs) do 
             local buff_name=" "
-            if key=="point" then
+            if (key=="point") then
                 buff_name="积分"
-            elseif key=="INT" then
+            elseif (key=="INT") then
                 buff_name="智力"
-            elseif key=="CON" then
+            elseif (key=="CON") then
                 buff_name="体质"
-            elseif key=="WIL" then
+            elseif (key=="WIL") then
                 buff_name="意志"
-            elseif key=="LUC" then
+            elseif (key=="LUC") then
                 buff_name="运气"
-            elseif key=="energy" then
+            elseif (key=="energy") then
                 buff_name="精力"
-            elseif key=="mood" then
+            elseif (key=="mood") then
                 buff_name="心情"
-            elseif key=="credit" then
+            elseif (key=="credit") then
                 buff_name="学分"
             end 
             local sym=string.sub(val,1,1)
