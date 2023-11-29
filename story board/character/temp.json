@@ -1,17 +1,34 @@
 {
-    "76755379":{
-        "last_sign":{},
-        "daily_done":[],
-        "weekly_done":[],
-        "next_daily":{
-            "generate_time" : "nil",
-            "num": "nil",
-            "type":"nil"
-        },
-        "next_weekly":{
-            "generate_time" : "nil",
-            "num": "nil",
-            "type":"nil"
-        }
-    }
+ "76755379": {
+  "next_weekly": {
+   "type": "nil",
+   "num": "nil",
+   "generate_time": "nil"
+  },
+  "weather": "晴天",
+  "daily_done": {},
+  "weekly_done": {},
+  "next_daily": {
+   "type": "nil",
+   "num": "nil",
+   "generate_time": "nil"
+  },
+  "last_sign": {}
+ },
+ "1885027977": {
+  "next_weekly": {
+   "type": "nil",
+   "num": "nil",
+   "generate_time": "nil"
+  },
+  "weather": "晴天",
+  "daily_done": {},
+  "weekly_done": {},
+  "next_daily": {
+   "type": "nil",
+   "num": "nil",
+   "generate_time": "nil"
+  },
+  "last_sign": {}
+ }
 }

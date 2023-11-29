@@ -1,124 +1,178 @@
 {
  "76755379": {
-  "Info": {
-   "Nickname": "ljh",
-   "Introduction": "经验+3，告辞",
-   "Gender": "男",
-   "Job": "学生"
-  },
-  "points": 0,
-  "Mainline": {
-   "Semester": 1,
-   "credit": 0,
-   "FinishTimes": 0,
-   "rank": 514
-  },
-  "Bag": {
-   "study": 0,
-   "game": 0,
-   "item": {},
-   "trophy": 0,
-   "snack": 0,
-   "fans": 0,
-   "anima": 0,
-   "sum": 0,
-   "comp": 0,
-   "sport": 0
-  },
   "Count": {
-   "public": 0,
    "spec": 0,
-   "bottleSend": 0,
-   "daily": 0,
-   "bottleRecv": 0,
-   "bottleCast": 0,
-   "exam": 0,
-   "sign": 0,
+   "disturb": 0,
+   "CatCounter": 0,
+   "PoiliticsCounter": 0,
+   "public": 0,
    "shop": 0,
+   "daily": 0,
    "board": 0,
+   "exam": 0,
+   "bottleSend": 0,
+   "bottleCast": 0,
+   "FailtoSleepCounter:": 0,
+   "MeetJasonCounter": 0,
+   "sign": 0,
    "weekly": 0,
-   "disturb": 0
+   "bottleRecv": 0
   },
   "Event": {
+   "spec": {},
    "daily": {},
-   "weekly": {},
-   "spec": {}
+   "weekly": {}
   },
-  "MainAtt": {
-   "CON": 10,
-   "INT": 10,
-   "WIL": 10,
-   "LUC": 16,
-   "SUM": 46
-  },
+  "Inheritkey": "dScBtEYV5eFgL7xI",
   "Achievement": [
    "ac000"
   ],
+  "Bag": {},
+  "points": 0,
+  "MainAtt": {
+   "CON": 10,
+   "SUM": 46,
+   "INT": 10,
+   "LUC": 16,
+   "WIL": 10
+  },
+  "Mainline": {
+   "Semester": 1,
+   "FinishTimes": 0,
+   "credit": 0,
+   "rank": 514
+  },
   "DailyAtt": {
-   "energy_limit": 100,
-   "mood_limit": 100,
    "mood": 100,
-   "energy": 100
+   "energy": 100,
+   "mood_limit": 100,
+   "energy_limit": 100
+  },
+  "Info": {
+   "Introduction": "经验+3，告辞",
+   "Nickname": "ljh",
+   "Job": "学生",
+   "Gender": "男"
+  }
+ },
+ "797093627": {
+  "Count": {
+   "spec": 0,
+   "disturb": 0,
+   "CatCounter": 0,
+   "PoiliticsCounter": 0,
+   "public": 0,
+   "shop": 0,
+   "daily": 0,
+   "board": 0,
+   "exam": 0,
+   "bottleSend": 0,
+   "bottleCast": 0,
+   "FailtoSleepCounter:": 0,
+   "MeetJasonCounter": 0,
+   "sign": 0,
+   "weekly": 0,
+   "bottleRecv": 0
+  },
+  "Event": {
+   "spec": {},
+   "daily": {},
+   "weekly": {}
+  },
+  "Inheritkey": "cFHLbqDxdywynzoy",
+  "Achievement": {},
+  "Bag": {},
+  "points": 0,
+  "MainAtt": {
+   "CON": 3,
+   "SUM": 33,
+   "INT": 10,
+   "LUC": 15,
+   "WIL": 5
+  },
+  "Mainline": {
+   "Semester": 1,
+   "FinishTimes": 0,
+   "credit": 0,
+   "rank": 0
+  },
+  "DailyAtt": {
+   "mood": 105,
+   "energy": 103,
+   "mood_limit": 105,
+   "energy_limit": 103
+  },
+  "Info": {
+   "Introduction": " ",
+   "Nickname": "天麟",
+   "Job": "学生",
+   "Gender": "男"
   }
  },
  "1885027977": {
-  "Info": {
-   "Nickname": "sjhdj",
-   "Introduction": " ",
-   "Gender": "男",
-   "Job": "学生"
-  },
-  "points": 0,
-  "Mainline": {
-   "Semester": 1,
-   "credit": 0,
-   "FinishTimes": 0,
-   "rank": 0
-  },
-  "Bag": {
-   "study": 0,
-   "game": 0,
-   "item": {},
-   "trophy": 0,
-   "snack": 0,
-   "fans": 0,
-   "anima": 0,
-   "sum": 0,
-   "comp": 0,
-   "sport": 0
-  },
   "Count": {
-   "public": 0,
    "spec": 0,
-   "bottleSend": 0,
-   "daily": 0,
+   "disturb": 0,
+   "shop": 0,
    "bottleRecv": 0,
+   "daily": 0,
+   "bottleSend": 0,
    "bottleCast": 0,
    "exam": 0,
-   "sign": 0,
-   "shop": 0,
+   "sign": 15,
    "board": 0,
    "weekly": 0,
-   "disturb": 0
+   "public": 0
   },
   "Event": {
+   "spec": {},
    "daily": {},
-   "weekly": {},
-   "spec": {}
+   "weekly": {}
   },
+  "Inheritkey": "lEei9FqXQZ8nhCMF",
+  "Achievement": [
+   "ac000",
+   "ac001",
+   "ac002",
+   "ac003"
+  ],
+  "Bag": {
+   "comp": 0,
+   "item": {},
+   "study": 0,
+   "fans": 0,
+   "sum": 0,
+   "snack": 0,
+   "anima": 0,
+   "game": 0,
+   "trophy": 0,
+   "sport": 0
+  },
+  "points": 100,
   "MainAtt": {
-   "CON": 4,
-   "INT": 11,
-   "WIL": 13,
-   "LUC": 12,
-   "SUM": 40
+   "CON": 9,
+   "SUM": 38,
+   "INT": 7,
+   "LUC": 10,
+   "WIL": 12
   },
-  "Achievement": {},
+  "Mainline": {
+   "Semester": 1,
+   "FinishTimes": 0,
+   "credit": 0,
+   "rank": 0
+  },
   "DailyAtt": {
-   "energy_limit": 104,
-   "mood_limit": 113,
-   "mood": 113,
-   "energy": 104
+   "mood": 112,
+   "energy": 109,
+   "mood_limit": 112,
+   "energy_limit": 109
+  },
+  "Info": {
+   "Introduction": "djgsfhkjdfhk",
+   "Nickname": "hjsfjgj",
+   "Job": "学生",
+   "Gender": "男"
   }
  }
 }
