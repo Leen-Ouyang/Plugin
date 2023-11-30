@@ -1,0 +1,984 @@
+{
+    "study":
+    {
+        "I000":
+        {  
+            "name": "《计算机科学导论》",  
+            "shop": "积分商店",  
+            "price":50,  
+            "description": "经典黑皮书。这是学习计算机必不可少的书籍，可以让你更深入地理解学术知识。",  
+            "pre":{
+                "label":"《计算机科学导论》"
+            },
+            "buff": {
+                "INT":3
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 5,
+            "remaining_usage": 5
+        },
+        "I001":
+        {  
+            "name": "《形势与政策（一）》",  
+            "shop": "积分商店",  
+            "price": 30,  
+            "description": "这是学习社会形势必不可少的书籍，可以让你更透彻地了解世界现状。",  
+            "pre":{
+                "label":"形势与政策",
+                "semester":1
+            },
+            "buff":{
+                "INT":5
+            },
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 2,
+            "remaining_usage": 2
+        },
+        "I002":
+        {  
+            "name": "《形势与政策（二）》",  
+            "shop": "积分商店",  
+            "price": 30,  
+            "description": "这是学习社会形势必不可少的书籍，可以让你更透彻地了解世界现状。",  
+            "pre":{
+                "label":"形势与政策",
+                "semester":2
+            },
+            "buff":{
+                "INT":5
+            },  
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 2,
+            "remaining_usage": 2
+        },
+        "I003":
+        {  
+            "name": "《形势与政策（三）》",  
+            "shop": "积分商店",  
+            "price": 30,  
+            "description": "这是学习社会形势必不可少的书籍，可以让你更透彻地了解世界现状。",  
+            "pre":{
+                "label":"形势与政策",
+                "semester":3
+            },
+            "buff":{
+                "INT":5
+            },  
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 2,
+            "remaining_usage": 2
+        },
+        "I004":
+        {  
+            "name": "《形势与政策（四）》",  
+            "shop": "积分商店",  
+            "price": 30,  
+            "description": "这是学习社会形势必不可少的书籍，可以让你更透彻地了解世界现状。",  
+            "pre":{
+                "label":"形势与政策",
+                "semester":4
+            },
+            "buff":{
+                "INT":5
+            },  
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 2,
+            "remaining_usage": 2
+        },
+        "I005":
+        {  
+            "name": "《形势与政策（五）》",  
+            "shop": "积分商店",  
+            "price": 30,  
+            "description": "这是学习社会形势必不可少的书籍，可以让你更透彻地了解世界现状。",  
+            "pre":{
+                "label":"形势与政策",
+                "semester":5
+            },
+            "buff":{
+                "INT":5
+            },  
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 2,
+            "remaining_usage": 2
+        },
+        "I006":
+        {  
+            "name": "《形势与政策（六）》",  
+            "shop": "积分商店",  
+            "price": 30,  
+            "description": "这是学习社会形势必不可少的书籍，可以让你更透彻地了解世界现状。",  
+            "pre":{
+                "label":"形势与政策",
+                "semester":6
+            },
+            "buff":{
+                "INT":5
+            },  
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 2,
+            "remaining_usage": 2
+        },
+        "I007":
+        {  
+            "name": "《形势与政策（七）》",  
+            "shop": "积分商店",  
+            "price": 30,  
+            "description": "这是学习社会形势必不可少的书籍，可以让你更透彻地了解世界现状。",  
+            "pre":{
+                "label":"形势与政策",
+                "semester":7
+            },
+            "buff":{
+                "INT":5
+            },  
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 2,
+            "remaining_usage": 2
+        },
+        "I008":
+        {  
+            "name": "《形势与政策（八）》",  
+            "shop": "积分商店",  
+            "price": 30,  
+            "description": "这是学习社会形势必不可少的书籍，可以让你更透彻地了解世界现状。",  
+            "pre":{
+                "label":"形势与政策",
+                "semester":8
+            },
+            "buff":{
+                "INT":5
+            },  
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 2,
+            "remaining_usage": 2
+        },
+        "I009":
+        {  
+            "name": "《高级语言程序设计》",  
+            "shop": "积分商店",  
+            "price": 60,  
+            "description": "这是编程必不可少的书籍，可以让你更深入地理解学术知识。",  
+            "pre":{
+                "label":"高级语言程序设计"
+            },
+            "buff": {
+                "INT":5
+            },
+            "unique": false,  
+            "acquired": false,
+            "maxI_usage": 5,
+            "remaining_usage": 5
+        },
+        "I014":
+        {  
+            "name": "笔记本",  
+            "shop": "积分商店",  
+            "price": 20,  
+            "description": "精美的笔记本，可用于记录课堂笔记和作业，可让你事半功倍。",  
+            "pre":{
+                "label":"学习"
+            },
+            "buff": {
+                "INT":2,
+                "energy":1
+            },
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 5,
+            "remaining_usage": 5
+        },
+        "I015":
+        {  
+            "name": "历年卷",  
+            "shop": "积分商店",  
+            "price": 30,  
+            "description": "包含了过去的考试试卷，有助于了解历年考试的题型和难度。",  
+            "pre":{
+                "event":["NO100","NO101","NO102","NO103","N0104","NO105","NO106","NO107","NO108","NO109"]
+            },
+            "buff":{
+                "INT":4
+            },  
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 3,
+            "remaining_usage": 3
+        },
+        "I019": {
+            "name": "记忆面包",
+            "shop": "特殊商店",
+            "price": 68,
+            "description": "吃下这个特殊的面包，能够在短时间内提高学习记忆力。",
+            "pre": {
+                "event":["NO020","NO030","NO032"]
+            },
+            "buff": {
+                "result":1,
+                "INT":8
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 3,
+            "remaining_usage": 3
+        },        
+        "I020":
+        {  
+            "name": "学长の笔记",  
+            "shop": "特殊商店",  
+            "price": 166,  
+            "description": "传说是杰胜学长的大学四年以来的珍贵笔记，里面记录了他的学习经验和心得。",  
+            "pre":{
+                "event":["NO100","NO101","NO102","NO103","N0104","NO105","NO106","NO107","NO108","NO109"]
+            },
+            "buff": {
+                "INT":10,
+                "LUC":5
+            },
+            "unique": true,  
+            "acquired": false,
+            "max_usage": 10,
+            "remaining_usage": 10
+        }
+    },
+    "sport":
+    {   
+        "I022":
+        {  
+            "name": "李柠牌运动鞋",  
+            "shop": "积分商店",  
+            "price": 120,  
+            "description": "专门为跑步设计的运动鞋，适合长跑和健身。",  
+            "pre":{
+                "label":["跑步","散步"]
+            },
+            "buff": {
+                "energy":3,
+                "WIL": 5
+            },
+            "unique": true,  
+            "acquired": false,
+            "max_usage": 10,
+            "remaining_usage": 10
+        },
+        "I023":
+        {  
+            "name": "跳绳",  
+            "shop": "积分商店",  
+            "price": 15,  
+            "description": "一种简单的健身器材，可以锻炼身体的协调性和耐力。",  
+            "pre":{
+            },
+            "buff": {
+                "CON":3,
+                "WIL":1
+            },  
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 10,
+            "remaining_usage": 10
+        },
+        "I024":
+        {  
+            "name": "二手自行车",  
+            "shop": "特殊商店",  
+            "price": 300,  
+            "description": "方便的交通工具，可以让你更快地到达目的地。",  
+            "pre":{
+                "label":"迟到"
+            },
+            "buff":{ 
+                "result":1,
+                "WIL":3,
+                "CON":1
+            },  
+            "unique": true,  
+            "acquired": false,
+            "max_usage": 10,
+            "remaining_usage": 10
+        },
+        "I025":
+        {  
+            "name": "小米粒运动手环",  
+            "shop": "积分商店",  
+            "price": 200,  
+            "description": "最时尚的可穿戴设备。可以监测心率、睡眠质量等健康数据的手环。",  
+            "pre":{
+                "event":"NO004"
+            },
+            "buff": {
+                "result":1,
+                "CON":3,
+                "mood":6 
+            },
+            "unique": true,  
+            "acquired": false,
+            "max_usage": 10,
+            "remaining_usage": 10
+        }
+    },
+    "snack":
+    {
+        "I050":
+        {  
+            "name": "乐色薯片",  
+            "shop": "积分商店",  
+            "price": 25,  
+            "description": "酥脆可口，口感鲜美，是休闲娱乐时的最佳小食品。",  
+            "pre":{
+            },
+            "buff":{
+                "energy":5,
+                "mood":10
+            },
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I051":
+        {  
+            "name": "肥宅快乐水",  
+            "shop": "积分商店",  
+            "price": 20,  
+            "description": "肥宅们的最爱，喝上一口，快乐无比。",  
+            "pre":{
+            },
+            "buff":{
+                "energy":3,
+                "mood":5
+            },
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I052":
+        {  
+            "name": "百香方便面",  
+            "shop": "积分商店",  
+            "price": 30,  
+            "description": "“不是百香的我不吃”",  
+            "pre":{
+            },
+            "buff":{
+                "energy":10,
+                "mood":10
+            }, 
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I053":
+        {  
+            "name": "QQㄋㄟㄋㄟ好喝到咩噗茶",  
+            "shop": "积分商店",  
+            "price": 25,  
+            "description": "香浓的奶茶，配以顺滑的奶油，口感绝佳。",  
+            "pre":{
+            },
+            "buff":{
+                "energy":8,
+                "mood":8
+            },  
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I054":
+        {  
+            "name": "幸爸爸咖啡",  
+            "shop": "积分商店",  
+            "price": 30,  
+            "description": "浓郁的咖啡香味，可以提神醒脑，增加工作效率。",  
+            "pre":{
+            },
+            "buff":{
+                "energy":10,
+                "WIL":1
+            },
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I055":
+        {  
+            "name": "cc果汁",  
+            "shop": "积分商店",  
+            "price": 35,  
+            "description": "采用新鲜水果榨取，口感鲜美，营养丰富。",  
+            "pre":{
+            },
+            "buff": {
+                "CON":6,
+                "mood":5
+            },
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I056":
+        {  
+            "name": "V51炸鸡全家桶",  
+            "shop": "积分商店",  
+            "price": 60,  
+            "description": "包含多种炸鸡口味，是家庭聚餐或朋友聚会的不错选择。",  
+            "pre":{
+                "date":"(星期四)"
+            },
+            "buff": {
+                "energy":20,
+                "mood":20
+            },  
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I057":
+        {  
+            "name": "水果捞",  
+            "shop": "积分商店",  
+            "price": 50,  
+            "description": "多种新鲜水果搭配在一起，色彩缤纷，美味可口。",   
+            "pre":{
+            },
+            "buff": {
+                "CON":8,
+                "mood":10
+            },
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        }
+    },
+    "game":
+    {
+        "I031": 
+        {
+            "name": "猫条",
+            "shop": "积分商店",
+            "price": 20,
+            "description": "专为猫咪设计的美味零食，能够讨好你的小伙伴。",
+            "pre": {
+                "label":"撸猫"
+            },
+            "buff": {
+                "result":1,
+                "LUC":5
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I032": 
+        {
+            "name": "逗宠棒",
+            "shop": "积分商店",
+            "price": 35,
+            "description": "专业级的宠物玩具，能够引发猫咪狗勾的好奇心。",
+            "pre": {
+                "label":["撸猫","撸狗"]
+            },
+            "buff": {
+                "result":1,
+                "mood":10
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 2,
+            "remaining_usage": 2
+        },
+        "I033": 
+        {
+            "name": "肉骨头",
+            "shop": "积分商店",
+            "price": 45,
+            "description": "新鲜的肉骨头，是大型犬类宠物的最爱。",
+            "pre": {
+                "label":"撸狗"
+            },
+            "buff": {
+                "result":1,
+                "LUC":"5"
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 2,
+            "remaining_usage": 2
+        },
+        "I034": {
+            "name": "风筝",
+            "shop": "积分商店",
+            "price": 60,
+            "description": "五彩斑斓的风筝，适合在悠闲的时光放飞。",
+            "pre": {
+                "weather":"晴天",
+                "energy":">=50"
+            },
+            "buff": {
+                "mood":15
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I035": {
+            "name": "荣耀峡谷皮肤",
+            "shop": "积分商店",
+            "price": 80,
+            "description": "荣耀峡谷游戏中的皮肤，让你的角色焕然一新。",
+            "pre": {
+                "label":"游戏"
+            },
+            "buff": {
+                "result":1,
+                "LUC":3,
+                "energy":3,
+                "mood":4
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 6,
+            "remaining_usage": 6
+        },
+        "I036": {
+            "name": "精英联盟皮肤",
+            "shop": "积分商店",
+            "price": 120,
+            "description": "精英联盟游戏中的皮肤，让你的角色焕然一新。",
+            "pre": {
+                "label":"游戏"
+            },
+            "buff": {
+                "result":1,
+                "LUC":3,
+                "WIL":3,
+                "energy":5,
+                "mood":6
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 6,
+            "remaining_usage": 6
+        }        
+    },
+    "anima":
+    {
+        "I041": {
+            "name": "劈里啪啦大会员",
+            "shop": "积分商店",
+            "price": 68,
+            "description": "解锁动漫世界的特权，畅享全站高清动画，尽在劈里啪啦大会员。",
+            "pre": {
+                "label":"劈里啪啦"
+            },
+            "buff": {
+                "energy":3,
+                "mood":15
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 10,
+            "remaining_usage": 10
+        },
+        "I042": {
+            "name": "少年leap杂志",
+            "shop": "积分商店",
+            "price": 20,
+            "description": "充实你的动漫知识，每期收录最新最热动漫资讯，成为真正的动漫通。",
+            "pre": {},
+            "buff": {
+                "mood":6,
+                "INT":2
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I043": {
+            "name": "心机之蛙公仔",
+            "shop": "成就商店",
+            "price": 80,
+            "description": "拥有这只心机之蛙公仔，拥有这只心机之蛙公仔，它总是摸你的肚子，睿智地告诉你真相只有一个。",
+            "pre": {
+                "label":"看动漫"
+            },
+            "buff": {
+                "energy":3,
+                "mood":1,
+                "INT":0.5
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": -1,
+            "remaining_usage": -1
+        },
+        "I044": {
+            "name": "恶魔果实泡泡糖",
+            "shop": "积分商店",
+            "price": 40,
+            "description": "尝一口恶魔果实泡泡糖，仿佛能获得一种短暂的超能力体验。",
+            "pre": {
+                "LUC":">66"
+            },
+            "buff": {
+                "energy":9,
+                "WIL":6,
+                "CON":6
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I045": {
+            "name": "凹凸曼变身器",
+            "shop": "特殊商店",
+            "price": 77,
+            "description": "使用凹凸曼变身器，瞬间变身成你最喜欢的动漫英雄，体验不一样的冒险之旅。",
+            "pre": {
+            },
+            "buff": {
+                "CON":30,
+                "LUC":15
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        }  
+    },
+    "comp":
+    {
+        "I061":
+        {  
+            "name": "周年校庆餐券",  
+            "shop": "特殊商店", 
+            "price": 10,  
+            "description": "庆祝学校成立65周年特别推出的餐券，可在食堂兑换特色菜品。",  
+            "pre":{
+                "category":"snack"
+            },
+            "buff": {
+                "discount":"0.5",
+                "LUC":5
+            },
+            "unique": true,  
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I062":
+        {  
+            "name": "学校明信片",  
+            "shop": "社交商店",  
+            "price": 20,  
+            "description": "记录学校美景和历史的明信片，可用来收藏或寄给朋友。",  
+            "pre": {
+            },
+            "buff": {
+                "effect":"可获得对应的漂流瓶文字UI"
+            },
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 6,
+            "remaining_usage": 6
+        }
+    },
+    "fans":
+    {
+    },
+    "trophy":
+    {
+    },
+    "shenqi":
+    {
+        "I093": 
+        {
+            "name": "天麟之发",
+            "shop": "特殊商店",
+            "price": 0,
+            "description": "PM熬夜肝软工掉落的珍贵毛发，传说收集6根就可以升级获得三大神奇之一的‘天麟之鳞’！",
+            "pre": {
+            },
+            "buff": {
+            },
+            "unique": true,
+            "acquired": false,
+            "max_usage": -1,
+            "remaining_usage": -1
+        },
+        "I094": 
+        {
+            "name": "天麟之鳞",
+            "shop": "特殊商店",
+            "price": 0,
+            "description": "神器之一『天麟之鳞』，拥有了这片珍贵的鳞片，今后继续探索软工的道路上，更多神秘力量将助你前进。",
+            "pre": {
+            },
+            "buff": {
+            },
+            "unique": true,
+            "acquired": false,
+            "max_usage": -1,
+            "remaining_usage": -1
+        },
+        "I095": 
+        {
+            "name": "栋之眼镜",
+            "shop": "特殊商店",
+            "price": 0,
+            "description": "神器之一『栋之眼镜』，这是德高望重的院长常常佩戴的眼镜，戴上这副眼镜在编程的道路上获得更高的洞察力吧！",
+            "pre": {
+            },
+            "buff": {
+            },
+            "unique": true,
+            "acquired": false,
+            "max_usage": -1,
+            "remaining_usage": -1
+        },
+        "I096": 
+        {
+            "name": "圣之注视",
+            "shop": "特殊商店",
+            "price": 0,
+            "description": "神器之一『圣之注视』，在与学长的挑战结束后，你久久不能忘怀他锐利又炙热的眼神，这份注视仿佛刻在你的灵魂深处。在这圣之注视下，你拥有了极高的专注力和优秀的解决问题的能力。",
+            "pre": {
+            },
+            "buff": {
+            },
+            "unique": true,
+            "acquired": false,
+            "max_usage": -1,
+            "remaining_usage": -1
+        }
+    },
+    "moqi":
+    {
+        "I097": 
+        {
+            "name": "邪恶炒饭",
+            "shop": "成就商店",
+            "price": 0,
+            "description": "魔器其一“邪恶炒饭”，其香气扑鼻，仿佛来自地狱厨房。食用后，灵感如同黑暗之烟，但力量和体力却会突然增强，让你在黑暗的编程领域中找到一线曙光。",
+            "pre": {
+            },
+            "buff": {
+            },
+            "unique": true,
+            "acquired": false,
+            "max_usage": -1,
+            "remaining_usage": -1
+        },
+        "I098": 
+        {
+            "name": "代码蠹虫",
+            "shop": "成就商店",
+            "price": 0,
+            "description": "魔器其二“代码蠹虫”，你陷入代码深渊，遇到了这只不可思议的蠹虫。注入源源不断的代码能量后，你的智慧超越常人，但思维也变得古怪，为编码世界带来了前所未有的不确定性。",
+            "pre": {
+            },
+            "buff": {
+            },
+            "unique": true,
+            "acquired": false,
+            "max_usage": -1,
+            "remaining_usage": -1
+        },
+        "I099": 
+        {
+            "name": "碧油鸡羽",
+            "shop": "成就商店",
+            "price": 0,
+            "description": "魔器其三“碧油鸡羽”，相传它是由码界中最稀有的魔禽——碧油神鸡所褪下的一片羽毛。拥有它的人将被注入创意的源泉，灵感如涌泉般滚滚而来。",
+            "pre": {
+            },
+            "buff": {
+            },
+            "unique": true,
+            "acquired": false,
+            "max_usage": -1,
+            "remaining_usage": -1
+        }
+    },
+    "social":
+    {
+    },
+    "other":
+    {
+        "I021":
+        {  
+            "name": "普通透明雨伞",  
+            "shop": "积分商店",  
+            "price": 30,  
+            "description": "大头大头，下雨不愁，别人有大头，我有伞~",
+            "pre": {
+                "weather":"雨天"
+            },  
+            "buff": {
+                "result":1
+            },
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 2,
+            "remaining_usage": 2
+        },
+        "I060":
+        {  
+            "name": "普通餐券",  
+            "shop": "积分商店",  
+            "price": 5,  
+            "description": "可在食堂兑换任意菜品，凭此券可享受优惠。",  
+            "pre":{
+                "category":"snack"
+            },
+            "buff": {
+                "discount":"0.5"
+            },  
+            "unique": false,  
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I080": 
+        {
+            "name": "福灵剂",
+            "shop": "成就商店",
+            "price": 66,
+            "description": "传闻中的神奇饮品，喝下后好运连连。",
+            "pre": {
+                "achi":[]
+            },
+            "buff": {
+                "LUC": 36
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I081": 
+        {
+            "name": "超市会员卡",
+            "shop": "成就商店",
+            "price": 88,
+            "description": "购物更优惠的会员卡，享受超市内的专属折扣。",
+            "pre": {
+                "achi":[]
+            },
+            "buff": {
+                "discount": "0.9"
+            },
+            "unique": true,
+            "acquired": false,
+            "max_usage": 50,
+            "remaining_usage": 50
+        },
+        "I082": 
+        {
+            "name": "魅力香水",
+            "shop": "特殊商店",
+            "price": 55,
+            "description": "喷洒后，全身散发了无人可当的魅力。",
+            "pre": {
+            },
+            "buff": {
+                "event": ["NO160","NO161","NO162"],
+                "odds":0.88,
+                "LUC":10
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I083":
+        {
+            "name": "小熊褪黑素",
+            "shop": "特殊商店",
+            "price": 60,
+            "description": "可助眠的小熊造型药品，睡眠质量得到提升。",
+            "pre": {
+                "event": "NO204"
+            },
+            "buff": {
+                "result":1,
+                "CON":30,
+                "energy":10
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 2,
+            "remaining_usage": 2
+        },
+        "I084":
+        {
+            "name": "小福袋",
+            "shop": "成就商店",
+            "price": 50,
+            "description": "内含一些小惊喜，打开后可能获得意外收获。",
+            "pre": {
+            },
+            "buff": {
+                "snack":"",
+                "sport":"",
+                "study":""
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        },
+        "I085": 
+        {
+            "name": "大福袋",
+            "shop": "成就商店",
+            "price": 100,
+            "description": "内含更多的惊喜，打开后可能获得丰厚奖励。",
+            "pre": {
+            },
+            "buff": {
+
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 2,
+            "remaining_usage": 2
+        },
+        "I086": 
+        {
+            "name": "豪华福袋",
+            "shop": "成就商店",
+            "price": 200,
+            "description": "内含奢华的惊喜，打开后可能获得稀有道具。",
+            "pre": {
+            },
+            "buff": {
+
+            },
+            "unique": false,
+            "acquired": false,
+            "max_usage": 1,
+            "remaining_usage": 1
+        }      
+    }
+}
