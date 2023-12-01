@@ -1,0 +1,641 @@
+{
+  "ac000": {
+    "name": "种子发芽",
+    "premise": {},
+    "description": "创建角色",
+    "buff": { "point": 50 },
+    "unique": 0,
+    "unlocked": 1
+  },
+  "ac001": {
+    "name": "小苗初成",
+    "premise": { "Count": { "sign": 3 } },
+    "description": "累计签到3天”",
+    "buff": { "point": 50 },
+    "unique": 0,
+    "unlocked": 1
+  },
+  "ac002": {
+    "name": "枝繁叶茂",
+    "premise": { "Count": { "sign": 7 } },
+    "description": "累计签到一周",
+    "buff": {
+      "MainAtt": {
+        "WIL": 1
+      }
+    },
+    "unique": 0,
+    "unlocked": 1
+  },
+  "ac003": {
+    "name": "开花结果",
+    "premise": { "Count": { "sign": 30 } },
+    "description": "累计签到一个月",
+    "buff": { "MainAtt": { "WIL": 2 } },
+    "unique": 0,
+    "unlocked": 1
+  },
+  "ac004": {
+    "name": "传道受业",
+    "premise": { "MainAtt": { "INT": 25 } },
+    "description": "解锁教师职业",
+    "buff": {
+      "point": 50
+    },
+    "unique": 0,
+    "unlocked": 1
+  },
+  "ac005": {
+    "name": "民以食为天",
+    "premise": { "Count": { "sign": 14 } },
+    "description": "解锁食堂员工职业”",
+    "buff": {
+      "point": 50
+    },
+    "unique": 0,
+    "unlocked": 1
+  },
+  "ac006": {
+    "name": "校园之盾",
+    "premise": { "MainAtt": { "CON": 30 } },
+    "description": "解锁保安职业”",
+    "buff": {
+      "point": 50
+    },
+    "unique": 0,
+    "unlocked": 1
+  },
+  "ac007": {
+    "name": "收款码战士",
+    "premise": { "Count": { "shop": 50 } },
+    "description": "解锁售货员职业",
+    "buff": {
+      "point": 50
+    },
+    "unique": 0,
+    "unlocked": 1
+  },
+  "ac008": {
+    "name": "喵？",
+    "premise": { "point": 777 },
+    "description": "解锁猫职业",
+    "buff": {
+      "point": 50
+    },
+    "unique": 0,
+    "unlocked": 1
+  },
+  "ac009": {
+    "name": "汪！",
+    "premise": { "Main line": { "Semester": 8 } },
+    "description": "解锁狗职业",
+    "buff": {
+      "point": 50
+    },
+    "unique": 0,
+    "unlocked": 1
+  },
+  "ac010": {
+    "name": "科学指导运动",
+    "premise": { "MainAtt": { "INT": 15 } },
+    "description": "智力达到15点，体质增加1点",
+    "buff": { "MainAtt": { "CON": 1 } },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac011": {
+    "name": "自省锤炼意志",
+    "premise": { "MainAtt": { "INT": 20 } },
+    "description": "智力达到20点，意志增加1点”",
+    "buff": { "MainAtt": { "WIL": 1 } },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac012": {
+    "name": "知识改变命运",
+    "premise": { "MainAtt": { "INT": 25 } },
+    "description": "智力达到25点，运气增加1点",
+    "buff": { "MainAtt": { "LUC": 1 } },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac013": {
+    "name": "大脑还在发育！",
+    "premise": { "MainAtt": { "CON": 15 } },
+    "description": "体质达到15点，智力增加1点",
+    "buff": { "MainAtt": { "INT": 1 } },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac014": {
+    "name": "终点快到了！",
+    "premise": { "MainAtt": { "CON": 20 } },
+    "description": "体质达到20点，意志增加1点",
+    "buff": { "MainAtt": { "WIL": 1 } },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac015": {
+    "name": "病魔退散！",
+    "premise": { "MainAtt": { "CON": 25 } },
+    "description": "体质达到25点，运气增加1点",
+    "buff": { "MainAtt": { "LUC": 1 } },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac016": {
+    "name": "聪明在于勤奋",
+    "premise": { "MainAtt": { "WIL": 15 } },
+    "description": "意志达到15点，智力增加1点",
+    "buff": { "MainAtt": { "INT": 1 } },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac017": {
+    "name": "早睡早起身体好",
+    "premise": { "MainAtt": { "WIL": 20 } },
+    "description": "意志达到20点，体质增加1点",
+    "buff": {
+      "MainAtt": { "CON": 1 }
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac018": {
+    "name": "早起的鸟儿有虫吃",
+    "premise": { "MainAtt": { "WIL": 25 } },
+    "description": "意志达到25点，运气增加1点",
+    "buff": { "MainAtt": { "LUC": 1 } },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac019": {
+    "name": "趁热打铁",
+    "premise": { "MainAtt": { "LUC": 15 } },
+    "description": "运气达到15点，智力增加1点",
+    "buff": { "MainAtt": { "INT": 1 } },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac020": {
+    "name": "水到渠成",
+    "premise": { "MainAtt": { "LUC": 20 } },
+    "description": "运气达到20点，体质增加1点",
+    "buff": { "MainAtt": { "CON": 1 } },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac021": {
+    "name": "锦上添花",
+    "premise": { "MainAtt": { "LUC": 25 } },
+    "description": "运气达到25点，意志增加1点",
+    "buff": { "MainAtt": { "WIL": 1 } },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac022": {
+    "name": "发愤图强",
+    "premise": { "MainAtt": { "sum": 50 } },
+    "description": "主属性点总和达到50",
+    "buff": {
+      "point": 50
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac023": {
+    "name": "争分夺秒",
+    "premise": { "MainAtt": { "sum": 60 } },
+    "description": "主属性点总和达到60”",
+    "buff": {
+      "point": 60
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac024": {
+    "name": "蒸蒸日上",
+    "premise": { "MainAtt": { "sum": 75 } },
+    "description": "主属性点总和达到75",
+    "buff": {
+      "point": 75
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac025": {
+    "name": "刮目相看",
+    "premise": { "MainAtt": { "sum": 100 } },
+    "description": "主属性点总和达到100",
+    "buff": {
+      "point": 100
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac026": {
+    "name": "精力UP！",
+    "premise": { "DailyAtt": { "energy": 120 } },
+    "description": "精力上限达到120",
+    "buff": { "point": 50 },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac027": {
+    "name": "精力UP！",
+    "premise": { "DailyAtt": { "energy": 150 } },
+    "description": "精力上限达到150",
+    "buff": { "point": 100 },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac028": {
+    "name": "心情UP！",
+    "premise": { "DailyAtt": { "mood": 120 } },
+    "description": "心情上限达到120",
+    "buff": { "point": 50 },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac029": {
+    "name": "心情UP！",
+    "premise": { "DailyAtt": { "mood": 150 } },
+    "description": "心情上限达到150",
+    "buff": { "point": 100 },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac030": {
+    "name": "天上掉馅饼",
+    "premise": { "Count": { "spec": 1 } },
+    "description": "触发特殊事件",
+    "buff": { "point": 50  },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac031": {
+    "name": "风水轮流转",
+    "premise": { "Count": { "spec": 3 } },
+    "description": "触发五次特殊事件",
+    "buff": { "point": 50 },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac032": {
+    "name": "快去买彩票",
+    "premise": { "Count": { "spec": 15 } },
+    "description": "触发十五次特殊事件",
+    "buff": { "point": 100 },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac033": {
+    "name": "第66个日常",
+    "premise": { "Count": { "daily": 66 } },
+    "description": "光阴似箭",
+    "buff": {
+      "MainAtt": {
+        "INT": 1,
+        "CON": 1
+      }
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac034": {
+    "name": "第6个周常",
+    "premise": { "Count": { "weekly": 6 } },
+    "description": "日月如梭",
+    "buff": {
+      "MainAtt": {
+        "WIL": 1,
+        "LUC": 1
+      }
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac050": {
+    "name": "米卫兵",
+    "premise": { "Event": { "spec": "NO271" } },
+    "description": "这不是我们XX的XX吗？",
+    "buff": {
+      "point": 10
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac061": {
+    "name": "领域大神",
+    "premise": { "Event": { "spec": "NO285" } },
+    "description": "论坛过街老鼠认证",
+    "buff": {
+      "point": 10
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac070": {
+    "name": "黑板上的第一笔",
+    "premise": { "Count": { "board": 1 } },
+    "description": "我的第一条留言",
+    "buff": {
+      "point": 10
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac071": {
+    "name": "知识，与你分享",
+    "premise": { "Count": { "board": 10 } },
+    "description": "留言板发布10条留言",
+    "buff": {
+      "point": 30
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac072": {
+    "name": "飞鸽传书",
+    "premise": { "Count": { "bottleSend": 1 } },
+    "description": "送出的第一个漂流瓶",
+    "buff": {
+      "point": 10
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac073": {
+    "name": "瓶中时光",
+    "premise": { "Count": { "bottleSend": 10 } },
+    "description": "送出的第十个漂流瓶",
+    "buff": {
+      "point": 30
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac074": {
+    "name": "打水漂",
+    "premise": { "Count": { "bottleCast": 1 } },
+    "description": "丢出的第一个漂流瓶",
+    "buff": {
+      "point": 10
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac075": {
+    "name": "漂流瓶投手",
+    "premise": { "Count": { "bottleCast": 10 } },
+    "description": "丢出的第十个漂流瓶",
+    "buff": {
+      "point": 30
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac076": {
+    "name": "合作愉快！",
+    "premise": { "Count": { "public": 1 } },
+    "description": "完成一次公共事件",
+    "buff": {
+      "point": 10
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac077": {
+    "name": "社交达人",
+    "premise": { "Count": { "public": 10 } },
+    "description": "完成十次公共事件",
+    "buff": {
+      "point": 50
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac078": {
+    "name": "乐子人·开端",
+    "premise": { "Count": { "disturb": 1 } },
+    "description": "完成一次干扰",
+    "buff": {
+      "point": 10
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac079": {
+    "name": "搞事能手",
+    "premise": { "Count": { "disturb": 10 } },
+    "description": "完成十次干扰",
+    "buff": {
+      "point": 30
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac080": {
+    "name": "内卷王",
+    "premise": { "Bag": { "study": 15 } },
+    "description": "累计获得15个学习类物品",
+    "buff": {
+      "point": 20
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac081": {
+    "name": "运动狂",
+    "premise": { "Bag": { "sport": 10 } },
+    "description": "累计获得10个运动类物品",
+    "buff": {
+      "point": 20
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac082": {
+    "name": "花栗鼠",
+    "premise": { "Bag": { "snack": 10 } },
+    "description": "累计获得10个零食类物品",
+    "buff": {
+      "point": 20
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac083": {
+    "name": "游戏迷",
+    "premise": { "Bag": { "game": 10 } },
+    "description": "累计获得10个游戏类物品",
+    "buff": {
+      "point": 20
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac084": {
+    "name": "二刺螈",
+    "premise": { "Bag": { "anima": 10 } },
+    "description": "累计获得10个动漫类物品",
+    "buff": {
+      "point": 20
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac085": {
+    "name": "校园通",
+    "premise": { "Bag": { "comp": 10 } },
+    "description": "累计获得10个校园专属物品",
+    "buff": {
+      "point": 20
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac086": {
+    "name": "发烧友",
+    "premise": { "Bag": { "fans": 10 } },
+    "description": "累计获得10个其他娱乐类物品",
+    "buff": {
+      "point": 20
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac087": {
+    "name": "八冠王",
+    "premise": { "Bag": { "trophy": 8 } },
+    "description": "累计获得8个奖杯",
+    "buff": {
+      "point": 50
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac088": {
+    "name": "易！物！",
+    "premise": { "Count": { "shop": 1 } },
+    "description": "完成一次任意商店交易",
+    "buff": {
+      "point": 10
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac089": {
+    "name": "剁手狂魔",
+    "premise": { "Count": { "shop": 15 } },
+    "description": "完成十五次任意商店交易",
+    "buff": {
+      "point": 20
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac090": {
+    "name": "特定指令",
+    "premise": {},
+    "description": "拙劣的彩蛋成就罢了",
+    "buff": {
+      "point": 20
+    },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac091": {
+    "name": "PMの聖遺物",
+    "premise": { "Bag": { "item": "天麟的鳞片" } },
+    "description": "获得码界三神器其一“天麟的鳞片”",
+    "buff": { "point": 99 },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac092": {
+    "name": "院长神器",
+    "premise": { "Bag": { "item": "张梁的眼镜" } },
+    "description": "获得码界三神器其二“张梁的眼镜”",
+    "buff": { "point": 99 },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac093": {
+    "name": "神之眼",
+    "premise": { "Bag": { "item": "杰森的注视" } },
+    "description": "获得码界三神器其三“杰森的注视”",
+    "buff": { "point": 99 },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac094": {
+    "name": "Error!",
+    "premise": { "Bag": { "item": "邪恶炒饭" } },
+    "description": "获得黑洞三魔器其一“邪恶炒饭”",
+    "buff": { "point": 99 },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac095": {
+    "name": "一个BUG",
+    "premise": { "Bag": { "item": "代码蠹虫" } },
+    "description": "获得黑洞三魔器其二“代码蠹虫”",
+    "buff": { "point": 99 },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac096": {
+    "name": "BUG缠身",
+    "premise": { "Bag": { "item": "碧油鸡羽" } },
+    "description": "获得黑洞三魔器其三“碧油鸡羽”",
+    "buff": { "point": 99 },
+    "unique": 0,
+    "unlocked": 0
+  },
+  "ac097": {
+    "name": "一念神魔",
+    "premise": {
+      "Bag": {
+        "item": {
+          "shenqi": 1,
+          "moqi": 1
+        }
+      },
+      "description": "同时拥有神器和魔器",
+      "buff": {
+        "point": 99
+      },
+      "unique": 0,
+      "unlocked": 0
+    }
+  },
+  "ac098": {
+    "name": "码神再临",
+    "premise": {
+      "Bag": {
+        "item": {
+          "shenqi": 3
+        }
+      },
+      "description": "获得码界三神器",
+      "buff": { "point": 99 },
+      "unique": 0,
+      "unlocked": 0
+    }
+  },
+  "ac099": {
+    "name": "谬魔复苏",
+    "premise": {
+      "Bag": {
+        "item": {
+          "moqi": 3
+        }
+      },
+      "description": "获得黑洞三魔器",
+      "buff": { "point": 99 },
+      "unique": 0,
+      "unlocked": 0
+    }
+  }
+}
