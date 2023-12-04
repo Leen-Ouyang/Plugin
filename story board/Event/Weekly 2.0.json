@@ -1,0 +1,2284 @@
+{
+  "NO100": [
+    {
+      "title": "小测·高等数学（上）",
+      "description": "课堂开始时，老师发布了这周的小测。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.8,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次小测取得了理想成绩。",
+      "failure": "由于平时缺乏锻炼，这次小测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester1"
+    },
+    {
+      "title": "小测·高等数学（上）",
+      "description": "老师发布了这周的小测，你深知自己摸鱼了，于是打开了搜题APP。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "你侥幸躲过了老师的检查，成功完成了小测，取得了不错的成绩。",
+      "failure": "你的动作再鬼鬼祟祟，也逃不过老师的鹰眼，你被抓了个正着。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 0,
+      "limit": "Semester1"
+    }
+  ],
+  "NO101": [
+    {
+      "title": "小测·线性代数",
+      "description": "课堂开始时，老师发布了这周的小测。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.8,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次小测取得了理想成绩。",
+      "failure": "由于复习不够全面，这次小测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester1"
+    },
+    {
+      "title": "小测·线性代数",
+      "description": "老师发布了这周的小测，你深知自己摸鱼了，于是打开了搜题APP。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "你侥幸躲过了老师的检查，成功完成了小测，取得了不错的成绩。",
+      "failure": "你的动作再鬼鬼祟祟，也逃不过老师的鹰眼，你被抓了个正着。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 0,
+      "limit": "Semester1"
+    }
+  ],
+  "NO102": [
+    {
+      "title": "小测·高级语言程序设计",
+      "description": "课堂开始时，老师发布了这周的小测。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.8,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次小测取得了理想成绩。",
+      "failure": "由于复习不够全面，这次小测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester1"
+    },
+    {
+      "title": "小测·高级语言程序设计",
+      "description": "老师发布了这周的小测，你深知自己摸鱼了，于是打开了搜题APP。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "你侥幸躲过了老师的检查，成功完成了小测，取得了不错的成绩。",
+      "failure": "你的动作再鬼鬼祟祟，也逃不过老师的鹰眼，你被抓了个正着。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 0,
+      "limit": "Semester1"
+    }
+  ],
+  "NO103": [
+    {
+      "title": "体能测试·体育（一）",
+      "description": "这周体育课是小测环节，接下来轮到你了。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 1,
+      "count": 1,
+      "judge": "CON",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次体测取得了理想成绩。",
+      "failure": "由于平时缺乏锻炼，这次体测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester1"
+    }
+  ],
+  "NO104": [
+    {
+      "title": "小测·大学英语（二）",
+      "description": "课堂开始时，老师发布了这周的小测。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.8,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次小测取得了理想成绩。",
+      "failure": "由于复习不够全面，这次小测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester1"
+    },
+    {
+      "title": "小测·大学英语（二）",
+      "description": "老师发布了这周的小测，你深知自己摸鱼了，于是打开了搜题APP。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "你侥幸躲过了老师的检查，成功完成了小测，取得了不错的成绩。",
+      "failure": "你的动作再鬼鬼祟祟，也逃不过老师的鹰眼，你被抓了个正着。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 0,
+      "limit": "Semester1"
+    }
+  ],
+  "NO105": [
+    {
+      "title": "小测·高等数学（下）",
+      "description": "课堂开始时，老师发布了这周的小测。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.8,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次小测取得了理想成绩。",
+      "failure": "由于复习不够全面，这次小测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester2"
+    },
+    {
+      "title": "小测·高等数学（下）",
+      "description": "老师发布了这周的小测，你深知自己摸鱼了，于是打开了搜题APP。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "你侥幸躲过了老师的检查，成功完成了小测，取得了不错的成绩。",
+      "failure": "你的动作再鬼鬼祟祟，也逃不过老师的鹰眼，你被抓了个正着。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 0,
+      "limit": "Semester2"
+    }
+  ],
+  "NO106": [
+    {
+      "title": "小测·基础电路与电子学",
+      "description": "课堂开始时，老师发布了这周的小测。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.8,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次小测取得了理想成绩。",
+      "failure": "由于复习不够全面，这次小测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester2"
+    },
+    {
+      "title": "小测·基础电路与电子学",
+      "description": "老师发布了这周的小测，你深知自己摸鱼了，于是打开了搜题APP。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "你侥幸躲过了老师的检查，成功完成了小测，取得了不错的成绩。",
+      "failure": "你的动作再鬼鬼祟祟，也逃不过老师的鹰眼，你被抓了个正着。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 0,
+      "limit": "Semester2"
+    }
+  ],
+  "NO107": [
+    {
+      "title": "小测·大学物理（上）",
+      "description": "课堂开始时，老师发布了这周的小测。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.8,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次小测取得了理想成绩。",
+      "failure": "由于复习不够全面，这次小测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester2"
+    },
+    {
+      "title": "小测·大学物理（上）",
+      "description": "老师发布了这周的小测，你深知自己摸鱼了，于是打开了搜题APP。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "你侥幸躲过了老师的检查，成功完成了小测，取得了不错的成绩。",
+      "failure": "你的动作再鬼鬼祟祟，也逃不过老师的鹰眼，你被抓了个正着。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 0,
+      "limit": "Semester2"
+    }
+  ],
+  "NO108": [
+    {
+      "title": "体能测试·体育（二）",
+      "description": "这周体育课是小测环节，接下来轮到你了。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 1,
+      "count": 1,
+      "judge": "CON",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次体测取得了理想成绩。",
+      "failure": "由于平时缺乏锻炼，这次体测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester2"
+    }
+  ],
+  "NO109": [
+    {
+      "title": "小测·大学英语（三）",
+      "description": "课堂开始时，老师发布了这周的小测。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.8,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次小测取得了理想成绩。",
+      "failure": "由于复习不够全面，这次小测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester2"
+    },
+    {
+      "title": "小测·大学英语（三）",
+      "description": "老师发布了这周的小测，你深知自己摸鱼了，于是打开了搜题APP。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "你侥幸躲过了老师的检查，成功完成了小测，取得了不错的成绩。",
+      "failure": "你的动作再鬼鬼祟祟，也逃不过老师的鹰眼，你被抓了个正着。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 0,
+      "limit": "Semester2"
+    }
+  ],
+  "NO110": [
+    {
+      "title": "小测·离散数学",
+      "description": "课堂开始时，老师发布了这周的小测。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.8,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次小测取得了理想成绩。",
+      "failure": "由于复习不够全面，这次小测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester3"
+    },
+    {
+      "title": "小测·离散数学",
+      "description": "老师发布了这周的小测，你深知自己摸鱼了，于是打开了搜题APP。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "你侥幸躲过了老师的检查，成功完成了小测，取得了不错的成绩。",
+      "failure": "你的动作再鬼鬼祟祟，也逃不过老师的鹰眼，你被抓了个正着。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 0,
+      "limit": "Semester3"
+    }
+  ],
+  "NO111": [
+    {
+      "title": "小测·算法与数据结构",
+      "description": "课堂开始时，老师发布了这周的小测。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.8,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次小测取得了理想成绩。",
+      "failure": "由于复习不够全面，这次小测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester3"
+    },
+    {
+      "title": "小测·算法与数据结构",
+      "description": "老师发布了这周的小测，你深知自己摸鱼了，于是打开了搜题APP。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "你侥幸躲过了老师的检查，成功完成了小测，取得了不错的成绩。",
+      "failure": "你的动作再鬼鬼祟祟，也逃不过老师的鹰眼，你被抓了个正着。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 0,
+      "limit": "Semester3"
+    }
+  ],
+  "NO112": [
+    {
+      "title": "小测·大学物理（下）",
+      "description": "课堂开始时，老师发布了这周的小测。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.8,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次小测取得了理想成绩。",
+      "failure": "由于复习不够全面，这次小测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester3"
+    },
+    {
+      "title": "小测·大学物理（下）",
+      "description": "老师发布了这周的小测，你深知自己摸鱼了，于是打开了搜题APP。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "你侥幸躲过了老师的检查，成功完成了小测，取得了不错的成绩。",
+      "failure": "你的动作再鬼鬼祟祟，也逃不过老师的鹰眼，你被抓了个正着。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 0,
+      "limit": "Semester3"
+    }
+  ],
+  "NO113": [
+    {
+      "title": "体能测试·体育（三）",
+      "description": "这周体育课是小测环节，接下来轮到你了。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 1,
+      "count": 1,
+      "judge": "CON",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次体测取得了理想成绩。",
+      "failure": "由于平时缺乏锻炼，这次体测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester3"
+    }
+  ],
+  "NO114": [
+    {
+      "title": "小测·大学英语（四）",
+      "description": "课堂开始时，老师发布了这周的小测。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.8,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次小测取得了理想成绩。",
+      "failure": "由于复习不够全面，这次小测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester3"
+    },
+    {
+      "title": "小测·大学英语（四）",
+      "description": "老师发布了这周的小测，你深知自己摸鱼了，于是打开了搜题APP。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "你侥幸躲过了老师的检查，成功完成了小测，取得了不错的成绩。",
+      "failure": "你的动作再鬼鬼祟祟，也逃不过老师的鹰眼，你被抓了个正着。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 0,
+      "limit": "Semester3"
+    }
+  ],
+  "NO115": [
+    {
+      "title": "小测·概率论与数理统计",
+      "description": "课堂开始时，老师发布了这周的小测。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.8,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次小测取得了理想成绩。",
+      "failure": "由于复习不够全面，这次小测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester4"
+    },
+    {
+      "title": "小测·概率论与数理统计",
+      "description": "老师发布了这周的小测，你深知自己摸鱼了，于是打开了搜题APP。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "你侥幸躲过了老师的检查，成功完成了小测，取得了不错的成绩。",
+      "failure": "你的动作再鬼鬼祟祟，也逃不过老师的鹰眼，你被抓了个正着。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 0,
+      "limit": "Semester4"
+    }
+  ],
+  "NO116": [
+    {
+      "title": "小测·数据通信与计算机网络",
+      "description": "课堂开始时，老师发布了这周的小测。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.8,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次小测取得了理想成绩。",
+      "failure": "由于复习不够全面，这次小测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester4"
+    },
+    {
+      "title": "小测·数据通信与计算机网络",
+      "description": "老师发布了这周的小测，你深知自己摸鱼了，于是打开了搜题APP。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "你侥幸躲过了老师的检查，成功完成了小测，取得了不错的成绩。",
+      "failure": "你的动作再鬼鬼祟祟，也逃不过老师的鹰眼，你被抓了个正着。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 0,
+      "limit": "Semester4"
+    }
+  ],
+  "NO117": [
+    {
+      "title": "小测·计算机组成原理",
+      "description": "课堂开始时，老师发布了这周的小测。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.8,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次小测取得了理想成绩。",
+      "failure": "由于复习不够全面，这次小测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester4"
+    },
+    {
+      "title": "小测·计算机组成原理",
+      "description": "老师发布了这周的小测，你深知自己摸鱼了，于是打开了搜题APP。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "你侥幸躲过了老师的检查，成功完成了小测，取得了不错的成绩。",
+      "failure": "你的动作再鬼鬼祟祟，也逃不过老师的鹰眼，你被抓了个正着。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 0,
+      "limit": "Semester4"
+    }
+  ],
+  "NO118": [
+    {
+      "title": "体能测试·体育（三）",
+      "description": "这周体育课是小测环节，接下来轮到你了。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 1,
+      "count": 1,
+      "judge": "CON",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次体测取得了理想成绩。",
+      "failure": "由于平时缺乏锻炼，这次体测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester4"
+    }
+  ],
+  "NO119": [
+    {
+      "title": "小测·英语专题课",
+      "description": "课堂开始时，老师发布了这周的小测。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.8,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次小测取得了理想成绩。",
+      "failure": "由于复习不够全面，这次小测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester4"
+    },
+    {
+      "title": "小测·英语专题课",
+      "description": "老师发布了这周的小测，你深知自己摸鱼了，于是打开了搜题APP。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "你侥幸躲过了老师的检查，成功完成了小测，取得了不错的成绩。",
+      "failure": "你的动作再鬼鬼祟祟，也逃不过老师的鹰眼，你被抓了个正着。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 0,
+      "limit": "Semester4"
+    }
+  ],
+  "NO120": [
+    {
+      "title": "小测·数据库系统原理",
+      "description": "课堂开始时，老师发布了这周的小测。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.8,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次小测取得了理想成绩。",
+      "failure": "由于复习不够全面，这次小测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester5"
+    },
+    {
+      "title": "小测·数据库系统原理",
+      "description": "老师发布了这周的小测，你深知自己摸鱼了，于是打开了搜题APP。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "你侥幸躲过了老师的检查，成功完成了小测，取得了不错的成绩。",
+      "failure": "你的动作再鬼鬼祟祟，也逃不过老师的鹰眼，你被抓了个正着。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 0,
+      "limit": "Semester5"
+    }
+  ],
+  "NO121": [
+    {
+      "title": "小测·计算机操作系统",
+      "description": "课堂开始时，老师发布了这周的小测。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.8,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次小测取得了理想成绩。",
+      "failure": "由于复习不够全面，这次小测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester5"
+    },
+    {
+      "title": "小测·计算机操作系统",
+      "description": "老师发布了这周的小测，你深知自己摸鱼了，于是打开了搜题APP。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "你侥幸躲过了老师的检查，成功完成了小测，取得了不错的成绩。",
+      "failure": "你的动作再鬼鬼祟祟，也逃不过老师的鹰眼，你被抓了个正着。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 0,
+      "limit": "Semester5"
+    }
+  ],
+  "NO122": [
+    {
+      "title": "小测·计算机操作系统",
+      "description": "课堂开始时，老师发布了这周的小测。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.8,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次小测取得了理想成绩。",
+      "failure": "由于复习不够全面，这次小测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester5"
+    },
+    {
+      "title": "小测·计算机操作系统",
+      "description": "老师发布了这周的小测，你深知自己摸鱼了，于是打开了搜题APP。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "你侥幸躲过了老师的检查，成功完成了小测，取得了不错的成绩。",
+      "failure": "你的动作再鬼鬼祟祟，也逃不过老师的鹰眼，你被抓了个正着。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 0,
+      "limit": "Semester5"
+    }
+  ],
+  "NO123": [
+    {
+      "title": "小测·软件工程",
+      "description": "课堂开始时，老师发布了这周的小测。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.8,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次小测取得了理想成绩。",
+      "failure": "由于复习不够全面，这次小测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester5"
+    },
+    {
+      "title": "小测·软件工程",
+      "description": "老师发布了这周的小测，你深知自己摸鱼了，于是打开了搜题APP。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "你侥幸躲过了老师的检查，成功完成了小测，取得了不错的成绩。",
+      "failure": "你的动作再鬼鬼祟祟，也逃不过老师的鹰眼，你被抓了个正着。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 0,
+      "limit": "Semester5"
+    }
+  ],
+  "NO124": [
+    {
+      "title": "小测·编译原理",
+      "description": "课堂开始时，老师发布了这周的小测。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.8,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次小测取得了理想成绩。",
+      "failure": "由于复习不够全面，这次小测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester6"
+    },
+    {
+      "title": "小测·编译原理",
+      "description": "老师发布了这周的小测，你深知自己摸鱼了，于是打开了搜题APP。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "你侥幸躲过了老师的检查，成功完成了小测，取得了不错的成绩。",
+      "failure": "你的动作再鬼鬼祟祟，也逃不过老师的鹰眼，你被抓了个正着。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 0,
+      "limit": "Semester6"
+    }
+  ],
+  "NO125": [
+    {
+      "title": "小测·计算方法",
+      "description": "课堂开始时，老师发布了这周的小测。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.8,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次小测取得了理想成绩。",
+      "failure": "由于复习不够全面，这次小测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester6"
+    },
+    {
+      "title": "小测·计算方法",
+      "description": "老师发布了这周的小测，你深知自己摸鱼了，于是打开了搜题APP。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "你侥幸躲过了老师的检查，成功完成了小测，取得了不错的成绩。",
+      "failure": "你的动作再鬼鬼祟祟，也逃不过老师的鹰眼，你被抓了个正着。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 0,
+      "limit": "Semester6"
+    }
+  ],
+  "NO126": [
+    {
+      "title": "小测·计算机系统结构",
+      "description": "课堂开始时，老师发布了这周的小测。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.8,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "“功夫不负有心人”，你这次小测取得了理想成绩。",
+      "failure": "由于复习不够全面，这次小测的成绩并不理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester6"
+    },
+    {
+      "title": "小测·计算机系统结构",
+      "description": "老师发布了这周的小测，你深知自己摸鱼了，于是打开了搜题APP。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "你侥幸躲过了老师的检查，成功完成了小测，取得了不错的成绩。",
+      "failure": "你的动作再鬼鬼祟祟，也逃不过老师的鹰眼，你被抓了个正着。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 0,
+      "limit": "Semester6"
+    }
+  ],
+  "NO127": [
+    {
+      "title": "认知实习",
+      "description": "这周的实践课又来了，你摩拳擦掌准备动手。",
+      "place": "compus",
+      "label": "学习",
+      "pre": {},
+      "odds": 1,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "凭借着足够的知识储备和强大的学习能力，你在这次课上收获了理想的成果。",
+      "failure": "你在这次课上碰到了各种奇怪的拦路虎，这次的成果不甚理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester1"
+    }
+  ],
+  "NO128": [
+    {
+      "title": "高级语言程序设计实践",
+      "description": "这周的实践课又来了，你摩拳擦掌准备动手。",
+      "place": "compus",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.95,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "凭借着足够的知识储备和强大的学习能力，你在这次课上收获了理想的成果。",
+      "failure": "你在这次课上碰到了各种奇怪的拦路虎，这次的成果不甚理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester1"
+    }
+  ],
+  "NO129": [
+    {
+      "title": "电子线路综合实验",
+      "description": "这周的实践课又来了，你摩拳擦掌准备动手。",
+      "place": "compus",
+      "label": "学习",
+      "pre": {},
+      "odds": 1,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "凭借着足够的知识储备和强大的学习能力，你在这次课上收获了理想的成果。",
+      "failure": "你在这次课上碰到了各种奇怪的拦路虎，这次的成果不甚理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester2"
+    }
+  ],
+  "NO130": [
+    {
+      "title": "程序设计语言综合设计",
+      "description": "这周的实践课又来了，你摩拳擦掌准备动手。",
+      "place": "compus",
+      "label": "学习",
+      "pre": {},
+      "odds": 1,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "凭借着足够的知识储备和强大的学习能力，你在这次课上收获了理想的成果。",
+      "failure": "你在这次课上碰到了各种奇怪的拦路虎，这次的成果不甚理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester2"
+    }
+  ],
+  "NO131": [
+    {
+      "title": "大学物理实验A（上）",
+      "description": "这周的实践课又来了，你摩拳擦掌准备动手。",
+      "place": "compus",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.95,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "凭借着足够的知识储备和强大的学习能力，你在这次课上收获了理想的成果。",
+      "failure": "你在这次课上碰到了各种奇怪的拦路虎，这次的成果不甚理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester2"
+    }
+  ],
+  "NO132": [
+    {
+      "title": "Python程序设计实践",
+      "description": "这周的实践课又来了，你摩拳擦掌准备动手。",
+      "place": "compus",
+      "label": "学习",
+      "pre": {},
+      "odds": 1,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "凭借着足够的知识储备和强大的学习能力，你在这次课上收获了理想的成果。",
+      "failure": "你在这次课上碰到了各种奇怪的拦路虎，这次的成果不甚理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester2"
+    }
+  ],
+  "NO133": [
+    {
+      "title": "数字逻辑电路设计",
+      "description": "这周的实践课又来了，你摩拳擦掌准备动手。",
+      "place": "compus",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.95,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "凭借着足够的知识储备和强大的学习能力，你在这次课上收获了理想的成果。",
+      "failure": "你在这次课上碰到了各种奇怪的拦路虎，这次的成果不甚理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester3"
+    }
+  ],
+  "NO134": [
+    {
+      "title": "算法与数据结构实践",
+      "description": "这周的实践课又来了，你摩拳擦掌准备动手。",
+      "place": "compus",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.95,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "凭借着足够的知识储备和强大的学习能力，你在这次课上收获了理想的成果。",
+      "failure": "你在这次课上碰到了各种奇怪的拦路虎，这次的成果不甚理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester3"
+    }
+  ],
+  "NO135": [
+    {
+      "title": "大学物理实验A（下）",
+      "description": "这周的实践课又来了，你摩拳擦掌准备动手。",
+      "place": "compus",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.95,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "凭借着足够的知识储备和强大的学习能力，你在这次课上收获了理想的成果。",
+      "failure": "你在这次课上碰到了各种奇怪的拦路虎，这次的成果不甚理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester3"
+    }
+  ],
+  "NO136": [
+    {
+      "title": "汇编语言程序设计",
+      "description": "这周的实践课又来了，你摩拳擦掌准备动手。",
+      "place": "compus",
+      "label": "学习",
+      "pre": {},
+      "odds": 1,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "凭借着足够的知识储备和强大的学习能力，你在这次课上收获了理想的成果。",
+      "failure": "你在这次课上碰到了各种奇怪的拦路虎，这次的成果不甚理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester4"
+    }
+  ],
+  "NO137": [
+    {
+      "title": "计算机组成原理实践",
+      "description": "这周的实践课又来了，你摩拳擦掌准备动手。",
+      "place": "compus",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.95,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "凭借着足够的知识储备和强大的学习能力，你在这次课上收获了理想的成果。",
+      "failure": "你在这次课上碰到了各种奇怪的拦路虎，这次的成果不甚理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester4"
+    }
+  ],
+  "NO138": [
+    {
+      "title": "思想政治实践课",
+      "description": "这周的实践课又来了，你摩拳擦掌准备动手。",
+      "place": "compus",
+      "label": "学习",
+      "pre": {},
+      "odds": 1,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "凭借着足够的知识储备和强大的学习能力，你在这次课上收获了理想的成果。",
+      "failure": "你在这次课上碰到了各种奇怪的拦路虎，这次的成果不甚理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester4"
+    }
+  ],
+  "NO139": [
+    {
+      "title": "软件工程实践",
+      "description": "这周的实践课又来了，你摩拳擦掌准备动手。",
+      "place": "compus",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.95,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "凭借着足够的知识储备和强大的学习能力，你在这次课上收获了理想的成果。",
+      "failure": "你在这次课上碰到了各种奇怪的拦路虎，这次的成果不甚理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester4"
+    }
+  ],
+  "NO140": [
+    {
+      "title": "数据库应用实践",
+      "description": "这周的实践课又来了，你摩拳擦掌准备动手。",
+      "place": "compus",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.95,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "凭借着足够的知识储备和强大的学习能力，你在这次课上收获了理想的成果。",
+      "failure": "你在这次课上碰到了各种奇怪的拦路虎，这次的成果不甚理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester5"
+    }
+  ],
+  "NO141": [
+    {
+      "title": "计算机操作系统实践",
+      "description": "这周的实践课又来了，你摩拳擦掌准备动手。",
+      "place": "compus",
+      "label": "学习",
+      "pre": {},
+      "odds": 1,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "凭借着足够的知识储备和强大的学习能力，你在这次课上收获了理想的成果。",
+      "failure": "你在这次课上碰到了各种奇怪的拦路虎，这次的成果不甚理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester5"
+    }
+  ],
+  "NO142": [
+    {
+      "title": "计算机技术劳动实践",
+      "description": "这周的实践课又来了，你摩拳擦掌准备动手。",
+      "place": "compus",
+      "label": "学习",
+      "pre": {},
+      "odds": 1,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "凭借着足够的知识储备和强大的学习能力，你在这次课上收获了理想的成果。",
+      "failure": "你在这次课上碰到了各种奇怪的拦路虎，这次的成果不甚理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester6"
+    }
+  ],
+  "NO143": [
+    {
+      "title": "编译系统设计实践",
+      "description": "这周的实践课又来了，你摩拳擦掌准备动手。",
+      "place": "compus",
+      "label": "学习",
+      "pre": {},
+      "odds": 1,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "凭借着足够的知识储备和强大的学习能力，你在这次课上收获了理想的成果。",
+      "failure": "你在这次课上碰到了各种奇怪的拦路虎，这次的成果不甚理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester6"
+    }
+  ],
+  "NO144": [
+    {
+      "title": "系统综合实践",
+      "description": "这周的实践课又来了，你摩拳擦掌准备动手。",
+      "place": "compus",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.95,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "凭借着足够的知识储备和强大的学习能力，你在这次课上收获了理想的成果。",
+      "failure": "你在这次课上碰到了各种奇怪的拦路虎，这次的成果不甚理想。",
+      "change": {
+        "credit": 1.5
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "Semester6"
+    }
+  ],
+  "NO145": [
+    {
+      "title": "篮球赛",
+      "description": "学校操场举办了院篮球赛，你报名了这次的篮球赛并接受了训练。",
+      "place": "playground",
+      "label": "运动",
+      "pre": {},
+      "odds": 0.3,
+      "count": 1,
+      "judge": "CON",
+      "ending": 1,
+      "diff": 20,
+      "success": "在你和队友平时的刻苦训练和比赛时的默契配合下，你们班的队伍成功获得冠军。",
+      "failure": "你们班的队伍在比赛中每个人都尽力了，奈何实力与对手存在差距，你们队惜败了。",
+      "change": {
+        "point": 50
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    },
+    {
+      "title": "篮球赛",
+      "description": "学校操场举办了院篮球赛，你作为观众观看了这次比赛。",
+      "place": "playground",
+      "label": "运动",
+      "pre": {},
+      "odds": 0.4,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 20,
+      "success": "你们班的队伍取得了决赛的胜利，你欢呼起来。",
+      "failure": "你们班的队伍惜败于对方，你感到惋惜。",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": 20,
+      "limit": "null"
+    }
+  ],
+  "NO146": [
+    {
+      "title": "足球赛",
+      "description": "学校操场举办了校足球赛，你报名了这次的足球赛并接受了训练。",
+      "place": "playground",
+      "label": "运动",
+      "pre": {},
+      "odds": 0.3,
+      "count": 1,
+      "judge": "CON",
+      "ending": 1,
+      "diff": 20,
+      "success": "在你和队友平时的刻苦训练和比赛时的默契配合下，你所在学院的队伍成功获得冠军。",
+      "failure": "你所在学院的队伍在比赛中每个人都尽力了，奈何实力与对手存在差距，你们队惜败了。",
+      "change": {
+        "point": 50
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    },
+    {
+      "title": "足球赛",
+      "description": "学校操场举办了校足球赛，你作为观众观看了这次比赛。",
+      "place": "playground",
+      "label": "运动",
+      "pre": {},
+      "odds": 0.4,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 20,
+      "success": "你所在学院的队伍取得了决赛的胜利，你欢呼起来。",
+      "failure": "你所在学院的队伍惜败于对方，你感到惋惜。",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": 20,
+      "limit": "null"
+    }
+  ],
+  "NO147": [
+    {
+      "title": "乒乓球赛",
+      "description": "学院举办了院乒乓球比赛，你报名了这次的乒乓球赛并开始训练。",
+      "place": "playground",
+      "label": "运动",
+      "pre": {},
+      "odds": 0.9,
+      "count": 1,
+      "judge": "CON",
+      "ending": 1,
+      "diff": 20,
+      "success": "在你平时的刻苦训练下，你成功获得了冠军。",
+      "failure": "你在比赛中尽力而为，奈何实力与对手存在差距，无缘第一。",
+      "change": {
+        "point": 30
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    }
+  ],
+  "NO148": [
+    {
+      "title": "羽毛球赛",
+      "description": "学院举办了院羽毛球比赛，你报名了这次的羽毛球赛并开始训练。",
+      "place": "playground",
+      "label": "运动",
+      "pre": {},
+      "odds": 0.9,
+      "count": 1,
+      "judge": "CON",
+      "ending": 1,
+      "diff": 20,
+      "success": "在你平时的刻苦训练下，你成功获得了冠军。",
+      "failure": "你在比赛中尽力而为，奈何实力与对手存在差距，无缘第一。",
+      "change": {
+        "point": 30
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    }
+  ],
+  "NO149": [
+    {
+      "title": "棋牌赛",
+      "description": "学校举办了校棋牌赛，你报名了这次的棋牌赛并开始训练。",
+      "place": "playground",
+      "label": "运动",
+      "pre": {},
+      "odds": 0.9,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 20,
+      "success": "在你平时的刻苦训练下，你成功获得了冠军。",
+      "failure": "你在比赛中尽力而为，奈何实力与对手存在差距，无缘第一。",
+      "change": {
+        "point": 50
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    }
+  ],
+  "NO150": [
+    {
+      "title": "校选课",
+      "description": "你深知上校选课是为了拿学分，于是开始自习。",
+      "place": "classroom",
+      "label": "学习",
+      "pre": {},
+      "odds": 1,
+      "count": 1,
+      "judge": "WIL",
+      "ending": 1,
+      "diff": 10,
+      "success": "你专心致志，屏蔽了一切诱惑，圆满完成自习任务。",
+      "failure": "在仔细过程中你禁不住诱惑开始玩起APP，鸽掉了自习。",
+      "change": {
+        "credit": 1
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    }
+  ],
+  "NO151": [
+    {
+      "title": "图书馆的时光",
+      "description": "由于最近自制力有所下降，今天你决定到图书馆自习。",
+      "place": "library",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.9,
+      "count": 1,
+      "judge": "WIL",
+      "ending": 1,
+      "diff": 10,
+      "success": "在自习过程中，你注意力越来越集中，最后成功完成任务。",
+      "failure": "在自习过程中，你愈发烦躁，不到1h就离开了图书馆。",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    }
+  ],
+  "NO152": [
+    {
+      "title": "实验室的一天",
+      "description": "今天，导师委托你到实验室帮忙，你接下了这个任务。",
+      "place": "library",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.9,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 10,
+      "success": "你在帮忙时细心谨慎，最后不仅成功完成任务，还吸收了额外知识。",
+      "failure": "你在某个环节不小心出错了，后来在导师的帮助下才勉强完成了任务。",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    }
+  ],
+  "NO153": [
+    {
+      "title": "就近原则",
+      "description": "今天，你不想出门，于是在宿舍进行每周复习强化。",
+      "place": "dormitory",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.9,
+      "count": 1,
+      "judge": "WIL",
+      "ending": 1,
+      "diff": 10,
+      "success": "在自习过程中，你注意力越来越集中，最后成功完成任务。",
+      "failure": "在自习过程中，你禁不住游戏的诱惑，于是鸽掉了复习任务。",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    }
+  ],
+  "NO154": [
+    {
+      "title": "大牛讲座",
+      "description": "你事先报名了知名专家的讲座，今天是听讲座的日子。",
+      "place": "dormitory",
+      "label": "学习",
+      "pre": {},
+      "odds": 0.9,
+      "count": 1,
+      "judge": "WIL",
+      "ending": 1,
+      "diff": 10,
+      "success": "你牢记了讲座的时间，准时到场并听取了讲座，受益匪浅。",
+      "failure": "你沉迷于娱乐活动，将讲座的事抛在了脑后，后知后觉时你懊悔不已。",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    }
+  ],
+  "NO155": [
+    {
+      "title": "网上购物",
+      "description": "今天你零食瘾犯了，于是在小猫贸上购买了一箱零食。",
+      "place": "dormitory",
+      "label": "零食",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 10,
+      "success": "几天之后，快递到了，你取出快递并开箱检查，发现零食完好无损。",
+      "failure": "几天后快递到了，你取出快递并开箱检查，发现部分零食包装破损，你直呼倒霉。",
+      "change": {
+        "Bag": "I059"
+      },
+      "energy": -10,
+      "mood": 0,
+      "limit": "null"
+    },
+    {
+      "title": "网上购物",
+      "description": "你日思夜想的游戏卡带终于出了，立马打开小狗购APP下单。",
+      "place": "dormitory",
+      "label": "游戏",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 10,
+      "success": "几天之后，快递到了，你取出快递并开箱检查，发现游戏卡带没问题。",
+      "failure": "几天后快递到了，你取出快递并开箱检查，发现游戏卡带寄错了。",
+      "change": {
+        "Bag": "I040"
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    },
+    {
+      "title": "网上购物",
+      "description": "你日思夜想的漫画终于发行了最新一期，立马打开淘金潮APP下单。",
+      "place": "dormitory",
+      "label": "动漫",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 10,
+      "success": "几天之后，快递到了，你取出快递并开箱检查，没有破损。",
+      "failure": "几天后快递到了，你取出快递并开箱检查，发现漫画破损了。",
+      "change": {
+        "Bag": "I042"
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    },
+    {
+      "title": "网上购物",
+      "description": "你原来的无线耳机坏掉了，于是打开拼夕夕APP购买了新的无线耳机。",
+      "place": "dormitory",
+      "label": "粉丝",
+      "pre": {},
+      "odds": 0.2,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 10,
+      "success": "几天之后，快递到了，你取出快递并开箱检查，耳机完好无损。",
+      "failure": "几天后快递到了，你取出快递并开箱检查，发现商家寄错了物品。",
+      "change": {
+        "Bag": "I070"
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    }
+  ],
+  "NO156": [
+    {
+      "title": "漫画更新",
+      "description": "你日思夜想的漫画终于更新了，你迫不及待地打开了霹雳霹雳漫画。",
+      "place": "dormitory",
+      "label": "动漫",
+      "pre": {},
+      "odds": 0.4,
+      "count": 1,
+      "judge": "WIL",
+      "ending": 1,
+      "diff": 10,
+      "success": "这期漫画的剧情让你眼前一亮，令你连连惊叹。",
+      "failure": "看到漫画的剧情依然没崩，你心满意足。",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    },
+    {
+      "title": "番剧更新",
+      "description": "你日思夜想的番剧终于更新了，你迫不及待地打开了霹雳霹雳。",
+      "place": "dormitory",
+      "label": "动漫",
+      "pre": {},
+      "odds": 0.4,
+      "count": 1,
+      "judge": "WIL",
+      "ending": 1,
+      "diff": 10,
+      "success": "这期的番剧出奇的好，你非常满意。",
+      "failure": "这期的番剧依旧正常，令你感到满足。",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    }
+  ],
+  "NO157": [
+    {
+      "title": "宿舍联机",
+      "description": "今天手头的事不算多，你和舍友联机玩Steam上的游戏。",
+      "place": "dormitory",
+      "label": "游戏",
+      "pre": {},
+      "odds": 0.4,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 15,
+      "success": "在四人的默契配合下，你们成功打通了所有关卡，心满意足。",
+      "failure": "你被舍友的操作坑了一把，导致攻打最终boss时就被boss反杀了，乐。",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": 20,
+      "limit": "null"
+    },
+    {
+      "title": "你画我猜",
+      "description": "今天，你约了几个朋友启动了Stream，组队玩《你画我猜》。",
+      "place": "dormitory",
+      "label": "游戏",
+      "pre": {},
+      "odds": 0.4,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 15,
+      "success": "你那不羁搞笑的画风吸引了同房的好友，耳机里充满了一阵阵笑声，你名副其实地拿了第一。",
+      "failure": "虽然你的画作稍逊于好友，但是好友奇葩的画作还是让你瞬间绷不住了，你全程都在笑。",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": 20,
+      "limit": "null"
+    }
+  ],
+  "NO158": [
+    {
+      "title": "每周电影",
+      "description": "你忙活了好几天，今天终于有时间闲下来和朋友看电影。",
+      "place": "dormitory",
+      "label": "粉丝",
+      "pre": {},
+      "odds": 0.8,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 10,
+      "success": "不愧是拿过奖的电影，这部电影的惊艳之处令你目瞪口呆。",
+      "failure": "虽然达不到你的期望，但电影质量本身还是不错的。",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": 20,
+      "limit": "null"
+    }
+  ],
+  "NO159": [
+    {
+      "title": "每周综艺",
+      "description": "你忙活了好几天，今天终于有时间闲下来看综艺。",
+      "place": "dormitory",
+      "label": "粉丝",
+      "pre": {},
+      "odds": 0.4,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 30,
+      "success": "这周的综艺难得的好看，满足了你的内心。",
+      "failure": "这周的综艺依旧一般，达不到你的期望。",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": 20,
+      "limit": "null"
+    },
+    {
+      "title": "每周综艺",
+      "description": "你忙活了好几天，今天终于有时间闲下来看网剧。",
+      "place": "dormitory",
+      "label": "粉丝",
+      "pre": {},
+      "odds": 0.4,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 30,
+      "success": "这周的网剧难得的好看，满足了你的内心。",
+      "failure": "这周的网剧依旧一般，达不到你的期望。",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": 20,
+      "limit": "null"
+    }
+  ],
+  "NO160": [
+    {
+      "title": "社团活动",
+      "description": "你所在的社团开展了活动，抱着好奇的态度，你也加入其中。",
+      "place": "compus",
+      "label": "校园",
+      "pre": {},
+      "odds": 0.9,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 10,
+      "success": "这次的社团活动挺有趣的，你在活动中有了额外收获。",
+      "failure": "这次的社团活动内容一般，但你也从中得到了一些快乐。",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    }
+  ],
+  "NO161": [
+    {
+      "title": "我为人人",
+      "description": "你事先报名了这周的志愿活动，此刻正是志愿活动的时间。",
+      "place": "compus",
+      "label": "校园",
+      "pre": {},
+      "odds": 0.9,
+      "count": 1,
+      "judge": "WIL",
+      "ending": 1,
+      "diff": 10,
+      "success": "你及时赶到了目的地，耐心地做完了志愿服务，获得了额外收获。",
+      "failure": "你此时正对着手机，沉浸其中无法自拔，把志愿的事抛在脑后。",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    }
+  ],
+  "NO162": [
+    {
+      "title": "校园打卡",
+      "description": "今天学校活动处举办了校园打卡活动，此时正值打卡时间。",
+      "place": "compus",
+      "label": "校园",
+      "pre": {},
+      "odds": 0.9,
+      "count": 1,
+      "judge": "WIL",
+      "ending": 1,
+      "diff": 10,
+      "success": "你及时赶到了目的地，顺利地完成了打卡活动，获得了额外收获。",
+      "failure": "你对打卡活动不感兴趣，觉得这破B玩意不如窝在宿舍好。",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    }
+  ],
+  "NO163": [
+    {
+      "title": "诶，是猫猫",
+      "description": "你在校园小道上漫步，有一只超可爱的猫猫路过。",
+      "place": "compus",
+      "label": "撸猫",
+      "pre": {},
+      "odds": 1,
+      "count": 0.9,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 10,
+      "success": "你的手上恰好有顺手带出门的冻干并投喂了猫猫。喵~小猫咪快乐地对你翻肚皮。",
+      "failure": "你的手上没有猫粮，你只能远观而不可近玩。看着可爱的猫猫，你的心情也变好了。",
+      "change": {
+        "point": 30,
+        "petting_cat": 1
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    },
+    {
+      "title": "诶，是狗狗",
+      "description": "你在校园小道上漫步，有一只超可爱的狗狗路过。",
+      "place": "compus",
+      "label": "喂狗",
+      "pre": {},
+      "odds": 0.9,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 10,
+      "success": "你的手上恰好有顺手带出门的火腿肠并投喂了狗狗。汪汪~小狗快乐地围着你的腿打转。",
+      "failure": "你的手上没有零食，你只能远观而不可近玩。看着可爱的狗狗，你的心情也变好了。",
+      "change": {
+        "point": 30,
+        "petting_dog": 1
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    }
+  ],
+  "NO164": [
+    {
+      "title": "校园演出",
+      "description": "今天学校举办的校园演出，此时正值演出时间。",
+      "place": "compus",
+      "label": "校园",
+      "pre": {},
+      "odds": 0.9,
+      "count": 1,
+      "judge": "WIL",
+      "ending": 1,
+      "diff": 10,
+      "success": "你及时赶到了演出场地，观看了这场演出，获得了额外收获。",
+      "failure": "你对校园演出不感兴趣，觉得这破B玩意不如窝在宿舍好。",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    }
+  ],
+  "NO165": [
+    {
+      "title": "烧烤宴会",
+      "description": "今天你和好友一起去吃烧烤，你们边撸串边聊天。",
+      "place": "compus",
+      "label": "校园",
+      "pre": {},
+      "odds": 0.95,
+      "count": 1,
+      "judge": "WIL",
+      "ending": 1,
+      "diff": 10,
+      "success": "烧烤的异常美味加上聊天的欢乐氛围，使你感到非常满足。",
+      "failure": "虽然烧烤味道一般，但聊天的欢乐氛围使你满足。",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    }
+  ],
+  "NO166": [
+    {
+      "title": "茶话闲谈",
+      "description": "今天你和好友一同在奶茶店，边喝奶茶边聊天。",
+      "place": "compus",
+      "label": "校园",
+      "pre": {},
+      "odds": 0.95,
+      "count": 1,
+      "judge": "WIL",
+      "ending": 1,
+      "diff": 10,
+      "success": "今天的话似乎异常的多，你完全向朋友敞开了心扉，享受着聊天的过程。",
+      "failure": "虽然奶茶味道不错，但今天你们似乎放不太开。就算这样，你依然感到满足。",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    }
+  ],
+  "NO167": [
+    {
+      "title": "目标是学生街",
+      "description": "今天你和好友在学生街的一家饭店聚餐。",
+      "place": "compus",
+      "label": "校园",
+      "pre": {},
+      "odds": 0.95,
+      "count": 1,
+      "judge": "WIL",
+      "ending": 1,
+      "diff": 10,
+      "success": "吃饱之后，你们开始喝酒吹牛，餐桌上洋溢着快乐的氛围。",
+      "failure": "因为明天早上有课，所以你们都不喝酒，聊天也没有那么火热，但你依然满足。",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    }
+  ],
+  "NO168": [
+    {
+      "title": "校园美景",
+      "description": "今天你和好友一起在校园的湖边散步，欣赏着校园美景。",
+      "place": "compus",
+      "label": "校园",
+      "pre": {},
+      "odds": 0.95,
+      "count": 1,
+      "judge": "WIL",
+      "ending": 1,
+      "diff": 10,
+      "success": "校园的美景虽好，你和好友皆沉浸其中，流连忘返。",
+      "failure": "突然电闪雷鸣，你和好友得知雨水降至，只好匆匆离去。",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    }
+  ],
+  "NO169": [
+    {
+      "title": "PM的邀请",
+      "description": "你收到了天麟的于今日畅谈的邀请，当你到达目的地后，等着你的却是负责测试的ZZC。",
+      "place": "compus",
+      "label": "校园",
+      "pre": {},
+      "odds": 0.15,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 0,
+      "success": "在你强大的聊天能力之下，内向的ZZC居然和你畅聊起来，他满意地赠与你3根天麟之毛。",
+      "failure": "",
+      "change": {
+        "Bag": "I093"
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    },
+    {
+      "title": "PM的邀请",
+      "description": "你收到了天麟的于今日畅谈的邀请，当你到达目的地后，等着你的却是负责故事的Expadd3。",
+      "place": "compus",
+      "label": "校园",
+      "pre": {},
+      "odds": 0.15,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 0,
+      "success": "在你强大的聊天能力之下，你和Expadd3聊得很顺畅，他满意地赠与你2根天麟之毛。",
+      "failure": "",
+      "change": {
+        "Bag": "I093"
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    },
+    {
+      "title": "PM的邀请",
+      "description": "你收到了天麟的于今日畅谈的邀请，当你到达目的地后，等着你的却是负责故事代码的咸鱼。",
+      "place": "compus",
+      "label": "校园",
+      "pre": {},
+      "odds": 0.15,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 0,
+      "success": "在你强大的聊天能力之下，咸鱼和你畅快地聊了起来，他满意地赠与你1根天麟之毛。",
+      "failure": "",
+      "change": {
+        "Bag": "I093"
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    },
+    {
+      "title": "PM的邀请",
+      "description": "你收到了天麟的于今日畅谈的邀请，当你到达目的地后，等着你的却是负责其他模块代码的zsy。",
+      "place": "compus",
+      "label": "校园",
+      "pre": {},
+      "odds": 0.15,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 0,
+      "success": "在你强大的聊天能力之下，zsy和你交谈甚欢，她满意地赠与你1根天麟之毛。",
+      "failure": "",
+      "change": {
+        "Bag": "I093"
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    },
+    {
+      "title": "PM的邀请",
+      "description": "你收到了天麟的于今日畅谈的邀请，当你到达目的地后，等着你的却是负责记录的林贝贝。",
+      "place": "compus",
+      "label": "校园",
+      "pre": {},
+      "odds": 0.15,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 0,
+      "success": "在你强大的聊天能力之下，林贝贝和你的交谈过程充满快乐，她满意地赠与你2根天麟之毛。",
+      "failure": "",
+      "change": {
+        "Bag": "I093"
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    },
+    {
+      "title": "PM的邀请",
+      "description": "你收到了天麟的于今日畅谈的邀请，当你到达目的地后，等着你的却是负责物品的李莉莉。",
+      "place": "compus",
+      "label": "校园",
+      "pre": {},
+      "odds": 0.15,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 0,
+      "success": "在你强大的聊天能力之下，性格外向的李莉莉认可了你的交际能力，她满意地赠与你3根天麟之毛。",
+      "failure": "",
+      "change": {
+        "Bag": "I093"
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    }
+  ]
+}
