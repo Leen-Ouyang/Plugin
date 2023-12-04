@@ -254,8 +254,7 @@ function getChange(msg)
                 generate_time = "nil",  
                 num = "nil",  
                 type = "nil"  
-            },
-            weather = "晴天"
+            }
         }
         temps[userQQ]=user_temp
         temp_data:set(temps)
@@ -352,7 +351,10 @@ function createPlayer(msg)
             bottleCast = 0,
             public = 0,
             disturb = 0,
-            shop = 0
+            shop = 0,
+            FailtoSleepCounter = 0,
+            MeetJasonCounter = 0,
+            PoiliticsCounter = 0,
             },
             Mainline = {
             Semester = 1,
@@ -361,16 +363,6 @@ function createPlayer(msg)
             FinishTimes = 0
             },
             Bag = {
-            item = {},
-            study = 0,
-            sport = 0,
-            snack = 0,
-            game = 0,
-            anima = 0,
-            comp = 0,
-            fans = 0,
-            trophy = 0,
-            sum = 0
             },
         Achievement = {},
         points = 0,

@@ -1,7 +1,9 @@
 bag="背包"
+checkitem=""
+useitem=""
 config={
     msg={
-        item="╔═══════════════╗\n            远程背包\n  ——————————\n   积分 {point}       道具 {num}\n  ——————————\n  {items}\n   指令:\n      「查看+道具名」\n       「使用+道具名」\n╚═══════════════╝"
+        item="╔═══════════════╗\n             远程背包\n  ——————————\n   积分 {point}           道具 {num}\n  ——————————\n{items}\n  ——————————\n   指令:\n      「查看道具+道具名」\n      「使用道具+道具名」\n╚═══════════════╝"
     }
 }
 msg_order={}
@@ -22,11 +24,44 @@ function viewBag(msg)
     else
         return "未创建角色，请先创建角色「创建新角色」"
     end
-    --[[ local point = players[QQ]["points"]
-    local items = players[QQ]["Bag"]["item"]
-    local num = players[QQ]["Bag"]["sum"]
-    config.msg.item = config.msg.sign_success:gsub("{point}", point)
-    config.msg.item = config.msg.sign_success:gsub("{num}", num)
-    config.msg.item = config.msg.sign_success:gsub("{items}", items) ]]
+    item_information="item.json"
+    item_data = getSelfData(item_information)
+    items = item_data:get(nil, {})
+    if(items == nil)then
+        items = {}
+    end
+    local point = players[QQ]["points"]
+    local items_id = {}
+    local items_name = ""
+    local num = 0
+    local bag = players[QQ]["Bag"]
+    config.msg.item = config.msg.item:gsub("{point}", point)
+    for k,v in pairs(bag) do
+        table.insert(items_id,k)
+        local item_count=v["count"]
+        num=num+item_count
+    end
+    config.msg.item = config.msg.item:gsub("{num}", num)
+    for i=1,#items_id do
+        local id=items_id[i]
+        local name=""
+        for k,v in pairs(items) do
+            for key,val in pairs(v) do
+                if(key==id) then
+                    name=val["name"]
+                    break
+                end
+            end
+            if(name~="") then
+                break
+            end
+        end
+        if (i==#items_id) then
+            items_name=items_name.."  "..name
+        else
+            items_name=items_name.."  "..name.."\n"
+        end
+    end
+    config.msg.item = config.msg.item:gsub("{items}", items_name)
     return config.msg.item
 end
