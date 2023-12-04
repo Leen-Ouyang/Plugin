@@ -254,7 +254,8 @@ function getChange(msg)
                 generate_time = "nil",  
                 num = "nil",  
                 type = "nil"  
-            }
+            },
+            discount = 1
         }
         temps[userQQ]=user_temp
         temp_data:set(temps)
