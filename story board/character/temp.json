@@ -1,34 +1,42 @@
 {
- "76755379": {
-  "next_weekly": {
-   "type": "nil",
-   "num": "nil",
-   "generate_time": "nil"
-  },
-  "weather": "晴天",
-  "daily_done": {},
-  "weekly_done": {},
-  "next_daily": {
-   "type": "nil",
-   "num": "nil",
-   "generate_time": "nil"
-  },
-  "last_sign": {}
- },
  "1885027977": {
-  "next_weekly": {
-   "type": "nil",
-   "num": "nil",
-   "generate_time": "nil"
-  },
-  "weather": "晴天",
-  "daily_done": {},
-  "weekly_done": {},
+  "weekly_done": [
+   "NO104"
+  ],
+  "daily_done": [
+   "NO003",
+   "NO006"
+  ],
   "next_daily": {
-   "type": "nil",
-   "num": "nil",
-   "generate_time": "nil"
+   "generate_time": 1701635477,
+   "num": "NO000",
+   "type": "Daily"
   },
-  "last_sign": {}
- }
+  "last_sign": {},
+  "next_weekly": {
+   "generate_time": 1701635490,
+   "type": "Weekly",
+   "num": "NO101"
+  },
+  "discount":1,
+  "odds":{}  
+ },
+ "76755379": {
+  "weekly_done": {},
+  "daily_done": {},
+  "next_daily": {
+   "generate_time": "nil",
+   "num": "nil",
+   "type": "nil"
+  },
+  "last_sign": {},
+  "next_weekly": {
+   "generate_time": "nil",
+   "num": "nil",
+   "type": "nil"
+  },
+  "discount":1,
+  "odds":{}
+ },
+ "weather": "晴天"
 }

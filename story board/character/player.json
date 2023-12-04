@@ -11,7 +11,7 @@
   "Bag": {
     "I000":{
         "count":2,
-        "remaining_usage":5
+        "remaining_usage":10
     },
     "I004":{
         "count":1,
@@ -19,7 +19,7 @@
     },
     "I025":{
         "count":3,
-        "remaining_usage":10
+        "remaining_usage":30
     }
   },
   "Mainline": {
