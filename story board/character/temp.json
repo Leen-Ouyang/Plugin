@@ -19,7 +19,13 @@
    "num": "NO101"
   },
   "discount":1,
-  "odds":{}  
+  "buff":{
+    "LUC":1,
+    "CON":1,
+    "odds":{
+        "NO004":1
+    }
+  }  
  },
  "76755379": {
   "weekly_done": {},
@@ -36,7 +42,7 @@
    "type": "nil"
   },
   "discount":1,
-  "odds":{}
+  "buff":{}
  },
  "weather": "晴天"
 }

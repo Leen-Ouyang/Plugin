@@ -256,7 +256,7 @@ function getChange(msg)
                 type = "nil"  
             },
             discount = 1,
-            odds = {}
+            buff = {}
         }
         temps[userQQ]=user_temp
         temp_data:set(temps)
