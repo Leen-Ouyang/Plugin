@@ -99,6 +99,7 @@ function viewItem(msg)
     local found_flag=0
     local id=""
     local description=""
+    local maxusage=0
     for k,v in pairs(items) do
         for key,val in pairs(v) do
             if(val["name"]==item_name) then
@@ -107,6 +108,7 @@ function viewItem(msg)
                 end
                 id=key
                 description=val["description"]
+                maxusage=val["max_usage"]
                 found_flag=1
                 break
             end
@@ -121,9 +123,11 @@ function viewItem(msg)
     local bag = players[QQ]["Bag"]
     local owned_flag=0
     local count=0
+    local remaind=0
     for k,v in pairs(bag) do
         if(k==id) then
             count=v["count"]
+            remaind=v["remaining_usage"]
             owned_flag=1
             break
         end
@@ -131,7 +135,7 @@ function viewItem(msg)
     if(owned_flag==0) then
         return config.msg.noowned
     end
-    return "「"..item_name.."」".."           数量："..count.."\n"..description
+    return "「"..item_name.."」".."           数量："..count.."    总剩余使用次数："..remaind.."\n"..description.."\n该道具每个能使用"..maxusage.."次"
 end
 
 function UseItem(msg)
@@ -160,12 +164,14 @@ function UseItem(msg)
     local id=""
     local buff={}
     local pre={}
+    local maxusage=0
     for k,v in pairs(items) do
         for key,val in pairs(v) do
             if(val["name"]==item_name) then
                 id=key
                 buff=val["buff"]
                 pre=val["pre"]
+                maxusage=val["max_usage"]
                 found_flag=1
                 break
             end
@@ -180,13 +186,15 @@ function UseItem(msg)
     local bag = players[QQ]["Bag"]
     local owned_flag=0
     local count=0
+    local remaind=0
     for k,v in pairs(bag) do
         if(k==id) then
             if(players[QQ]["Bag"][k]["count"]=0) then
                 break
             end
-            players[QQ]["Bag"][k]["count"]=players[QQ]["Bag"][k]["count"]-1
             players[QQ]["Bag"][k]["remaining_usage"]=players[QQ]["Bag"][k]["remaining_usage"]-1
+            remaind=v["remaining_usage"]
+            players[QQ]["Bag"][k]["count"]=math.ceil(remaind/maxusage)
             owned_flag=1
             break
         end
