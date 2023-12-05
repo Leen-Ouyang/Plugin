@@ -1,0 +1,1180 @@
+{
+  "NO282": [
+    {
+      "title": "老兵回归",
+      "description": "你意识到今天又可以领《河南号》老兵回归奖励，于是火速登上了。",
+      "place": "dormitory",
+      "label": "游戏",
+      "pre": {
+        "event": [ "Daily", "NO082" ]
+      },
+      "odds": 0.03,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 0,
+      "success": "成功领取回归奖励，几米+1",
+      "failure": "",
+      "change": {
+        "WIL": 1
+      },
+      "energy": -10,
+      "mood": -20,
+      "limit": "null"
+    }
+  ],
+  "NO280": [
+    {
+      "title": "灭爸",
+      "description": "你在《bokimon》进行双打对战，见对面掏出绿毛虫，你不屑一顾。区区绿毛虫能打s我的裂空座？",
+      "place": "dormitory",
+      "label": "游戏",
+      "pre": {
+        "event": [ "Daily", "NO080" ]
+      },
+      "odds": 0.05,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 0,
+      "success": "你的裂空座被对面的卡璞蝶蝶一发月亮之力打出了气势披带，紧接着绿毛虫一个电网将裂空座打s了，你气得当场吃掉电脑屏幕。",
+      "failure": "",
+      "change": {
+        "LUC": 1
+      },
+      "energy": -10,
+      "mood": -20,
+      "limit": "null"
+    }
+  ],
+  "NO278": [
+    {
+      "title": "金色传说",
+      "description": "这把《泥底之弈》玩大成九五，五费主C卢锡安还差一张就能三星。",
+      "place": "dormitory",
+      "label": "游戏",
+      "pre": {
+        "event": [ "Daily", "NO078" ]
+      },
+      "odds": 0.05,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 30,
+      "success": "你花光金币，终于在最后一刻D出了最后一张卢锡安，薄纱对面几回合之后成功登顶。",
+      "failure": "你卖光了场上其他弈子，花光了金币，却死活D不出最后一张卢锡安，最终带着遗憾和屈辱点了投降。",
+      "change": {
+        "LUC": 1
+      },
+      "energy": -10,
+      "mood": -20,
+      "limit": "null"
+    }
+  ],
+  "NO277": [
+    {
+      "title": "天灾！天灾！天灾！",
+      "description": "你正在玩《群星》，突然弹出了天灾降临的前兆窗口，你知道天灾即将来临。",
+      "place": "dormitory",
+      "label": "游戏",
+      "pre": {
+        "event": [ "Daily", "NO077" ]
+      },
+      "odds": 0.05,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 30,
+      "success": "在你的一番谨慎指挥之下，你成功战胜了天灾，称霸宇宙。",
+      "failure": "在你的一番胡乱指挥之下，你的国家没多久就被天灾荡平。",
+      "change": {
+        "INT": 1
+      },
+      "energy": -10,
+      "mood": -20,
+      "limit": "null"
+    }
+  ],
+  "NO276": [
+    {
+      "title": "崩服",
+      "description": "今天，你上线了《麦块》多人服务器，继续游玩。",
+      "place": "dormitory",
+      "label": "游戏",
+      "pre": {
+        "event": [ "Daily", "NO076" ]
+      },
+      "odds": 0.05,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 0,
+      "success": "突然，服务器炸了，你之前的存档也消失了，你既崩溃又无奈。",
+      "failure": "",
+      "change": {
+        "point": -30
+      },
+      "energy": -10,
+      "mood": -20,
+      "limit": "null"
+    }
+  ],
+  "NO274": [
+    {
+      "title": "小红车",
+      "description": "桌面原有的壁纸看腻了，你打算启动Stream，上小红车换壁纸。",
+      "place": "dormitory",
+      "label": "游戏",
+      "pre": {
+        "event": [ "Daily", "NO074" ]
+      },
+      "odds": 0.2,
+      "count": 1,
+      "judge": "WIL",
+      "ending": 1,
+      "diff": 15,
+      "success": "经过一番甄选，你成功在创意工坊找到了满意的壁纸。",
+      "failure": "或许是今天欲望太强，你忍不住在创意工坊执行了□□√操作，对着壁纸导了起来。",
+      "change": {
+        "point": -10
+      },
+      "energy": -5,
+      "mood": 15,
+      "limit": "null"
+    }
+  ],
+  "NO273": [
+    {
+      "title": "Stream打折",
+      "description": "今天Stream上的游戏又打折了，你打算趁机入手几款游戏。",
+      "place": "dormitory",
+      "label": "游戏",
+      "pre": {
+        "event": [ "Daily", "NO073" ]
+      },
+      "odds": 0.2,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 10,
+      "success": "这款游戏的价格在打折之后终于买得起了，你果断入手了。",
+      "failure": "然而，打折后的游戏的价格仍让你望而却步，你想都没想就放弃了。",
+      "change": {
+        "point": -10
+      },
+      "energy": -5,
+      "mood": 10,
+      "limit": "null"
+    }
+  ],
+  "NO270": [
+    {
+      "title": "法球盲盒",
+      "description": "你拿到了《精英联盟》通行证送的法球，下意识地开启了。",
+      "place": "dormitory",
+      "label": "游戏",
+      "pre": {
+        "event": [ "Daily", "NO070" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 30,
+      "success": "法球居然开出了传说皮肤，你不敢相信自己的运气。",
+      "failure": "果不其然，以马服的抠门程度，根本不可能开出好皮肤。",
+      "change": {
+        "LUC": 1
+      },
+      "energy": -10,
+      "mood": 20,
+      "limit": "null"
+    },
+    {
+      "title": "好运来？",
+      "description": "你完成了免费皮肤活动的所有前提任务，打开《精英联盟》活动页面试试手气。",
+      "place": "dormitory",
+      "label": "游戏",
+      "pre": {
+        "event": [ "Daily", "NO070" ]
+      },
+      "odds": 0.3,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 30,
+      "success": "你居然抽中了EZ的终极皮肤，不敢相信自己的运气。",
+      "failure": "果不其然，以马服的抠门程度，根本不可能开出好皮肤。",
+      "change": {
+        "LUC": 1
+      },
+      "energy": -10,
+      "mood": 20,
+      "limit": "null"
+    }
+  ],
+  "NO271": [
+    {
+      "title": "根行·深渊",
+      "description": "你启动了《根行》，打渊月螺旋12层时，圣骸兽打你就跟打狗一样简单，你被恶心退了。",
+      "place": "dormitory",
+      "label": "游戏",
+      "pre": {},
+      "odds": 0.04,
+      "count": 1,
+      "judge": "WIL",
+      "ending": 1,
+      "diff": 10,
+      "success": "在你坚持不懈地凹深渊之下，最终12层深渊成功满星，你又赚了一堆原石抽想要的角色。",
+      "failure": "在打12层深渊时，你尝试了多种方法，但仍然无法满星。你内心大呼布响丸辣，果断退出《根行》。",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    },
+    {
+      "title": "根行·祈愿",
+      "description": "梦寐以求的角色终于UP了，你迫不及待地打开《根行》，摩拳擦掌准备梭哈。",
+      "place": "dormitory",
+      "label": "游戏",
+      "pre": {
+        "event": [ "Daily", "NO071" ]
+      },
+      "odds": 0.03,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 20,
+      "success": "天空中穿出一颗彗星，刹那间化作金光降临，伴随着金光的消逝，你十抽出了两个想要的角色，头脑一热直接续上小月卡。",
+      "failure": "一道金光划过天空，然而天空岛这次并没有眷顾你，你不仅小保底歪了，还花光了160纠缠之缘。",
+      "change": {
+        "Bag": "I037"
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    },
+    {
+      "title": "根行·卡池延期",
+      "description": "由于某些原因，《根行》神里绫华卡池延期了240天，你的夜兰迟迟不肯出来。",
+      "place": "dormitory",
+      "label": "游戏",
+      "pre": {
+        "event": [ "Daily", "NO071" ]
+      },
+      "odds": 0.01,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 20,
+      "success": "后面米忽悠把延期改成了20天，你苦等夜兰的日子终于要到头了，高兴地续上了月卡。",
+      "failure": "由于某些不明原因，米忽悠放弃了《根行》，你再也等不到夜兰了，令人感叹。",
+      "change": {
+        "Bag": "I037"
+      },
+      "energy": -10,
+      "mood": 20,
+      "limit": "null"
+    },
+    {
+      "title": "寰宇列车·跃迁",
+      "description": "梦寐以求的角色终于UP了，你迫不及待地打开《寰宇列车》，准备梭哈。",
+      "place": "dormitory",
+      "label": "游戏",
+      "pre": {
+        "event": [ "Daily", "NO071" ]
+      },
+      "odds": 0.04,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 20,
+      "success": "伴随着列车门的开启，金光从中涌现，你用了二十抽就出了想要的角色，头脑一热续上了月卡。",
+      "failure": "伴随着列车门的开启，金光从中涌现，一看竟是常驻角色，你抱怨这次又歪了。",
+      "change": {
+        "Bag": "I037"
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    },
+    {
+      "title": "绷3·补给",
+      "description": "梦寐以求的角色终于UP了，你迫不及待地打开《绷3》，十指乱动准备梭哈。",
+      "place": "dormitory",
+      "label": "游戏",
+      "pre": {
+        "event": [ "Daily", "NO071" ]
+      },
+      "odds": 0.04,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 20,
+      "success": "补给箱从天而降，在打开盖子的瞬间，闪闪金光从中涌现，你用了十抽就出了所爱的女武神。",
+      "failure": "第一百个补给箱从天而降，伴随着盖子的开启，想要的女武神终于出现在屏幕上，这次又保底了。",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    },
+    {
+      "title": "绷3·深渊",
+      "description": "今天又是打深渊的一天，你上号《绷3》，摩拳擦掌准备打超弦空间/量子流形。",
+      "place": "dormitory",
+      "label": "游戏",
+      "pre": {
+        "event": [ "Daily", "NO071" ]
+      },
+      "odds": 0.03,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 20,
+      "success": "在挑战深渊时，你凹了很久，终于打完了深渊，保住了红莲的位置。",
+      "failure": "在挑战深渊时，你凹了很久，奈何怪物太强打不动，你知道这次又要降级了。",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    },
+    {
+      "title": "绷3·兔女郎",
+      "description": "你在霹雳霹雳等平台得知《绷3》外服推出了兔女郎活动，心中对米忽悠的不满在评论区的煽动下瞬间爆发。",
+      "place": "dormitory",
+      "label": "游戏",
+      "pre": {
+        "event": [ "Daily", "NO071" ]
+      },
+      "odds": 0.01,
+      "judge": "WIL",
+      "ending": 0,
+      "diff": 20,
+      "success": "你决定从此不给米忽悠氪金，然而在不久的将来，你被爱莉希雅所吸引，还是止不住氪金的欲望。",
+      "failure": "你决定从此不给米忽悠氪金，在后来成功省下了多笔生活费。",
+      "change": {
+        "Bag": "037"
+      },
+      "energy": -10,
+      "mood": 20,
+      "limit": "null"
+    }
+  ],
+  "NO249": [
+    {
+      "title": "灵光乍现",
+      "description": "今天你不想出门，于是在宿舍自习。",
+      "place": "dormitory",
+      "label": "学习",
+      "pre": {
+        "event": [ "Daily", "NO049" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 0,
+      "success": "你在自习中偶然掌握了一项新技能，自习效率大大提高。",
+      "failure": "",
+      "change": {
+        "INT": 1
+      },
+      "energy": -10,
+      "mood": 30,
+      "limit": "null"
+    },
+    {
+      "title": "心烦意乱",
+      "description": "今天你不想出门，于是在宿舍自习，然而舍友边洗澡边唱歌，吵的你心烦意乱",
+      "place": "dormitory",
+      "label": "学习",
+      "pre": {
+        "event": [ "Daily", "NO049" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "CON",
+      "ending": 1,
+      "diff": 30,
+      "success": "你成功地让自己冷静下来，抗住了这次的干扰。",
+      "failure": "你试图让自己冷静下来，然而并没有什么卵用，索性摆了。",
+      "change": {
+        "WIL": 1
+      },
+      "energy": -10,
+      "mood": 15,
+      "limit": "null"
+    }
+  ],
+  "NO350": [
+    {
+      "title": "问鼎龙卷风",
+      "description": "“龙卷风杯”篮球赛今年在我校举办，你报名了这次的篮球赛并接受了训练。",
+      "place": "playground",
+      "label": "运动",
+      "pre": {
+        "event": [ "Weekly", "NO145" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "CON",
+      "ending": 1,
+      "diff": 20,
+      "success": "在你和队友平时的刻苦训练和比赛时的默契配合下，你们队成功夺得龙卷风杯。",
+      "failure": "你所在的队伍在比赛中每个人都尽力了，奈何实力与对手存在差距，你们队惜败了。",
+      "change": {
+        "Bag": "I100"
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    },
+    {
+      "title": "问鼎龙卷风",
+      "description": "“龙卷风杯”篮球赛今年在我校举办，你作为观众和好友一同观看了这次比赛。",
+      "place": "playground",
+      "label": "运动",
+      "pre": {
+        "event": [ "Weekly", "NO145" ]
+      },
+      "odds": 0.2,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 20,
+      "success": "我校队伍取得了篮球赛决赛的胜利，你和好友一同欢呼。",
+      "failure": "我校队伍惜败与对方，无缘龙卷风杯，你感到惋惜。",
+      "change": {
+        "point": 50
+      },
+      "energy": -10,
+      "mood": 20,
+      "limit": "null"
+    }
+  ],
+  "NO351": [
+    {
+      "title": "逐鹿大力王",
+      "description": "“大力王杯”足球赛今年在我校举办，你报名了这次的足球赛并接受了训练。",
+      "place": "playground",
+      "label": "运动",
+      "pre": {
+        "event": [ "Weekly", "NO146" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "CON",
+      "ending": 1,
+      "diff": 20,
+      "success": "在你和队友平时的刻苦训练和比赛时的默契配合下，你们队成功夺得大力王杯。",
+      "failure": "你所在的队伍在比赛中每个人都尽力了，奈何实力与对手存在差距，你们队惜败了。",
+      "change": {
+        "Bag": "I101"
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    },
+    {
+      "title": "逐鹿大力王",
+      "description": "“大力王杯”足球赛今年在我校举办，你作为观众和好友一同观看了这次比赛。",
+      "place": "playground",
+      "label": "运动",
+      "pre": {
+        "event": [ "Weekly", "NO146" ]
+      },
+      "odds": 0.2,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 20,
+      "success": "我校队伍取得了足球赛决赛的胜利，你和好友一同欢呼。",
+      "failure": "我校队伍惜败与对方，无缘大力王杯，你感到惋惜。",
+      "change": {
+        "point": 50
+      },
+      "energy": -10,
+      "mood": 20,
+      "limit": "null"
+    }
+  ],
+  "NO352": [
+    {
+      "title": "摘得金牌",
+      "description": "省乒乓球赛今年在我校举办，你报名了这次的乒乓球赛并接受了训练。",
+      "place": "playground",
+      "label": "运动",
+      "pre": {
+        "event": [ "Weekly", "NO147" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "CON",
+      "ending": 1,
+      "diff": 20,
+      "success": "在你平时的刻苦训练下，你成功摘得省乒乓球赛的金牌。",
+      "failure": "你在比赛中尽力而为，奈何实力与对手存在差距，你无缘金牌。",
+      "change": {
+        "Bag": "I102"
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    }
+  ],
+  "NO353": [
+    {
+      "title": "加冕桂冠",
+      "description": "省羽毛球赛今年在我校举办，你报名了这次的羽毛球赛并接受了训练。",
+      "place": "playground",
+      "label": "运动",
+      "pre": {
+        "event": [ "Weekly", "NO148" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "CON",
+      "ending": 1,
+      "diff": 20,
+      "success": "在你平时的刻苦训练下，你成功摘得省羽毛球赛的桂冠。",
+      "failure": "你在比赛中尽力而为，奈何实力与对手存在差距，你无缘冠军。",
+      "change": {
+        "Bag": "I103"
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    }
+  ],
+  "NO354": [
+    {
+      "title": "取将夺帅",
+      "description": "省象棋赛今年在我校举办，你报名了这次的象棋赛并接受了训练。",
+      "place": "playground",
+      "label": "运动",
+      "pre": {
+        "event": [ "Weekly", "NO149" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 20,
+      "success": "在你平时的刻苦训练下，你成功获得省象棋赛的冠军，获得了金棋盘。",
+      "failure": "你在比赛中尽力而为，奈何实力与对手存在差距，你无缘冠军。",
+      "change": {
+        "Bag": "I104"
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    }
+  ],
+  "NO355": [
+    {
+      "title": "ACM",
+      "description": "你事先报名了ACM竞赛，今天是你参赛的日子，你摩拳擦掌，跃跃欲试。",
+      "place": "compus",
+      "label": "奖杯",
+      "pre": {
+        "event": [ "Weekly", "NO150" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 20,
+      "success": "凭借着平时的不懈练习，你成功获得了ACM的壹等奖牌。",
+      "failure": "你的水平虽然逊于同赛场的大佬们，但你还是凭着努力获得贰等。",
+      "change": {
+        "Bag": "I105"
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    },
+    {
+      "title": "蓝桥杯",
+      "description": "你事先报名了“蓝桥杯”，今天是你参赛的日子，你摩拳擦掌，跃跃欲试。",
+      "place": "compus",
+      "label": "奖杯",
+      "pre": {
+        "event": [ "Weekly", "NO150" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 20,
+      "success": "凭借着平时的不懈练习，你成功抱得“蓝桥杯”归。",
+      "failure": "你的水平虽然逊于同赛场的大佬们，但你还是凭着努力获得二等奖。",
+      "change": {
+        "Bag": "I106"
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    }
+  ],
+  "NO356": [
+    {
+      "title": "学科竞赛",
+      "description": "你事先报名了学科竞赛，今天是你参赛的日子，你摩拳擦掌，跃跃欲试。",
+      "place": "compus",
+      "label": "奖杯",
+      "pre": {
+        "event": [ "Weekly", "NO151" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 20,
+      "success": "凭借着平时的不懈练习，你成功获得了金奖状。",
+      "failure": "你的水平虽然逊于同赛场的大佬们，但你还是凭着努力获得三等奖。",
+      "change": {
+        "Bag": "I107"
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    },
+    {
+      "title": "一马当先",
+      "description": "你事先报名了“一马当先”，今天是你参赛的日子，你摩拳擦掌，跃跃欲试。",
+      "place": "compus",
+      "label": "奖杯",
+      "pre": {
+        "event": [ "Weekly", "NO151" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 20,
+      "success": "凭借着丰富的知识储备，你成功获得了“一马当先”杯。",
+      "failure": "你的储备虽然逊于同赛场的选手，但你还是凭着努力获得三等奖。",
+      "change": {
+        "Bag": "I108"
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    }
+  ],
+  "NO357": [
+    {
+      "title": "SRTP",
+      "description": "你和队友报名并参加了SRTP，今天是公布比赛结果的日子。",
+      "place": "compus",
+      "label": "奖杯",
+      "pre": {
+        "event": [ "Weekly", "NO152" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 20,
+      "success": "凭借着你和队友的不懈努力，你们队成功获得了SRTP杯。",
+      "failure": "你的水平虽然逊于同赛场的大佬们，但你还是凭着努力获得了优秀奖。",
+      "change": {
+        "Bag": "I107"
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    }
+  ],
+  "NO358": [
+    {
+      "title": "数学建模竞赛",
+      "description": "校数学建模竞赛拉开了帷幕，你积极参加，与你的同学一起报名。",
+      "place": "compus",
+      "label": "奖杯",
+      "pre": {
+        "event": [ "Weekly", "NO153" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 20,
+      "success": "你凭借着对数学理论的深入理解、过硬的计算机技能和优秀的团队协作，最终在竞赛中夺得金立方。",
+      "failure": "你由于准备不足、团队协作不佳，与奖项失之交臂。",
+      "change": {
+        "Bag": "I107"
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    }
+  ],
+  "NO359": [
+    {
+      "title": "ASC",
+      "description": "ASC拉开了帷幕,你踊跃参加，与几位志同道合的同学一起组队，开始了你们的ASC之旅。",
+      "place": "compus",
+      "label": "奖杯",
+      "pre": {
+        "event": [ "Weekly", "NO154" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 20,
+      "success": "你凭借着过硬的技术实力和紧密的配合，成功地完成了一系列复杂的编程任务，最终在竞赛中获得了奖项。",
+      "failure": "你虽积极参加，但团队犹如一团散沙，竞赛结果不尽人意。",
+      "change": {
+        "Bag": "I107"
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    }
+  ],
+  "NO360": [
+    {
+      "title": "突发奇想",
+      "description": "你的眼镜碎了，正愁无眼镜可戴，突然想起课上院长的那款眼镜，决定打开入手。",
+      "place": "dormitory",
+      "label": "学习",
+      "pre": {
+        "event": [ "Weekly", "NO155" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 20,
+      "success": "你成功买到了院长同款眼镜，在收到货后试了一下，果然获得了神奇的力量。",
+      "failure": "你搜索一番，终于搜到了这款眼镜，然后发现卖完了，你无奈放弃。",
+      "change": {
+        "Bag": "I018"
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    },
+    {
+      "title": "双11",
+      "description": "今天是双11，你打算趁此机会买买买。",
+      "place": "dormitory",
+      "label": "学习",
+      "pre": {
+        "event": [ "Weekly", "NO155" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 20,
+      "success": "在一番运气加成之下，你成功抢到了很多货物。",
+      "failure": "今天运气不好，你想要的很多货都销售一空。",
+      "change": {
+        "Bag": "I085"
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    }
+  ],
+  "NO361": [
+    {
+      "title": "会员到期",
+      "description": "你今天打开了霹雳霹雳，正想看今天更新的番，突然发现大会员到期了。",
+      "place": "dormitory",
+      "label": "动漫",
+      "pre": {
+        "event": [ "Weekly", "NO156" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 0,
+      "success": "你果断续了大会员，被叔叔薅了一把米。",
+      "failure": "",
+      "change": {
+        "Bag": "I041"
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    },
+    {
+      "title": "烂中烂",
+      "description": "你日思夜想的番剧终于更新了，你迫不及待地打开了霹雳霹雳。",
+      "place": "dormitory",
+      "label": "动漫",
+      "pre": {
+        "event": [ "Weekly", "NO156" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 0,
+      "success": "卧槽，这什么铸币烂剧情，你越看越憋屈，越看越窝火。",
+      "failure": "",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": -20,
+      "limit": "null"
+    }
+  ],
+  "NO362": [
+    {
+      "title": "游戏崩溃",
+      "description": "你今天和舍友开了一把联机游戏，正体验着其中的乐趣。",
+      "place": "dormitory",
+      "label": "游戏",
+      "pre": {
+        "event": [ "Weekly", "NO157" ]
+      },
+      "odds": 0.02,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 0,
+      "success": "突然，游戏崩溃了，你的舍友幸灾乐祸地看着你。",
+      "failure": "",
+      "change": {
+        "point": 233
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    }
+  ],
+  "NO363": [
+    {
+      "title": "会员到期",
+      "description": "你今天打开了I71，正想看新电影，突然发现会员到期了。",
+      "place": "dormitory",
+      "label": "粉丝",
+      "pre": {
+        "event": [ "Weekly", "NO158" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 0,
+      "success": "你果断续了I71会员，被平台狠狠地薅了一把米。",
+      "failure": "",
+      "change": {
+        "Bag": "I071"
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    },
+    {
+      "title": "辜负众望",
+      "description": "最近又有新电影上线了，你迫不及待。",
+      "place": "dormitory",
+      "label": "粉丝",
+      "pre": {
+        "event": [ "Weekly", "NO158" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 0,
+      "success": "这电影什么狗匕剧情，你不仅吐槽，同时翻看评论，发现全是辱骂，意满离。",
+      "failure": "",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": -20,
+      "limit": "null"
+    }
+  ],
+  "NO364": [
+    {
+      "title": "会员到期",
+      "description": "你今天打开了I71，正想看今天更新的综艺，突然发现会员到期了。",
+      "place": "dormitory",
+      "label": "粉丝",
+      "pre": {
+        "event": [ "Weekly", "NO159" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 0,
+      "success": "你果断续了I71会员，被平台狠狠地薅了一把米。",
+      "failure": "",
+      "change": {
+        "Bag": "I071"
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    },
+    {
+      "title": "辜负众望",
+      "description": "你忙活了好几天，今天终于有时间闲下来看网剧。",
+      "place": "dormitory",
+      "label": "粉丝",
+      "pre": {
+        "event": [ "Weekly", "NO159" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 0,
+      "success": "这什么狗匕剧情，你吐槽道，同时打开豆瓣看评分，发现这集是低星，意满离。",
+      "failure": "",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": -20,
+      "limit": "null"
+    }
+  ],
+  "NO365": [
+    {
+      "title": "社团聚餐",
+      "description": "你所在的社团开展了活动，今天是聚餐，你也被邀请了。",
+      "place": "compus",
+      "label": "校园",
+      "pre": {
+        "event": [ "Weekly", "NO160" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 0,
+      "success": "这次聚餐活动既有丰盛饭菜又有闲谈，你的身心都得到了满足。",
+      "failure": "",
+      "change": {
+        "Bag": "I071"
+      },
+      "energy": 20,
+      "mood": 30,
+      "limit": "null"
+    }
+  ],
+  "NO367": [
+    {
+      "title": "校庆活动",
+      "description": "正逢大学周年校庆，作为学生，你收到了学校赠与的午餐券。",
+      "place": "compus",
+      "label": "校园",
+      "pre": {
+        "event": [ "Weekly", "NO162" ]
+      },
+      "odds": 0.25,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 0,
+      "success": "你回到宿舍，询问舍友校庆午餐的味道，舍友评价其一般般，你忍俊不禁。",
+      "failure": "",
+      "change": {
+        "Bag": "I061"
+      },
+      "energy": -10,
+      "mood": 20,
+      "limit": "null"
+    },
+    {
+      "title": "偶遇校友",
+      "description": "在校庆这天，你在校园道路两侧的人行道上散步。",
+      "place": "dormitory",
+      "label": "粉丝",
+      "pre": {
+        "event": [ "Weekly", "NO159" ]
+      },
+      "odds": 0.05,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 0,
+      "success": "你碰到了崇拜的知名学长，主动上前和他攀谈，你从他身上学到了不少经验。",
+      "failure": "",
+      "change": {
+        "point": 30
+      },
+      "energy": -10,
+      "mood": -20,
+      "limit": "null"
+    }
+  ],
+  "NO368": [
+    {
+      "title": "动物伤人事件",
+      "description": "你在校园小道上漫步，有一只超可爱的猫猫路过。",
+      "place": "compus",
+      "label": "校园",
+      "pre": {
+        "event": [ "Weekly", "NO163" ]
+      },
+      "odds": 0.05,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 0,
+      "success": "你的手上没有猫粮，但你决定强行撸猫。很不幸，猫猫狠狠地抓伤了你，你得去打疫苗了。",
+      "failure": "",
+      "change": {
+        "point": -30
+      },
+      "energy": -10,
+      "mood": -30,
+      "limit": "null"
+    },
+    {
+      "title": "动物伤人事件",
+      "description": "你在校园小道上漫步，有一只超可爱的狗狗路过。",
+      "place": "compus",
+      "label": "校园",
+      "pre": {
+        "event": [ "Weekly", "NO163" ]
+      },
+      "odds": 0.05,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 0,
+      "success": "你的手上没有零食，但你决定强行摸它。很不幸，小狗狠狠地咬了你一口，你得去打疫苗了。",
+      "failure": "",
+      "change": {
+        "point": -30
+      },
+      "energy": -10,
+      "mood": -30,
+      "limit": "null"
+    }
+  ],
+  "NO369": [
+    {
+      "title": "大腕登台",
+      "description": "这次校园演出，学校邀请了知名乐队表演，全场人山人海，一片沸腾",
+      "place": "compus",
+      "label": "校园",
+      "pre": {
+        "event": [ "Weekly", "NO164" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "WIL",
+      "ending": 1,
+      "diff": 20,
+      "success": "经过不懈努力，你终于等到了入场的机会，如愿看到表演。",
+      "failure": "你坚持了一会便放弃进场了，错过了这场难得的表演。",
+      "change": {
+        "Bag": "I071"
+      },
+      "energy": 20,
+      "mood": 30,
+      "limit": "null"
+    }
+  ],
+  "NO370": [
+    {
+      "title": "《半条命》",
+      "description": "今天你和好友一起去吃烧烤，聊了一会儿，你感到浑身疼痛，头晕目眩。",
+      "place": "compus",
+      "label": "校园",
+      "pre": {
+        "event": [ "Weekly", "NO165" ]
+      },
+      "odds": 0.05,
+      "count": 1,
+      "judge": "WIL",
+      "ending": 0,
+      "diff": 20,
+      "success": "食物毒性太强，你的大脑受到损伤，需要一年才能恢复。",
+      "failure": "由于身心强大，你很快便恢复正常，找回了丢失的半条命。",
+      "change": {
+        "credit": -15
+      },
+      "energy": 20,
+      "mood": 30,
+      "limit": "null"
+    }
+  ],
+  "NO372": [
+    {
+      "title": "酩酊大醉",
+      "description": "今天你和好友在学生街的一家饭店聚餐，吃饱之后，你们开始喝酒吹牛。",
+      "place": "compus",
+      "label": "校园",
+      "pre": {
+        "event": [ "Weekly", "NO167" ]
+      },
+      "odds": 0.05,
+      "count": 1,
+      "judge": "WIL",
+      "ending": 0,
+      "diff": 20,
+      "success": "由于喝了太多的酒，导致你只能散步回宿舍，第二天由于晚起而迟到。",
+      "failure": "由于喝了太多的酒，导致你只能散步回宿舍，好在第二天及时醒来。",
+      "change": {
+        "credit": -1
+      },
+      "energy": 20,
+      "mood": 30,
+      "limit": "null"
+    }
+  ],
+  "NO373": [
+    {
+      "title": "假期旅游",
+      "description": "学校放了长假，你终于可以去校外旅游。",
+      "place": "compus",
+      "label": "校园",
+      "pre": {
+        "event": [ "Weekly", "NO168" ]
+      },
+      "odds": 0.05,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 0,
+      "success": "在旅游途中，你欣赏到了一路的美景，增加了不少阅历。",
+      "failure": "",
+      "change": {
+        "INT": 1
+      },
+      "energy": 20,
+      "mood": 30,
+      "limit": "null"
+    }
+  ],
+  "NO169": [
+    {
+      "title": "PM的邀请",
+      "description": "你收到了天麟的于今日畅谈的邀请，当你到达目的地后，一位龙首墨发兽人正端坐着等待你的到来。",
+      "place": "compus",
+      "label": "校园",
+      "pre": {},
+      "odds": 0.1,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 0,
+      "success": "一番畅聊之后，天麟认可了你，他缓缓地从口袋中掏出了被称为“码界神器”天麟之鳞的合成配方，并赠与了你。",
+      "failure": "",
+      "change": {
+        "Bag": "I093"
+      },
+      "energy": -10,
+      "mood": 10,
+      "limit": "null"
+    }
+  ]
+}
