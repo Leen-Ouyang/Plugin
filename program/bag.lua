@@ -103,7 +103,7 @@ function viewItem(msg)
     for k,v in pairs(items) do
         for key,val in pairs(v) do
             if(val["name"]==item_name) then
-                if(players[QQ]["Bag"][k]["count"]=0) then
+                if(players[QQ]["Bag"][k]["count"]==0) then
                     break
                 end
                 id=key
@@ -189,7 +189,7 @@ function UseItem(msg)
     local remaind=0
     for k,v in pairs(bag) do
         if(k==id) then
-            if(players[QQ]["Bag"][k]["count"]=0) then
+            if(players[QQ]["Bag"][k]["count"]==0) then
                 break
             end
             players[QQ]["Bag"][k]["remaining_usage"]=players[QQ]["Bag"][k]["remaining_usage"]-1
