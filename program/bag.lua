@@ -103,9 +103,6 @@ function viewItem(msg)
     for k,v in pairs(items) do
         for key,val in pairs(v) do
             if(val["name"]==item_name) then
-                if(players[QQ]["Bag"][k]["count"]==0) then
-                    break
-                end
                 id=key
                 description=val["description"]
                 maxusage=val["max_usage"]
@@ -126,6 +123,9 @@ function viewItem(msg)
     local remaind=0
     for k,v in pairs(bag) do
         if(k==id) then
+            if(v["count"]==0) then
+                break
+            end
             count=v["count"]
             remaind=v["remaining_usage"]
             owned_flag=1
@@ -135,7 +135,7 @@ function viewItem(msg)
     if(owned_flag==0) then
         return config.msg.noowned
     end
-    return "「"..item_name.."」".."           数量："..count.."    总剩余使用次数："..remaind.."\n"..description.."\n该道具每个能使用"..maxusage.."次"
+    return "「"..item_name.."」".."           数量："..count.."      总剩余使用次数："..remaind.."\n"..description.."\nps:该道具每个能使用"..maxusage.."次"
 end
 
 function UseItem(msg)
@@ -189,7 +189,7 @@ function UseItem(msg)
     local remaind=0
     for k,v in pairs(bag) do
         if(k==id) then
-            if(players[QQ]["Bag"][k]["count"]==0) then
+            if(v["count"]==0) then
                 break
             end
             players[QQ]["Bag"][k]["remaining_usage"]=players[QQ]["Bag"][k]["remaining_usage"]-1
