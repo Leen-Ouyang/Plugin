@@ -18,16 +18,36 @@
    "type": "Weekly",
    "num": "NO101"
   },
-  "discount":1,
+  "discount":{
+    "snack": 1,
+    "study": 1,
+    "sport": 1,
+    "game": 1,
+    "anima": 1,
+    "comp": 1,
+    "fans": 1,
+    "trophy": 1,
+    "other": 1
+  },
+  "odds":{},
   "buff":{
     "I020": {
       "event":["NO100","NO101","NO102","NO103","N0104","NO105","NO106","NO107","NO108","NO109"],
       "INT":2,
       "LUC":1
     },
+    "I021": {
+      "ending":0,
+      "odds":0.05
+    },
     "I002":{
       "label":["形势与政策"],
       "INT":5
+    },
+    "I061":{
+      "category":["snack"],
+      "discount":0.5,
+      "LUC":2
     }
   } 
  },
@@ -45,7 +65,18 @@
    "num": "nil",
    "type": "nil"
   },
-  "discount":1,
+  "discount":{
+    "snack": 1,
+    "study": 1,
+    "sport": 1,
+    "game": 1,
+    "anima": 1,
+    "comp": 1,
+    "fans": 1,
+    "trophy": 1,
+    "other": 1
+  },
+  "odds":{},
   "buff":{}
  },
  "weather": "晴天"

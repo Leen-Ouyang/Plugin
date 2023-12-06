@@ -255,7 +255,18 @@ function getChange(msg)
                 num = "nil",  
                 type = "nil"  
             },
-            discount = 1,
+            discount = {
+                snack = 1,
+                study = 1,
+                sport = 1,
+                game = 1,
+                anima = 1,
+                comp = 1,
+                fans = 1,
+                trophy = 1,
+                other = 1
+            },
+            odds={},
             buff = {}
         }
         temps[userQQ]=user_temp
