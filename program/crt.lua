@@ -286,7 +286,7 @@ function getChange(msg)
             end
         end
         players[userQQ]["Achievement"]=achievement
-        players[userQQ]["points"]=50
+        players[userQQ]["points"]=20
         players[userQQ]["Inheritkey"]=key
         data:set(players)
         return config.msg.success

@@ -49,7 +49,7 @@ function sign(msg)
                 local ach=players[QQ]["Achievement"]
                 table.insert(ach,"ac001")
                 players[QQ]["Achievement"]=ach
-                players[QQ]["points"]=players[QQ]["points"]+50
+                players[QQ]["points"]=players[QQ]["points"]+30
                 achi_msg="\n恭喜！解锁成就「小苗初成」"
             elseif (days==7) then
                 local ach=players[QQ]["Achievement"]
