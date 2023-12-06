@@ -1,7 +1,7 @@
 info = "档案"
 config = {
     msg = {
-        record="╔═══════════════╗\n            个人档案\n  姓名  {name}\n  性别 {gender}      职业 {job}\n  个人简介\n  {intro}\n  ——————————\n   主属性        每日状态\n  智力  {int}         精力\n  体质 {con}        {energy}/{energy_limit}\n  意志 {wil}         心情\n  运气 {luc}       {mood}/{mood_limit}\n  ——————————\n  学年  {semester}         学分 {credit}\n  积分  {point}       成就数 {achi_num}\n{buff}╚═══════════════╝\n"
+        record="╔═══════════════╗\n            个人档案\n  姓名  {name}\n  性别 {gender}      职业 {job}\n  个人简介\n  {intro}\n  ——————————\n   主属性        每日状态\n  智力  {int}         精力\n  体质 {con}        {energy}/{energy_limit}\n  意志 {wil}         心情\n  运气 {luc}       {mood}/{mood_limit}\n  ——————————\n  学年  {semester}         学分 {credit}\n  积分  {point}       成就数 {achi_num}\n{buff}╚═══════════════╝\n{ps}"
     }
 }
 msg_order = {}
@@ -43,6 +43,7 @@ function getInformation(msg)
     local point = players[QQ]["points"]
     local achi_num = #players[QQ]["Achievement"]
     local buff=""
+    local ps=""
     temp="temp.json"
     temp_data = getSelfData(temp)
     temps = temp_data:get(nil,{})
@@ -55,45 +56,110 @@ function getInformation(msg)
         buffnum=buffnum+1
     end
     if (buffnum>0) then
-        local first_flag=0
-        for k,v in pairs(item_buff) do
-            if(k=="INT") then
-                if(first_flag==0) then
-                    buff=buff.."  ——————————\n  道具加成：\n"
-                    first_flag=1
+        local firstitem_flag=0
+        local temporary_item={}
+        item_information="item.json"
+        item_data = getSelfData(item_information)
+        items = item_data:get(nil, {})
+        if(items == nil)then
+            items = {}
+        end
+        for key,val in pairs(item_buff) do
+            local item_name=""
+            local flag=0
+            for k,v in pairs(items) do
+                for id,info in pairs(v) do
+                    if(id==key) then
+                        item_name=info["name"]
+                        flag=1
+                        break
+                    end
                 end
-                buff=buff.."      智力+"..v.."\n"
-            elseif(k=="CON") then
-                if(first_flag==0) then
-                    buff=buff.."  ——————————\n  道具加成：\n"
-                    first_flag=1
+                if (flag==1) then
+                    break
                 end
-                buff=buff.."      体质+"..v.."\n"
-            elseif(k=="LUC") then
-                if(first_flag==0) then
-                    buff=buff.."  ——————————\n  道具加成：\n"
-                    first_flag=1
-                end
-                buff=buff.."      运气+"..v.."\n"
-            elseif(k=="WIL") then
-                if(first_flag==0) then
-                    buff=buff.."  ——————————\n  道具加成：\n"
-                    first_flag=1
-                end
-                buff=buff.."      意志+"..v.."\n"
-            elseif(k=="mood") then
-                if(first_flag==0) then
-                    buff=buff.."  ——————————\n  道具加成：\n"
-                    first_flag=1
-                end
-                buff=buff.."      心情+"..v.."\n"
-            elseif(k=="energy") then
-                if(first_flag==0) then
-                    buff=buff.."  ——————————\n  道具加成：\n"
-                    first_flag=1
-                end
-                buff=buff.."      精力+"..v.."\n"
             end
+            local firstbuff_flag=0
+            local temporary_flag=0
+            for k,v in pairs(val) do
+                if(k=="INT") then
+                    if(firstitem_flag==0) then
+                        buff=buff.."  ——————————\n            道具加成\n"
+                        firstitem_flag=1
+                    end
+                    if(firstbuff_flag==0) then
+                        buff=buff.."  "..item_name.."：\n"
+                        firstbuff_flag=1
+                    end
+                    buff=buff.."        智力+"..v.."\n"
+                elseif(k=="CON") then
+                    if(firstitem_flag==0) then
+                        buff=buff.."  ——————————\n            道具加成\n"
+                        firstitem_flag=1
+                    end
+                    if(firstbuff_flag==0) then
+                        buff=buff.."  "..item_name.."：\n"
+                        firstbuff_flag=1
+                    end
+                    buff=buff.."        体质+"..v.."\n"
+                elseif(k=="LUC") then
+                    if(firstitem_flag==0) then
+                        buff=buff.."  ——————————\n            道具加成\n"
+                        firstitem_flag=1
+                    end
+                    if(firstbuff_flag==0) then
+                        buff=buff.."  "..item_name.."：\n"
+                        firstbuff_flag=1
+                    end
+                    buff=buff.."        运气+"..v.."\n"
+                elseif(k=="WIL") then
+                    if(firstitem_flag==0) then
+                        buff=buff.."  ——————————\n            道具加成\n"
+                        firstitem_flag=1
+                    end
+                    if(firstbuff_flag==0) then
+                        buff=buff.."  "..item_name.."：\n"
+                        firstbuff_flag=1
+                    end
+                    buff=buff.."        意志+"..v.."\n"
+                elseif(k=="discount") then
+                    if(firstitem_flag==0) then
+                        buff=buff.."  ——————————\n            道具加成\n"
+                        firstitem_flag=1
+                    end
+                    if(firstbuff_flag==0) then
+                        buff=buff.."  "..item_name.."：\n"
+                        firstbuff_flag=1
+                    end
+                    buff=buff.."        商品打折".."\n"
+                elseif(k=="odds" or k=="result") then
+                    if(firstitem_flag==0) then
+                        buff=buff.."  ——————————\n            道具加成\n"
+                        firstitem_flag=1
+                    end
+                    if(firstbuff_flag==0) then
+                        buff=buff.."  "..item_name.."：\n"
+                        firstbuff_flag=1
+                    end
+                    buff=buff.."        提升事件成功概率".."\n"
+                elseif(k=="label" or k=="event" or k=="title" or k=="ending") then
+                    if (temporary_flag==0) then
+                        table.insert(temporary_item,item_name)
+                        temporary_flag=1
+                    end
+                end
+            end
+        end
+        if(#temporary_item>0) then
+            ps=ps.."  ps："
+            for i=1,#temporary_item do
+                if(i==#temporary_item) then
+                    ps=ps..temporary_item[i]
+                else
+                    ps=ps..temporary_item[i].."，"
+                end
+            end
+            ps=ps.."仅对特定事件有效"
         end
     end
     config.msg.record = config.msg.record:gsub("{name}", name)
@@ -113,5 +179,6 @@ function getInformation(msg)
     config.msg.record = config.msg.record:gsub("{point}", point)
     config.msg.record = config.msg.record:gsub("{achi_num}", achi_num)
     config.msg.record = config.msg.record:gsub("{buff}", buff)
+    config.msg.record = config.msg.record:gsub("{ps}", ps)
     return config.msg.record
 end
