@@ -1,12 +1,12 @@
 {
  "1885027977": {
-  "weekly_done": [
-   "NO104"
-  ],
-  "daily_done": [
-   "NO003",
-   "NO006"
-  ],
+  "weekly_done": {
+   "NO104":1
+ },
+  "daily_done": {
+   "NO003":0,
+   "NO006":1
+  },
   "next_daily": {
    "generate_time": 1701635477,
    "num": "NO000",
