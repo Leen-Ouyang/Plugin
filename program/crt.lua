@@ -368,6 +368,7 @@ function createPlayer(msg)
             FailtoSleepCounter = 0,
             MeetJasonCounter = 0,
             PoiliticsCounter = 0,
+            CatCounter = 0
             },
             Mainline = {
             Semester = 1,
