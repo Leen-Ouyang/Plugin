@@ -56,12 +56,14 @@ function sign(msg)
                 table.insert(ach,"ac002")
                 players[QQ]["Achievement"]=ach
                 players[QQ]["MainAtt"]["WIL"]=players[QQ]["MainAtt"]["WIL"]+1
+                players[QQ]["MainAtt"]["SUM"]=players[QQ]["MainAtt"]["SUM"]+1
                 achi_msg="\n恭喜！解锁成就「枝繁叶茂」"
             elseif (days==30) then
                 local ach=players[QQ]["Achievement"]
                 table.insert(ach,"ac003")
                 players[QQ]["Achievement"]=ach
                 players[QQ]["MainAtt"]["WIL"]=players[QQ]["MainAtt"]["WIL"]+2
+                players[QQ]["MainAtt"]["SUM"]=players[QQ]["MainAtt"]["SUM"]+2
                 achi_msg="\n恭喜！解锁成就「开花结果」"    
             end
             data:set(players)
