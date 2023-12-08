@@ -1,0 +1,271 @@
+{
+ "797093627": {
+  "Inheritkey": "cFHLbqDxdywynzoy",
+  "Achievement": {},
+  "DailyAtt": {
+   "energy": 103,
+   "mood": 105,
+   "energy_limit": 103,
+   "mood_limit": 105
+  },
+  "points": 0,
+  "Mainline": {
+   "Semester": 1,
+   "FinishTimes": 0,
+   "credit": 0,
+   "rank": 0
+  },
+  "Event": {
+   "Daily": {},
+   "Weekly": {},
+   "Spec": {}
+  },
+  "Count": {
+   "bottleSend": 0,
+   "disturb": 0,
+   "shop": 0,
+   "spec": 0,
+   "CatCounter": 0,
+   "board": 0,
+   "bottleRecv": 0,
+   "sign": 0,
+   "MeetJasonCounter": 0,
+   "bottleCast": 0,
+   "exam": 0,
+   "weekly": 0,
+   "FailtoSleepCounter": 0,
+   "daily": 0,
+   "public": 0,
+   "PoiliticsCounter": 0
+  },
+  "Bag": {},
+  "Info": {
+   "Introduction": " ",
+   "Job": "学生",
+   "Gender": "男",
+   "Nickname": "天麟"
+  },
+  "MainAtt": {
+   "INT": 10,
+   "SUM": 33,
+   "LUC": 15,
+   "CON": 3,
+   "WIL": 5
+  }
+ },
+ "3667165531": {
+  "Achievement": [
+   "特定指令",
+   "种子发芽",
+   "心情UP！",
+   "心情UP！",
+   "特定指令",
+   "种子发芽",
+   "种子发芽",
+   "心情UP！",
+   "特定指令",
+   "种子发芽",
+   "特定指令",
+   "心情UP！",
+   "心情UP！",
+   "ac029",
+   "ac037",
+   "ac000",
+   "ac028",
+   "ac090",
+   "ac036"
+  ],
+  "DailyAtt": {
+   "energy": 90,
+   "mood": 150,
+   "energy_limit": 109,
+   "mood_limit": 110
+  },
+  "points": 0,
+  "Mainline": {
+   "Semester": 1,
+   "FinishTimes": 0,
+   "credit": 5.0,
+   "rank": 0
+  },
+  "Event": {
+   "Daily": {
+    "NO007": 1,
+    "NO006": 1,
+    "NO061": 1
+   },
+   "Weekly": {
+    "NO102": 1
+   },
+   "Spec": {}
+  },
+  "Count": {
+   "bottleSend": 0,
+   "disturb": 0,
+   "shop": 0,
+   "spec": 0,
+   "points": 20,
+   "bottleRecv": 0,
+   "bottleCast": 0,
+   "exam": 0,
+   "board": 0,
+   "daily": 0,
+   "sign": 0,
+   "public": 0,
+   "weekly": 0
+  },
+  "Bag": {
+   "snack": 0,
+   "game": 0,
+   "anima": 0,
+   "sum": 0,
+   "item": {},
+   "study": 0,
+   "trophy": 0,
+   "fans": 0,
+   "sport": 0,
+   "comp": 0
+  },
+  "Info": {
+   "Introduction": " ",
+   "Job": "学生",
+   "Gender": "女",
+   "Nickname": "ganganxia"
+  },
+  "MainAtt": {
+   "sum": 0,
+   "SUM": 38,
+   "LUC": 8,
+   "INT": 11,
+   "CON": 9,
+   "WIL": 10
+  }
+ },
+ "76755379": {
+  "Inheritkey": "dScBtEYV5eFgL7xI",
+  "Achievement": [
+   "ac000"
+  ],
+  "DailyAtt": {
+   "energy": 100,
+   "mood": 100,
+   "energy_limit": 100,
+   "mood_limit": 100
+  },
+  "points": 0,
+  "Mainline": {
+   "Semester": 1,
+   "FinishTimes": 0,
+   "credit": 0,
+   "rank": 514
+  },
+  "Event": {
+   "Daily": {},
+   "Weekly": {},
+   "Spec": {}
+  },
+  "Count": {
+   "bottleSend": 0,
+   "disturb": 0,
+   "shop": 0,
+   "spec": 0,
+   "CatCounter": 0,
+   "board": 0,
+   "bottleRecv": 0,
+   "sign": 0,
+   "MeetJasonCounter": 0,
+   "bottleCast": 0,
+   "exam": 0,
+   "weekly": 0,
+   "FailtoSleepCounter": 0,
+   "daily": 0,
+   "public": 0,
+   "PoiliticsCounter": 0
+  },
+  "Bag": {},
+  "Info": {
+   "Introduction": "经验+3，告辞",
+   "Job": "学生",
+   "Gender": "男",
+   "Nickname": "ljh"
+  },
+  "MainAtt": {
+   "INT": 10,
+   "SUM": 46,
+   "LUC": 16,
+   "CON": 10,
+   "WIL": 10
+  }
+ },
+ "1885027977": {
+  "Inheritkey": "lEei9FqXQZ8nhCMF",
+  "Achievement": [
+   "ac000",
+   "ac001",
+   "ac002",
+   "ac003"
+  ],
+  "DailyAtt": {
+   "energy": 29,
+   "mood": 87,
+   "energy_limit": 109,
+   "mood_limit": 112
+  },
+  "points": 80,
+  "Mainline": {
+   "Semester": 1,
+   "FinishTimes": 0,
+   "credit": 0,
+   "rank": 0
+  },
+  "Event": {
+   "Daily": {},
+   "Weekly": {},
+   "Spec": {}
+  },
+  "Count": {
+   "bottleSend": 0,
+   "disturb": 0,
+   "shop": 0,
+   "spec": 0,
+   "board": 44,
+   "bottleRecv": 0,
+   "sign": 15,
+   "MeetJasonCounter": 0,
+   "bottleCast": 0,
+   "exam": 0,
+   "weekly": 0,
+   "daily": 0,
+   "FailtoSleepCounter": 0,
+   "public": 0,
+   "PoiliticsCounter": 0
+  },
+  "Bag": {
+   "I004": {
+    "count": 1,
+    "remaining_usage": 5
+   },
+   "I000": {
+    "count": 2,
+    "remaining_usage": 10
+   },
+   "I025": {
+    "count": 3,
+    "remaining_usage": 30
+   }
+  },
+  "Info": {
+   "Introduction": "djgsfhkjdfhk",
+   "Job": "学生",
+   "Gender": "男",
+   "Nickname": "hjsfjgj"
+  },
+  "MainAtt": {
+   "INT": 7,
+   "SUM": 38,
+   "LUC": 10,
+   "CON": 9,
+   "WIL": 12
+  }
+ }
+}
