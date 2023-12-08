@@ -348,9 +348,9 @@ function createPlayer(msg)
             mood = 100
         },
         Event = {
-            daily = {},
-            weekly = {},
-            spec = {}
+            Daily = {},
+            Weekly = {},
+            Spec = {}
             },
             Count = {
             daily = 0,
@@ -368,7 +368,8 @@ function createPlayer(msg)
             FailtoSleepCounter = 0,
             MeetJasonCounter = 0,
             PoiliticsCounter = 0,
-            CatCounter = 0
+            CatCounter = 0,
+            AnimaCounter = 0
             },
             Mainline = {
             Semester = 1,

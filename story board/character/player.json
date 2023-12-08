@@ -13,9 +13,9 @@
    "Gender": "男"
   },
   "Event": {
-   "weekly": {},
-   "spec": {},
-   "daily": {}
+   "Weekly": {},
+   "Spec": {},
+   "Daily": {}
   },
   "Achievement": [
    "ac000",
@@ -79,7 +79,8 @@
    "disturb": 0,
    "spec": 0,
    "public": 0,
-   "bottleSend": 0
+   "bottleSend": 0,
+   "AnimaCounter":0
   }
  },
  "76755379": {
@@ -96,9 +97,9 @@
    "Gender": "男"
   },
   "Event": {
-   "weekly": {},
-   "spec": {},
-   "daily": {}
+   "Weekly": {},
+   "Spec": {},
+   "Daily": {}
   },
   "Achievement": [
    "ac000"
@@ -135,7 +136,8 @@
    "disturb": 0,
    "spec": 0,
    "public": 0,
-   "MeetJasonCounter": 0
+   "MeetJasonCounter": 0,
+   "AnimaCounter":0
   }
  },
  "797093627": {
@@ -152,9 +154,9 @@
    "Gender": "男"
   },
   "Event": {
-   "weekly": {},
-   "spec": {},
-   "daily": {}
+   "Weekly": {},
+   "Spec": {},
+   "Daily": {}
   },
   "Achievement": {},
   "MainAtt": {
@@ -189,7 +191,8 @@
    "disturb": 0,
    "spec": 0,
    "public": 0,
-   "MeetJasonCounter": 0
+   "MeetJasonCounter": 0,
+   "AnimaCounter":0
   }
  }
 }
