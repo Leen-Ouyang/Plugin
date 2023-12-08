@@ -1,1334 +1,1334 @@
 {
- "ac000": {
-  "premise": {},
-  "unlocked": 1,
-  "description": "创建角色",
-  "name": "种子发芽",
-  "buff": {
-   "points": 20
-  },
-  "unique": 0
- },
- "ac052": {
-  "premise": {
-   "Event": {
-    "Daily": "NO023"
-   }
-  },
-  "unlocked": 0,
-  "description": "白虎，作为四神兽之一为人敬仰，尤为男性所喜爱，其地位如同计算机网络在计算机专业中的位置。",
-  "name": "西白虎",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac089": {
-  "premise": {
-   "Count": {
-    "disturb": 10
-   }
-  },
-  "unlocked": 0,
-  "description": "完成十次干扰",
-  "name": "搞事能手",
-  "buff": {
-   "points": 50
-  },
-  "unique": 0
- },
- "ac053": {
-  "premise": {
-   "Event": {
-    "Daily": "NO024"
-   }
-  },
-  "unlocked": 0,
-  "description": "如果把计算机专业的硬件部分比作凤凰，那么计算机组成原理便是凤凰的手下——朱雀。",
-  "name": "南朱雀",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac030": {
-  "premise": {
-   "Count": {
-    "spec": 1
-   }
-  },
-  "unlocked": 0,
-  "description": "触发特殊事件",
-  "name": "天上掉馅饼",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac027": {
-  "premise": {
-   "DailyAtt": {
-    "energy": 150
-   }
-  },
-  "unlocked": 0,
-  "description": "精力上限达到150",
-  "name": "精力UP！",
-  "buff": {
-   "points": 75
-  },
-  "unique": 0
- },
- "ac037": {
-  "premise": {
-   "Event": {
-    "Daily": "NO007"
-   }
-  },
-  "unlocked": 0,
-  "description": "思想道德与法治，大学思政课的开端。",
-  "name": "思之书·序章",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac018": {
-  "premise": {
-   "MainAtt": {
-    "WIL": 25
-   }
-  },
-  "unlocked": 0,
-  "description": "意志达到25点，运气增加1点",
-  "name": "早起的鸟儿有虫吃",
-  "buff": {
-   "LUC": 1
-  },
-  "unique": 0
- },
- "ac080": {
-  "premise": {
-   "Count": {
-    "board": 1
-   }
-  },
-  "unlocked": 0,
-  "description": "我的第一条留言",
-  "name": "黑板上的第一笔",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac013": {
-  "premise": {
-   "MainAtt": {
-    "CON": 15
-   }
-  },
-  "unlocked": 0,
-  "description": "体质达到15点，智力增加1点",
-  "name": "锻炼脑力",
-  "buff": {
-   "INT": 1
-  },
-  "unique": 0
- },
- "ac012": {
-  "premise": {
-   "MainAtt": {
-    "INT": 25
-   }
-  },
-  "unlocked": 0,
-  "description": "智力达到25点，运气增加1点",
-  "name": "知识改变命运",
-  "buff": {
-   "LUC": 1
-  },
-  "unique": 0
- },
- "ac067": {
-  "premise": {
-   "Event": {
-    "Spec": "NO217"
-   }
-  },
-  "unlocked": 0,
-  "description": "天生与电路八字不合",
-  "name": "损",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac008": {
-  "premise": {
-   "points": 555
-  },
-  "unlocked": 1,
-  "description": "当前积分达到555点",
-  "name": "钱包鼓鼓",
-  "buff": {
-   "points": 100
-  },
-  "unique": 0
- },
- "ac062": {
-  "premise": {
-   "Event": {
-    "Weekly": "NO163"
-   }
-  },
-  "unlocked": 0,
-  "description": "猫猫狗狗可爱捏",
-  "name": "初遇萌物",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac065": {
-  "premise": {
-   "Event": {
-    "Spec": "NO230"
-   }
-  },
-  "unlocked": 0,
-  "description": "猛烈相创",
-  "name": "热情相拥",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac047": {
-  "premise": {
-   "Event": {
-    "Daily": "NO043"
-   }
-  },
-  "unlocked": 0,
-  "description": "考研人的紧张感来自考研，考公人的紧张感来自考公，就业人的紧张感来自就业。",
-  "name": "紧张感",
-  "buff": {
-   "points": 50
-  },
-  "unique": 0
- },
- "ac028": {
-  "premise": {
-   "DailyAtt": {
-    "mood": 120
-   }
-  },
-  "unlocked": 0,
-  "description": "心情上限达到120",
-  "name": "心情UP！",
-  "buff": {
-   "points": 50
-  },
-  "unique": 0
- },
- "ac073": {
-  "premise": {
-   "Event": {
-    "Weekly": "NO132"
-   }
-  },
-  "unlocked": 0,
-  "description": "Python程序设计实践",
-  "name": "码到成功",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac094": {
-  "premise": {
-   "Bag": "I097"
-  },
-  "unlocked": 0,
-  "description": "获得码界三魔器其一“邪恶炒饭”",
-  "name": "谬之开端",
-  "buff": {
-   "LUC": -3
-  },
-  "unique": 0
- },
- "ac026": {
-  "premise": {
-   "DailyAtt": {
-    "energy": 120
-   }
-  },
-  "unlocked": 0,
-  "description": "精力上限达到120",
-  "name": "精力UP！",
-  "buff": {
-   "points": 50
-  },
-  "unique": 0
- },
- "ac064": {
-  "premise": {
-   "Event": {
-    "Spec": "NO201"
-   }
-  },
-  "unlocked": 0,
-  "description": "高数课前的灾难",
-  "name": "飞来横祸",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac074": {
-  "premise": {
-   "Event": {
-    "Weekly": "NO134"
-   }
-  },
-  "unlocked": 0,
-  "description": "算法与数据结构实践",
-  "name": "走码观花",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac029": {
-  "premise": {
-   "DailyAtt": {
-    "mood": 150
-   }
-  },
-  "unlocked": 0,
-  "description": "心情上限达到150",
-  "name": "心情UP！",
-  "buff": {
-   "points": 75
-  },
-  "unique": 0
- },
- "ac095": {
-  "premise": {
-   "Bag": "I098"
-  },
-  "unlocked": 0,
-  "description": "获得码界三魔器其二“代码蠹虫”",
-  "name": "谬之发展",
-  "buff": {
-   "INT": 3
-  },
-  "unique": 0
- },
- "ac010": {
-  "premise": {
-   "MainAtt": {
-    "INT": 15
-   }
-  },
-  "unlocked": 0,
-  "description": "智力达到15点，体质增加1点",
-  "name": "科学指导运动",
-  "buff": {
-   "CON": 1
-  },
-  "unique": 0
- },
- "ac063": {
-  "premise": {
-   "Event": {
-    "Weekly": "NO169"
-   }
-  },
-  "unlocked": 0,
-  "description": "这个成就就叫这名",
-  "name": "彩蛋",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac006": {
-  "premise": {
-   "Mainline": {
-    "Semester": 7
-   }
-  },
-  "unlocked": 1,
-  "description": "晋升大四学年的证明",
-  "name": "大学元老",
-  "buff": {
-   "LUC": 1
-  },
-  "unique": 0
- },
- "ac014": {
-  "premise": {
-   "MainAtt": {
-    "CON": 20
-   }
-  },
-  "unlocked": 0,
-  "description": "体质达到20点，意志增加1点",
-  "name": "锻炼耐力",
-  "buff": {
-   "WIL": 1
-  },
-  "unique": 0
- },
- "ac024": {
-  "premise": {
-   "MainAtt": {
-    "sum": 75
-   }
-  },
-  "unlocked": 0,
-  "description": "主属性点总和达到75",
-  "name": "蒸蒸日上",
-  "buff": {
-   "points": 75
-  },
-  "unique": 0
- },
- "ac034": {
-  "premise": {
-   "Count": {
-    "weekly": 6
-   }
-  },
-  "unlocked": 0,
-  "description": "日月如梭",
-  "name": "第6个周常",
-  "buff": {
-   "CON": 1
-  },
-  "unique": 0
- },
- "ac002": {
-  "premise": {
-   "Count": {
-    "sign": 7
-   }
-  },
-  "unlocked": 1,
-  "description": "累计签到一周",
-  "name": "枝繁叶茂",
-  "buff": {
-   "WIL": 1
-  },
-  "unique": 0
- },
- "ac071": {
-  "premise": {
-   "Event": {
-    "Weekly": "NO128"
-   }
-  },
-  "unlocked": 0,
-  "description": "高级语言程序设计实践",
-  "name": "一码当先",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac005": {
-  "premise": {
-   "Mainline": {
-    "Semester": 5
-   }
-  },
-  "unlocked": 1,
-  "description": "晋升大三学年的证明",
-  "name": "大学黄牌",
-  "buff": {
-   "CON": 1
-  },
-  "unique": 0
- },
- "ac057": {
-  "premise": {
-   "Event": {
-    "Weekly": "NO156"
-   }
-  },
-  "unlocked": 0,
-  "description": "没想到吧，学生AI也能模拟学生玩二次元。",
-  "name": "二次元",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac020": {
-  "premise": {
-   "MainAtt": {
-    "LUC": 20
-   }
-  },
-  "unlocked": 0,
-  "description": "运气达到20点，体质增加1点",
-  "name": "水到渠成",
-  "buff": {
-   "CON": 1
-  },
-  "unique": 0
- },
- "ac040": {
-  "premise": {
-   "Event": {
-    "Daily": "NO014"
-   }
-  },
-  "unlocked": 0,
-  "description": "中国近现代史，大学生必修的第二门思政课。",
-  "name": "思之书·壹",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac051": {
-  "premise": {
-   "Event": {
-    "Daily": "NO016"
-   }
-  },
-  "unlocked": 0,
-  "description": "算法与数据结构，它与计算机考研专业的关系，正如镇守东方的青龙与四神兽的关系。",
-  "name": "东青龙",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac036": {
-  "premise": {
-   "Event": {
-    "Daily": "NO006"
-   }
-  },
-  "unlocked": 0,
-  "description": "大学英语（二），大学英语的开端。",
-  "name": "英之书·序章",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac032": {
-  "premise": {
-   "Count": {
-    "spec": 15
-   }
-  },
-  "unlocked": 0,
-  "description": "触发十五次特殊事件",
-  "name": "快去买彩票",
-  "buff": {
-   "points": 100
-  },
-  "unique": 0
- },
- "ac069": {
-  "premise": {
-   "Event": {
-    "Spec": "NO224"
-   }
-  },
-  "unlocked": 0,
-  "description": "电子元件团结起来反抗人类，然而并没什么卵用",
-  "name": "摧",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac016": {
-  "premise": {
-   "MainAtt": {
-    "WIL": 15
-   }
-  },
-  "unlocked": 0,
-  "description": "意志达到15点，智力增加1点",
-  "name": "聪明在于勤奋",
-  "buff": {
-   "INT": 1
-  },
-  "unique": 0
- },
  "ac007": {
+  "unlocked": 1,
   "premise": {
    "points": 233
   },
-  "unlocked": 1,
-  "description": "当前积分达到233点",
   "name": "小有积蓄",
   "buff": {
    "points": 50
   },
-  "unique": 0
+  "unique": 0,
+  "description": "当前积分达到233点"
  },
- "ac017": {
-  "premise": {
-   "MainAtt": {
-    "WIL": 20
-   }
-  },
+ "ac094": {
   "unlocked": 0,
-  "description": "意志达到20点，体质增加1点",
-  "name": "早睡早起身体好",
-  "buff": {
-   "CON": 1
-  },
-  "unique": 0
- },
- "ac054": {
   "premise": {
-   "Event": {
-    "Daily": "NO030"
-   }
+   "Bag": "I097"
   },
-  "unlocked": 0,
-  "description": "前面的成就把计算机考研学科之三和四神兽之三都凑完了，操作系统这玩意自然是和玄武嗯凑了。",
-  "name": "北玄武",
+  "name": "谬之开端",
   "buff": {
-   "points": 30
+   "LUC": -3
   },
-  "unique": 0
- },
- "ac092": {
-  "premise": {
-   "Bag": "I095"
-  },
-  "unlocked": 0,
-  "description": "获得码界三神器其二“栋之眼镜”",
-  "name": "镇院之宝",
-  "buff": {
-   "CON": 2
-  },
-  "unique": 0
- },
- "ac078": {
-  "premise": {
-   "Event": {
-    "Spec": "NO223"
-   }
-  },
-  "unlocked": 0,
-  "description": "交通管理A+",
-  "name": "大学特色·贰",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac035": {
-  "premise": {
-   "Event": {
-    "Daily": "NO001"
-   }
-  },
-  "unlocked": 0,
-  "description": "高等数学（上），大学数学的开端。",
-  "name": "数之书·序章",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac001": {
-  "premise": {
-   "Count": {
-    "sign": 3
-   }
-  },
-  "unlocked": 1,
-  "description": "累计签到3天”",
-  "name": "小苗初成",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac003": {
-  "premise": {
-   "Count": {
-    "sign": 30
-   }
-  },
-  "unlocked": 1,
-  "description": "累计签到一个月",
-  "name": "开花结果",
-  "buff": {
-   "WIL": 2
-  },
-  "unique": 0
- },
- "ac041": {
-  "premise": {
-   "Event": {
-    "Daily": "NO020"
-   }
-  },
-  "unlocked": 0,
-  "description": "大学英语（四），倒数第二门英语课程。",
-  "name": "英之书·贰",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac046": {
-  "premise": {
-   "Event": {
-    "Daily": "NO028"
-   }
-  },
-  "unlocked": 0,
-  "description": "中国红色思想（下），大学生必修的最后一门闭卷思政理论课。",
-  "name": "思之书·终章",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac042": {
-  "premise": {
-   "Event": {
-    "Daily": "NO020"
-   }
-  },
-  "unlocked": 0,
-  "description": "中国红色思想（上），它真正的名字太长，Expadd3一时摸鱼就换了这名，后面就懒得改了。",
-  "name": "思之书·贰",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac055": {
-  "premise": {
-   "Event": {
-    "Daily": "NO048"
-   }
-  },
-  "unlocked": 0,
-  "description": "证明：∵思政课=水，开卷考=水，∴形势与政策=思政课+开卷考=水上加水",
-  "name": "水中水",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac088": {
-  "premise": {
-   "Count": {
-    "disturb": 1
-   }
-  },
-  "unlocked": 0,
-  "description": "完成一次干扰",
-  "name": "乐子人·开端",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac072": {
-  "premise": {
-   "Event": {
-    "Weekly": "NO130"
-   }
-  },
-  "unlocked": 0,
-  "description": "程序设计语言综合设计",
-  "name": "天码行空",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac076": {
-  "premise": {
-   "Event": {
-    "Spec": "NO202"
-   }
-  },
-  "unlocked": 0,
-  "description": "人有一条命，但■■只拥有一半",
-  "name": "我超，（）",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac038": {
-  "premise": {
-   "Event": {
-    "Daily": "NO008"
-   }
-  },
-  "unlocked": 0,
-  "description": "高等数学（下），记载众多积分公式的天书。",
-  "name": "数之书·壹",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac086": {
-  "premise": {
-   "Count": {
-    "public": 1
-   }
-  },
-  "unlocked": 0,
-  "description": "完成一次公共事件",
-  "name": "合作愉快！",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac009": {
-  "premise": {
-   "points": 888
-  },
-  "unlocked": 1,
-  "description": "当前积分达到888点",
-  "name": "家有金库",
-  "buff": {
-   "LUC": 1
-  },
-  "unique": 0
- },
- "ac048": {
-  "premise": {
-   "Event": {
-    "Daily": "NO045"
-   }
-  },
-  "unlocked": 0,
-  "description": "大学实习，就业的体验卡，然而猫扑上对其的评分普遍不高。",
-  "name": "职场体验卡",
-  "buff": {
-   "points": 50
-  },
-  "unique": 0
- },
- "ac070": {
-  "premise": {
-   "Event": {
-    "Spec": "NO238"
-   }
-  },
-  "unlocked": 0,
-  "description": "痛失爱本",
-  "name": "毁",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac081": {
-  "premise": {
-   "Count": {
-    "board": 10
-   }
-  },
-  "unlocked": 0,
-  "description": "留言板发布10条留言",
-  "name": "知识，与你分享",
-  "buff": {
-   "points": 50
-  },
-  "unique": 0
- },
- "ac061": {
-  "premise": {
-   "Event": {
-    "Weekly": "NO161"
-   }
-  },
-  "unlocked": 0,
-  "description": "学长背上的行李，是梦寐以求的德育",
-  "name": "德育之开端",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac091": {
-  "premise": {
-   "Bag": "I094"
-  },
-  "unlocked": 0,
-  "description": "获得码界三神器其一“天麟之鳞”",
-  "name": "开发组之礼",
-  "buff": {
-   "INT": 2
-  },
-  "unique": 0
- },
- "ac058": {
-  "premise": {
-   "Event": {
-    "Weekly": "NO157"
-   }
-  },
-  "unlocked": 0,
-  "description": "多人联机，多倍快乐",
-  "name": "独游乐不如众游乐",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
+  "unique": 0,
+  "description": "获得码界三魔器其一“邪恶炒饭”"
  },
  "ac025": {
+  "unlocked": 0,
   "premise": {
    "MainAtt": {
-    "sum": 100
+    "SUM": 100
    }
   },
-  "unlocked": 0,
-  "description": "主属性点总和达到100",
   "name": "刮目相看",
   "buff": {
    "points": 100
   },
-  "unique": 0
- },
- "ac049": {
-  "premise": {
-   "Event": {
-    "Daily": "NO047"
-   }
-  },
-  "unlocked": 0,
-  "description": "毕业论文，毕业之路的必经之地，在猫扑上的评分和实习一样不高。",
-  "name": "必经之地",
-  "buff": {
-   "points": 50
-  },
-  "unique": 0
- },
- "ac087": {
-  "premise": {
-   "Count": {
-    "public": 10
-   }
-  },
-  "unlocked": 0,
-  "description": "完成十次公共事件",
-  "name": "社交达人",
-  "buff": {
-   "points": 50
-  },
-  "unique": 0
- },
- "ac090": {
-  "premise": {},
-  "unlocked": 0,
-  "description": "拙劣的彩蛋成就罢了",
-  "name": "特定指令",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac083": {
-  "premise": {
-   "Count": {
-    "bottleSend": 10
-   }
-  },
-  "unlocked": 0,
-  "description": "送出的第十个漂流瓶",
-  "name": "瓶中时光",
-  "buff": {
-   "points": 50
-  },
-  "unique": 0
- },
- "ac050": {
-  "premise": {
-   "Event": {
-    "Daily": "NO004"
-   }
-  },
-  "unlocked": 0,
-  "description": "计算机学科导论，计算机专业必修课的总括。",
-  "name": "中黄土",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac033": {
-  "premise": {
-   "Count": {
-    "daily": 66
-   }
-  },
-  "unlocked": 0,
-  "description": "光阴似箭",
-  "name": "第66个日常",
-  "buff": {
-   "INT": 1
-  },
-  "unique": 0
- },
- "ac077": {
-  "premise": {
-   "Event": {
-    "Spec": "NO220"
-   }
-  },
-  "unlocked": 0,
-  "description": "水上运输A+",
-  "name": "大学特色·壹",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac068": {
-  "premise": {
-   "Event": {
-    "Spec": "NO218"
-   }
-  },
-  "unlocked": 0,
-  "description": "仪器破坏者",
-  "name": "坏",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac045": {
-  "premise": {
-   "Event": {
-    "Daily": "NO027"
-   }
-  },
-  "unlocked": 0,
-  "description": "马克思主义基本原理，中国红色思想的基础。",
-  "name": "思之书·叁",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac056": {
-  "premise": {
-   "Event": {
-    "Weekly": "NO155"
-   }
-  },
-  "unlocked": 0,
-  "description": "作为学生AI，模拟网购是服务学生的基本功能之一。",
-  "name": "校外商店",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac084": {
-  "premise": {
-   "Count": {
-    "bottleCast": 1
-   }
-  },
-  "unlocked": 0,
-  "description": "丢出的第一个漂流瓶",
-  "name": "打水漂",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac004": {
-  "premise": {
-   "Mainline": {
-    "Semester": 3
-   }
-  },
-  "unlocked": 1,
-  "description": "晋升大二学年的证明",
-  "name": "大学蓝牌",
-  "buff": {
-   "INT": 1
-  },
-  "unique": 0
- },
- "ac066": {
-  "premise": {
-   "Event": {
-    "Spec": "NO211"
-   }
-  },
-  "unlocked": 0,
-  "description": "仪器见你如见阎王",
-  "name": "破",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac015": {
-  "premise": {
-   "MainAtt": {
-    "CON": 25
-   }
-  },
-  "unlocked": 0,
-  "description": "体质达到25点，运气增加1点",
-  "name": "锻炼免疫力",
-  "buff": {
-   "LUC": 1
-  },
-  "unique": 0
- },
- "ac085": {
-  "premise": {
-   "Count": {
-    "bottleCast": 10
-   }
-  },
-  "unlocked": 0,
-  "description": "丢出的第十个漂流瓶",
-  "name": "漂流瓶投手",
-  "buff": {
-   "points": 50
-  },
-  "unique": 0
- },
- "ac039": {
-  "premise": {
-   "Event": {
-    "Daily": "NO013"
-   }
-  },
-  "unlocked": 0,
-  "description": "大学英语（三），大学的第二门英语课程。",
-  "name": "英之书·壹",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac021": {
-  "premise": {
-   "MainAtt": {
-    "LUC": 25
-   }
-  },
-  "unlocked": 0,
-  "description": "运气达到25点，意志增加1点",
-  "name": "锦上添花",
-  "buff": {
-   "WIL": 1
-  },
-  "unique": 0
- },
- "ac082": {
-  "premise": {
-   "Count": {
-    "bottleSend": 1
-   }
-  },
-  "unlocked": 0,
-  "description": "送出的第一个漂流瓶",
-  "name": "飞鸽传书",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac075": {
-  "premise": {
-   "Event": {
-    "Weekly": "NO136"
-   }
-  },
-  "unlocked": 0,
-  "description": "汇编语言程序设计",
-  "name": "码首是瞻",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac060": {
-  "premise": {
-   "Event": {
-    "Weekly": "NO160"
-   }
-  },
-  "unlocked": 0,
-  "description": "大学人际圈拓宽的一步，也许……吧",
-  "name": "初入社团",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac059": {
-  "premise": {
-   "Event": {
-    "Weekly": "NO158"
-   }
-  },
-  "unlocked": 0,
-  "description": "长期被短视频滋润的心，终于肯接受一小时起步的艺术。",
-  "name": "第一部电影",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac093": {
-  "premise": {
-   "Bag": "I096"
-  },
-  "unlocked": 0,
-  "description": "获得码界三神器其三“圣之注视”",
-  "name": "神之眼",
-  "buff": {
-   "WIL": 2
-  },
-  "unique": 0
- },
- "ac031": {
-  "premise": {
-   "Count": {
-    "spec": 3
-   }
-  },
-  "unlocked": 0,
-  "description": "触发五次特殊事件",
-  "name": "风水轮流转",
-  "buff": {
-   "points": 50
-  },
-  "unique": 0
- },
- "ac096": {
-  "premise": {
-   "Bag": "I099"
-  },
-  "unlocked": 0,
-  "description": "获得码界三魔器其三“碧油鸡羽”",
-  "name": "谬之高潮",
-  "buff": {
-   "CON": 3
-  },
-  "unique": 0
- },
- "ac023": {
-  "premise": {
-   "MainAtt": {
-    "sum": 60
-   }
-  },
-  "unlocked": 0,
-  "description": "主属性点总和达到60”",
-  "name": "争分夺秒",
-  "buff": {
-   "points": 60
-  },
-  "unique": 0
- },
- "ac019": {
-  "premise": {
-   "MainAtt": {
-    "LUC": 15
-   }
-  },
-  "unlocked": 0,
-  "description": "运气达到15点，智力增加1点",
-  "name": "趁热打铁",
-  "buff": {
-   "INT": 1
-  },
-  "unique": 0
- },
- "ac079": {
-  "premise": {
-   "Event": {
-    "Spec": "NO237"
-   }
-  },
-  "unlocked": 0,
-  "description": "网络工程A+",
-  "name": "大学特色·叁",
-  "buff": {
-   "points": 30
-  },
-  "unique": 0
- },
- "ac022": {
-  "premise": {
-   "MainAtt": {
-    "sum": 50
-   }
-  },
-  "unlocked": 0,
-  "description": "主属性点总和达到50",
-  "name": "发愤图强",
-  "buff": {
-   "points": 50
-  },
-  "unique": 0
+  "unique": 0,
+  "description": "主属性点总和达到100"
  },
  "ac043": {
+  "unlocked": 0,
   "premise": {
    "Event": {
     "Daily": "NO022"
    }
   },
-  "unlocked": 0,
-  "description": "概率论，最后一门大学数学课程。什么，你说还有线性代数？别问，问就是Expadd3漏了，不想补了。",
   "name": "数之书·终章",
   "buff": {
    "points": 30
   },
-  "unique": 0
+  "unique": 0,
+  "description": "概率论，最后一门大学数学课程。什么，你说还有线性代数？别问，问就是Expadd3漏了，不想补了。"
+ },
+ "ac070": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Spec": "NO238"
+   }
+  },
+  "name": "毁",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "痛失爱本"
+ },
+ "ac042": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Daily": "NO020"
+   }
+  },
+  "name": "思之书·贰",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "中国红色思想（上），它真正的名字太长，Expadd3一时摸鱼就换了这名，后面就懒得改了。"
+ },
+ "ac018": {
+  "unlocked": 0,
+  "premise": {
+   "MainAtt": {
+    "WIL": 25
+   }
+  },
+  "name": "早起的鸟儿有虫吃",
+  "buff": {
+   "LUC": 1
+  },
+  "unique": 0,
+  "description": "意志达到25点，运气增加1点"
+ },
+ "ac000": {
+  "unlocked": 1,
+  "premise": {},
+  "name": "种子发芽",
+  "buff": {
+   "points": 20
+  },
+  "unique": 0,
+  "description": "创建角色"
+ },
+ "ac084": {
+  "unlocked": 0,
+  "premise": {
+   "Count": {
+    "bottleCast": 1
+   }
+  },
+  "name": "打水漂",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "丢出的第一个漂流瓶"
+ },
+ "ac092": {
+  "unlocked": 0,
+  "premise": {
+   "Bag": "I095"
+  },
+  "name": "镇院之宝",
+  "buff": {
+   "CON": 2
+  },
+  "unique": 0,
+  "description": "获得码界三神器其二“栋之眼镜”"
+ },
+ "ac016": {
+  "unlocked": 0,
+  "premise": {
+   "MainAtt": {
+    "WIL": 15
+   }
+  },
+  "name": "聪明在于勤奋",
+  "buff": {
+   "INT": 1
+  },
+  "unique": 0,
+  "description": "意志达到15点，智力增加1点"
+ },
+ "ac008": {
+  "unlocked": 1,
+  "premise": {
+   "points": 555
+  },
+  "name": "钱包鼓鼓",
+  "buff": {
+   "points": 100
+  },
+  "unique": 0,
+  "description": "当前积分达到555点"
+ },
+ "ac086": {
+  "unlocked": 0,
+  "premise": {
+   "Count": {
+    "public": 1
+   }
+  },
+  "name": "合作愉快！",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "完成一次公共事件"
+ },
+ "ac082": {
+  "unlocked": 0,
+  "premise": {
+   "Count": {
+    "bottleSend": 1
+   }
+  },
+  "name": "飞鸽传书",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "送出的第一个漂流瓶"
+ },
+ "ac081": {
+  "unlocked": 0,
+  "premise": {
+   "Count": {
+    "board": 10
+   }
+  },
+  "name": "知识，与你分享",
+  "buff": {
+   "points": 50
+  },
+  "unique": 0,
+  "description": "留言板发布10条留言"
+ },
+ "ac040": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Daily": "NO014"
+   }
+  },
+  "name": "思之书·壹",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "中国近现代史，大学生必修的第二门思政课。"
+ },
+ "ac051": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Daily": "NO016"
+   }
+  },
+  "name": "东青龙",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "算法与数据结构，它与计算机考研专业的关系，正如镇守东方的青龙与四神兽的关系。"
+ },
+ "ac052": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Daily": "NO023"
+   }
+  },
+  "name": "西白虎",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "白虎，作为四神兽之一为人敬仰，尤为男性所喜爱，其地位如同计算机网络在计算机专业中的位置。"
+ },
+ "ac076": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Spec": "NO202"
+   }
+  },
+  "name": "我超，（）",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "人有一条命，但■■只拥有一半"
+ },
+ "ac059": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Weekly": "NO158"
+   }
+  },
+  "name": "第一部电影",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "长期被短视频滋润的心，终于肯接受一小时起步的艺术。"
+ },
+ "ac073": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Weekly": "NO132"
+   }
+  },
+  "name": "码到成功",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "Python程序设计实践"
+ },
+ "ac034": {
+  "unlocked": 0,
+  "premise": {
+   "Count": {
+    "weekly": 6
+   }
+  },
+  "name": "第6个周常",
+  "buff": {
+   "CON": 1
+  },
+  "unique": 0,
+  "description": "日月如梭"
+ },
+ "ac063": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Weekly": "NO169"
+   }
+  },
+  "name": "彩蛋",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "这个成就就叫这名"
+ },
+ "ac004": {
+  "unlocked": 1,
+  "premise": {
+   "Mainline": {
+    "Semester": 3
+   }
+  },
+  "name": "大学蓝牌",
+  "buff": {
+   "INT": 1
+  },
+  "unique": 0,
+  "description": "晋升大二学年的证明"
+ },
+ "ac047": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Daily": "NO043"
+   }
+  },
+  "name": "紧张感",
+  "buff": {
+   "points": 50
+  },
+  "unique": 0,
+  "description": "考研人的紧张感来自考研，考公人的紧张感来自考公，就业人的紧张感来自就业。"
+ },
+ "ac053": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Daily": "NO024"
+   }
+  },
+  "name": "南朱雀",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "如果把计算机专业的硬件部分比作凤凰，那么计算机组成原理便是凤凰的手下——朱雀。"
+ },
+ "ac032": {
+  "unlocked": 0,
+  "premise": {
+   "Count": {
+    "spec": 15
+   }
+  },
+  "name": "快去买彩票",
+  "buff": {
+   "points": 100
+  },
+  "unique": 0,
+  "description": "触发十五次特殊事件"
+ },
+ "ac006": {
+  "unlocked": 1,
+  "premise": {
+   "Mainline": {
+    "Semester": 7
+   }
+  },
+  "name": "大学元老",
+  "buff": {
+   "LUC": 1
+  },
+  "unique": 0,
+  "description": "晋升大四学年的证明"
+ },
+ "ac022": {
+  "unlocked": 0,
+  "premise": {
+   "MainAtt": {
+    "SUM": 50
+   }
+  },
+  "name": "发愤图强",
+  "buff": {
+   "points": 50
+  },
+  "unique": 0,
+  "description": "主属性点总和达到50"
+ },
+ "ac060": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Weekly": "NO160"
+   }
+  },
+  "name": "初入社团",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "大学人际圈拓宽的一步，也许……吧"
+ },
+ "ac050": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Daily": "NO004"
+   }
+  },
+  "name": "中黄土",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "计算机学科导论，计算机专业必修课的总括。"
+ },
+ "ac064": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Spec": "NO201"
+   }
+  },
+  "name": "飞来横祸",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "高数课前的灾难"
+ },
+ "ac035": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Daily": "NO001"
+   }
+  },
+  "name": "数之书·序章",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "高等数学（上），大学数学的开端。"
+ },
+ "ac029": {
+  "unlocked": 0,
+  "premise": {
+   "DailyAtt": {
+    "mood": 150
+   }
+  },
+  "name": "心情UP！",
+  "buff": {
+   "points": 75
+  },
+  "unique": 0,
+  "description": "心情上限达到150"
+ },
+ "ac080": {
+  "unlocked": 0,
+  "premise": {
+   "Count": {
+    "board": 1
+   }
+  },
+  "name": "黑板上的第一笔",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "我的第一条留言"
+ },
+ "ac017": {
+  "unlocked": 0,
+  "premise": {
+   "MainAtt": {
+    "WIL": 20
+   }
+  },
+  "name": "早睡早起身体好",
+  "buff": {
+   "CON": 1
+  },
+  "unique": 0,
+  "description": "意志达到20点，体质增加1点"
+ },
+ "ac039": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Daily": "NO013"
+   }
+  },
+  "name": "英之书·壹",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "大学英语（三），大学的第二门英语课程。"
+ },
+ "ac005": {
+  "unlocked": 1,
+  "premise": {
+   "Mainline": {
+    "Semester": 5
+   }
+  },
+  "name": "大学黄牌",
+  "buff": {
+   "CON": 1
+  },
+  "unique": 0,
+  "description": "晋升大三学年的证明"
+ },
+ "ac049": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Daily": "NO047"
+   }
+  },
+  "name": "必经之地",
+  "buff": {
+   "points": 50
+  },
+  "unique": 0,
+  "description": "毕业论文，毕业之路的必经之地，在猫扑上的评分和实习一样不高。"
+ },
+ "ac058": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Weekly": "NO157"
+   }
+  },
+  "name": "独游乐不如众游乐",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "多人联机，多倍快乐"
+ },
+ "ac021": {
+  "unlocked": 0,
+  "premise": {
+   "MainAtt": {
+    "LUC": 25
+   }
+  },
+  "name": "锦上添花",
+  "buff": {
+   "WIL": 1
+  },
+  "unique": 0,
+  "description": "运气达到25点，意志增加1点"
+ },
+ "ac030": {
+  "unlocked": 0,
+  "premise": {
+   "Count": {
+    "spec": 1
+   }
+  },
+  "name": "天上掉馅饼",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "触发特殊事件"
+ },
+ "ac087": {
+  "unlocked": 0,
+  "premise": {
+   "Count": {
+    "public": 10
+   }
+  },
+  "name": "社交达人",
+  "buff": {
+   "points": 50
+  },
+  "unique": 0,
+  "description": "完成十次公共事件"
+ },
+ "ac062": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Weekly": "NO163"
+   }
+  },
+  "name": "初遇萌物",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "猫猫狗狗可爱捏"
+ },
+ "ac061": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Weekly": "NO161"
+   }
+  },
+  "name": "德育之开端",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "学长背上的行李，是梦寐以求的德育"
+ },
+ "ac077": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Spec": "NO220"
+   }
+  },
+  "name": "大学特色·壹",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "水上运输A+"
+ },
+ "ac019": {
+  "unlocked": 0,
+  "premise": {
+   "MainAtt": {
+    "LUC": 15
+   }
+  },
+  "name": "趁热打铁",
+  "buff": {
+   "INT": 1
+  },
+  "unique": 0,
+  "description": "运气达到15点，智力增加1点"
+ },
+ "ac038": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Daily": "NO008"
+   }
+  },
+  "name": "数之书·壹",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "高等数学（下），记载众多积分公式的天书。"
+ },
+ "ac028": {
+  "unlocked": 0,
+  "premise": {
+   "DailyAtt": {
+    "mood": 120
+   }
+  },
+  "name": "心情UP！",
+  "buff": {
+   "points": 50
+  },
+  "unique": 0,
+  "description": "心情上限达到120"
+ },
+ "ac009": {
+  "unlocked": 1,
+  "premise": {
+   "points": 888
+  },
+  "name": "家有金库",
+  "buff": {
+   "LUC": 1
+  },
+  "unique": 0,
+  "description": "当前积分达到888点"
  },
  "ac011": {
+  "unlocked": 0,
   "premise": {
    "MainAtt": {
     "INT": 20
    }
   },
-  "unlocked": 0,
-  "description": "智力达到20点，意志增加1点”",
   "name": "自省锤炼意志",
   "buff": {
    "WIL": 1
   },
-  "unique": 0
+  "unique": 0,
+  "description": "智力达到20点，意志增加1点”"
+ },
+ "ac078": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Spec": "NO223"
+   }
+  },
+  "name": "大学特色·贰",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "交通管理A+"
+ },
+ "ac048": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Daily": "NO045"
+   }
+  },
+  "name": "职场体验卡",
+  "buff": {
+   "points": 50
+  },
+  "unique": 0,
+  "description": "大学实习，就业的体验卡，然而猫扑上对其的评分普遍不高。"
+ },
+ "ac024": {
+  "unlocked": 0,
+  "premise": {
+   "MainAtt": {
+    "SUM": 75
+   }
+  },
+  "name": "蒸蒸日上",
+  "buff": {
+   "points": 75
+  },
+  "unique": 0,
+  "description": "主属性点总和达到75"
+ },
+ "ac085": {
+  "unlocked": 0,
+  "premise": {
+   "Count": {
+    "bottleCast": 10
+   }
+  },
+  "name": "漂流瓶投手",
+  "buff": {
+   "points": 50
+  },
+  "unique": 0,
+  "description": "丢出的第十个漂流瓶"
+ },
+ "ac072": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Weekly": "NO130"
+   }
+  },
+  "name": "天码行空",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "程序设计语言综合设计"
+ },
+ "ac026": {
+  "unlocked": 0,
+  "premise": {
+   "DailyAtt": {
+    "energy": 120
+   }
+  },
+  "name": "精力UP！",
+  "buff": {
+   "points": 50
+  },
+  "unique": 0,
+  "description": "精力上限达到120"
+ },
+ "ac041": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Daily": "NO020"
+   }
+  },
+  "name": "英之书·贰",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "大学英语（四），倒数第二门英语课程。"
+ },
+ "ac020": {
+  "unlocked": 0,
+  "premise": {
+   "MainAtt": {
+    "LUC": 20
+   }
+  },
+  "name": "水到渠成",
+  "buff": {
+   "CON": 1
+  },
+  "unique": 0,
+  "description": "运气达到20点，体质增加1点"
+ },
+ "ac069": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Spec": "NO224"
+   }
+  },
+  "name": "摧",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "电子元件团结起来反抗人类，然而并没什么卵用"
+ },
+ "ac015": {
+  "unlocked": 0,
+  "premise": {
+   "MainAtt": {
+    "CON": 25
+   }
+  },
+  "name": "锻炼免疫力",
+  "buff": {
+   "LUC": 1
+  },
+  "unique": 0,
+  "description": "体质达到25点，运气增加1点"
+ },
+ "ac090": {
+  "unlocked": 0,
+  "premise": {},
+  "name": "特定指令",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "拙劣的彩蛋成就罢了"
+ },
+ "ac046": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Daily": "NO028"
+   }
+  },
+  "name": "思之书·终章",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "中国红色思想（下），大学生必修的最后一门闭卷思政理论课。"
+ },
+ "ac091": {
+  "unlocked": 0,
+  "premise": {
+   "Bag": "I094"
+  },
+  "name": "开发组之礼",
+  "buff": {
+   "INT": 2
+  },
+  "unique": 0,
+  "description": "获得码界三神器其一“天麟之鳞”"
+ },
+ "ac031": {
+  "unlocked": 0,
+  "premise": {
+   "Count": {
+    "spec": 3
+   }
+  },
+  "name": "风水轮流转",
+  "buff": {
+   "points": 50
+  },
+  "unique": 0,
+  "description": "触发五次特殊事件"
+ },
+ "ac036": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Daily": "NO006"
+   }
+  },
+  "name": "英之书·序章",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "大学英语（二），大学英语的开端。"
+ },
+ "ac013": {
+  "unlocked": 0,
+  "premise": {
+   "MainAtt": {
+    "CON": 15
+   }
+  },
+  "name": "锻炼脑力",
+  "buff": {
+   "INT": 1
+  },
+  "unique": 0,
+  "description": "体质达到15点，智力增加1点"
+ },
+ "ac033": {
+  "unlocked": 0,
+  "premise": {
+   "Count": {
+    "daily": 66
+   }
+  },
+  "name": "第66个日常",
+  "buff": {
+   "INT": 1
+  },
+  "unique": 0,
+  "description": "光阴似箭"
+ },
+ "ac012": {
+  "unlocked": 0,
+  "premise": {
+   "MainAtt": {
+    "INT": 25
+   }
+  },
+  "name": "知识改变命运",
+  "buff": {
+   "LUC": 1
+  },
+  "unique": 0,
+  "description": "智力达到25点，运气增加1点"
+ },
+ "ac075": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Weekly": "NO136"
+   }
+  },
+  "name": "码首是瞻",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "汇编语言程序设计"
+ },
+ "ac003": {
+  "unlocked": 1,
+  "premise": {
+   "Count": {
+    "sign": 30
+   }
+  },
+  "name": "开花结果",
+  "buff": {
+   "WIL": 2
+  },
+  "unique": 0,
+  "description": "累计签到一个月"
+ },
+ "ac067": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Spec": "NO217"
+   }
+  },
+  "name": "损",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "天生与电路八字不合"
+ },
+ "ac055": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Daily": "NO048"
+   }
+  },
+  "name": "水中水",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "证明：∵思政课=水，开卷考=水，∴形势与政策=思政课+开卷考=水上加水"
  },
  "ac044": {
+  "unlocked": 0,
   "premise": {
    "Event": {
     "Daily": "NO026"
    }
   },
-  "unlocked": 0,
-  "description": "英语专题课，大学英语的分支，同时也是最后一门英语课程。",
   "name": "英之书·终章",
   "buff": {
    "points": 30
   },
-  "unique": 0
+  "unique": 0,
+  "description": "英语专题课，大学英语的分支，同时也是最后一门英语课程。"
+ },
+ "ac088": {
+  "unlocked": 0,
+  "premise": {
+   "Count": {
+    "disturb": 1
+   }
+  },
+  "name": "乐子人·开端",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "完成一次干扰"
+ },
+ "ac010": {
+  "unlocked": 0,
+  "premise": {
+   "MainAtt": {
+    "INT": 15
+   }
+  },
+  "name": "科学指导运动",
+  "buff": {
+   "CON": 1
+  },
+  "unique": 0,
+  "description": "智力达到15点，体质增加1点"
+ },
+ "ac014": {
+  "unlocked": 0,
+  "premise": {
+   "MainAtt": {
+    "CON": 20
+   }
+  },
+  "name": "锻炼耐力",
+  "buff": {
+   "WIL": 1
+  },
+  "unique": 0,
+  "description": "体质达到20点，意志增加1点"
+ },
+ "ac037": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Daily": "NO007"
+   }
+  },
+  "name": "思之书·序章",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "思想道德与法治，大学思政课的开端。"
+ },
+ "ac054": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Daily": "NO030"
+   }
+  },
+  "name": "北玄武",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "前面的成就把计算机考研学科之三和四神兽之三都凑完了，操作系统这玩意自然是和玄武嗯凑了。"
+ },
+ "ac089": {
+  "unlocked": 0,
+  "premise": {
+   "Count": {
+    "disturb": 10
+   }
+  },
+  "name": "搞事能手",
+  "buff": {
+   "points": 50
+  },
+  "unique": 0,
+  "description": "完成十次干扰"
+ },
+ "ac068": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Spec": "NO218"
+   }
+  },
+  "name": "坏",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "仪器破坏者"
+ },
+ "ac001": {
+  "unlocked": 1,
+  "premise": {
+   "Count": {
+    "sign": 3
+   }
+  },
+  "name": "小苗初成",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "累计签到3天”"
+ },
+ "ac093": {
+  "unlocked": 0,
+  "premise": {
+   "Bag": "I096"
+  },
+  "name": "神之眼",
+  "buff": {
+   "WIL": 2
+  },
+  "unique": 0,
+  "description": "获得码界三神器其三“圣之注视”"
+ },
+ "ac095": {
+  "unlocked": 0,
+  "premise": {
+   "Bag": "I098"
+  },
+  "name": "谬之发展",
+  "buff": {
+   "INT": 3
+  },
+  "unique": 0,
+  "description": "获得码界三魔器其二“代码蠹虫”"
+ },
+ "ac027": {
+  "unlocked": 0,
+  "premise": {
+   "DailyAtt": {
+    "energy": 150
+   }
+  },
+  "name": "精力UP！",
+  "buff": {
+   "points": 75
+  },
+  "unique": 0,
+  "description": "精力上限达到150"
+ },
+ "ac096": {
+  "unlocked": 0,
+  "premise": {
+   "Bag": "I099"
+  },
+  "name": "谬之高潮",
+  "buff": {
+   "CON": 3
+  },
+  "unique": 0,
+  "description": "获得码界三魔器其三“碧油鸡羽”"
+ },
+ "ac079": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Spec": "NO237"
+   }
+  },
+  "name": "大学特色·叁",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "网络工程A+"
+ },
+ "ac071": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Weekly": "NO128"
+   }
+  },
+  "name": "一码当先",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "高级语言程序设计实践"
+ },
+ "ac074": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Weekly": "NO134"
+   }
+  },
+  "name": "走码观花",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "算法与数据结构实践"
+ },
+ "ac002": {
+  "unlocked": 1,
+  "premise": {
+   "Count": {
+    "sign": 7
+   }
+  },
+  "name": "枝繁叶茂",
+  "buff": {
+   "WIL": 1
+  },
+  "unique": 0,
+  "description": "累计签到一周"
+ },
+ "ac023": {
+  "unlocked": 0,
+  "premise": {
+   "MainAtt": {
+    "SUM": 60
+   }
+  },
+  "name": "争分夺秒",
+  "buff": {
+   "points": 60
+  },
+  "unique": 0,
+  "description": "主属性点总和达到60”"
+ },
+ "ac083": {
+  "unlocked": 0,
+  "premise": {
+   "Count": {
+    "bottleSend": 10
+   }
+  },
+  "name": "瓶中时光",
+  "buff": {
+   "points": 50
+  },
+  "unique": 0,
+  "description": "送出的第十个漂流瓶"
+ },
+ "ac065": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Spec": "NO230"
+   }
+  },
+  "name": "热情相拥",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "猛烈相创"
+ },
+ "ac045": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Daily": "NO027"
+   }
+  },
+  "name": "思之书·叁",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "马克思主义基本原理，中国红色思想的基础。"
+ },
+ "ac057": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Weekly": "NO156"
+   }
+  },
+  "name": "二次元",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "没想到吧，学生AI也能模拟学生玩二次元。"
+ },
+ "ac056": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Weekly": "NO155"
+   }
+  },
+  "name": "校外商店",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "作为学生AI，模拟网购是服务学生的基本功能之一。"
+ },
+ "ac066": {
+  "unlocked": 0,
+  "premise": {
+   "Event": {
+    "Spec": "NO211"
+   }
+  },
+  "name": "破",
+  "buff": {
+   "points": 30
+  },
+  "unique": 0,
+  "description": "仪器见你如见阎王"
  }
 }
