@@ -580,7 +580,7 @@
             "description": "五彩斑斓的风筝，适合在悠闲的时光放飞。",
             "pre": {
                 "weather":"晴天",
-                "energy":50
+                "energy":">=50"
             },
             "buff": {
                 "mood":15,
@@ -718,7 +718,7 @@
             "price": 60,
             "description": "尝一口恶魔果实泡泡糖，仿佛能获得一种短暂的超能力体验。",
             "pre": {
-                "LUC":16
+                "LUC":">15"
             },
             "buff": {
                 "label":["动漫"],
@@ -1352,7 +1352,7 @@
             "buff": {
                 "category":["snack","study"],
                 "shop":"积分商店",
-                "random_item":1
+                "逻辑":"我不知道要咋写这个逻辑，反正就是积分商店的这2个类别道具里面随机赠送1个给玩家。"
             },
             "unique": 1,
             "acquired": false,
@@ -1371,7 +1371,7 @@
             "buff": {
                 "category":["anima","game","sport"],
                 "shop":"积分商店",
-                "random_item":2
+                "逻辑":"我不知道要咋写这个逻辑，反正就是积分商店的这3个类别道具里面随机赠送2个给玩家"
             },
             "unique": 1,
             "acquired": false,
@@ -1390,7 +1390,7 @@
             "buff": {
                 "category":["anima","sport","snack","study","comp"],
                 "shop":"积分商店",
-                "random_item":3
+                "逻辑":"我不知道要咋写这个逻辑，反正就是积分商店的这5个类别道具里面随机赠送3个给玩家"
             },
             "unique": 1,
             "acquired": false,

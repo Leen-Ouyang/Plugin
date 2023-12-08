@@ -107,7 +107,7 @@
             "discount":1,
             "pre":{
                 "label":["撸猫"],
-                "CatCounter":1
+                "petting_cat":1
             }
         },
         "I032":{
@@ -115,7 +115,8 @@
             "discount":1,
             "pre":{
                 "label":["撸猫","撸狗"],
-                "CatCounter":5
+                "petting_cat":5,
+                "petting_dog:":5
             }
         },
         "I033":{
@@ -123,7 +124,7 @@
             "discount":1,
             "pre":{
                 "label":["撸狗"],
-                "CatCounter":1
+                "petting_dog":1
             }
         },
         "I034":{
@@ -332,15 +333,14 @@
             "count":1,
             "discount":1,
             "pre":{
-                "PoiliticsCounter":8
+                "english_counter":5
             }
         },
         "I020":{
             "count":1,
             "discount":1,
             "pre":{
-                "INT":">12",
-                "MeetJasonCounter":5
+                "INT":">12"
             }
         },
         "I037":{
@@ -355,7 +355,7 @@
             "discount":1,
             "pre":{
                 "label":["动漫"],
-                "AnimaCounter":5
+                "anima_counter":5
             }
         },
         "I060":{
@@ -370,7 +370,7 @@
             "discount":1,
             "pre":{
                 "event":["NO161"],
-                "counter":3
+                "volunteer_counter":3
             }
         },
         "I065":{
@@ -391,7 +391,7 @@
             "count":1,
             "discount":1,
             "pre":{
-                "FailtoSleepCounter:":5
+                "CON":">12"
             }
         },
         "I093":{
