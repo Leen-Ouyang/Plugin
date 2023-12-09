@@ -69,12 +69,14 @@
         "I014":{
             "count":2,
             "discount":1,
+            "max_count":2,
             "pre":{
             }
         },
         "I015":{
             "count":1,
             "discount":1,
+            "max_count":1,
             "pre":{
             }
         },
@@ -87,6 +89,7 @@
         "I023":{
             "count":3,
             "discount":1,
+            "max_count":3,
             "pre":{
             }
         },
@@ -105,6 +108,7 @@
         "I031":{
             "count":1,
             "discount":1,
+            "max_count":1,
             "pre":{
                 "label":["撸猫"],
                 "petting_cat":1
@@ -113,6 +117,7 @@
         "I032":{
             "count":1,
             "discount":1,
+            "max_count":1,
             "pre":{
                 "label":["撸猫","撸狗"],
                 "petting_cat":5,
@@ -122,6 +127,7 @@
         "I033":{
             "count":1,
             "discount":1,
+            "max_count":1,
             "pre":{
                 "label":["撸狗"],
                 "petting_dog":1
@@ -130,6 +136,7 @@
         "I034":{
             "count":3,
             "discount":1,
+            "max_count":3,
             "pre":{
                 "weather":["晴天"]
             }
@@ -149,60 +156,70 @@
         "I041":{
             "count":1,
             "discount":1,
+            "max_count":1,
             "pre":{
             }
         },
         "I042":{
             "count":1,
             "discount":1,
+            "max_count":1,
             "pre":{
             }
         },
         "I044":{
             "count":1,
             "discount":1,
+            "max_count":1,
             "pre":{
             }
         },
         "I050":{
             "count":1,
             "discount":1,
+            "max_count":1,
             "pre":{
             }
         },
         "I051":{
             "count":1,
             "discount":1,
+            "max_count":1,
             "pre":{
             }
         },
         "I052":{
             "count":1,
             "discount":1,
+            "max_count":1,
             "pre":{
             }
         },
         "I053":{
             "count":1,
             "discount":1,
+            "max_count":1,
             "pre":{
             }
         },
         "I054":{
             "count":1,
             "discount":1,
+            "max_count":1,
             "pre":{
             }
         },
         "I055":{
             "count":1,
             "discount":1,
+            "max_count":1,
             "pre":{
             }
         },
         "I056":{
             "count":1,
             "discount":1,
+            "max_count":1,
             "pre":{
                 "wday":4
             }
@@ -210,6 +227,7 @@
         "I057":{
             "count":1,
             "discount":1,
+            "max_count":1,
             "pre":{
             }
         },
@@ -222,6 +240,7 @@
         "I071":{
             "count":1,
             "discount":1,
+            "max_count":1,
             "pre":{
             }
         },
@@ -340,7 +359,7 @@
             "count":1,
             "discount":1,
             "pre":{
-                "INT":">12"
+                "INT":"13"
             }
         },
         "I037":{
@@ -391,7 +410,7 @@
             "count":1,
             "discount":1,
             "pre":{
-                "CON":">12"
+                "CON":"13"
             }
         },
         "I093":{

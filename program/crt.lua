@@ -368,7 +368,8 @@ function createPlayer(msg)
             FailtoSleepCounter = 0,
             MeetJasonCounter = 0,
             PoiliticsCounter = 0,
-            CatCounter = 0,
+            petting_dog = 0,
+            petting_cat = 0,
             AnimaCounter = 0
             },
             Mainline = {

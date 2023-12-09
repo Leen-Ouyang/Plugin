@@ -44,10 +44,12 @@ function viewBag(msg)
     local bag = players[QQ]["Bag"]
     config.msg.item = config.msg.item:gsub("{point}", point)
     for k,v in pairs(bag) do
-        table.insert(items_id,k)
-        table.insert(count,v["count"])
         local item_count=v["count"]
-        num=num+item_count
+        if(item_count>0) then
+            table.insert(items_id,k)
+            table.insert(count,item_count)
+            num=num+item_count
+        end
     end
     config.msg.item = config.msg.item:gsub("{num}", num)
     for i=1,#items_id do
@@ -288,7 +290,7 @@ function UseItem(msg)
                 if(players == nil)then
                     players = {}
                 end
-                if(players[QQ]["Mainline"]~=val) then
+                if(players[QQ]["Mainline"]["Semester"]~=v) then
                     pre_flag=0
                     break
                 end
@@ -468,12 +470,8 @@ function UseItem(msg)
                                 shops = {}
                             end
                             local item_pre=shops["Common"][key]["pre"]
-                            local prenum=0
-                            for prename,preval in pairs(item_pre) do
-                                prenum=prenum+1
-                            end
                             local itempre_flag=1
-                            if(prenum>0) then
+                            if(item_pre~=nil) then
                                 for prename,preval in pairs(item_pre) do
                                     if(prename=="weather") then
                                         temp="temp.json"
@@ -482,22 +480,42 @@ function UseItem(msg)
                                         if(temps == nil)then
                                             temps = {}
                                         end
+                                        local weather=""
                                         for x,y in pairs(temps) do
                                             if(x=="weather") then
-                                                if(preval~=y) then
-                                                    itempre_flag=0
-                                                    break
-                                                end
+                                                weather=y
                                             end
                                         end
-                                    elseif(prename=="CatCounter") then
+                                        local weather_flag=0
+                                        for i=1,#preval do
+                                            if(preval[i]==weather) then
+                                                weather_flag=1
+                                                break
+                                            end
+                                        end
+                                        if(weather_flag==0) then
+                                            itempre_flag=0
+                                            break
+                                        end
+                                    elseif(prename=="wday") then
+                                        local time=os.date("*t")
+                                        local wday=time.wday
+                                        if (wday==1) then
+                                            wday=8
+                                        end
+                                        wday=wday-1
+                                        if(wday~=preval) then
+                                            pre_flag=0
+                                            break
+                                        end
+                                    elseif(prename=="petting_dog" or prename=="petting_cat") then
                                         player_information="player.json"
                                         data = getSelfData(player_information)
                                         players = data:get(nil, {})
                                         if(players == nil)then
                                             players = {}
                                         end
-                                        if(players[QQ]["Count"]["CatCounter"]<preval) then
+                                        if(players[QQ]["Count"][prename]<preval) then
                                             itempre_flag=0
                                             break
                                         end
@@ -505,7 +523,10 @@ function UseItem(msg)
                                 end
                             end
                             if(itempre_flag==1) then
-                                table.insert(itemid_list,key)
+                                local unique=ctgitems[key]["unique"]
+                                if(unique==-1) then
+                                    table.insert(itemid_list,key)
+                                end
                             end
                         end
                     end
@@ -513,10 +534,12 @@ function UseItem(msg)
                 local item_list={}
                 for j=1,random_item do
                     local rand_number=math.random(1, #itemid_list)
-                    table.insert(item_list,itemid_list[rand_number])
+                    local rand_id=itemid_list[rand_number]
+                    table.insert(item_list,rand_id)
                 end
                 local rand_name=""
                 for j=1,#item_list do
+                    local randid=item_list[j]
                     item_information="item.json"
                     item_data = getSelfData(item_information)
                     items = item_data:get(nil, {})
@@ -525,11 +548,11 @@ function UseItem(msg)
                     end
                     for key,val in pairs(items) do
                         for x,y in pairs(val) do
-                            if(x==item_list[i]) then
-                                if(i==#item_list) then
-                                    rand_name=rand_name..y["name"]
+                            if(x==randid) then
+                                if(j==#item_list) then
+                                    rand_name=rand_name.."「"..y["name"].."」"
                                 else
-                                    rand_name=rand_name..y["name"].."、"
+                                    rand_name=rand_name.."「"..y["name"].."」、"
                                 end
                                 local rem=y["max_usage"]
                                 local info={
@@ -542,14 +565,27 @@ function UseItem(msg)
                                 if(players == nil)then
                                     players = {}
                                 end
-                                players[QQ]["Bag"][x]=info
+                                local oflag=0
+                                local bags=players[QQ]["Bag"]
+                                for u,w in pairs(bags) do
+                                    if(u==randid) then
+                                        oflag=1
+                                        break
+                                    end
+                                end
+                                if(oflag==0) then
+                                    players[QQ]["Bag"][x]=info
+                                else
+                                    players[QQ]["Bag"][x]["count"]=players[QQ]["Bag"][x]["count"]+1
+                                    players[QQ]["Bag"][x]["remaining_usage"]=players[QQ]["Bag"][x]["remaining_usage"]+rem
+                                end
                                 data:set(players)
                                 break
                             end 
                         end
                     end
                 end
-                rand_info="恭喜获得道具"..rand_name                   
+                rand_info="恭喜获得道具"..rand_name                 
             end
             buff_num=0
             if(buff) then

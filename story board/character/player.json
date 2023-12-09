@@ -1,198 +1,222 @@
 {
- "1885027977": {
-  "DailyAtt": {
-   "energy": 31,
-   "mood_limit": 112,
-   "mood": 87,
-   "energy_limit": 109
-  },
-  "Info": {
-   "Introduction": "djgsfhkjdfhk",
-   "Nickname": "hjsfjgj",
-   "Job": "学生",
-   "Gender": "男"
-  },
-  "Event": {
-   "Weekly": {},
-   "Spec": {},
-   "Daily": {}
-  },
-  "Achievement": [
-   "ac000",
-   "ac001",
-   "ac002",
-   "ac003"
-  ],
-  "MainAtt": {
-   "LUC": 10,
-   "SUM": 38,
-   "CON": 9,
-   "WIL": 12,
-   "INT": 7
-  },
-  "Mainline": {
-   "FinishTimes": 0,
-   "credit": 0,
-   "rank": 0,
-   "Semester": 1
-  },
-  "Bag": {
-   "I004": {
-    "remaining_usage": 5,
-    "count": 1
-   },
-   "I014": {
-    "remaining_usage": 8,
-    "count": 2
-   },
-   "I020": {
-    "remaining_usage": -1,
-    "count": 1
-   },
-   "I025": {
-    "remaining_usage": 30,
-    "count": 3
-   },
-   "I000": {
-    "remaining_usage": 4,
-    "count": 1
-   },
-   "I084": {
-    "remaining_usage": 0,
-    "count": 0
-   }
-  },
-  "Inheritkey": "lEei9FqXQZ8nhCMF",
-  "points": 92,
-  "Count": {
-   "weekly": 0,
-   "bottleRecv": 0,
-   "daily": 0,
-   "exam": 0,
-   "PoiliticsCounter": 0,
-   "FailtoSleepCounter": 0,
-   "shop": 0,
-   "MeetJasonCounter": 0,
-   "board": 44,
-   "sign": 16,
-   "bottleCast": 0,
-   "disturb": 0,
-   "spec": 0,
-   "public": 0,
-   "bottleSend": 0,
-   "AnimaCounter":0
-  }
- },
- "76755379": {
-  "DailyAtt": {
-   "energy": 100,
-   "mood_limit": 100,
-   "mood": 100,
-   "energy_limit": 100
-  },
-  "Info": {
-   "Introduction": "经验+3，告辞",
-   "Nickname": "ljh",
-   "Job": "学生",
-   "Gender": "男"
-  },
-  "Event": {
-   "Weekly": {},
-   "Spec": {},
-   "Daily": {}
-  },
-  "Achievement": [
-   "ac000"
-  ],
-  "MainAtt": {
-   "LUC": 16,
-   "SUM": 46,
-   "CON": 10,
-   "WIL": 10,
-   "INT": 10
-  },
-  "Mainline": {
-   "FinishTimes": 0,
-   "credit": 0,
-   "rank": 514,
-   "Semester": 1
-  },
-  "Bag": {},
-  "Inheritkey": "dScBtEYV5eFgL7xI",
-  "points": 0,
-  "Count": {
-   "bottleRecv": 0,
-   "weekly": 0,
-   "bottleSend": 0,
-   "daily": 0,
-   "exam": 0,
-   "FailtoSleepCounter": 0,
-   "CatCounter": 0,
-   "shop": 0,
-   "board": 0,
-   "bottleCast": 0,
-   "sign": 0,
-   "PoiliticsCounter": 0,
-   "disturb": 0,
-   "spec": 0,
-   "public": 0,
-   "MeetJasonCounter": 0,
-   "AnimaCounter":0
-  }
- },
  "797093627": {
+  "points": 0,
+  "MainAtt": {
+   "CON": 3,
+   "LUC": 15,
+   "INT": 10,
+   "WIL": 5,
+   "SUM": 33
+  },
+  "Count": {
+   "board": 0,
+   "bottleRecv": 0,
+   "PoiliticsCounter": 0,
+   "bottleCast": 0,
+   "disturb": 0,
+   "public": 0,
+   "sign": 0,
+   "daily": 0,
+   "petting_dog": 0,
+   "exam": 0,
+   "spec": 0,
+   "FailtoSleepCounter": 0,
+   "MeetJasonCounter": 0,
+   "bottleSend": 0,
+   "petting_cat": 0,
+   "weekly": 0,
+   "AnimaCounter": 0,
+   "shop": 0
+  },
+  "Inheritkey": "cFHLbqDxdywynzoy",
+  "Event": {
+   "Spec": {},
+   "Weekly": {},
+   "Daily": {}
+  },
+  "Info": {
+   "Gender": "男",
+   "Introduction": " ",
+   "Job": "学生",
+   "Nickname": "天麟"
+  },
+  "Mainline": {
+   "rank": 0,
+   "FinishTimes": 0,
+   "Semester": 1,
+   "credit": 0
+  },
+  "Achievement": {},
   "DailyAtt": {
    "energy": 103,
    "mood_limit": 105,
    "mood": 105,
    "energy_limit": 103
   },
-  "Info": {
-   "Introduction": " ",
-   "Nickname": "天麟",
-   "Job": "学生",
-   "Gender": "男"
+  "Bag": {}
+ },
+ "76755379": {
+  "points": 0,
+  "MainAtt": {
+   "CON": 10,
+   "LUC": 16,
+   "INT": 10,
+   "WIL": 10,
+   "SUM": 46
   },
+  "Count": {
+   "board": 0,
+   "bottleRecv": 0,
+   "PoiliticsCounter": 0,
+   "bottleCast": 0,
+   "disturb": 0,
+   "public": 0,
+   "sign": 0,
+   "daily": 0,
+   "petting_dog": 0,
+   "exam": 0,
+   "spec": 0,
+   "FailtoSleepCounter": 0,
+   "MeetJasonCounter": 0,
+   "bottleSend": 0,
+   "petting_cat": 0,
+   "weekly": 0,
+   "AnimaCounter": 0,
+   "shop": 0
+  },
+  "Inheritkey": "dScBtEYV5eFgL7xI",
   "Event": {
-   "Weekly": {},
    "Spec": {},
+   "Weekly": {},
    "Daily": {}
   },
-  "Achievement": {},
-  "MainAtt": {
-   "LUC": 15,
-   "SUM": 33,
-   "CON": 3,
-   "WIL": 5,
-   "INT": 10
+  "Info": {
+   "Gender": "男",
+   "Introduction": "经验+3，告辞",
+   "Job": "学生",
+   "Nickname": "ljh"
   },
   "Mainline": {
+   "rank": 514,
    "FinishTimes": 0,
-   "credit": 0,
-   "rank": 0,
-   "Semester": 1
+   "Semester": 1,
+   "credit": 0
   },
-  "Bag": {},
-  "Inheritkey": "cFHLbqDxdywynzoy",
-  "points": 0,
+  "Achievement": [
+   "ac000"
+  ],
+  "DailyAtt": {
+   "energy": 100,
+   "mood_limit": 100,
+   "mood": 100,
+   "energy_limit": 100
+  },
+  "Bag": {}
+ },
+ "1885027977": {
+  "points": 52,
+  "MainAtt": {
+   "CON": 9,
+   "LUC": 10,
+   "INT": 7,
+   "WIL": 12,
+   "SUM": 38
+  },
   "Count": {
+   "board": 44,
    "bottleRecv": 0,
-   "weekly": 0,
-   "bottleSend": 0,
-   "daily": 0,
-   "exam": 0,
-   "FailtoSleepCounter": 0,
-   "CatCounter": 0,
-   "shop": 0,
-   "board": 0,
-   "bottleCast": 0,
-   "sign": 0,
    "PoiliticsCounter": 0,
+   "bottleCast": 0,
    "disturb": 0,
-   "spec": 0,
    "public": 0,
+   "sign": 16,
+   "daily": 0,
+   "petting_dog": 1,
+   "exam": 0,
+   "spec": 0,
+   "FailtoSleepCounter": 0,
    "MeetJasonCounter": 0,
-   "AnimaCounter":0
+   "bottleSend": 0,
+   "petting_cat": 1,
+   "weekly": 0,
+   "AnimaCounter": 0,
+   "shop": 0
+  },
+  "Inheritkey": "lEei9FqXQZ8nhCMF",
+  "Event": {
+   "Spec": {},
+   "Weekly": {},
+   "Daily": {}
+  },
+  "Info": {
+   "Gender": "男",
+   "Introduction": "djgsfhkjdfhk",
+   "Job": "学生",
+   "Nickname": "hjsfjgj"
+  },
+  "Mainline": {
+   "rank": 0,
+   "FinishTimes": 0,
+   "Semester": 1,
+   "credit": 0
+  },
+  "Achievement": [
+   "ac000",
+   "ac001",
+   "ac002",
+   "ac003",
+   "ac031",
+   "ac032",
+   "ac088",
+   "ac089"
+  ],
+  "DailyAtt": {
+   "energy": 31,
+   "mood_limit": 112,
+   "mood": 87,
+   "energy_limit": 109
+  },
+  "Bag": {
+   "I004": {
+    "count": 1,
+    "remaining_usage": 5
+   },
+   "I006": {
+    "count": 1,
+    "remaining_usage": 2
+   },
+   "I000": {
+    "count": 1,
+    "remaining_usage": 4
+   },
+   "I064": {
+    "count": 1,
+    "remaining_usage": -1
+   },
+   "I020": {
+    "count": 1,
+    "remaining_usage": -1
+   },
+   "I084": {
+    "count": 0,
+    "remaining_usage": 0
+   },
+   "I056": {
+    "count": 1,
+    "remaining_usage": 1
+   },
+   "I054": {
+    "count": 1,
+    "remaining_usage": 1
+   },
+   "I025": {
+    "count": 3,
+    "remaining_usage": 30
+   },
+   "I014": {
+    "count": 2,
+    "remaining_usage": 8
+   }
   }
  }
 }
