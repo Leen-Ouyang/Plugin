@@ -322,6 +322,13 @@ function createPlayer(msg)
     if(players == nil)then
         players = {}
     end
+    local player_num=0
+    for k,v in pairs(players) do
+        local rank=v["Mainline"]["rank"]
+        if(rank>0) then
+            player_num=player_num+1
+        end
+    end
     if (players[tostring(userQQ)]) then
         if (tonumber(players[tostring(userQQ)]["Mainline"]["FinishTimes"])>0) then
             achievement=players[tostring(userQQ)]["Achievement"]
@@ -386,6 +393,7 @@ function createPlayer(msg)
     }
     players[userQQ]=information
     players[userQQ]["Achievement"]=achievement
+    players[userQQ]["Mainline"]["rank"]=player_num
     data:set(players)
     local currentTime = os.date("*t")
     local currentYear = currentTime.year
