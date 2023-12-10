@@ -108,6 +108,7 @@
         "I021":{
             "count":1,
             "discount":1,
+            "max_count":1,
             "pre":{
             }
         },
