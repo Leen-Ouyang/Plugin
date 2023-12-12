@@ -75,6 +75,10 @@ for key,value in pairs(shop) do
     end
 end
 
+local weather={"晴天","阴天","雨天"}
+local rand=math.random(1,#weather)
+temp["weather"]=weather[rand]
+
 data:set(temp)
 data1:set(event)
 data2:set(player)
