@@ -1,0 +1,933 @@
+{
+  "Daily": {
+    "NO000": [
+      {
+        "title": "用餐时间",
+        "description": "今天你和朋友一起到食堂吃饭，你们一边吃饭，一边聊天。",
+        "place": "canteen",
+        "label": "生活",
+        "pre": {},
+        "odds": 0.15,
+        "count": 1,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+        "success": "你们的话匣子一下子打开了，顺畅的聊天，让原本平淡无奇的饭菜变得格外美味。",
+        "failure": "你和朋友聊着聊着突然出现了分歧，然后开始争论起来，你们两个都没了食欲。",
+        "change": {
+          "point": 5
+        },
+        "energy": 15,
+        "mood": 20,
+        "limit": "null"
+      },
+      {
+        "title": "用餐时间",
+        "description": "今天没有好友陪伴，又是一个人在食堂用餐。",
+        "place": "canteen",
+        "label": "生活",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+        "success": "也许是饥饿的原因，今天的食物味道格外美味，你心满意足地炫完了餐，一点残渣都不剩。",
+        "failure": "食物的味道平淡无奇，食堂里又拥挤，你皱着眉头，勉强吃完了今天的午餐。",
+        "change": {
+          "point": 5
+        },
+        "energy": 15,
+        "mood": 10,
+        "limit": "null"
+      },
+      {
+        "title": "用餐时间",
+        "description": "今天在宿舍用餐，味道很平淡，你决定观看视频下饭。",
+        "place": "dormitory",
+        "label": "生活",
+        "pre": {},
+        "odds": 0.15,
+        "count": 1,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+        "success": "这期的电子榨菜非常下饭，出乎你的意料，你食欲大增，三下五除二就把餐炫完了。",
+        "failure": "这期的电子榨菜一点都不下饭，出乎你的意料，你食欲不振，餐没吃完就倒掉了。",
+        "change": {
+          "point": 5
+        },
+        "energy": 15,
+        "mood": 5,
+        "limit": "null"
+      },
+      {
+        "title": "用餐时间",
+        "description": "你饥肠辘辘，独自一人来到食堂，却发现每一个档口都大排长龙。",
+        "place": "canteen",
+        "label": "生活",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+        "success": "尽管等待时间很长，你仍然坚持不懈地排队等待，并最终吃上了晚饭。",
+        "failure": "等待时间过长，让你感到饥饿和不耐烦，你无奈回到宿舍泡面或吃一些零食来充饥。",
+        "change": {
+          "point": 5
+        },
+        "energy": 15,
+        "mood": 5,
+        "limit": "null"
+      },
+      {
+        "title": "用餐时间",
+        "description": "由于懒得去食堂吃饭，你打开了米团APP点了一份外卖，不久就收到了外卖已送达的消息。",
+        "place": "dormitory",
+        "label": "生活",
+        "pre": {},
+        "odds": 0.1,
+        "count": 1,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+        "success": "你下楼查看外卖架，经过一番查找，发现了自己的外卖，取外卖-上楼-干饭，整个过程非常顺畅。",
+        "failure": "你慢悠悠地下楼查看外卖架，找了很久，外卖架上迟迟不见踪影，你只好重新点餐。",
+        "change": {
+          "point": 5
+        },
+        "energy": 15,
+        "mood": 0,
+        "limit": "null"
+      }
+    ],
+    "NO001": [
+      {
+        "title": "高等数学（上）",
+        "description": "数学公式和方程填满了前方的黑板，老师讲解得有声有色，你积极参与互动。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.5,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+        "success": "在老师的引导下，你成功地理解了一些复杂的数学概念和公式，并且能够运用它们解决问题。",
+        "failure": "尽管你努力参与互动，但你发现自己的理解并不如其他同学那样深刻，你感到有些失落和困惑。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "Semster1"
+      },
+      {
+        "title": "高等数学（上）",
+        "description": "听着老师讲课，你试图跟上节奏，然而老师的声音对你来说就是一首摇篮曲。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.3,
+        "count": 1,
+        "judge": "WIL",
+        "ending": 1,
+        "diff": 10,
+        "success": "尽管你感到疲倦，但你成功地坚持听完了整节课，在困意中吸收了一点知识。",
+        "failure": "尽管你试图保持清醒，但你愈发觉得困倦，于是趴在桌上睡了一整节课。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 5,
+        "limit": "Semster1"
+      },
+      {
+        "title": "高等数学（上）",
+        "description": "听着老师讲课，你觉得自己跟不上节奏，于是掏出口袋里的爱机打算自学。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.15,
+        "count": 1,
+        "judge": "WIL",
+        "ending": 1,
+        "diff": 10,
+        "success": "你打开了霹雳霹雳，点开了宋浩老师的高数视频，吸收了不少高数知识。",
+        "failure": "你打开了霹雳霹雳，却被首页的推荐吸引，你无心学习，连刷了多条短视频。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "Semster1"
+      }
+    ],
+    "NO002": [
+      {
+        "title": "线性代数",
+        "description": "老师照着PPT棒读讲课内容的方式让你感到无聊，你掏出了手机打算自习。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.4,
+        "count": 1,
+        "judge": "WIL",
+        "ending": 1,
+        "diff": 10,
+        "success": "凭借着强大的自制力，你在自学过程中丝毫不为短视频所动，成功get到技能点。",
+        "failure": "锁屏界面出现了帖子推送通知，极大吸引了你的兴趣，于是你收获了一堆乐子。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 5,
+        "limit": "Semster1"
+      },
+      {
+        "title": "线性代数",
+        "description": "今天你决定认真听课，你试图跟上节奏，然而老师的声音对你来说就是一首摇篮曲。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.3,
+        "count": 1,
+        "judge": "WIL",
+        "ending": 1,
+        "diff": 10,
+        "success": "尽管你感到疲倦，但你成功地坚持听完了整节课，在困意中吸收了一点知识。",
+        "failure": "尽管你试图保持清醒，但你愈发觉得困倦，于是趴在桌上睡了一整节课。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 5,
+        "limit": "Semster1"
+      },
+      {
+        "title": "线性代数",
+        "description": "由于事先预习过，你认为这节课可以让你的线代知识库锦上添花。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.25,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+        "success": "在听课过程中，你发现自己的预习不够详细全面，趁此机会补上了缺的这块营养。",
+        "failure": "在听课过程中，你发现老师讲的这些东西你都掌握了，成功地浪费了一节课的时间。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "Semster1"
+      }
+    ],
+    "NO003": [
+      {
+        "title": "高级语言程序设计",
+        "description": "老师照着PPT棒读讲课内容的方式让你感到无聊，你掏出了手机打算自习。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.4,
+        "count": 1,
+        "judge": "WIL",
+        "ending": 1,
+        "diff": 10,
+        "success": "凭借着强大的自制力，你在自学过程中丝毫不为短视频所动，成功get到技能点。",
+        "failure": "锁屏界面出现了视频推送通知，极大吸引了你的兴趣，于是你收获了一堆乐子。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "Semster1"
+      },
+      {
+        "title": "高级语言程序设计",
+        "description": "由于提前自学过，你对这节课不屑一顾，掏出手机开始玩。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "WIL",
+        "ending": 0,
+        "diff": 10,
+        "success": "你在千度论坛发现了一个非常乐的帖子，忍不住放声大笑，老师的眼睛直勾勾地盯着你。",
+        "failure": "你刷到了令你忍俊不禁的短视频，然而在强大意志的加持下你忍住了。",
+        "change": {
+          "credit": -1
+        },
+        "energy": -10,
+        "mood": 0,
+        "limit": "Semster1"
+      },
+      {
+        "title": "高级语言程序设计",
+        "description": "由于没有提前自学过相关内容，这节课你打算认真听讲。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.3,
+        "count": 1,
+        "judge": "CON",
+        "ending": 1,
+        "diff": 10,
+        "success": "凭借着旺盛精力和强大的理解能力，你成功学习了这节课所讲的语法。",
+        "failure": "昨晚熬夜导致你这节课精神不振，你没听几分钟就趴在桌上睡着了。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "Semster1"
+      }
+    ],
+    "NO004": [
+      {
+        "title": "计算机学科导论",
+        "description": "得知导论课是开卷考，你索性放弃听课，掏出了高数课本开始自习。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.95,
+        "count": 1,
+        "judge": "WIL",
+        "ending": 1,
+        "diff": 10,
+        "success": "凭借着强大的意志，你在自学过程中丝毫不为外界所干扰，成功完成自习目标。",
+        "failure": "突然手机响了一声，你下意识掏出手机，被锁屏界面的推送所吸引，放弃了自习。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "Semster1"
+      }
+    ],
+    "NO005": [
+      {
+        "title": "体育（一）",
+        "description": "按照惯例，体育课前几min需要慢跑1km以热身，你信心满满，认为自己能完成。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.45,
+        "count": 1,
+        "judge": "CON",
+        "ending": 1,
+        "diff": 10,
+        "success": "由于良好的身体素质，你成功完成了1km慢跑热身，全身的运动细胞成功激活。",
+        "failure": "由于平时缺乏锻炼，你慢跑了一圈半就坚持不住，只能偷懒走回原地。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 5,
+        "limit": "Semster1"
+      },
+      {
+        "title": "体育（一）",
+        "description": "按照惯例，体育课前几min需要慢跑1km以热身，你今天状态有点不好。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.5,
+        "count": 1,
+        "judge": "WIL",
+        "ending": 1,
+        "diff": 15,
+        "success": "虽然不在状态，但是凭借顽强的毅力，你成功完成了1km热身。",
+        "failure": "由于心理素质一般，你中途便坚持不住，只能偷懒走回原地。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "Semster1"
+      }
+    ],
+    "NO006": [
+      {
+        "title": "大学英语（二）",
+        "description": "英语老师上课非常喜欢整烂活，今天是课前的U校园听力练习。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.3,
+        "count": 1,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+        "success": "过程非常折磨，你只能根据听到的那几个单词来做判断，然而结果出乎意料，你蒙对了大部分题目。",
+        "failure": "每个单词都听得懂，但是连在一起就听不懂了，你被这勾八听力绕晕了，选择直接摆烂。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": -5,
+        "limit": "Semster1"
+      },
+      {
+        "title": "大学英语（二）",
+        "description": "英语老师上课非常喜欢整烂活，今天是牢记并背诵英语课文。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.3,
+        "count": 1,
+        "judge": "WIL",
+        "ending": 1,
+        "diff": 10,
+        "success": "在强大意志的加持下，你屏蔽了一切外界干扰，成功熟记并背诵了英语课文。",
+        "failure": "你试图牢记课文，然而旁边同学的诵读声却使你久久不能安下心来，你果断摆烂了。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": -5,
+        "limit": "Semster1"
+      },
+      {
+        "title": "大学英语（二）",
+        "description": "英语老师上课非常喜欢整烂活，今天是两人一组，互相用英语交谈所给话题。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.3,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+        "success": "凭借着你和队友的默契和强大的理解能力，你们练习了几遍后就顺畅地完成了交谈。",
+        "failure": "双方默契匹配度基本为0，你和队友之间的谈话如同鸡同鸭讲，练习了n遍依旧如此。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": -5,
+        "limit": "Semster1"
+      }
+    ],
+    "NO007": [
+      {
+        "title": "思想道德与法治",
+        "description": "你认为思政课和心理课一样都是水课，所以你开始掏出纸笔写作业。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.4,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+        "success": "你写作业时的状态非常投入，但你用见闻色霸气注意到了老师的走进，迅速地收起练习，逃过一劫。",
+        "failure": "你写作业时的状态非常投入，以至于没有注意到老师的身影走进，老师拍了拍你，露出邪魅一笑。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 5,
+        "limit": "Semster1"
+      },
+      {
+        "title": "思想道德与法治",
+        "description": "你认为思政课和心理课一样都是水课，所以你掏出手机玩《铁锹互殴》。",
+        "place": "classroom",
+        "label": "游戏",
+        "pre": {},
+        "odds": 0.5,
+        "count": 1,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+        "success": "老师并没有下台巡视，你在运气和实力的双重加持下，在下课时成功吃鸡。",
+        "failure": "由于这节课老师频繁下台巡视，你的节奏被打乱了，喜提老八出局。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 5,
+        "limit": "Semster1"
+      }
+    ],
+    "NO008": [
+      {
+        "title": "高等数学（下）",
+        "description": "由于事先做好了预习，在课堂上你可以精神饱满地跟上老师的步伐。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.5,
+        "count": 1,
+        "judge": "INT",
+        "ending": 1,
+        "diff": 10,
+        "success": "老师提出问题时，你自告奋勇地举手了，并且正确地回答了问题，老师满意地点了点头。",
+        "failure": "老师提出问题时，你自告奋勇地举手了，然而由于粗心而答错，你感到很尴尬。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "Semster2"
+      },
+      {
+        "title": "高等数学（下）",
+        "description": "望着PPT上各种眼花缭乱的积分，你感到难以理解，昏昏欲睡。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.3,
+        "count": 1,
+        "judge": "WIL",
+        "ending": 1,
+        "diff": 10,
+        "success": "尽管睡意缠绕着你，但在你的强大意志下成功坚持住了，在睡意中吸收了一点知识。",
+        "failure": "尽管你试图睁大眼睛以抵抗睡意，但还是失败了，你趴在桌上睡了一整节课。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 5,
+        "limit": "Semster2"
+      },
+      {
+        "title": "高等数学（下）",
+        "description": "面对难以理解的奇怪积分和老师的催眠曲，你决定掏出口袋里的爱机自学。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.15,
+        "count": 1,
+        "judge": "WIL",
+        "ending": 1,
+        "diff": 10,
+        "success": "你打开了霹雳霹雳，观看了宋浩老师的高数视频，从中获取了不少的积分知识。",
+        "failure": "你打开了霹雳霹雳，却被首页的推荐吸引，你无心学习，连刷了多条短视频。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 5,
+        "limit": "Semster2"
+      }
+    ],
+    "NO009": [
+      {
+        "title": "面向对象程序设计",
+        "description": "老师的讲课的节奏太快，你深知自己跟不上，于是掏出了手机打算自习。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.4,
+        "count": 1,
+        "judge": "WIL",
+        "ending": 1,
+        "diff": 10,
+        "success": "凭借着强大的自制力，你在自学过程中丝毫不为短视频所动，成功get到技能点。",
+        "failure": "锁屏界面出现了视频推送通知，极大吸引了你的兴趣，于是你收获了一堆乐子。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "Semster1"
+      },
+      {
+        "title": "面向对象程序设计",
+        "description": "由于提前自学过，你对自己充满信心，索性不听课，掏出手机开始玩。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.2,
+        "count": 1,
+        "judge": "WIL",
+        "ending": 0,
+        "diff": 10,
+        "success": "你刷到了一个非常乐的短视频，忍不住放声大笑，院长的眼睛直勾勾地盯着你。",
+        "failure": "你刷到了令你忍俊不禁的帖子，然而在强大意志的加持下你忍住了。",
+        "change": {
+          "credit": -1
+        },
+        "energy": -10,
+        "mood": 0,
+        "limit": "Semster1"
+      },
+      {
+        "title": "面向对象程序设计",
+        "description": "由于没有提前自学过相关内容，这节课你打算认真听讲。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {},
+        "odds": 0.3,
+        "count": 1,
+        "judge": "CON",
+        "ending": 1,
+        "diff": 10,
+        "success": "凭借着旺盛精力和强大的理解能力，你成功学习了这节课所讲的内容。",
+        "failure": "昨晚熬夜导致你这节课精神不振，你没听几分钟就趴在桌上睡着了。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "Semster1"
+      }
+    ]
+  },
+
+  "Weekly": {
+  },
+
+  "Spec": {
+    "NO200": [
+      {
+        "title": "忍饥挨饿",
+        "description": "也许是起得太晚，也许是事情太忙，你没时间用餐，就去做其他事了。",
+        "place": "dormitory",
+        "label": "早餐",
+        "pre": {
+          "event": [ "Daily", "NO000" ]
+        },
+        "odds": 0.1,
+        "judge": "WIL",
+        "ending": 1,
+        "diff": 10,
+        "success": "在内外强大力量的加持下，你成功抗住了饥饿。",
+        "failure": "你试图用躯体和意念硬刚饥饿，果不其然地失败了。",
+        "change": {
+          "WIL": 2
+        },
+        "energy": -15,
+        "mood": -10,
+        "limit": "null"
+      },
+      {
+        "title": "因噎废食",
+        "description": "你和朋友边吃饭边聊天，突然噎住了。",
+
+        "place": "canteen",
+        "label": "食物",
+        "pre": {
+          "event": [ "Daily", "NO000" ]
+        },
+        "odds": 0.03,
+        "judge": "CON",
+        "ending": 1,
+        "diff": 10,
+        "success": "虽然朋友帮你摆脱了危险，但是你早已食欲全无。",
+        "failure": "在朋友的帮助下，你摆脱了危险，紧皱的眉头舒缓开来。",
+        "change": {
+          "point": -10
+        },
+        "energy": -15,
+        "mood": -10,
+        "limit": "null"
+      },
+      {
+        "title": "《半条命》",
+        "description": "你不小心吃到了有毒的食物，顿感头晕目眩。",
+        "place": "canteen",
+        "label": "食物",
+        "pre": {
+          "event": [ "Daily", "NO000" ]
+        },
+        "odds": 0.02,
+        "judge": "CON",
+        "ending": 0,
+        "diff": 10,
+        "success": "食物毒性太强，你的大脑受到损伤，需要一年才能恢复。",
+        "failure": "由于身心强大，你很快便恢复正常，找回了丢失的半条命。",
+        "change": {
+          "point": -30,
+          "credit": -30
+        },
+        "energy": -50,
+        "mood": -30,
+        "limit": "null"
+      },
+      {
+        "title": "饭前一排",
+        "description": "饭点到了，正打算去吃饭时，你突然想上厕所。",
+        "place": "canteen",
+        "label": "食物",
+        "pre": {
+          "event": [ "Daily", "NO000" ]
+        },
+        "odds": 0.05,
+        "judge": "LUC",
+        "ending": 0,
+        "diff": 10,
+        "success": "你在厕所里发现了没有冲下去的答辩，突然你大病发作，忍不住吃了起来，嗯，OC~",
+        "failure": "你在厕所里顺畅地出恭，排空的瞬间身心非常舒畅，食欲也变得更强了。",
+        "change": {
+          "point": 30
+        },
+        "energy": 50,
+        "mood": 30,
+        "limit": "null"
+      }
+    ],
+    "NO201": [
+      {
+        "title": "高数课前的灾难",
+        "description": "你在前往教室的路上时，被一辆疾驰的电动车创了，这正如多数学生学习高数的开端。",
+        "place": "compus",
+        "label": "车祸",
+        "pre": {
+          "event": [ "Daily", "NO001" ]
+        },
+        "odds": 0.05,
+        "judge": "CON",
+        "ending": 0,
+        "diff": 10,
+        "success": "由于伤势过重难以快速恢复，你被迫接收了留级的命运。",
+        "failure": "凭借强健的躯体和不屈的意志，几周后你大致恢复了健康。",
+        "change": {
+          "point": -20,
+          "credit": -30
+        },
+        "energy": -50,
+        "mood": -30,
+        "limit": "null"
+      }
+    ],
+    "NO202": [
+      {
+        "title": "可莉矩阵",
+        "description": "线代老师在讲到“可逆矩阵”这个名词时，你DNA动了，下意识来了句：“卧槽，这不是我们根行的可莉吗！”。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {
+          "event": [ "Daily", "NO002" ]
+        },
+        "odds": 0.05,
+        "judge": "INT",
+        "ending": 0,
+        "diff": 10,
+        "success": "由于没控制好音量，你瞬间被所有人的目光所聚焦，老师脸上也稍有不满。",
+        "failure": "由于控制住了音量，你成功地避开了老师的注意，避免了被扣平时分的命运。",
+        "change": {
+          "credit": -1
+        },
+        "energy": -50,
+        "mood": -30,
+        "limit": "null"
+      }
+    ],
+    "NO203": [
+      {
+        "title": "Error!",
+        "description": "这是你这节课第n次测试代码。出于好奇，你输入了一个与题目毫不相关的用例，突然……",
+        "place": "compus",
+        "label": "学习",
+        "pre": {
+          "event": [ "Daily", "NO003" ]
+        },
+        "odds": 0.05,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 0,
+        "success": "你穿越到了一个骚乱的慕尼黑啤酒馆，此时你面前摆着一碗炒饭，你伸手打算一探究竟。手指触碰碗壁的一瞬间，你穿越回了机房，此时那碗炒饭也出现在你的书包里……",
+        "failure": "",
+        "change": {
+          "Bag": "I097"
+        },
+        "energy": -20,
+        "mood": -10,
+        "limit": "null"
+      }
+    ],
+    "NO204": [
+      {
+        "title": "导·论",
+        "description": "在导论这门水课上，你在霹雳霹雳平台水着视频，突然刷到了雷电将军的泳装热舞，你的下面顿时来了反应。",
+        "place": "compus",
+        "label": "学习",
+        "pre": {
+          "event": [ "Daily", "NO004" ]
+        },
+        "odds": 0.05,
+        "judge": "WIL",
+        "ending": 0,
+        "diff": 0,
+        "success": "你忍不住脱下了裤子开始紫薇，不一会儿，黏稠物从下面喷出，溅到了课桌上，散发着不可描述的味道，吸引了周围的目光。",
+        "failure": "在大脑的顽强抵抗下，你的内裤和课桌成功地避免了被沾湿的命运。",
+        "change": {
+          "point": 69
+        },
+        "energy": -20,
+        "mood": -10,
+        "limit": "null"
+      }
+    ],
+    "NO205": [
+      {
+        "title": "两眼一黑",
+        "description": "这节体育课，由于运动不当，你在跑步途中体力不支，顿时昏厥过去。",
+        "place": "compus",
+        "label": "学习",
+        "pre": {
+          "event": [ "Daily", "NO005" ]
+        },
+        "odds": 0.05,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+        "success": "同学及时发现了你，在体育老师和同学们的帮助下，你很快便恢复过来。",
+        "failure": "过了好一会儿，同学才发现你的存在，然而此时你只能被送往校医疗室。",
+        "change": {
+          "point": 30
+        },
+        "energy": -30,
+        "mood": -10,
+        "limit": "null"
+      }
+    ],
+    "NO206": [
+      {
+        "title": "难得的平静",
+        "description": "这节英语课，老师居然不整烂活了，整节课下来非常平静。",
+        "place": "compus",
+        "label": "学习",
+        "pre": {
+          "event": [ "Daily", "NO005" ]
+        },
+        "odds": 0.1,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+        "success": "你惊讶于这场平静，顺利地听完了这节难得的英语课，get了不少语法内容。",
+        "failure": "或许是不习惯这样的平静，你掏出了手机开始自娱自乐，课堂仿佛与你无关。",
+        "change": {
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "null"
+      }
+    ],
+    "NO207": [
+      {
+        "title": "认真听课",
+        "description": "这节课你没带练习和课本，手机也因为忘记充电而没电，你只能乖乖听课。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {
+          "event": [ "Daily", "NO007" ]
+        },
+        "odds": 0.1,
+        "judge": "CON",
+        "ending": 0,
+        "diff": 10,
+        "success": "由于睡眠充足，你居然听了一整节心理课，自己都感到不可思议。",
+        "failure": "昨晚没睡好，你听着听着，半节课不到就趴在桌子上睡觉了。",
+        "change": {
+          "point": 25,
+          "credit": 1
+        },
+        "energy": -20,
+        "mood": 10,
+        "limit": "null"
+      }
+    ],
+    "NO208": [
+      {
+        "title": "逆天录播",
+        "description": "每次高数课结束后，老师都会在教室的电脑上留下录播，你今天决定把录播拷下来，然后观看录播来温习。回到宿舍，你打开并观看了录播。这段录播并没有到老师下课才结束，出于好奇，你继续观看下去，只见人都散了，只剩下一对情侣在教室。他们先在教室看了一个小时h片，而后启动《根行》做剧情，最后他们进入了实战，在教室快活了一番。",
+        "place": "dormitory",
+        "label": "意外",
+        "pre": {
+          "event": [ "Daily", "NO008" ]
+        },
+        "odds": 0.05,
+        "judge": "WIL",
+        "ending": 1,
+        "diff": 10,
+        "success": "看到如此大瓜，你果断打开千度论坛，发现了有关此事的帖子，满意地离开了。",
+        "failure": "你对这样的画面感到不适，一股恶心的信号从你大脑传来，你差点就呕了出来。",
+        "change": {
+          "point": 69
+        },
+        "energy": -10,
+        "mood": 0,
+        "limit": "null"
+      }
+    ],
+    "NO209": [
+      {
+        "title": "遗失的眼镜",
+        "description": "下课了，老师匆匆走出教室，在讲台上落下了一副眼镜。凭借着尖锐的眼力，你发现了那副看似不起眼的眼镜，打算还给The栋老师。就在手指触碰的瞬间，一道亮光将你包围……",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {
+          "event": [ "Daily", "NO003" ]
+        },
+        "odds": 0.05,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 0,
+        "success": "你穿越到了一片空白，此时一个形似The栋的人站在你面前，他开口了：“我是学院的第114位守护者，第514位天选之人，请你双手接下这幅探谬之镜”。你双手接下了神器，顿时穿越回了教室，刚刚的所见所闻仿佛梦境一般，然而那副眼镜却实实在在在你手心……",
+        "failure": "",
+        "change": {
+          "Bag": "I095"
+        },
+        "energy": -20,
+        "mood": -10,
+        "limit": "null"
+      }
+    ],
+    "NO248": [
+      {
+        "title": "认真听课",
+        "description": "由于奇怪的原因，今天你破天荒地准备认真听行策课。",
+        "place": "classroom",
+        "label": "学习",
+        "pre": {
+          "event": [ "Daily", "NO048" ]
+        },
+        "odds": 0.16,
+        "judge": "CON",
+        "ending": 1,
+        "diff": 10,
+        "success": "由于睡眠充足，你思政课听得津津有味，自己都感到不可思议。",
+        "failure": "由于昨晚没睡好，你听着听着，半节课不到就趴在桌子上睡觉了。",
+        "change": {
+          "point": 25,
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "null"
+      },
+      {
+        "title": "原来你也……",
+        "description": "你认为行策课是水课，所以掏出手机启动《根行》。",
+        "place": "compus",
+        "label": "学习",
+        "pre": {
+          "event": [ "Daily", "NO048" ]
+        },
+        "odds": 0.04,
+        "judge": "LUC",
+        "ending": 1,
+        "diff": 10,
+        "success": "突然老师出现在你身后，你以为老师要动怒了，这时老师开口了：“原来，你也玩根行！”，你满脸震惊，同学们哄堂大笑。",
+        "failure": "突然老师出现在你身后，他露出了核善的笑容，周围的人也幸灾乐祸地看着你，你尴尬地抠着脚趾，恨不得找个地洞钻进去。",
+        "change": {
+          "point": 30,
+          "credit": 1
+        },
+        "energy": -10,
+        "mood": 10,
+        "limit": "null"
+      }
+    ]
+  }
+}

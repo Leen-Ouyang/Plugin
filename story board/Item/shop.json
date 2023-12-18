@@ -1,239 +1,547 @@
 {
     "Common":{
-        "000":{
+        "I000":{
             "count":3,
             "discount":1,
             "pre":{
             }
         },
-        "001":{
+        "I001":{
             "count":3,
             "discount":1,
             "pre":{
             }
         },
-        "002":{
+        "I002":{
+            "count":3,
+            "discount":1,
+            "pre":{
+            }
+        },
+        "I003":{
+            "count":3,
+            "discount":1,
+            "pre":{
+            }
+        },
+        "I004":{
+            "count":3,
+            "discount":1,
+            "pre":{
+            }
+        },
+        "I005":{
+            "count":3,
+            "discount":1,
+            "pre":{
+            }
+        },
+        "I006":{
+            "count":3,
+            "discount":1,
+            "pre":{
+            }
+        },
+        "I007":{
+            "count":3,
+            "discount":1,
+            "pre":{
+            }
+        },
+        "I008":{
+            "count":3,
+            "discount":1,
+            "pre":{
+            }
+        },
+        "I009":{
+            "count":3,
+            "discount":1,
+            "pre":{
+            }
+        },
+        "I010":{
+            "count":3,
+            "discount":1,
+            "pre":{
+            }
+        },
+        "I014":{
             "count":2,
             "discount":1,
+            "max_count":2,
             "pre":{
             }
         },
-        "003":{
-            "count":2,
+        "I015":{
+            "count":1,
+            "discount":1,
+            "max_count":1,
+            "pre":{
+            }
+        },
+        "I022":{
+            "count":1,
             "discount":1,
             "pre":{
             }
         },
-        "004":{
-            "count":2,
+        "I023":{
+            "count":3,
+            "discount":1,
+            "max_count":3,
+            "pre":{
+            }
+        },
+        "I024":{
+            "count":1,
             "discount":1,
             "pre":{
             }
         },
-        "005":{
+        "I025":{
+            "count":1,
+            "discount":1,
+            "pre":{
+            }
+        },
+        "I021":{
+            "count":1,
+            "discount":1,
+            "max_count":1,
+            "pre":{
+            }
+        },
+        "I031":{
+            "count":1,
+            "discount":1,
+            "max_count":1,
+            "pre":{
+                "label":["撸猫"],
+                "petting_cat":1
+            }
+        },
+        "I032":{
+            "count":1,
+            "discount":1,
+            "max_count":1,
+            "pre":{
+                "label":["撸猫","撸狗"],
+                "petting_cat":5,
+                "petting_dog:":5
+            }
+        },
+        "I033":{
+            "count":1,
+            "discount":1,
+            "max_count":1,
+            "pre":{
+                "label":["撸狗"],
+                "petting_dog":1
+            }
+        },
+        "I034":{
+            "count":3,
+            "discount":1,
+            "max_count":3,
+            "pre":{
+                "weather":["晴天"]
+            }
+        },
+        "I035":{
             "count":3,
             "discount":1,
             "pre":{
             }
         },
-        "006":{
+        "I036":{
             "count":3,
             "discount":1,
             "pre":{
             }
         },
-        "007":{
-            "count":5,
+        "I041":{
+            "count":1,
             "discount":1,
+            "max_count":1,
             "pre":{
             }
         },
-        "014":{
-            "count":2,
+        "I042":{
+            "count":1,
             "discount":1,
+            "max_count":1,
             "pre":{
             }
         },
-        "015":{
+        "I044":{
+            "count":1,
+            "discount":1,
+            "max_count":1,
+            "pre":{
+            }
+        },
+        "I050":{
+            "count":1,
+            "discount":1,
+            "max_count":1,
+            "pre":{
+            }
+        },
+        "I051":{
+            "count":1,
+            "discount":1,
+            "max_count":1,
+            "pre":{
+            }
+        },
+        "I052":{
+            "count":1,
+            "discount":1,
+            "max_count":1,
+            "pre":{
+            }
+        },
+        "I053":{
+            "count":1,
+            "discount":1,
+            "max_count":1,
+            "pre":{
+            }
+        },
+        "I054":{
+            "count":1,
+            "discount":1,
+            "max_count":1,
+            "pre":{
+            }
+        },
+        "I055":{
+            "count":1,
+            "discount":1,
+            "max_count":1,
+            "pre":{
+            }
+        },
+        "I056":{
+            "count":1,
+            "discount":1,
+            "max_count":1,
+            "pre":{
+                "wday":4
+            }
+        },
+        "I057":{
+            "count":1,
+            "discount":1,
+            "max_count":1,
+            "pre":{
+            }
+        },
+        "I066":{
+            "count":1,
+            "discount":1,
+            "max_count":1,
+            "pre":{
+            }
+        },
+        "I070":{
             "count":1,
             "discount":1,
             "pre":{
             }
         },
-        "022":{
+        "I071":{
             "count":1,
             "discount":1,
-            "pre":{
-            }
-        },
-        "023":{
-            "count":3,
-            "discount":1,
-            "pre":{
-            }
-        },
-        "024":{
-            "count":1,
-            "discount":1,
-            "pre":{
-                "event":"迟到"
-            }
-        },
-        "025":{
-            "count":1,
-            "discount":1,
-            "pre":{
-                "event":"失眠"
-            }
-        },
-        "031":{
-            "count":1,
-            "discount":1,
-            "pre":{
-                "event":"至少撸过1次猫"
-            }
-        },
-        "032":{
-            "count":1,
-            "discount":1,
-            "pre":{
-                "event":"至少撸过5次猫"
-            }
-        },
-        "033":{
-            "count":1,
-            "discount":1,
-            "pre":{
-                "event":"至少撸过1次狗"
-            }
-        },
-        "034":{
-            "count":3,
-            "discount":1,
-            "pre":{
-                "weather":"晴天"
-            }
-        },
-        "035":{
-            "count":3,
-            "discount":1,
-            "pre":{
-            }
-        },
-        "036":{
-            "count":3,
-            "discount":1,
-            "pre":{
-            }
-        },
-        "050":{
-            "count":1,
-            "discount":1,
-            "pre":{
-            }
-        },
-        "051":{
-            "count":1,
-            "discount":1,
-            "pre":{
-            }
-        },
-        "052":{
-            "count":1,
-            "discount":1,
-            "pre":{
-            }
-        },
-        "053":{
-            "count":1,
-            "discount":1,
-            "pre":{
-            }
-        },
-        "054":{
-            "count":1,
-            "discount":1,
-            "pre":{
-            }
-        },
-        "055":{
-            "count":1,
-            "discount":1,
-            "pre":{
-            }
-        },
-        "056":{
-            "count":1,
-            "discount":1,
-            "pre":{
-            }
-        },
-        "057":{
-            "count":1,
-            "discount":1,
-            "pre":{
-            }
-        },
-        "070":{
-            "count":1,
-            "discount":1,
-            "pre":{
-            }
-        },
-        "071":{
-            "count":1,
-            "discount":1,
-            "pre":{
-            }
-        },
-        "072":{
-            "count":1,
-            "discount":1,
-            "pre":{
-            }
-        },
-        "073":{
-            "count":1,
-            "discount":1,
-            "pre":{
-            }
-        },
-        "074":{
-            "count":1,
-            "discount":1,
-            "pre":{
-            }
-        },
-        "075":{
-            "count":1,
-            "discount":1,
-            "pre":{
-            }
-        },
-        "076":{
-            "count":1,
-            "discount":1,
+            "max_count":1,
             "pre":{
             }
         }
     },
     "Achi":{
-        "062":{
+        "I043":{
             "count":5,
             "discount":1,
             "pre":{
-                "achi":"各属性总值达到50"
+                "achi":["ac084"]
+            }
+        },
+        "I062":{
+            "count":1,
+            "discount":1,
+            "pre":{
+                "achi":["ac022"]
+            }
+        },
+        "I063":{
+            "count":1,
+            "discount":1,
+            "pre":{
+                "achi":["ac002"]
+            }
+        },
+        "I064":{
+            "count":1,
+            "discount":1,
+            "pre":{
+                "achi":["ac003"]
+            }
+        },
+        "I080":{
+            "count":1,
+            "discount":1,
+            "pre":{
+                "achi": ["ac032"]
+            }
+        },
+        "I081":{
+            "count":1,
+            "discount":1,
+            "pre":{
+                "achi":["ac089"]
+            }
+        },
+        "I082":{
+            "count":1,
+            "discount":1,
+            "pre":{
+                "achi":["ac077"]
+            }
+        },
+        "I084":{
+            "count":1,
+            "discount":1,
+            "pre":{
+                "achi": ["ac088"]
+            }
+        },
+        "I085":{
+            "count":1,
+            "discount":1,
+            "pre":{
+                "achi": ["ac089"]
+            }
+        },
+        "I086":{
+            "count":1,
+            "discount":1,
+            "pre":{
+                "achi": ["ac031"]
             }
         }
     },
     "Spec":{
-        "020":{
+        "I019":{
+            "count":1,
+            "discount":1,
+            "pre":{
+                "english_counter":5
+            }
+        },
+        "I020":{
+            "count":1,
+            "discount":1,
+            "pre":{
+                "INT":"13"
+            }
+        },
+        "I037":{
+            "count":1,
+            "discount":1,
+            "pre":{
+                "title": "根行·卡池延期"
+            }
+        },
+        "I045":{
+            "count":1,
+            "discount":1,
+            "pre":{
+                "label":["动漫"],
+                "anima_counter":5
+            }
+        },
+        "I060":{
             "count":5,
             "discount":1,
             "pre":{
-                "INT":166,
-                "event":"触发与json哥相关事件5次。"
+                "event":["NO161"]
+            }
+        },
+        "I068":{
+            "count":1,
+            "discount":1,
+            "pre":{
+                "event":["NO161"],
+                "volunteer_counter":3
+            }
+        },
+        "I065":{
+            "count":1,
+            "discount":1,
+            "pre":{
+                "event":["NO369"]
+            }
+        },
+        "I067":{
+            "count":1,
+            "discount":1,
+            "pre":{
+                "event":["NO047"]
+            }
+        },
+        "I083":{
+            "count":1,
+            "discount":1,
+            "pre":{
+                "CON":"13"
+            }
+        },
+        "I093":{
+            "count":1,
+            "discount":1,
+            "pre":{
+                "event":["NO169"]
+            }
+        },
+        "I094":{
+            "count":1,
+            "discount":1,
+            "pre":{
+                "item":"I093",
+                "count":6
+            }
+        },
+        "I095":{
+            "count":1,
+            "discount":1,
+            "pre":{
+                "event":["NO209"]
+            }
+        },
+        "I096":{
+            "count":1,
+            "discount":1,
+            "pre":{
+                "event":["NO399"]
+            }
+        },
+        "I097":{
+            "count":1,
+            "discount":1,
+            "pre":{
+                "event":["NO203"]
+            }
+        },
+        "I098":{
+            "count":1,
+            "discount":1,
+            "pre":{
+                "event":["NO216"]
+            }
+        },
+        "I099":{
+            "count":1,
+            "discount":1,
+            "pre":{
+                "event":["NO232"]
+            }
+        },
+        "I100": {
+            "count": 1,
+            "discount": 1,
+            "pre": {
+                "event": ["NO350"],
+                "result":1
+            }
+        },
+        "I101": {
+            "count": 1,
+            "discount": 1,
+            "pre": {
+                "event": ["NO351"],
+                "result":1
+            }
+        },
+        "I102": {
+            "count": 1,
+            "discount": 1,
+            "pre": {
+                "event": ["NO352"],
+                "result":1
+            }
+        },
+        "I103": {
+            "count": 1,
+            "discount": 1,
+            "pre": {
+                "event": ["NO353"],
+                "result":1
+            }
+        },
+        "I104": {
+            "count": 1,
+            "discount": 1,
+            "pre": {
+                "event": ["NO354"],
+                "result":1
+            }
+        },
+        "I105": {
+            "count": 1,
+            "discount": 1,
+            "pre": {
+                "event": ["NO355"],
+                "result":1
+            }
+        },
+        "I106": {
+            "count": 1,
+            "discount": 1,
+            "pre": {
+                "event": ["NO355"],
+                "result":1
+            }
+        },
+        "I107": {
+            "count": 1,
+            "discount": 1,
+            "pre": {
+                "event": ["NO356"],
+                "result":1
+            }
+        },
+        "I108": {
+            "count": 1,
+            "discount": 1,
+            "pre": {
+                "event": ["NO356"],
+                "result":1
+            }
+        },
+        "I109": {
+            "count": 1,
+            "discount": 1,
+            "pre": {
+                "title": "SRTP",
+                "result":1
+            }
+        },
+        "I110": {
+            "count": 1,
+            "discount": 1,
+            "pre": {
+                "title": "数学建模竞赛",
+                "result":1
+            }
+        },
+        "I111": {
+            "count": 1,
+            "discount": 1,
+            "pre": {
+                "title": "ASC",
+                "result":1
             }
         }
-    }
+    }          
 }

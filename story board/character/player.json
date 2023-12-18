@@ -1,124 +1,222 @@
 {
- "76755379": {
+ "797093627": {
+  "MainAtt": {
+   "CON": 3,
+   "INT": 10,
+   "WIL": 5,
+   "SUM": 33,
+   "LUC": 15
+  },
+  "Bag": {},
+  "Inheritkey": "cFHLbqDxdywynzoy",
   "Info": {
-   "Nickname": "ljh",
-   "Introduction": "经验+3，告辞",
+   "Job": "学生",
    "Gender": "男",
-   "Job": "学生"
-  },
-  "points": 0,
-  "Mainline": {
-   "Semester": 1,
-   "credit": 0,
-   "FinishTimes": 0,
-   "rank": 514
-  },
-  "Bag": {
-   "study": 0,
-   "game": 0,
-   "item": {},
-   "trophy": 0,
-   "snack": 0,
-   "fans": 0,
-   "anima": 0,
-   "sum": 0,
-   "comp": 0,
-   "sport": 0
-  },
-  "Count": {
-   "public": 0,
-   "spec": 0,
-   "bottleSend": 0,
-   "daily": 0,
-   "bottleRecv": 0,
-   "bottleCast": 0,
-   "exam": 0,
-   "sign": 0,
-   "shop": 0,
-   "board": 0,
-   "weekly": 0,
-   "disturb": 0
+   "Nickname": "天麟",
+   "Introduction": " "
   },
   "Event": {
-   "daily": {},
-   "weekly": {},
-   "spec": {}
+   "Spec": {},
+   "Daily": {},
+   "Weekly": {}
   },
+  "Count": {
+   "FailtoSleepCounter": 0,
+   "spec": 0,
+   "disturb": 0,
+   "public": 0,
+   "PoiliticsCounter": 0,
+   "sign": 0,
+   "petting_cat": 0,
+   "daily": 0,
+   "exam": 0,
+   "MeetJasonCounter": 0,
+   "bottleCast": 0,
+   "weekly": 0,
+   "petting_dog": 0,
+   "AnimaCounter": 0,
+   "bottleSend": 0,
+   "board": 0,
+   "bottleRecv": 0,
+   "shop": 0
+  },
+  "DailyAtt": {
+   "energy_limit": 103,
+   "mood": 105,
+   "mood_limit": 105,
+   "energy": 103
+  },
+  "Mainline": {
+   "FinishTimes": 0,
+   "rank": 3,
+   "credit": 2,
+   "Semester": 1
+  },
+  "Achievement": {},
+  "points": 0
+ },
+ "1885027977": {
+  "MainAtt": {
+   "CON": 9,
+   "INT": 7,
+   "WIL": 12,
+   "SUM": 38,
+   "LUC": 10
+  },
+  "Bag": {
+   "I084": {
+    "remaining_usage": 0,
+    "count": 0
+   },
+   "I020": {
+    "remaining_usage": -1,
+    "count": 1
+   },
+   "I025": {
+    "remaining_usage": 30,
+    "count": 3
+   },
+   "I054": {
+    "remaining_usage": 1,
+    "count": 1
+   },
+   "I004": {
+    "remaining_usage": 5,
+    "count": 1
+   },
+   "I014": {
+    "remaining_usage": 8,
+    "count": 2
+   },
+   "I056": {
+    "remaining_usage": 1,
+    "count": 1
+   },
+   "I064": {
+    "remaining_usage": -1,
+    "count": 1
+   },
+   "I000": {
+    "remaining_usage": 4,
+    "count": 1
+   },
+   "I006": {
+    "remaining_usage": 2,
+    "count": 1
+   }
+  },
+  "Inheritkey": "lEei9FqXQZ8nhCMF",
+  "Info": {
+   "Job": "学生",
+   "Gender": "男",
+   "Nickname": "hjsfjgj",
+   "Introduction": "djgsfhkjdfhk"
+  },
+  "Event": {
+   "Spec": {},
+   "Daily": {},
+   "Weekly": {}
+  },
+  "Count": {
+   "FailtoSleepCounter": 0,
+   "spec": 0,
+   "disturb": 0,
+   "public": 0,
+   "PoiliticsCounter": 0,
+   "sign": 16,
+   "petting_cat": 1,
+   "daily": 0,
+   "exam": 0,
+   "MeetJasonCounter": 0,
+   "bottleCast": 0,
+   "weekly": 0,
+   "petting_dog": 1,
+   "AnimaCounter": 0,
+   "bottleSend": 0,
+   "board": 44,
+   "bottleRecv": 0,
+   "shop": 0
+  },
+  "DailyAtt": {
+   "energy_limit": 109,
+   "mood": 87,
+   "mood_limit": 112,
+   "energy": 31
+  },
+  "Mainline": {
+   "FinishTimes": 0,
+   "rank": 2,
+   "credit": 5,
+   "Semester": 1
+  },
+  "Achievement": [
+   "ac000",
+   "ac001",
+   "ac002",
+   "ac003",
+   "ac031",
+   "ac032",
+   "ac088",
+   "ac089"
+  ],
+  "points": 52
+ },
+ "76755379": {
   "MainAtt": {
    "CON": 10,
    "INT": 10,
    "WIL": 10,
-   "LUC": 16,
-   "SUM": 46
+   "SUM": 46,
+   "LUC": 16
+  },
+  "Bag": {},
+  "Inheritkey": "dScBtEYV5eFgL7xI",
+  "Info": {
+   "Job": "学生",
+   "Gender": "男",
+   "Nickname": "ljh",
+   "Introduction": "经验+3，告辞"
+  },
+  "Event": {
+   "Spec": {},
+   "Daily": {},
+   "Weekly": {}
+  },
+  "Count": {
+   "FailtoSleepCounter": 0,
+   "spec": 0,
+   "disturb": 0,
+   "public": 0,
+   "PoiliticsCounter": 0,
+   "sign": 0,
+   "petting_cat": 0,
+   "daily": 0,
+   "exam": 0,
+   "MeetJasonCounter": 0,
+   "bottleCast": 0,
+   "weekly": 0,
+   "petting_dog": 0,
+   "AnimaCounter": 0,
+   "bottleSend": 0,
+   "board": 0,
+   "bottleRecv": 0,
+   "shop": 0
+  },
+  "DailyAtt": {
+   "energy_limit": 100,
+   "mood": 100,
+   "mood_limit": 100,
+   "energy": 100
+  },
+  "Mainline": {
+   "FinishTimes": 0,
+   "rank": 1,
+   "credit": 10,
+   "Semester": 1
   },
   "Achievement": [
    "ac000"
   ],
-  "DailyAtt": {
-   "energy_limit": 100,
-   "mood_limit": 100,
-   "mood": 100,
-   "energy": 100
-  }
- },
- "1885027977": {
-  "Info": {
-   "Nickname": "sjhdj",
-   "Introduction": " ",
-   "Gender": "男",
-   "Job": "学生"
-  },
-  "points": 0,
-  "Mainline": {
-   "Semester": 1,
-   "credit": 0,
-   "FinishTimes": 0,
-   "rank": 0
-  },
-  "Bag": {
-   "study": 0,
-   "game": 0,
-   "item": {},
-   "trophy": 0,
-   "snack": 0,
-   "fans": 0,
-   "anima": 0,
-   "sum": 0,
-   "comp": 0,
-   "sport": 0
-  },
-  "Count": {
-   "public": 0,
-   "spec": 0,
-   "bottleSend": 0,
-   "daily": 0,
-   "bottleRecv": 0,
-   "bottleCast": 0,
-   "exam": 0,
-   "sign": 0,
-   "shop": 0,
-   "board": 0,
-   "weekly": 0,
-   "disturb": 0
-  },
-  "Event": {
-   "daily": {},
-   "weekly": {},
-   "spec": {}
-  },
-  "MainAtt": {
-   "CON": 4,
-   "INT": 11,
-   "WIL": 13,
-   "LUC": 12,
-   "SUM": 40
-  },
-  "Achievement": {},
-  "DailyAtt": {
-   "energy_limit": 104,
-   "mood_limit": 113,
-   "mood": 113,
-   "energy": 104
-  }
+  "points": 0
  }
 }

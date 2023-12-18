@@ -16,7 +16,11 @@ function updateIntro(msg)
     if(players == nil)then
         players = {}
     end
-    if (players[QQ]["Info"]["Nickname"]==nil) then 
+    if (players[QQ]) then
+        if (players[QQ]["Info"]["Nickname"]==nil) then 
+            return "未创建角色，请先创建角色「创建新角色」"
+        end
+    else
         return "未创建角色，请先创建角色「创建新角色」"
     end
     players[QQ]["Info"]["Introduction"]=introduction

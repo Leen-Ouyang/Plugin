@@ -1,7 +1,7 @@
 s="签到"
 config={
     msg={
-        sign_success="签到成功！积分+{point}\n连续签到{days}天",
+        sign_success="签到成功！积分+{point}\n累计签到{days}天",
         already="今日已签到！"
     }
 }
@@ -27,7 +27,7 @@ function sign(msg)
     if (players[QQ]["Info"]["Nickname"]==nil) then 
         return "未创建角色，请先创建角色「请先创建角色」"
     end
-    if (#temps[QQ]["last_sign"]==0) then
+    if (#temps[QQ]["last_sign"]~={}) then
         local last_sign=temps[QQ]["last_sign"]
         local last_year = temps[QQ]["last_sign"]["year"]
         local last_month = temps[QQ]["last_sign"]["month"]
@@ -40,15 +40,37 @@ function sign(msg)
             return config.msg.already
         else
             temps[QQ]["last_sign"]=time
-            temp_data:set(temps)
             players[QQ]["Count"]["sign"]=players[QQ]["Count"]["sign"]+1
             local days=players[QQ]["Count"]["sign"]
             local point = 10+math.random(1, 10)
+            local achi_msg=""
             players[QQ]["points"]=players[QQ]["points"]+ point
+            if (days==3) then
+                local ach=players[QQ]["Achievement"]
+                table.insert(ach,"ac001")
+                players[QQ]["Achievement"]=ach
+                players[QQ]["points"]=players[QQ]["points"]+30
+                achi_msg="\n恭喜！解锁成就「小苗初成」"
+            elseif (days==7) then
+                local ach=players[QQ]["Achievement"]
+                table.insert(ach,"ac002")
+                players[QQ]["Achievement"]=ach
+                players[QQ]["MainAtt"]["WIL"]=players[QQ]["MainAtt"]["WIL"]+1
+                players[QQ]["MainAtt"]["SUM"]=players[QQ]["MainAtt"]["SUM"]+1
+                achi_msg="\n恭喜！解锁成就「枝繁叶茂」"
+            elseif (days==30) then
+                local ach=players[QQ]["Achievement"]
+                table.insert(ach,"ac003")
+                players[QQ]["Achievement"]=ach
+                players[QQ]["MainAtt"]["WIL"]=players[QQ]["MainAtt"]["WIL"]+2
+                players[QQ]["MainAtt"]["SUM"]=players[QQ]["MainAtt"]["SUM"]+2
+                achi_msg="\n恭喜！解锁成就「开花结果」"    
+            end
             data:set(players)
+            temp_data:set(temps)
             config.msg.sign_success = config.msg.sign_success:gsub("{point}", point)
             config.msg.sign_success = config.msg.sign_success:gsub("{days}", days)
-            return config.msg.sign_success
+            return config.msg.sign_success..achi_msg
         end
     else
         local time = os.date("*t")

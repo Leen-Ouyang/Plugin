@@ -1,0 +1,166 @@
+{
+  "NO350": [
+    {
+      "title": "问鼎龙卷风",
+      "description": "“龙卷风杯”篮球赛今年在我校举办，你报名了这次的篮球赛并接受了训练。",
+      "place": "playground",
+      "label": "运动",
+      "pre": {
+        "event": [ "Weekly", "NO145" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 20,
+      "success": "在你和队友平时的刻苦训练和比赛时的默契配合下，你们队成功夺得龙卷风杯。",
+      "failure": "你所在的队伍在比赛中每个人都尽力了，奈何实力与对手存在差距，你们队惜败了。",
+      "change": {
+        "Bag": "I100"
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    },
+    {
+      "title": "问鼎龙卷风",
+      "description": "“龙卷风杯”篮球赛今年在我校举办，你作为观众和好友一同观看了这次比赛。",
+      "place": "playground",
+      "label": "运动",
+      "pre": {
+        "event": [ "Weekly", "NO145" ]
+      },
+      "odds": 0.2,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 20,
+      "success": "我校队伍取得了篮球赛决赛的胜利，你和好友一同欢呼。",
+      "failure": "我校队伍惜败与对方，无缘龙卷风杯，你感到惋惜。",
+      "change": {
+        "point": 50
+      },
+      "energy": -10,
+      "mood": 20,
+      "limit": "null"
+    }
+  ],
+  "NO351": [
+    {
+      "title": "逐鹿大力王",
+      "description": "“大力王杯”足球赛今年在我校举办，你报名了这次的足球赛并接受了训练。",
+      "place": "playground",
+      "label": "运动",
+      "pre": {
+        "event": [ "Weekly", "NO146" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 20,
+      "success": "在你和队友平时的刻苦训练和比赛时的默契配合下，你们队成功夺得大力王杯。",
+      "failure": "你所在的队伍在比赛中每个人都尽力了，奈何实力与对手存在差距，你们队惜败了。",
+      "change": {
+        "Bag": "I101"
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    },
+    {
+      "title": "逐鹿大力王",
+      "description": "“大力王杯”足球赛今年在我校举办，你作为观众和好友一同观看了这次比赛。",
+      "place": "playground",
+      "label": "运动",
+      "pre": {
+        "event": [ "Weekly", "NO146" ]
+      },
+      "odds": 0.2,
+      "count": 1,
+      "judge": "LUC",
+      "ending": 1,
+      "diff": 20,
+      "success": "我校队伍取得了足球赛决赛的胜利，你和好友一同欢呼。",
+      "failure": "我校队伍惜败与对方，无缘大力王杯，你感到惋惜。",
+      "change": {
+        "point": 50
+      },
+      "energy": -10,
+      "mood": 20,
+      "limit": "null"
+    }
+  ],
+  "NO352": [
+    {
+      "title": "摘得金牌",
+      "description": "省乒乓球赛今年在我校举办，你报名了这次的乒乓球赛并接受了训练。",
+      "place": "playground",
+      "label": "运动",
+      "pre": {
+        "event": [ "Weekly", "NO147" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "CON",
+      "ending": 1,
+      "diff": 20,
+      "success": "在你平时的刻苦训练下，你成功摘得省乒乓球赛的金牌。",
+      "failure": "你在比赛中尽力而为，奈何实力与对手存在差距，你无缘金牌。",
+      "change": {
+        "Bag": "I102"
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    }
+  ],
+  "NO353": [
+    {
+      "title": "加冕桂冠",
+      "description": "省羽毛球赛今年在我校举办，你报名了这次的羽毛球赛并接受了训练。",
+      "place": "playground",
+      "label": "运动",
+      "pre": {
+        "event": [ "Weekly", "NO148" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "CON",
+      "ending": 1,
+      "diff": 20,
+      "success": "在你平时的刻苦训练下，你成功摘得省羽毛球赛的桂冠。",
+      "failure": "你在比赛中尽力而为，奈何实力与对手存在差距，你无缘冠军。",
+      "change": {
+        "Bag": "I102"
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    }
+  ],
+  "NO354": [
+    {
+      "title": "取将夺帅",
+      "description": "省象棋赛今年在我校举办，你报名了这次的象棋赛并接受了训练。",
+      "place": "playground",
+      "label": "运动",
+      "pre": {
+        "event": [ "Weekly", "NO149" ]
+      },
+      "odds": 0.1,
+      "count": 1,
+      "judge": "INT",
+      "ending": 1,
+      "diff": 20,
+      "success": "在你平时的刻苦训练下，你成功获得省象棋赛的冠军，获得了金棋盘。",
+      "failure": "你在比赛中尽力而为，奈何实力与对手存在差距，你无缘冠军。",
+      "change": {
+        "Bag": "I102"
+      },
+      "energy": -20,
+      "mood": 30,
+      "limit": "null"
+    }
+  ]
+}

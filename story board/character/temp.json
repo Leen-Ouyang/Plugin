@@ -1,17 +1,128 @@
 {
-    "76755379":{
-        "last_sign":{},
-        "daily_done":[],
-        "weekly_done":[],
-        "next_daily":{
-            "generate_time" : "nil",
-            "num": "nil",
-            "type":"nil"
-        },
-        "next_weekly":{
-            "generate_time" : "nil",
-            "num": "nil",
-            "type":"nil"
-        }
-    }
+ "weather": "晴天",
+ "76755379": {
+  "weekly_done": {},
+  "next_weekly": {
+   "type": "nil",
+   "num": "nil",
+   "generate_time": "nil"
+  },
+  "next_daily": {
+   "type": "nil",
+   "num": "nil",
+   "generate_time": "nil"
+  },
+  "last_sign": {},
+  "daily_done": {},
+  "odds": {},
+  "discount": {
+   "anima": 1,
+   "game": 1,
+   "study": 1,
+   "comp": 1,
+   "trophy": 1,
+   "sport": 1,
+   "snack": 1,
+   "other": 1,
+   "fans": 1
+  },
+  "buff": {}
+ },
+ "1885027977": {
+  "weekly_done": [
+   "NO104"
+  ],
+  "next_weekly": {
+   "type": "Weekly",
+   "num": "NO101",
+   "generate_time": 1701635490
+  },
+  "next_daily": {
+   "type": "Daily",
+   "num": "NO000",
+   "generate_time": 1701635477
+  },
+  "last_sign": {
+   "day": 7,
+   "sec": 55,
+   "min": 6,
+   "hour": 15,
+   "month": 12,
+   "yday": 341,
+   "wday": 5,
+   "year": 2023
+  },
+  "daily_done": [
+   "NO003",
+   "NO006"
+  ],
+  "odds": {},
+  "discount": {
+   "anima": 1,
+   "game": 1,
+   "study": 1,
+   "comp": 1,
+   "trophy": 1,
+   "sport": 1,
+   "snack": 1,
+   "other": 1,
+   "fans": 1
+  },
+  "buff": {
+   "I000": {
+    "label": [
+     "《计算机科学导论》"
+    ],
+    "INT": 10
+   },
+   "I020": {
+    "LUC": 1,
+    "event": [
+     "NO100",
+     "NO101",
+     "NO102",
+     "NO103",
+     "N0104",
+     "NO105",
+     "NO106",
+     "NO107",
+     "NO108",
+     "NO109"
+    ],
+    "INT": 2
+   },
+   "I061": {
+    "LUC": 2,
+    "discount": 0.5,
+    "category": [
+     "snack"
+    ]
+   },
+   "I014": {
+    "label": [
+     "学习"
+    ],
+    "INT": 6
+   },
+   "I021": {
+    "odds": 0.05,
+    "ending": 0
+   },
+   "I002": {
+    "label": [
+     "形势与政策"
+    ],
+    "INT": 5
+   },
+   "I025": {
+    "event": [
+     "NO214",
+     "NO221",
+     "NO228",
+     "NO248"
+    ],
+    "result": 1
+   }
+  }
+ }
 }
